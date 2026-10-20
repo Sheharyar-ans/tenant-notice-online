@@ -1,6 +1,3 @@
-User-agent: *
-Allow: /
-
 User-agent: Googlebot
 Allow: /
 
@@ -14,6 +11,37 @@ User-agent: ClaudeBot
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Block Aggressive Vulnerability Scanners and Scraping Exploits
+User-agent: sqlmap
+Disallow: /
+
+User-agent: nikto
+Disallow: /
+
+User-agent: wpscan
+Disallow: /
+
+User-agent: masscan
+Disallow: /
+
+User-agent: zgrab
+Disallow: /
+
+User-agent: Nessus
+Disallow: /
+
+User-agent: OpenVAS
+Disallow: /
+
+User-agent: Acunetix
+Disallow: /
+
+User-agent: *
 Allow: /
 
 Sitemap: https://tenantnotice.online/sitemap.xml

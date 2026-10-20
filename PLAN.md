@@ -1,69 +1,60 @@
-# TenantNotice.online - Strategic Implementation Plan
+# TenantNotice.online - Strategic Implementation & Refactor Plan
 
 ## Executive Summary
-TenantNotice.online is an authoritative, unmetered, client-side legal document generation engine and statutory guidance portal. The platform provides complete jurisdictional segregation between the United States (US) and the United Kingdom (UK) legal regimes to ensure exact statutory compliance, eliminate legal cross-contamination, and maximize programmatic SEO, GEO (Generative Engine Optimization), and AEO (Answer Engine Optimization) authority.
+TenantNotice.online is an authoritative, zero-latency, client-side legal document generation engine and statutory guidance portal. This refactoring sprint elevates the platform into a native mobile app-like interface with thumb-friendly controls, sticky action bars, strict inverted-pyramid heading hierarchies for GEO and AEO search engines, rich statutory keyword integration, and cybersecurity edge hardening.
 
-## Active Skills & Technical Discovery
-The project leverages the following core architectural capabilities:
-- **Design System & Semantic UI**: High-fidelity Tailwind CSS utility architecture, Google Fonts (Inter, Plus Jakarta Sans, JetBrains Mono), responsive typography, and print-specialized styling.
-- **Frontend State & Document Compiler Engine**: Pure zero-dependency client-side vanilla JavaScript reactive state engine. Form updates mutate the legal preview in real time with zero server roundtrips, ensuring privacy and speed.
-- **Search Systems Strategy (SEO / GEO / AIO / AEO)**: Semantic heading hierarchies, 45-word direct answer capsules for AI ingestion (Google AI Overviews, Perplexity, GPT), valid JSON-LD schemas (FAQPage, WebApplication, BreadcrumbList, Organization, WebSite), and strict internal linking meshes.
-- **Security & Crawl Infrastructure**: Cloudflare edge headers (`_headers`), robust `robots.txt` honoring modern AI bots, `sitemap.xml`, `llms.txt`, and `llms-full.txt`.
+## Active Skills & Architectural Capabilities
+- **Mobile-First App Shell & Ergonomics**: Responsive app-like architecture featuring sticky bottom action bars on mobile viewports (< 768px), horizontal scrolling segmented pills for state and ground selection, 48px minimum touch targets, and sticky split-screen desktop workspaces.
+- **Client-Side Reactive Compiler**: Zero-data-retention vanilla JavaScript engine. Live input binding renders official legal letterheads in browser memory without server round-trips.
+- **Search & Generative Engine Optimization (SEO / GEO / AIO / AEO)**:
+  - Exact inverted pyramid heading hierarchies on every tool page.
+  - 45-word bold Direct Answer Capsules positioned immediately below single H1 tags.
+  - Complete statutory breakdowns: H2 Legal Foundations, H3 Variable Definitions & Qualifying Conditions table, H2 Service of Process, H2 Timelines Matrix, H2 Fatal Mistakes, H2 Conversational FAQs, and H2 Related Utilities.
+  - Valid JSON-LD schemas (WebApplication, FAQPage matching on-page copy 1:1, BreadcrumbList, Organization, WebSite).
+- **Security & Crawl Infrastructure**: Cloudflare edge headers (`_headers`), robust crawler directives (`robots.txt`), XML sitemaps (`sitemap.xml`), and machine-readable context files (`llms.txt`, `llms-full.txt`).
 
-## Phased Implementation Roadmap
+## Refactor Roadmap & Milestones
 
-### Phase 0: Foundations & Memory Initialization
-- Create structured tracking documents: `PLAN.md`, `ARCHITECTURE.md`, `TASK_QUEUE.md`.
-- Establish Git baseline and push tracking records to `main` branch.
+### Sprint Phase 0: Discovery & Audit
+- Review all existing templates across `/`, `/us/`, `/uk/`, `/guides/`, and `/legal/`.
+- Update `PLAN.md`, `ARCHITECTURE.md`, and `TASK_QUEUE.md`.
+- Verify zero broken links, zero outbound third-party links, and zero em-dash or AI filler characters.
 
-### Phase 1: Jurisdictional Isolation & Global Homepage
-- Develop `/index.html` featuring:
-  - Hero section with live client-side tool search and filter across jurisdictions and acts.
-  - Gateway cards with custom SVG emblems for US and UK portals.
-  - Cross-jurisdiction tenancy comparison matrix (notice periods, cure windows, judicial grounds).
-  - 3-column featured legal guides grid.
-  - Bi-directional hreflang tags (`en-US`, `en-GB`, `x-default`).
+### Sprint Phase 1: Native Mobile App-Like UI/UX Overhaul
+- Implement sticky bottom action bars (`md:hidden`) with dual high-contrast action buttons: "Copy Document" and "Print / Save PDF".
+- Introduce thumb-friendly horizontal segmented pill selectors for states, grounds, and roles.
+- Ensure 48px touch targets across all interactive elements.
+- Re-architect desktop workspaces into 40/60 split panels with collapsible input groups and sticky physical document preview letterheads.
+- Calibrate `@media print` CSS engines for US Letter and A4 portrait outputs.
 
-### Phase 2: United States Portal & Statutory Suite
-- Deploy `/us/index.html` with state filtering buttons (California, Texas, Florida, New York, and multi-state).
-- Build 4 comprehensive state-compliant document generators:
-  1. `/us/30-day-notice-to-vacate.html` (Cal. Civ. Code § 1946.1, Tex. Prop. Code § 24.005, Fla. Stat. § 83.57, NY RPL § 226-c).
-  2. `/us/3-day-pay-rent-or-quit.html` (Cal. CCP § 1161(2), Fla. Stat. § 83.56(3), Tex. Prop. Code § 24.005).
-  3. `/us/security-deposit-demand.html` (Cal. Civ. Code § 1950.5, Tex. Prop. Code § 92.103, Fla. Stat. § 83.49).
-  4. `/us/24-hour-notice-to-enter.html` (Cal. Civ. Code § 1954 and privacy covenants).
+### Sprint Phase 2: Inverted Pyramid Semantic Hierarchy & Meta Overhaul
+- Standardize every tool page to the mandatory inverted pyramid heading sequence.
+- Inject 45-word bold Direct Answer Capsules citing governing statutes and day-counting rules.
+- Add H3 raw HTML tables for Variable Definitions & Qualifying Conditions on all tools.
+- Refine meta titles and descriptions to include primary statutory search queries.
 
-### Phase 3: United Kingdom Portal (2026 Reforms Compliant)
-- Deploy `/uk/index.html` aligned with the modern Renters' Rights Act framework.
-- Build 4 comprehensive UK tenancy tools:
-  1. `/uk/section-8-notice-to-quit.html` (Housing Act 1988 reformed Schedule 2 possession grounds, Ground 8 and Ground 1A).
-  2. `/uk/tenant-notice-to-quit.html` (Periodic tenancy termination, statutory two-month notice calculation).
-  3. `/uk/tenancy-deposit-demand.html` (Housing Act 2004 Section 213 compliance, 1-3x penalty rules for unprotected deposits).
-  4. `/uk/section-13-rent-challenge.html` (Section 13 Form 4 rent increase challenge to the First-tier Tribunal).
+### Sprint Phase 3: High-Intent Keyword Integration
+- Embed researched US statutory keywords: California Civil Code § 1946.1, California CCP § 1161(2), Texas Property Code § 24.005 & § 92.103, Florida Statutes § 83.56 & § 83.57.
+- Embed researched UK statutory keywords: Renters' Rights Act notice rules, Section 8 Form 3 Ground 8 serious arrears, Section 13 Form 4 rent challenges, Housing Act 2004 Section 213 deposit protection.
 
-### Phase 4: Client-Side Document Compiler & Print Engine
-- Split-screen interactive interface (input control fields on left, live letterhead preview on right).
-- High-fidelity typography mimicking physical legal documents.
-- Print CSS `@media print` styling configured for standard 1-inch margins on US Letter and A4 papers, eliminating web UI chrome.
-- Instant copy-to-clipboard functionality with active toast feedback.
+### Sprint Phase 4: Humanization & Lexical Depth
+- Enforce absolute ban on em-dashes and formulaic AI filler tropes.
+- Expand explanatory analytical legal text to 1,000 to 1,400 words per tool page.
 
-### Phase 5: Search & AI Authority Architecture
-- Formulate 45-word direct answer capsules beneath single H1 tags for direct snippet and AI overview extraction.
-- Compile 1,000 to 1,400 words of rich statutory guidance, delivery of process instructions, timeline matrices, and pitfalls on every tool page.
-- Strict typography rules: no em-dashes and no formulaic AI tropes.
-- Structured JSON-LD markup on every page: FAQPage, WebApplication, BreadcrumbList, Organization, and WebSite schemas.
+### Sprint Phase 5: LLM-First FAQs & Valid JSON-LD Schemas
+- Structure 5 to 7 conversational FAQs per page with 40-word leading statutory rule answers.
+- Validate hardcoded FAQPage, WebApplication, and BreadcrumbList schemas.
 
-### Phase 6: Pillar-Cluster Internal Linking Mesh
-- Embedded 3-column related utilities component on all generator tools.
-- Educational legal guides in `/guides/` with minimum 4 contextual internal links per article.
-- HTML5 breadcrumb navigation paths on every page.
-- Complete outbound link hygiene (zero third-party links except Web3Forms endpoint).
+### Sprint Phase 6: Pillar-Cluster Internal Linking Mesh
+- Embed 3-column related utilities cards on all generators.
+- Verify 4+ contextual internal links per educational guide.
+- Maintain strict outbound link hygiene.
 
-### Phase 7: Brand Assets, Security Hardening & Trust Infrastructure
-- Custom `/favicon.svg` with dark navy (#0f172a) and emerald accent (#059669).
-- Cloudflare security headers via `_headers`.
-- Modern search crawl configuration: `robots.txt`, `llms.txt`, `llms-full.txt`, and `sitemap.xml`.
-- Institutional compliance suite under `/legal/`: About Us, Contact Us, Privacy Policy, Terms of Service, Disclaimer.
+### Sprint Phase 7: Edge Cybersecurity & Manifests
+- Harden Cloudflare `_headers` with strict CSP, HSTS, and frame protections.
+- Update `robots.txt` blocking vulnerability scanners while welcoming AI and search bots.
+- Verify `sitemap.xml`, `llms.txt`, and `llms-full.txt`.
 
-### Phase 8: Deployment & Git Verification
-- Verify all links, schemas, and responsive layouts.
-- Commit and push complete production codebase to GitHub repository.
+### Sprint Phase 8: Final Review & Git Push
+- Audit all pages for responsiveness, print fidelity, and schema validity.
+- Stage, commit, and push all refactored code to the repository.

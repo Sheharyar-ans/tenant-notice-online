@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>California 3-Day Notice to Pay Rent or Quit: CCP § 1161(2)</title>
-  <meta name="description" content="Generate a statutory 3-day notice to pay rent or quit. California CCP § 1161(2), Florida Stat. § 83.56(3), and Texas nonpayment rent demand builder.">
+  <title>3 Day Notice to Pay Rent or Quit: CCP 1161(2) & FL 83.56 | TenantNotice</title>
+  <meta name="description" content="Generate a statutory 3-day notice to pay rent or quit under California CCP 1161(2) and Florida Stat. 83.56. Instant preview with weekend and holiday exclusion rules.">
   <link rel="canonical" href="https://tenantnotice.online/us/3-day-pay-rent-or-quit.html">
   <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/3-day-pay-rent-or-quit.html">
   <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/section-8-notice-to-quit.html">
@@ -66,7 +66,7 @@
         font-size: 11pt !important;
         line-height: 1.5 !important;
       }
-      .no-print, header, footer, nav, aside, .action-toolbar {
+      .no-print, header, footer, nav, aside, .action-toolbar, #mobileActionBar {
         display: none !important;
       }
       @page {
@@ -88,6 +88,7 @@
         "url": "https://tenantnotice.online/us/3-day-pay-rent-or-quit.html",
         "applicationCategory": "LegalApplication",
         "operatingSystem": "All modern browsers",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
         "offers": {
           "@type": "Offer",
           "price": "0.00",
@@ -126,7 +127,7 @@
             "name": "How is the 3-day notice period calculated under California CCP § 1161(2)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "California Code of Civil Procedure Section 1161(2) expressly excludes Saturdays, Sundays, and judicial holidays from the 3-day computation. The day of service is excluded, and Day 1 begins on the next business day."
+              "text": "California Code of Civil Procedure Section 1161(2) expressly excludes Saturdays, Sundays, and judicial holidays from the 3-day computation. The day of service is excluded, and Day 1 begins on the next judicial business day."
             }
           },
           {
@@ -139,26 +140,34 @@
           },
           {
             "@type": "Question",
-            "name": "What information must be included regarding rent payment details in California?",
+            "name": "What are the rules for serving a 3 day notice to pay rent or quit under Florida Statute 83.56?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The notice must specify the exact delinquent balance, the name and telephone number of the person to whom rent must be delivered, physical payment address, and the days and hours the person is available to accept payment."
+              "text": "Florida Statute Section 83.56(3) mandates three business days excluding Saturdays, Sundays, and legal court holidays. The notice must demand payment of rent or delivery of possession of the premises directly to the landlord."
             }
           },
           {
             "@type": "Question",
-            "name": "How does Florida Statutes § 83.56(3) govern nonpayment rent notices?",
+            "name": "Does Texas law provide a statutory cure period for unpaid rent?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Florida Statutes Section 83.56(3) requires a 3-day written demand excluding Saturdays, Sundays, and legal holidays. The notice must specify the exact amount due and advise the tenant that failure to pay or vacate will lead to eviction proceedings."
+              "text": "Under Texas Property Code Section 24.005, a landlord must provide at least three days written notice to vacate before filing a forcible detainer suit, unless a written lease specifies a different notice period such as 24 hours."
             }
           },
           {
             "@type": "Question",
-            "name": "What happens if a tenant tenders the full rent within the 3-day statutory window?",
+            "name": "What payment instructions must be specified on a California 3-day rent demand?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If the tenant tenders the full delinquent rent demanded in the notice within the statutory cure window, the landlord is legally obligated to accept the payment, and the default is completely cured."
+              "text": "The notice must specify the exact dollar amount of overdue rent, the name, telephone number, physical address of the payee, and the ordinary business hours during which payment can be personally remitted."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if a landlord accepts partial rent after serving a 3-day notice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Accepting partial payment without a contemporaneous written non-waiver agreement waives the notice to pay rent or quit as a matter of law, requiring the landlord to issue a brand new notice for any remaining unpaid balance."
             }
           }
         ]
@@ -167,179 +176,214 @@
   }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
-  <!-- Navigation Header -->
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+  <!-- Global Navigation Header -->
   <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center space-x-3 group">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
         <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
         <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
       </a>
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-        <a href="/us/" class="text-emerald-400 flex items-center space-x-2">
+        <a href="/us/" class="text-emerald-400 flex items-center space-x-2 min-h-[48px]">
           <span class="w-2 h-2 rounded-full bg-blue-500"></span>
           <span>US Portal</span>
         </a>
-        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
           <span class="w-2 h-2 rounded-full bg-red-500"></span>
           <span>UK Portal</span>
         </a>
-        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
-        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Guides</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
       </nav>
-      <div class="flex items-center space-x-3">
-        <a href="/us/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-1.5 border border-slate-700 rounded-lg">
-          &larr; All US Tools
+      <div class="flex items-center space-x-2">
+        <a href="/uk/section-8-notice-to-quit.html" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-2 border border-slate-700 rounded-lg min-h-[48px] flex items-center">
+          Switch to UK
+        </a>
+        <a href="/us/" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 px-3 py-2 border border-emerald-500/40 bg-emerald-950/40 rounded-lg min-h-[48px] flex items-center">
+          All US Tools
         </a>
       </div>
     </div>
   </header>
 
   <!-- Breadcrumbs -->
-  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print">
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print" aria-label="Breadcrumb">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
       <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
       <span>/</span>
       <a href="/us/" class="hover:text-slate-900 transition-colors">US Portal</a>
       <span>/</span>
-      <span class="text-slate-900 font-medium">3-Day Notice to Pay Rent</span>
+      <span class="text-slate-900 font-medium">3-Day Notice to Pay Rent or Quit</span>
     </div>
   </nav>
 
-  <!-- Main Content Workspace -->
+  <!-- Inverted Pyramid: Main Workspace -->
   <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <!-- Header Title & Direct Answer Capsule -->
     <div class="mb-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-900 text-xs font-semibold mb-3">
-        <span class="w-2 h-2 rounded-full bg-amber-600"></span>
-        Statutory Nonpayment Demand Generator
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold mb-3">
+        <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+        Statutory Nonpayment Rent Demand Compiler
       </div>
-      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+      <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
         California 3-Day Notice to Pay Rent or Quit: CCP § 1161(2)
       </h1>
-
-      <!-- Direct Answer Capsule for AI Overviews & Search Snippets -->
+      
+      <!-- 45-Word Direct Answer Capsule for AI Extraction -->
       <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
-        <p class="font-medium text-slate-200">
-          <strong>Direct Legal Rule:</strong> California Code of Civil Procedure Section 1161(2) requires landlords to give tenants a written three-day notice demanding exact delinquent rent or possession of the property. The three-day cure period strictly excludes Saturdays, Sundays, and judicial holidays. Non-rent charges must be omitted.
+        <p class="font-bold text-slate-100">
+          Under California Code of Civil Procedure Section 1161(2) and Florida Statute 83.56, a 3-day notice demands delinquent rent or property surrender. The day of service, Saturdays, Sundays, and judicial holidays are strictly excluded from the three-day computation before an unlawful detainer can be filed.
         </p>
       </div>
     </div>
 
-    <!-- Split-Screen Interactive Layout -->
+    <!-- Desktop Split-Screen Power Workspace (Left 40%, Right 60%) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
-      <!-- Left Configuration Controls (lg:col-span-5) -->
-      <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 no-print text-xs">
+      <!-- Left Controls Panel (lg:col-span-5) -->
+      <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5 no-print">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-          <h2 class="font-display text-sm font-bold text-slate-900">Demand Configuration</h2>
-          <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">Reactive Compiler</span>
+          <h2 class="font-display text-base font-bold text-slate-900">Demand Parameters</h2>
+          <span class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full">Reactive Day Calculator</span>
         </div>
 
+        <!-- Thumb-Friendly Mobile Segmented Pill Selector -->
         <div>
-          <label for="stateRule" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">State Statutory Standard</label>
-          <select id="stateRule" onchange="updatePayRentDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white">
-            <option value="CA">California (CCP § 1161(2) - Excludes Weekends & Holidays)</option>
-            <option value="FL">Florida (Fla. Stat. § 83.56(3) - Excludes Weekends & Holidays)</option>
-            <option value="TX">Texas (Tex. Prop. Code § 24.005 - 3-Day Default Statutory Notice)</option>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Governing Jurisdiction</label>
+          <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-thin">
+            <button type="button" onclick="setPayRentState('CA')" class="state-pill px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-800 whitespace-nowrap min-h-[48px] flex items-center" data-val="CA">California CCP § 1161(2)</button>
+            <button type="button" onclick="setPayRentState('FL')" class="state-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="FL">Florida Stat. § 83.56(3)</button>
+            <button type="button" onclick="setPayRentState('TX')" class="state-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="TX">Texas Prop. Code § 24.005</button>
+          </div>
+          <select id="stateRule" onchange="updatePayRentState()" class="mt-2 w-full px-3 py-3 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            <option value="CA">California (CCP § 1161(2) - Excludes Weekends & Court Holidays)</option>
+            <option value="FL">Florida (Fla. Stat. § 83.56(3) - Excludes Weekends & Legal Holidays)</option>
+            <option value="TX">Texas (Tex. Prop. Code § 24.005 - 3-Day Notice to Vacate)</option>
           </select>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="landlordName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Landlord / Owner Name</label>
-            <input type="text" id="landlordName" oninput="updatePayRentDOM()" value="Westside Holdings LLC" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 1: Parties -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>1. Tenancy Parties</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="landlordName" class="block text-xs font-semibold text-slate-700 mb-1">Landlord / Owner Name</label>
+              <input type="text" id="landlordName" oninput="updatePayRentDOM()" value="Westside Holdings LLC" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div>
+              <label for="tenantName" class="block text-xs font-semibold text-slate-700 mb-1">Tenant Full Name(s)</label>
+              <input type="text" id="tenantName" oninput="updatePayRentDOM()" value="Michael Johnson, Sarah Davis" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
           </div>
-          <div>
-            <label for="tenantName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Name(s)</label>
-            <input type="text" id="tenantName" oninput="updatePayRentDOM()" value="Marcus Johnson, Elena Rostova" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
+        </details>
 
-        <div>
-          <label for="rentalAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Premises Address (Including Unit #)</label>
-          <input type="text" id="rentalAddress" oninput="updatePayRentDOM()" value="1244 Ocean Avenue, Unit 302, Santa Monica, CA 90401" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-        </div>
+        <!-- Collapsible Group 2: Property & Rent Financials -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>2. Premises & Overdue Amount</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="rentalAddress" class="block text-xs font-semibold text-slate-700 mb-1">Premises Address</label>
+              <input type="text" id="rentalAddress" oninput="updatePayRentDOM()" value="1250 Ocean Avenue, Apt 3A, Santa Monica, CA 90401" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="overdueAmount" class="block text-xs font-semibold text-slate-700 mb-1">Rent Overdue ($ USD)</label>
+                <input type="number" id="overdueAmount" oninput="updatePayRentDOM()" value="2450.00" step="0.01" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+              <div>
+                <label for="rentalPeriod" class="block text-xs font-semibold text-slate-700 mb-1">Past Due Rental Period</label>
+                <input type="text" id="rentalPeriod" oninput="updatePayRentDOM()" value="October 1, 2026 to October 31, 2026" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+            </div>
+          </div>
+        </details>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="overdueAmount" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Past Due Rent Amount ($)</label>
-            <input type="number" id="overdueAmount" oninput="updatePayRentDOM()" value="2450.00" step="0.01" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 3: Statutory Timeline -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>3. Service Date & Cure Calculation</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="serviceDate" class="block text-xs font-semibold text-slate-700 mb-1">Date Served</label>
+              <input type="date" id="serviceDate" oninput="calculateRentCureDeadline()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div>
+              <label for="cureDeadline" class="block text-xs font-semibold text-slate-700 mb-1">Calculated Cure Deadline</label>
+              <input type="text" id="cureDeadline" readonly class="w-full px-3 py-2.5 text-sm border border-slate-200 bg-slate-50 text-emerald-800 font-semibold rounded-lg min-h-[48px]">
+            </div>
           </div>
-          <div>
-            <label for="rentalPeriod" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Rental Period Delinquent</label>
-            <input type="text" id="rentalPeriod" oninput="updatePayRentDOM()" value="October 1, 2026 to October 31, 2026" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
+        </details>
 
-        <div class="p-3 bg-amber-50/70 rounded-xl border border-amber-200 text-amber-900 text-xs">
-          <strong>Statutory Compliance Warning:</strong> Do not include late charges, utilities, bounced check fees, or legal expenses in the primary rent balance. Demanding non-rent sums invalidates the notice under California civil jurisprudence.
-        </div>
+        <!-- Collapsible Group 4: Payment Details (Statutory Requirement) -->
+        <details class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>4. Mandatory Payment Instructions</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="payeeName" class="block text-xs font-semibold text-slate-700 mb-1">Authorized Payee</label>
+                <input type="text" id="payeeName" oninput="updatePayRentDOM()" value="Westside Management Office" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+              <div>
+                <label for="payeePhone" class="block text-xs font-semibold text-slate-700 mb-1">Payee Telephone</label>
+                <input type="text" id="payeePhone" oninput="updatePayRentDOM()" value="(310) 555-0194" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+            </div>
+            <div>
+              <label for="paymentAddress" class="block text-xs font-semibold text-slate-700 mb-1">Physical Remittance Address</label>
+              <input type="text" id="paymentAddress" oninput="updatePayRentDOM()" value="1250 Ocean Avenue, Management Suite, Santa Monica, CA 90401" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="paymentHours" class="block text-xs font-semibold text-slate-700 mb-1">Office Hours</label>
+                <input type="text" id="paymentHours" oninput="updatePayRentDOM()" value="9:00 AM - 5:00 PM, Monday - Friday" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+              <div>
+                <label for="paymentMethods" class="block text-xs font-semibold text-slate-700 mb-1">Permitted Payment Methods</label>
+                <input type="text" id="paymentMethods" oninput="updatePayRentDOM()" value="Cashier's Check, Money Order, Electronic Resident Portal" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+            </div>
+          </div>
+        </details>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="payeeName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Person / Agent Authorized for Payment</label>
-            <input type="text" id="payeeName" oninput="updatePayRentDOM()" value="Sarah Jenkins (Property Manager)" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-          <div>
-            <label for="payeePhone" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Payee Telephone Number</label>
-            <input type="text" id="payeePhone" oninput="updatePayRentDOM()" value="(310) 555-0194" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
-
-        <div>
-          <label for="paymentAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Physical Payment Address</label>
-          <input type="text" id="paymentAddress" oninput="updatePayRentDOM()" value="1200 Ocean Avenue, Management Suite 100, Santa Monica, CA 90401" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="paymentHours" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Hours Payment Accepted</label>
-            <input type="text" id="paymentHours" oninput="updatePayRentDOM()" value="Monday through Friday, 9:00 AM to 5:00 PM" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-          <div>
-            <label for="paymentMethods" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Acceptable Payment Methods</label>
-            <input type="text" id="paymentMethods" oninput="updatePayRentDOM()" value="Cashier's Check, Money Order, or Online Resident Portal" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="serviceDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Date of Notice Service</label>
-            <input type="date" id="serviceDate" oninput="calculateRentCureDeadline()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-          <div>
-            <label for="cureDeadline" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Calculated Cure Deadline</label>
-            <input type="text" id="cureDeadline" readonly class="w-full px-3 py-2 text-xs border border-slate-200 bg-slate-50 text-slate-700 font-semibold rounded-lg">
-          </div>
-        </div>
-
-        <!-- Action Toolbar -->
-        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
-          <button onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        <!-- Desktop Action Toolbar -->
+        <div class="hidden sm:flex gap-3 pt-2">
+          <button type="button" onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all min-h-[48px]">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
             <span>Print / Save as PDF</span>
           </button>
-          <button onclick="copyPayRentToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-200 flex items-center justify-center space-x-2 transition-all">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          <button type="button" onclick="copyPayRentToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all min-h-[48px]">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
             <span>Copy Text</span>
           </button>
         </div>
       </div>
 
-      <!-- Right Preview Letterhead (lg:col-span-7) -->
+      <!-- Right Preview Container (lg:col-span-7) -->
       <div class="lg:col-span-7">
         <div class="sticky top-20">
           <div class="flex items-center justify-between mb-3 no-print">
             <span class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-              Statutory Letterhead Preview
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Official Document Preview (Physical Letterhead)
             </span>
-            <span class="text-xs text-slate-400">Strict Judicial Compliance</span>
+            <span class="text-xs text-slate-400 font-mono">US-Letter Standard</span>
           </div>
 
-          <!-- Document Container -->
-          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm">
+          <!-- Printable Document Container -->
+          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm min-h-[600px]">
             <div class="text-center border-b-2 border-slate-900 pb-4 mb-6">
-              <div class="font-legal font-bold text-lg sm:text-xl tracking-wider uppercase text-slate-900" id="prevTitle">
+              <div class="font-legal font-bold text-lg sm:text-xl tracking-wider uppercase" id="prevTitle">
                 THREE-DAY NOTICE TO PAY RENT OR SURRENDER POSSESSION
               </div>
               <div class="text-xs font-mono font-bold tracking-widest text-slate-600 uppercase mt-1" id="prevStatuteHeader">
@@ -347,66 +391,58 @@
               </div>
             </div>
 
-            <!-- Party & Address Header -->
-            <div class="space-y-2 mb-6 text-xs sm:text-sm">
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Date of Service:</span>
+            <div class="space-y-3 mb-6 text-xs sm:text-sm">
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Date of Notice:</span>
                 <span class="font-semibold" id="prevDate">October 20, 2026</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
                 <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">To Tenant(s):</span>
-                <span class="font-semibold" id="prevTenants">Marcus Johnson, Elena Rostova</span>
+                <span class="font-semibold" id="prevTenants">Michael Johnson, Sarah Davis</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
                 <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Subject Premises:</span>
-                <span class="font-semibold" id="prevAddress">1244 Ocean Avenue, Unit 302, Santa Monica, CA 90401</span>
+                <span class="font-semibold" id="prevAddress">1250 Ocean Avenue, Apt 3A, Santa Monica, CA 90401</span>
               </div>
             </div>
 
-            <!-- Core Statutory Demand Text -->
-            <div class="space-y-4 text-justify mb-6 text-xs sm:text-sm">
+            <div class="space-y-4 text-justify mb-8 text-xs sm:text-sm">
               <p>
-                <strong>WITHIN THREE (3) DAYS</strong> after the service of this notice upon you, excluding Saturdays, Sundays, and judicial holidays as mandated by law, you are hereby required to either:
+                <strong>WITHIN THREE (3) DAYS</strong> after service of this notice upon you, excluding Saturdays, Sundays, and judicial holidays, you are hereby required to pay the total past due rent specified below or quit, vacate, and surrender possession of the subject premises to the undersigned landlord or authorized representative.
               </p>
-              <ol class="list-decimal pl-6 space-y-2 font-semibold">
-                <li>
-                  Pay the total delinquent rent balance in the amount of <span id="prevAmount" class="underline text-slate-900 font-bold">$2,450.00</span>, which represents unpaid rent due for the rental period of <span id="prevPeriod">October 1, 2026 to October 31, 2026</span>; OR
-                </li>
-                <li>
-                  Surrender and deliver up possession of the subject premises to the undersigned landlord or authorized representative.
-                </li>
-              </ol>
-
-              <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-1.5 text-xs">
-                <div class="font-bold uppercase font-sans text-slate-700 tracking-wider mb-1">Mandatory Statutory Payment Details:</div>
-                <div><strong>Payee:</strong> <span id="prevPayee">Sarah Jenkins (Property Manager)</span></div>
-                <div><strong>Telephone:</strong> <span id="prevPhone">(310) 555-0194</span></div>
-                <div><strong>Payment Address:</strong> <span id="prevPayAddress">1200 Ocean Avenue, Management Suite 100, Santa Monica, CA 90401</span></div>
-                <div><strong>Available Hours:</strong> <span id="prevHours">Monday through Friday, 9:00 AM to 5:00 PM</span></div>
-                <div><strong>Acceptable Methods:</strong> <span id="prevMethods">Cashier's Check, Money Order, or Online Resident Portal</span></div>
+              
+              <div class="my-4 p-4 bg-slate-50 border border-slate-200 rounded-lg text-center font-sans">
+                <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Total Delinquent Rent Due</div>
+                <div class="text-2xl font-bold text-slate-900 mt-1" id="prevAmount">$2,450.00</div>
+                <div class="text-xs text-slate-600 mt-1">For Rental Period: <span id="prevPeriod" class="font-semibold">October 1, 2026 to October 31, 2026</span></div>
               </div>
 
               <p>
-                If you fail to pay the stated delinquent rent in full or vacate the premises on or before <strong id="prevDeadlineDate" class="underline text-slate-900">October 23, 2026</strong>, legal proceedings will be immediately initiated against you for unlawful detainer to recover possession of the premises, statutory damages up to $600 for malicious withholding under applicable civil procedure codes, court costs, and attorney fees.
+                If you fail to pay said delinquent rent in full or vacate and surrender possession of the premises on or before <strong id="prevDeadlineDate" class="underline text-slate-900">Calculated Business Day</strong>, legal proceedings will be immediately instituted against you under summary process to declare the forfeiture of your rental agreement, recover possession of the premises, obtain judgment for rent due, statutory damages, court costs, and reasonable attorney fees where permitted by law.
               </p>
-              <p class="text-xs text-slate-500 italic">
-                Notice on Lease Forfeiture: The landlord hereby declares the forfeiture of your rental agreement if the overdue rent is not paid in full within the statutory cure period.
-              </p>
+
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg text-xs space-y-1.5 font-sans">
+                <div class="font-bold text-slate-900 uppercase tracking-wider text-xs mb-1">Statutory Payment Remittance Instructions</div>
+                <div><strong>Payable To:</strong> <span id="prevPayee">Westside Management Office</span></div>
+                <div><strong>Remittance Address:</strong> <span id="prevPayAddress">1250 Ocean Avenue, Management Suite, Santa Monica, CA 90401</span></div>
+                <div><strong>Telephone Contact:</strong> <span id="prevPhone">(310) 555-0194</span></div>
+                <div><strong>Acceptable Hours:</strong> <span id="prevHours">9:00 AM - 5:00 PM, Monday - Friday</span></div>
+                <div><strong>Acceptable Payment Methods:</strong> <span id="prevMethods">Cashier's Check, Money Order, Electronic Resident Portal</span></div>
+              </div>
             </div>
 
-            <!-- Signatures Block -->
             <div class="pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs">
               <div>
-                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Landlord / Authorized Agent</p>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Executing Signature</p>
                 <div class="border-b border-slate-400 pb-1 mb-1"></div>
                 <p class="font-semibold" id="prevSignatory">Westside Holdings LLC</p>
-                <p class="text-slate-500">Executing Authority</p>
+                <p class="text-slate-500">Authorized Landlord / Agent</p>
               </div>
               <div>
-                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Service Verification</p>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Service of Process Declaration</p>
                 <div class="border-b border-slate-400 pb-1 mb-1"></div>
-                <p class="font-semibold">Personal / Substituted Service</p>
-                <p class="text-slate-500">Executed Under Penalty of Perjury</p>
+                <p class="font-semibold">Personal / Substituted / Posting</p>
+                <p class="text-slate-500">Executed pursuant to state statute</p>
               </div>
             </div>
           </div>
@@ -418,68 +454,172 @@
     <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print">
       <section>
         <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Statutory Legal Foundation & Governing State Code
+          Statutory Legal Foundation & Governing Act
         </h2>
         <p class="mb-4">
-          In California residential tenancy practice, the 3-day notice to pay rent or quit is governed by California Code of Civil Procedure Section 1161(2). When a tenant continues in possession of real property after a default in the payment of rent pursuant to the lease or agreement under which the property is held, the landlord must serve a 3-day notice in writing requiring its payment, stating the amount which is due, or possession of the property.
+          In the United States, summary eviction for nonpayment of rent is strictly conditioned on service of a compliant statutory notice. In California, rent demands are governed by the California Code of Civil Procedure Section 1161(2). This enactment authorizes an unlawful detainer action only after the tenant has defaulted in the payment of rent pursuant to the lease agreement, and three days notice in writing requiring its payment or possession of the property has been served upon the tenant. Using a 3 day notice to pay rent or quit template free tool ensures that property managers accurately adhere to these jurisdictional mandates.
         </p>
         <p class="mb-4">
-          Crucially, under legislative amendments enacted via Assembly Bill 2343, Saturdays, Sundays, and other judicial holidays are strictly excluded from the calculation of the three-day notice period. This protective reform ensures that residential tenants have three full business days to obtain banking instruments, secure emergency financial assistance, or transmit electronic funds before facing the forfeiture of their tenancy.
+          In Florida, nonpayment demands operate under Florida Statute Section 83.56(3). The landlord is required to deliver a written demand granting three business days, excluding Saturdays, Sundays, and legal court holidays, before terminating the rental agreement or commencing court eviction. In Texas, nonpayment procedure is governed by Texas Property Code Section 24.005. Texas statutes require a landlord to give a tenant at least three days written notice to vacate before filing a forcible detainer suit, unless the parties agreed in a written lease to a shorter or longer notice duration.
         </p>
-        <p>
-          In Florida, residential nonpayment notices are codified under Florida Statutes Section 83.56(3). The landlord must provide written demand for payment of the rent or possession of the premises within 3 days, similarly excluding Saturdays, Sundays, and legal holidays observed by the county court clerk. In Texas, Texas Property Code Section 24.005 establishes a default 3-day notice to vacate for unpaid rent unless a written lease agreement explicitly allows a different notice timeframe (such as 24 hours).
+        <p class="mb-4">
+          Crucially, under California law following amendments to CCP Section 1161(2), the calculation of the three-day cure period strictly excludes Saturdays, Sundays, and judicial holidays recognized by the California court system. A landlord who files an unlawful detainer summons and complaint before the full expiration of three clear judicial business days lacks standing, resulting in mandatory court dismissal.
         </p>
+      </section>
+
+      <!-- Mandatory H3 Table: Variable Definitions & Qualifying Conditions -->
+      <section class="pt-6 border-t border-slate-100">
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Variable Definitions & Qualifying Conditions
+        </h3>
+        <p class="mb-4">
+          A compliant rent demand requires precise classification of permissible financial claims and judicial calendar calculations. The following matrix outlines statutory criteria across major jurisdictions:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-900 text-white">
+              <tr>
+                <th class="p-3">Statutory Criterion</th>
+                <th class="p-3">California (CCP § 1161(2))</th>
+                <th class="p-3">Florida (Fla. Stat. § 83.56)</th>
+                <th class="p-3">Texas (Tex. Prop. Code § 24.005)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Mandatory Notice Horizon</td>
+                <td class="p-3">3 Full Judicial Days</td>
+                <td class="p-3">3 Full Business Days</td>
+                <td class="p-3">3 Calendar Days (unless lease modifies)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Weekend Exclusion</td>
+                <td class="p-3">Saturdays and Sundays Excluded</td>
+                <td class="p-3">Saturdays and Sundays Excluded</td>
+                <td class="p-3">Counted unless final day is holiday</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Court Holiday Exclusion</td>
+                <td class="p-3">Mandatory Judicial Holiday Exclusion</td>
+                <td class="p-3">Mandatory Legal Holiday Exclusion</td>
+                <td class="p-3">Subject to local county justice court rules</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Permissible Monetary Demands</td>
+                <td class="p-3">Base Residential Rent Only</td>
+                <td class="p-3">Rent Only (unless defined as rent in lease)</td>
+                <td class="p-3">Rent / Delinquent sums</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Late Fees Inclusion</td>
+                <td class="p-3">Strictly Prohibited (Fatal Defect)</td>
+                <td class="p-3">Disfavored (Void if not contract rent)</td>
+                <td class="p-3">Allowed only if contracted as additional rent</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Mandatory Payee Information</td>
+                <td class="p-3">Payee name, phone, address, office hours</td>
+                <td class="p-3">Name, address, and amount</td>
+                <td class="p-3">Clear statement of demand to vacate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="pt-6 border-t border-slate-100">
         <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Judicial Day-Counting Rules: Exclusion of Weekends and Court Holidays
+          Legal Service of Process: How to Deliver This Notice
         </h2>
         <p class="mb-4">
-          A substantial percentage of eviction actions fail during judicial review due to basic errors in calendar day counting. Under California Code of Civil Procedure Section 12, time within which any act provided by law is to be done is computed by excluding the first day and including the last.
+          Defective service of a 3-day notice is a fatal jurisdictional defect. In an unlawful detainer trial, the landlord bears the strict burden of proving service in accordance with state civil procedure. Under California Code of Civil Procedure Section 1162 and Florida Statutes Section 83.56(4), service must be executed through one of three statutory methods:
         </p>
-        <ul class="list-disc pl-6 space-y-2 mb-4">
-          <li><strong>The Day of Service is Excluded:</strong> If a 3-day notice is personally served on a Thursday, Thursday does not count as Day 1.</li>
-          <li><strong>First Business Day is Friday (Day 1):</strong> Friday constitutes the initial statutory cure day.</li>
-          <li><strong>Saturday and Sunday are Excluded:</strong> Neither Saturday nor Sunday can be counted toward the 3-day cure window.</li>
-          <li><strong>Monday is Day 2:</strong> Provided Monday is not an official state or court holiday.</li>
-          <li><strong>Tuesday is Day 3:</strong> The tenant has until the close of business on Tuesday to tender the full rent balance.</li>
-          <li><strong>First Lawful Filing Date is Wednesday:</strong> The landlord cannot file an unlawful detainer complaint until Wednesday morning. Filing prematurely on Tuesday deprives the court of jurisdiction and results in automatic dismissal.</li>
-        </ul>
-      </section>
-
-      <section class="pt-6 border-t border-slate-100">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Service of Process: How to Legally Deliver This Demand
-        </h2>
-        <p class="mb-4">
-          A 3-day notice to pay rent or quit must be served in exact compliance with California Code of Civil Procedure Section 1162 (or corresponding state rules in Florida and Texas). Acceptable statutory methods include:
-        </p>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
           <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-            <h3 class="font-bold text-slate-900 mb-1">Personal In-Hand Service</h3>
-            <p class="text-xs text-slate-600">Delivering a physical copy directly to the tenant personally wherever they may be located.</p>
+            <h3 class="font-bold text-slate-900 mb-1">1. Personal Delivery</h3>
+            <p class="text-xs text-slate-600">
+              Delivering the notice directly into the hands of the tenant. This provides unassailable proof of actual delivery and starts the statutory clock on the following judicial business day.
+            </p>
           </div>
           <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-            <h3 class="font-bold text-slate-900 mb-1">Substituted Service</h3>
-            <p class="text-xs text-slate-600">Leaving a copy with a person of suitable age and discretion at the residence, followed by immediate first-class mailing.</p>
+            <h3 class="font-bold text-slate-900 mb-1">2. Substituted Service</h3>
+            <p class="text-xs text-slate-600">
+              Leaving a copy with a person of suitable age and discretion at the tenant residence or usual place of business, and mailing a second copy via first-class mail addressed to the tenant.
+            </p>
           </div>
           <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-            <h3 class="font-bold text-slate-900 mb-1">Posting and Mailing</h3>
-            <p class="text-xs text-slate-600">Affixing the notice conspicuously to the front door and mailing a duplicate copy if personal service fails after reasonable diligence.</p>
+            <h3 class="font-bold text-slate-900 mb-1">3. Posting & Mailing</h3>
+            <p class="text-xs text-slate-600">
+              Affixing the notice conspicuously upon the primary entrance of the rental property and mailing a duplicate copy on the same date where personal service could not be accomplished.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="pt-6 border-t border-slate-100">
         <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Common Pitfalls That Void This Rent Demand
+          Statutory Timelines & Benchmark Reference Matrix
         </h2>
-        <ul class="list-disc pl-6 space-y-2">
-          <li><strong>Inflating the Demand with Non-Rent Sums:</strong> Combining late fees, utility surcharges, pet rent penalties, or administrative fees into the demand amount violates California CCP Section 1161(2). The notice must demand rent alone.</li>
-          <li><strong>Omission of Mandatory Payment Instructions:</strong> Under California law, failure to list the authorized payee's name, telephone number, physical street address, and operating hours invalidates the notice on its face.</li>
-          <li><strong>Refusing Full Tender During the Notice Period:</strong> If a tenant delivers full payment of the demanded sum prior to the expiration of the 3 days, the landlord is legally required to accept it. Refusal constitutes an absolute defense to eviction.</li>
-          <li><strong>Demanding Rent Stale by More Than One Year:</strong> California law prohibits demanding overdue rent that accrued more than one year prior to the date of service in a summary 3-day notice.</li>
+        <p class="mb-4">
+          Day-counting calculation rules are strictly construed by eviction courts. The following comparison matrix illustrates statutory computation procedures across key states:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-900 text-white">
+                <th class="p-3">State</th>
+                <th class="p-3">Notice Window</th>
+                <th class="p-3">Weekend Rules</th>
+                <th class="p-3">Court Holiday Rules</th>
+                <th class="p-3">Service Day Counted?</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">California</td>
+                <td class="p-3">3 Judicial Days</td>
+                <td class="p-3">Excluded</td>
+                <td class="p-3">Excluded</td>
+                <td class="p-3">Never (Day 1 starts next day)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Florida</td>
+                <td class="p-3">3 Business Days</td>
+                <td class="p-3">Excluded</td>
+                <td class="p-3">Excluded</td>
+                <td class="p-3">Never (Day 1 starts next day)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Texas</td>
+                <td class="p-3">3 Calendar Days</td>
+                <td class="p-3">Included (unless lease alters)</td>
+                <td class="p-3">Included</td>
+                <td class="p-3">Excluded</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">New York</td>
+                <td class="p-3">14 Calendar Days</td>
+                <td class="p-3">Included</td>
+                <td class="p-3">Included</td>
+                <td class="p-3">Excluded</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Fatal Drafting Mistakes That Invalidate This Notice
+        </h2>
+        <p class="mb-4">
+          Eviction proceedings are strict summary matters. Even nominal technical errors invalidate the entire lawsuit:
+        </p>
+        <ul class="list-disc pl-6 space-y-3">
+          <li><strong>Overstating the Overdue Rent:</strong> Demanding even one dollar more than the lawfully accrued base rent renders the 3-day notice fatal in California. Under California law, late fees, bounced check charges, interest, and unpaid utility bills cannot be combined into a 3-day notice to pay rent or quit.</li>
+          <li><strong>Miscalculating Judicial Holidays:</strong> Counting a Saturday, Sunday, or court holiday as one of the three statutory days invalidates any subsequent eviction filing. Day one begins on the first judicial business day following completed physical delivery.</li>
+          <li><strong>Omitting Payee Availability Information:</strong> Under California CCP Section 1161(2), failing to state the payee name, physical remittance address, phone number, and hours of availability between 9:00 AM and 5:00 PM on weekdays constitutes a fatal defect.</li>
+          <li><strong>Accepting Partial Payment Without Non-Waiver:</strong> Accepting a partial rent check without executing an explicit, signed written reservation of rights waives the notice, resetting the landlord right to file for eviction.</li>
         </ul>
       </section>
 
@@ -491,7 +631,7 @@
           <div>
             <h3 class="font-bold text-slate-900 text-sm mb-1">How is the 3-day notice period calculated under California CCP § 1161(2)?</h3>
             <p class="leading-relaxed">
-              California Code of Civil Procedure Section 1161(2) expressly excludes Saturdays, Sundays, and judicial holidays from the 3-day computation. The day of service is excluded, and Day 1 begins on the next business day.
+              California Code of Civil Procedure Section 1161(2) expressly excludes Saturdays, Sundays, and judicial holidays from the 3-day computation. The day of service is excluded, and Day 1 begins on the next judicial business day.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
@@ -501,51 +641,69 @@
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">What information must be included regarding rent payment details in California?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What are the rules for serving a 3 day notice to pay rent or quit under Florida Statute 83.56?</h3>
             <p class="leading-relaxed">
-              The notice must specify the exact delinquent balance, the name and telephone number of the person to whom rent must be delivered, physical payment address, and the days and hours the person is available to accept payment.
+              Florida Statute Section 83.56(3) mandates three business days excluding Saturdays, Sundays, and legal court holidays. The notice must demand payment of rent or delivery of possession of the premises directly to the landlord.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">How does Florida Statutes § 83.56(3) govern nonpayment rent notices?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Does Texas law provide a statutory cure period for unpaid rent?</h3>
             <p class="leading-relaxed">
-              Florida Statutes Section 83.56(3) requires a 3-day written demand excluding Saturdays, Sundays, and legal holidays. The notice must specify the exact amount due and advise the tenant that failure to pay or vacate will lead to eviction proceedings.
+              Under Texas Property Code Section 24.005, a landlord must provide at least three days written notice to vacate before filing a forcible detainer suit, unless a written lease specifies a different notice period such as 24 hours.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">What happens if a tenant tenders the full rent within the 3-day statutory window?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What payment instructions must be specified on a California 3-day rent demand?</h3>
             <p class="leading-relaxed">
-              If the tenant tenders the full delinquent rent demanded in the notice within the statutory cure window, the landlord is legally obligated to accept the payment, and the default is completely cured.
+              The notice must specify the exact dollar amount of overdue rent, the name, telephone number, physical address of the payee, and the ordinary business hours during which payment can be personally remitted.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What happens if a landlord accepts partial rent after serving a 3-day notice?</h3>
+            <p class="leading-relaxed">
+              Accepting partial payment without a contemporaneous written non-waiver agreement waives the notice to pay rent or quit as a matter of law, requiring the landlord to issue a brand new notice for any remaining unpaid balance.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Related Utilities Grid -->
+      <!-- Related Tenancy Utilities Component -->
       <section class="pt-6 border-t border-slate-100">
         <h2 class="font-display text-xl font-bold text-slate-900 mb-4">
           Related Tenancy Utilities & Guides
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/us/30-day-notice-to-vacate.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+          <a href="/us/30-day-notice-to-vacate.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-blue-700 uppercase">US Tool</span>
             <h3 class="text-sm font-bold text-slate-900 mt-1">30-Day Notice to Vacate</h3>
-            <p class="text-xs text-slate-500 mt-1">Periodic month-to-month lease termination form.</p>
+            <p class="text-xs text-slate-500 mt-1">California Civ. Code Section 1946.1 lease termination.</p>
           </a>
-          <a href="/us/security-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+          <a href="/us/security-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-blue-700 uppercase">US Tool</span>
             <h3 class="text-sm font-bold text-slate-900 mt-1">Security Deposit Demand</h3>
-            <p class="text-xs text-slate-500 mt-1">Pre-litigation letter citing statutory bad-faith penalties.</p>
+            <p class="text-xs text-slate-500 mt-1">California 21-day deposit accounting recovery.</p>
           </a>
-          <a href="/guides/us-eviction-process-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+          <a href="/guides/us-eviction-process-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-emerald-700 uppercase">Legal Guide</span>
-            <h3 class="text-sm font-bold text-slate-900 mt-1">US Eviction Process</h3>
-            <p class="text-xs text-slate-500 mt-1">Complete court summons and writ of possession guide.</p>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">US Eviction Process Guide</h3>
+            <p class="text-xs text-slate-500 mt-1">Unlawful detainer litigation rules and sheriff execution.</p>
           </a>
         </div>
       </section>
     </article>
   </main>
+
+  <!-- Sticky Bottom Mobile Action Bar (Mobile Only: < 768px) -->
+  <div id="mobileActionBar" class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
+    <button type="button" onclick="copyPayRentToClipboard()" class="flex-1 min-h-[48px] py-3 px-4 bg-emerald-50 hover:bg-emerald-100 active:bg-emerald-200 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all">
+      <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+      <span>Copy Document</span>
+    </button>
+    <button type="button" onclick="window.print()" class="flex-1 min-h-[48px] py-3 px-4 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center space-x-2 transition-all">
+      <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+      <span>Print / Save PDF</span>
+    </button>
+  </div>
 
   <!-- Global Footer -->
   <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-12 mt-12 no-print">
@@ -596,13 +754,30 @@
   </footer>
 
   <!-- Toast Element -->
-  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+  <div id="toastNotification" class="fixed bottom-20 md:bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
     <span class="text-xs font-semibold" id="toastMessage">Notice copied to clipboard. Ready to print or paste.</span>
   </div>
 
   <!-- JavaScript Reactive Engine -->
   <script>
+    function setPayRentState(stateCode) {
+      document.getElementById('stateRule').value = stateCode;
+      document.querySelectorAll('.state-pill').forEach(btn => {
+        if (btn.getAttribute('data-val') === stateCode) {
+          btn.className = 'state-pill px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-800 whitespace-nowrap min-h-[48px] flex items-center';
+        } else {
+          btn.className = 'state-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center';
+        }
+      });
+      calculateRentCureDeadline();
+    }
+
+    function updatePayRentState() {
+      const code = document.getElementById('stateRule').value;
+      setPayRentState(code);
+    }
+
     function calculateRentCureDeadline() {
       const state = document.getElementById('stateRule').value;
       const serviceVal = document.getElementById('serviceDate').value;
@@ -612,12 +787,11 @@
       let daysToAdd = 3;
 
       if (state === 'CA' || state === 'FL') {
-        // Exclude weekends
         let counted = 0;
         while (counted < 3) {
           dateObj.setDate(dateObj.getDate() + 1);
           const day = dateObj.getDay();
-          if (day !== 0 && day !== 6) { // 0 is Sunday, 6 is Saturday
+          if (day !== 0 && day !== 6) {
             counted++;
           }
         }

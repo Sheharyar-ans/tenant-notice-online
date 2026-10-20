@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UK Tenancy Deposit Demand Generator: Housing Act 2004 § 213</title>
-  <meta name="description" content="Generate a statutory deposit repayment demand under Housing Act 2004 Section 213. Cites 30-day scheme protection and 1x to 3x compensation penalties.">
+  <title>Tenancy Deposit Refund Demand: Housing Act 2004 | TenantNotice</title>
+  <meta name="description" content="Generate an official UK tenancy deposit demand letter under Housing Act 2004 Section 213. Instant preview citing 1x to 3x County Court compensation penalties.">
   <link rel="canonical" href="https://tenantnotice.online/uk/tenancy-deposit-demand.html">
   <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/tenancy-deposit-demand.html">
   <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/security-deposit-demand.html">
@@ -66,12 +66,12 @@
         font-size: 11pt !important;
         line-height: 1.5 !important;
       }
-      .no-print, header, footer, nav, aside, .action-toolbar {
+      .no-print, header, footer, nav, aside, .action-toolbar, #mobileActionBar {
         display: none !important;
       }
       @page {
-        size: A4 portrait;
-        margin: 25mm;
+        size: a4 portrait;
+        margin: 20mm;
       }
     }
   </style>
@@ -84,10 +84,11 @@
       {
         "@type": "WebApplication",
         "@id": "https://tenantnotice.online/uk/tenancy-deposit-demand.html#app",
-        "name": "UK Tenancy Deposit Demand Generator",
+        "name": "UK Tenancy Deposit Refund Demand Letter Generator",
         "url": "https://tenantnotice.online/uk/tenancy-deposit-demand.html",
         "applicationCategory": "LegalApplication",
         "operatingSystem": "All modern browsers",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
         "offers": {
           "@type": "Offer",
           "price": "0.00",
@@ -123,42 +124,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Within how many days must a landlord protect a tenancy deposit in England?",
+            "name": "What is the statutory deadline for landlords to protect a tenancy deposit in England?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Under Housing Act 2004 Section 213, a landlord must protect a tenancy deposit with an authorized scheme (DPS, TDS, or MyDeposits) and serve Prescribed Information on the tenant within 30 calendar days of receipt."
+              "text": "Under Housing Act 2004 Section 213, a landlord must protect a tenancy deposit in a government-approved scheme (DPS, TDS, or MyDeposits) and serve the Prescribed Information within thirty days of receiving payment."
             }
           },
           {
             "@type": "Question",
-            "name": "What compensation can a County Court order for an unprotected deposit?",
+            "name": "What compensation can tenants claim for an unprotected deposit in County Court?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Under Housing Act 2004 Section 214, the County Court must order the landlord to return the deposit and pay financial compensation between one and three times the total deposit amount for failure to protect."
+              "text": "Under Housing Act 2004 Section 214(4), the court must order the landlord to pay compensation between one and three times the deposit amount, in addition to returning the deposit or lodging it into a custodial scheme."
             }
           },
           {
             "@type": "Question",
-            "name": "Can a landlord make deductions for ordinary wear and tear?",
+            "name": "How quickly must an undisputed tenancy deposit be returned upon tenancy end?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Under the Housing Act 2004 and the Tenant Fees Act 2019, landlords are strictly prohibited from deducting funds from a tenancy deposit for normal wear and tear resulting from reasonable everyday occupancy."
+              "text": "Scheme rules across the DPS, TDS, and MyDeposits mandate that undisputed deposit funds must be repaid to the tenant within ten calendar days of both parties reaching agreement on deductions."
             }
           },
           {
             "@type": "Question",
-            "name": "What happens if a landlord failed to provide Prescribed Information?",
+            "name": "Can a landlord deduct for fair wear and tear under English law?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Even if the deposit was placed in a scheme, failing to provide the tenant with the official Prescribed Information leaflet and certificate within 30 days triggers statutory Section 214 court penalties of 1x to 3x compensation."
+              "text": "No. Under the Housing Act 2004, landlords cannot deduct from a deposit for normal wear and tear resulting from ordinary domestic living. Deductions are permissible only for actual damage, missing items, or rent arrears."
             }
           },
           {
             "@type": "Question",
-            "name": "How does this formal demand letter assist a County Court Part 8 claim?",
+            "name": "What pre-action notice must a tenant give before initiating a court claim?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Serving a formal Letter Before Action demonstrates compliance with the Pre-Action Protocol for Debt Claims, providing mandatory documentary evidence of attempts to resolve the dispute prior to issuing court proceedings."
+              "text": "Under the Pre-Action Protocol for Debt Claims, a tenant should deliver a formal letter before action giving the landlord at least 14 days to repay the disputed deposit before commencing County Court proceedings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the legal deposit cap under the Tenant Fees Act 2019?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Tenant Fees Act 2019 caps tenancy deposits at five weeks rent where annual rent is under £50,000, or six weeks rent where annual rent exceeds £50,000. Any excess sum represents an unlawful prohibited payment."
             }
           }
         ]
@@ -167,36 +176,39 @@
   }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
-  <!-- Navigation Header -->
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+  <!-- Global Navigation Header -->
   <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center space-x-3 group">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
         <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
         <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
       </a>
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
-          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-          <span>US Portal</span>
-        </a>
-        <a href="/uk/" class="text-emerald-400 flex items-center space-x-2">
+        <a href="/uk/" class="text-emerald-400 flex items-center space-x-2 min-h-[48px]">
           <span class="w-2 h-2 rounded-full bg-red-500"></span>
           <span>UK Portal</span>
         </a>
-        <a href="/guides/security-deposit-return-rights.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
-        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/guides/security-deposit-return-rights.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Guides</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
       </nav>
-      <div class="flex items-center space-x-3">
-        <a href="/uk/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-1.5 border border-slate-700 rounded-lg">
-          &larr; All UK Tools
+      <div class="flex items-center space-x-2">
+        <a href="/us/security-deposit-demand.html" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-2 border border-slate-700 rounded-lg min-h-[48px] flex items-center">
+          Switch to US
+        </a>
+        <a href="/uk/" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 px-3 py-2 border border-emerald-500/40 bg-emerald-950/40 rounded-lg min-h-[48px] flex items-center">
+          All UK Tools
         </a>
       </div>
     </div>
   </header>
 
   <!-- Breadcrumbs -->
-  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print">
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print" aria-label="Breadcrumb">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
       <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
       <span>/</span>
@@ -206,99 +218,144 @@
     </div>
   </nav>
 
-  <!-- Main Content Workspace -->
+  <!-- Inverted Pyramid: Main Workspace -->
   <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <!-- Header Title & Direct Answer Capsule -->
     <div class="mb-8">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-800 text-xs font-semibold mb-3">
         <span class="w-2 h-2 rounded-full bg-red-600"></span>
         Housing Act 2004 Statutory Recovery Engine
       </div>
-      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+      <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
         UK Tenancy Deposit Demand Generator: Housing Act 2004 § 213
       </h1>
 
-      <!-- Direct Answer Capsule for AI Ingestion -->
+      <!-- 45-Word Direct Answer Capsule for AI Extraction -->
       <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
-        <p class="font-medium text-slate-200">
-          <strong>Direct Legal Rule:</strong> Under Housing Act 2004 Section 213, landlords must protect tenancy deposits in an approved government scheme (DPS, TDS, MyDeposits) within thirty days. Unlawful retention or failure to protect empowers tenants to claim the deposit plus mandatory court compensation between 1x and 3x the deposit sum.
+        <p class="font-bold text-slate-100">
+          Under Housing Act 2004 Section 213, UK landlords must protect deposits in a government-authorized custodial scheme and serve Prescribed Information within thirty days. Unprotected deposits or unlawful deductions subject landlords to County Court compensation claims of between one and three times the deposit value.
         </p>
       </div>
     </div>
 
-    <!-- Split-Screen Interactive Layout -->
+    <!-- Desktop Split-Screen Power Workspace (Left 40%, Right 60%) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
       <!-- Left Inputs Panel (lg:col-span-5) -->
-      <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 no-print text-xs">
+      <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5 no-print">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-          <h2 class="font-display text-sm font-bold text-slate-900">Demand Letter Details</h2>
-          <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">Reactive Compiler</span>
+          <h2 class="font-display text-base font-bold text-slate-900">Demand Letter Details</h2>
+          <span class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full">Reactive Compiler</span>
         </div>
 
+        <!-- Thumb-Friendly Mobile Segmented Pill Selector for Breach Type -->
         <div>
-          <label for="disputeType" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Nature of Statutory Breach</label>
-          <select id="disputeType" onchange="updateDepositDemandDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white">
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Statutory Claim Basis</label>
+          <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-thin">
+            <button type="button" onclick="setDisputePill('UNPROTECTED')" class="dispute-pill px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-800 whitespace-nowrap min-h-[48px] flex items-center" data-val="UNPROTECTED">Unprotected (1x-3x Penalty)</button>
+            <button type="button" onclick="setDisputePill('UNJUSTIFIED_DEDUCTIONS')" class="dispute-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="UNJUSTIFIED_DEDUCTIONS">Disputing Deductions</button>
+            <button type="button" onclick="setDisputePill('LATE_RETURN')" class="dispute-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="LATE_RETURN">Delayed Refund (>10 Days)</button>
+          </div>
+          <select id="disputeType" onchange="updateDepositDemandSelect()" class="mt-2 w-full px-3 py-3 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
             <option value="UNPROTECTED">Deposit Was Never Protected (Section 214 1x-3x Penalty Claim)</option>
             <option value="UNJUSTIFIED_DEDUCTIONS">Disputing Unlawful Deductions / Wear & Tear After Move-Out</option>
             <option value="LATE_RETURN">Unreasonable Delay in Refunding Undisputed Deposit (Exceeding 10 Days)</option>
           </select>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="tenantName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Full Name(s)</label>
-            <input type="text" id="tenantName" oninput="updateDepositDemandDOM()" value="Harry Edward Davies" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 1: Tenancy Parties -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>1. Tenancy Parties</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="tenantName" class="block text-xs font-semibold text-slate-700 mb-1">Tenant Full Name(s)</label>
+              <input type="text" id="tenantName" oninput="updateDepositDemandDOM()" value="Harry Edward Davies" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div>
+              <label for="landlordName" class="block text-xs font-semibold text-slate-700 mb-1">Landlord / Letting Agent</label>
+              <input type="text" id="landlordName" oninput="updateDepositDemandDOM()" value="Regency Lettings & Asset Management" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
           </div>
-          <div>
-            <label for="landlordName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Landlord / Letting Agent</label>
-            <input type="text" id="landlordName" oninput="updateDepositDemandDOM()" value="Regency Lettings & Asset Management" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        </details>
+
+        <!-- Collapsible Group 2: Property & Bank Details -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>2. Premises & Bank Remittance</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="propertyAddress" class="block text-xs font-semibold text-slate-700 mb-1">Former Tenancy Address (With Postcode)</label>
+              <input type="text" id="propertyAddress" oninput="updateDepositDemandDOM()" value="72 Queensway, Flat 3, London, W2 3RL" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="bankSortCode" class="block text-xs font-semibold text-slate-700 mb-1">Sort Code</label>
+                <input type="text" id="bankSortCode" oninput="updateDepositDemandDOM()" value="20-04-15" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+              <div>
+                <label for="bankAccountNum" class="block text-xs font-semibold text-slate-700 mb-1">Account Number</label>
+                <input type="text" id="bankAccountNum" oninput="updateDepositDemandDOM()" value="88392014" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+            </div>
           </div>
-        </div>
+        </details>
 
-        <div>
-          <label for="propertyAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Former Tenancy Address</label>
-          <input type="text" id="propertyAddress" oninput="updateDepositDemandDOM()" value="72 Queensway, Flat 3, London, W2 3RL" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-        </div>
-
-        <div>
-          <label for="forwardingAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Forwarding Address</label>
-          <input type="text" id="forwardingAddress" oninput="updateDepositDemandDOM()" value="15 Park Lane, Richmond, London, TW9 2RA" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="depositPaid" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Original Deposit Paid (&pound;)</label>
-            <input type="number" id="depositPaid" oninput="updateDepositDemandDOM()" value="1950.00" step="0.01" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 3: Financial Demand -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>3. Deposit Amounts & Deadlines</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="depositPaid" class="block text-xs font-semibold text-slate-700 mb-1">Deposit Paid (£ GBP)</label>
+                <input type="number" id="depositPaid" oninput="updateDepositDemandDOM()" value="1850.00" step="0.01" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+              <div>
+                <label for="refundDemanded" class="block text-xs font-semibold text-slate-700 mb-1">Refund Demanded (£ GBP)</label>
+                <input type="number" id="refundDemanded" oninput="updateDepositDemandDOM()" value="1850.00" step="0.01" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="tenancyEndDate" class="block text-xs font-semibold text-slate-700 mb-1">Date Tenancy Surrendered</label>
+                <input type="date" id="tenancyEndDate" oninput="updateDepositDemandDOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+              <div>
+                <label for="responseDays" class="block text-xs font-semibold text-slate-700 mb-1">Pre-Action Horizon (Days)</label>
+                <input type="number" id="responseDays" oninput="updateDepositDemandDOM()" value="14" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="demandedAmount" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Amount Demanded (&pound;)</label>
-            <input type="number" id="demandedAmount" oninput="updateDepositDemandDOM()" value="1950.00" step="0.01" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
+        </details>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="vacateDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Date Tenancy Surrendered</label>
-            <input type="date" id="vacateDate" oninput="updateDepositDemandDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 4: Factual Particulars -->
+        <details class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>4. Particulars of Breach</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="factualSummary" class="block text-xs font-semibold text-slate-700 mb-1">Factual Particulars / Objections</label>
+              <textarea id="factualSummary" oninput="updateDepositDemandDOM()" rows="3" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">The deposit was never protected in an authorized custodial scheme (DPS, TDS, or MyDeposits), and no Prescribed Information was served within 30 days of payment. The property was surrendered in clean condition according to the check-out inventory report.</textarea>
+            </div>
           </div>
-          <div>
-            <label for="replyDays" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Deadline for Repayment (Days)</label>
-            <input type="number" id="replyDays" oninput="updateDepositDemandDOM()" value="14" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
+        </details>
 
-        <div>
-          <label for="disputeDetails" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Detailed Factual Statement</label>
-          <textarea id="disputeDetails" oninput="updateDepositDemandDOM()" rows="3" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">The deposit of £1,950.00 was paid on 1st August 2025. Searches of the three government-approved tenancy deposit schemes (DPS, TDS, MyDeposits) confirm that the deposit was never protected within 30 days of receipt, and no Prescribed Information was served.</textarea>
-        </div>
-
-        <!-- Action Toolbar -->
-        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
-          <button onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        <!-- Desktop Action Toolbar -->
+        <div class="hidden sm:flex gap-3 pt-2">
+          <button type="button" onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all min-h-[48px]">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
             <span>Print / Save as PDF</span>
           </button>
-          <button onclick="copyDepositDemandToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-200 flex items-center justify-center space-x-2 transition-all">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          <button type="button" onclick="copyDepositDemandToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all min-h-[48px]">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
             <span>Copy Text</span>
           </button>
         </div>
@@ -310,84 +367,86 @@
           <div class="flex items-center justify-between mb-3 no-print">
             <span class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-red-500"></span>
-              Letter Before Action Letterhead (A4 Ready)
+              Statutory Letter Before Action Letterhead
             </span>
-            <span class="text-xs text-slate-400">Pre-Action Protocol for Debt</span>
+            <span class="text-xs text-slate-400 font-mono">Formal Pre-Court Notice</span>
           </div>
 
           <!-- Document Container -->
-          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm">
+          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm min-h-[600px]">
             <div class="text-center border-b-2 border-slate-900 pb-4 mb-6">
-              <div class="text-xs font-bold tracking-widest uppercase font-sans text-slate-500 mb-1">
-                FORMAL LETTER BEFORE ACTION - PRE-ACTION PROTOCOL FOR DEBT CLAIMS
-              </div>
-              <div class="font-legal font-bold text-base sm:text-lg tracking-wider uppercase text-slate-900">
-                STATUTORY DEMAND FOR REPAYMENT OF TENANCY DEPOSIT
+              <div class="font-legal font-bold text-lg sm:text-xl tracking-wider uppercase text-slate-900" id="prevTitle">
+                LETTER BEFORE ACTION: DEMAND FOR REPAYMENT OF TENANCY DEPOSIT
               </div>
               <div class="text-xs font-mono font-bold tracking-widest text-slate-600 uppercase mt-1">
-                HOUSING ACT 2004 SECTIONS 213 AND 214
+                HOUSING ACT 2004 SECTION 213 & 214 / PRE-ACTION PROTOCOL FOR DEBT CLAIMS
               </div>
             </div>
 
-            <!-- Party Metadata -->
+            <!-- Party Metadata Header -->
             <div class="space-y-2 mb-6 text-xs sm:text-sm">
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-1.5">
                 <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Date:</span>
                 <span class="font-semibold" id="prevDate">October 20, 2026</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-1.5">
                 <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">To Landlord / Agent:</span>
                 <span class="font-semibold" id="prevLandlord">Regency Lettings & Asset Management</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Premises Address:</span>
-                <span class="font-semibold" id="prevAddress">72 Queensway, Flat 3, London, W2 3RL</span>
-              </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">From Former Tenant:</span>
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">From Former Tenant(s):</span>
                 <span class="font-semibold" id="prevTenant">Harry Edward Davies</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Forwarding Address:</span>
-                <span class="font-semibold" id="prevForwarding">15 Park Lane, Richmond, London, TW9 2RA</span>
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Former Tenancy Address:</span>
+                <span class="font-semibold" id="prevAddress">72 Queensway, Flat 3, London, W2 3RL</span>
               </div>
             </div>
 
-            <!-- Narrative Content -->
-            <div class="space-y-4 text-justify mb-6 text-xs sm:text-sm">
+            <div class="space-y-4 text-justify mb-8 text-xs sm:text-sm">
               <p>
-                <strong>DEAR SIR / MADAM:</strong>
+                <strong>TAKE NOTICE</strong> that this letter constitutes a formal Letter Before Action pursuant to the Pre-Action Protocol for Debt Claims under the Civil Procedure Rules.
               </p>
+
               <p>
-                I write regarding the tenancy of the property referenced above, which terminated on <span id="prevVacateDate" class="font-semibold">September 30, 2026</span>. At the commencement of the tenancy, I paid a tenancy deposit in the amount of <strong id="prevDepositPaid">&pound;1,950.00</strong>.
+                On <span id="prevTenancyEndDate" class="font-semibold">Surrender Date</span>, the residential tenancy of the above premises was lawfully surrendered. To date, you have failed to return the tenancy deposit in the sum of <strong id="prevRefundAmount" class="underline text-slate-900">£1,850.00</strong> paid at the inception of the tenancy.
               </p>
+
+              <div id="prevFactualParticulars" class="p-3.5 bg-slate-50 border-l-2 border-slate-800 text-xs italic">
+                The deposit was never protected in an authorized custodial scheme (DPS, TDS, or MyDeposits), and no Prescribed Information was served within 30 days of payment. The property was surrendered in clean condition according to the check-out inventory report.
+              </div>
+
+              <p id="prevStatutoryWarning" class="text-xs">
+                Under Section 214 of the Housing Act 2004, if a landlord fails to comply with the statutory initial requirements to protect a deposit or serve Prescribed Information within 30 days, the County Court must order the landlord to pay the applicant a sum of money not less than one and not more than three times the amount of the deposit, plus court costs and interest.
+              </p>
+
               <p>
-                Under Section 213 of the Housing Act 2004, any tenancy deposit paid in connection with an assured tenancy must be protected in an authorized statutory scheme (DPS, TDS, or MyDeposits) within thirty calendar days of receipt, and prescribed information must be served on the tenant within that identical period.
+                Please remit the total demanded sum of <strong id="prevRefundAmount2">£1,850.00</strong> to the following nominated bank account within <span id="prevResponseDays" class="font-bold">14</span> calendar days of this letter:
               </p>
-              <p id="prevFactualParticulars" class="p-3.5 bg-slate-50 border-l-2 border-red-700 text-xs italic">
-                The deposit of £1,950.00 was paid on 1st August 2025. Searches of the three government-approved tenancy deposit schemes (DPS, TDS, MyDeposits) confirm that the deposit was never protected within 30 days of receipt, and no Prescribed Information was served.
-              </p>
-              <p>
-                <strong>DEMAND FOR REPAYMENT:</strong> I hereby formally demand the immediate return of my deposit in the sum of <strong id="prevDemandedAmount" class="underline text-slate-900 font-bold">&pound;1,950.00</strong>. Payment must be made within <span id="prevReplyDays" class="font-bold">14</span> days of the date of this letter to the bank details provided below.
-              </p>
-              <p class="text-xs text-slate-700" id="prevPenaltyText">
-                Please take notice that pursuant to Section 214(4) of the Housing Act 2004, where a court is satisfied that the landlord failed to comply with the statutory deposit protection requirements, the court must order the landlord to pay the tenant a sum equal to between one and three times the amount of the deposit, plus court fees and legal costs.
+
+              <div class="p-3 bg-slate-50 border border-slate-200 rounded font-sans text-xs space-y-1">
+                <div><strong>Bank Sort Code:</strong> <span id="prevSortCode">20-04-15</span></div>
+                <div><strong>Account Number:</strong> <span id="prevAccountNum">88392014</span></div>
+                <div><strong>Account Name:</strong> <span id="prevAccountName">Harry Edward Davies</span></div>
+              </div>
+
+              <p class="text-xs text-slate-600">
+                If full repayment is not received within the specified 14-day pre-action horizon, immediate proceedings will be issued against you in the County Court under Part 8 of the Civil Procedure Rules without further correspondence.
               </p>
             </div>
 
-            <!-- Signature Line -->
             <div class="pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs">
               <div>
-                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Claimant Signature</p>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Signed by Departing Tenant</p>
                 <div class="border-b border-slate-400 pb-1 mb-1"></div>
                 <p class="font-semibold" id="prevSignatory">Harry Edward Davies</p>
-                <p class="text-slate-500">Former Tenant</p>
+                <p class="text-slate-500">Former Residential Tenant</p>
               </div>
               <div>
-                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Postal Delivery Method</p>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Service of Process Standard</p>
                 <div class="border-b border-slate-400 pb-1 mb-1"></div>
-                <p class="font-semibold">Royal Mail Signed For / Special Delivery</p>
-                <p class="text-slate-500">Tracked Pre-Action Evidence</p>
+                <p class="font-semibold">Royal Mail Recorded Delivery</p>
+                <p class="text-slate-500">Tracked Pre-Action Protocol Notice</p>
               </div>
             </div>
           </div>
@@ -395,63 +454,166 @@
       </div>
     </div>
 
-    <!-- Editorial Analysis (1,000 to 1,400 words) -->
+    <!-- Editorial Mass & Statutory Analysis (1,000 to 1,400 words) -->
     <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print">
       <section>
         <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Statutory Legal Foundation & Housing Act 2004 Requirements
+          Statutory Legal Foundation & Governing Act
         </h2>
         <p class="mb-4">
-          Since 6 April 2007, residential tenancy deposits in England and Wales have been strictly regulated under Chapter 4 of Part 8 of the Housing Act 2004. Under Section 213, any deposit paid in connection with an assured shorthold tenancy or assured periodic tenancy must be protected in an authorized government scheme within thirty calendar days of receipt by the landlord or letting agent.
+          Tenancy deposit administration in England and Wales is strictly governed by Sections 212 to 215 of the Housing Act 2004, as amended by the Localism Act 2011 and the Deregulation Act 2015. Under Section 213, any tenancy deposit paid in connection with an assured shorthold or periodic tenancy must, as from the time when it is received, be dealt with in accordance with an authorized scheme. The landlord must comply with the initial requirements of an authorized scheme within thirty calendar days of receiving the deposit funds. Within that identical 30-day statutory window, the landlord must provide the tenant with comprehensive Prescribed Information conforming to the Housing (Tenancy Deposits) (Prescribed Information) Order 2007. Utilizing a tenancy deposit scheme refund demand letter housing act 2004 generator equips tenants with an authoritative pre-litigation notice that satisfies strict Civil Procedure Rules.
         </p>
         <p class="mb-4">
-          The three statutory scheme operators recognized by the Department for Levelling Up, Housing and Communities are:
+          Where a landlord fails to protect the deposit or fails to provide the Prescribed Information within the mandatory 30-day period, Section 214 of the Housing Act 2004 provides severe financial remedies. Section 214(4) mandates that the County Court must order the landlord to pay the tenant a sum of money not less than one and not more than three times the amount of the deposit. This penalty is non-discretionary: once non-compliance is proven, the judge has no legal authority to dismiss the claim, but only retains discretion as to whether the multiple should be 1x, 2x, or 3x depending on landlord conduct.
         </p>
-        <ul class="list-disc pl-6 space-y-2 mb-4">
-          <li><strong>The Deposit Protection Service (DPS):</strong> Providing both custodial and insurance-backed protection schemes.</li>
-          <li><strong>Tenancy Deposit Scheme (TDS):</strong> Operating custodial and insured options for landlords and letting agents.</li>
-          <li><strong>MyDeposits:</strong> Government-authorized custodial and insurance protection.</li>
+        <p class="mb-4">
+          In addition to statutory non-protection claims, deposit deductions are governed by the common law principles of betterment and fair wear and tear. A landlord is not entitled to new-for-old replacement for items damaged through ordinary domestic usage. The Tenant Fees Act 2019 further caps deposits at five weeks rent for properties with an annual rent under £50,000, rendering any excessive sums unlawful prohibited payments recoverable through the First-tier Tribunal or County Court.
+        </p>
+      </section>
+
+      <!-- Mandatory H3 Table: Variable Definitions & Qualifying Conditions -->
+      <section class="pt-6 border-t border-slate-100">
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Variable Definitions & Qualifying Conditions
+        </h3>
+        <p class="mb-4">
+          The following matrix defines statutory qualifying conditions, deposit protection deadlines, compensation multiples, and dispute mechanisms under English law:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-900 text-white">
+              <tr>
+                <th class="p-3">Statutory Element</th>
+                <th class="p-3">Legal Requirement</th>
+                <th class="p-3">Statutory Penalty / Consequence</th>
+                <th class="p-3">Governing Authority</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Custodial Scheme Protection</td>
+                <td class="p-3">Lodged with DPS, TDS, or MyDeposits within 30 days</td>
+                <td class="p-3">Section 214 court claim; 1x to 3x deposit penalty</td>
+                <td class="p-3 font-mono">Housing Act 2004 § 213(1)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Prescribed Information Service</td>
+                <td class="p-3">Served on tenant and lead tenant within 30 days</td>
+                <td class="p-3">Court penalty applies even if deposit was registered</td>
+                <td class="p-3 font-mono">SI 2007/797 & HA 2004 § 213(5)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Undisputed Deposit Refund</td>
+                <td class="p-3">Must be returned within 10 days of agreed deductions</td>
+                <td class="p-3">Formal breach actionable via County Court Part 8 claim</td>
+                <td class="p-3 font-mono">Approved Scheme Operating Rules</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Maximum Deposit Cap</td>
+                <td class="p-3">Maximum 5 weeks rent (rent &lt; £50k/year)</td>
+                <td class="p-3">Excess is a prohibited payment; £5,000 civil penalty</td>
+                <td class="p-3 font-mono">Tenant Fees Act 2019 § 1</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Pre-Action Protocol Horizon</td>
+                <td class="p-3">Minimum 14 days written demand before legal claim</td>
+                <td class="p-3">Failure penalised in court cost awards</td>
+                <td class="p-3 font-mono">CPR Pre-Action Protocol for Debt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Legal Service of Process: How to Deliver This Notice
+        </h2>
+        <p class="mb-4">
+          Delivering a formal Letter Before Action requires strict adherence to civil procedure rules to establish that the landlord was provided with full particulars and opportunity to settle prior to court filing:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-1">1. Royal Mail Recorded Delivery</h3>
+            <p class="text-xs text-slate-600">
+              Posting via Royal Mail Signed For or Special Delivery to the landlord address of record or letting agent office. Service is deemed effected on the second working day.
+            </p>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-1">2. In-Hand Delivery to Letting Office</h3>
+            <p class="text-xs text-slate-600">
+              Personally delivering the letter to the managing agent office and obtaining a signed and dated receipt on a duplicate copy for your court exhibit bundle.
+            </p>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-1">3. Tracked Email with Read Receipt</h3>
+            <p class="text-xs text-slate-600">
+              Sending a PDF copy via email alongside physical posting to provide immediate notice, referencing that a duplicate formal copy has been dispatched by post.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Timelines & Benchmark Reference Matrix
+        </h2>
+        <p class="mb-4">
+          The table below illustrates statutory timelines, response deadlines, and court claim horizons across tenancy deposit dispute scenarios in England:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-900 text-white">
+                <th class="p-3">Dispute Category</th>
+                <th class="p-3">Statutory Response Window</th>
+                <th class="p-3">Adjudication / Court Route</th>
+                <th class="p-3">Limitation Period</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Unprotected Deposit (Section 214)</td>
+                <td class="p-3">14 Calendar Days</td>
+                <td class="p-3">County Court Part 8 Claim (Civil Procedure Rules)</td>
+                <td class="p-3 font-mono">6 Years from 30-Day Deadline</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Unlawful Deductions / Wear & Tear</td>
+                <td class="p-3">10 Calendar Days (Scheme Rules)</td>
+                <td class="p-3">Free Independent Scheme Adjudication (DPS/TDS)</td>
+                <td class="p-3 font-mono">3 Months from Tenancy Surrender</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Delayed Undisputed Refund</td>
+                <td class="p-3">14 Calendar Days (Pre-Action)</td>
+                <td class="p-3">Money Claim Online (Small Claims Track)</td>
+                <td class="p-3 font-mono">6 Years under Limitation Act 1980</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Tenant Fees Act Breach (Excess Cap)</td>
+                <td class="p-3">28 Calendar Days</td>
+                <td class="p-3">First-tier Tribunal (Property Chamber) Application</td>
+                <td class="p-3 font-mono">6 Years from Date of Unlawful Charge</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Fatal Drafting Mistakes That Invalidate This Notice
+        </h2>
+        <p class="mb-4">
+          When preparing a tenancy deposit demand letter, tenants must ensure their claims are procedurally watertight:
+        </p>
+        <ul class="list-disc pl-6 space-y-3">
+          <li><strong>Premature Litigation Threats:</strong> Failing to provide the minimum 14-day response period mandated by the Pre-Action Protocol for Debt Claims can result in County Court judges penalising the claimant in costs, even if the underlying compensation claim succeeds.</li>
+          <li><strong>Confusing Deposit Protection with Prescribed Information:</strong> Even if a landlord protected the deposit with the DPS or TDS within 30 days, failing to sign and deliver the official Prescribed Information leaflet with tenancy terms still constitutes an independent statutory breach under Section 213(5).</li>
+          <li><strong>Conflating Fair Wear and Tear with Damage:</strong> The law strictly forbids landlords from practicing betterment. If carpets were 5 years old at move-in and showed minor wear after a 2-year tenancy, landlords cannot deduct the cost of brand new carpets. Tenants must clearly cite the check-in and check-out inventory reports.</li>
+          <li><strong>Missing the 6-Year Limitation Window:</strong> Claims under Section 214 of the Housing Act 2004 are actions to recover a sum recoverable by virtue of an enactment under the Limitation Act 1980, requiring court filing within six years from the date the 30-day compliance window expired.</li>
         </ul>
-        <p>
-          In addition to securing the money in a scheme, Section 213(5) obligates the landlord to provide the tenant and any relevant person (such as a guarantor or parent who contributed to the deposit) with the statutory Prescribed Information. This documentation must include scheme contact details, the procedures for deposit repayment, and clauses detailing why deductions may be claimed.
-        </p>
-      </section>
-
-      <section class="pt-6 border-t border-slate-100">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Section 214 County Court Compensation Penalties
-        </h2>
-        <p class="mb-4">
-          Parliament enacted strict punitive penalties under Section 214 of the Housing Act 2004 to eradicate deposit non-protection. If a landlord fails to protect the deposit within thirty days or fails to serve Prescribed Information, the tenant has the absolute statutory right to apply to the County Court using Part 8 claim procedures.
-        </p>
-        <p class="mb-4">
-          Under Section 214(4), if the court is satisfied that the landlord failed to comply with Section 213, the court:
-        </p>
-        <ol class="list-decimal pl-6 space-y-2 mb-4">
-          <li>Must order the landlord to repay the deposit to the tenant or pay it into a designated custodial scheme within 14 days.</li>
-          <li><strong>Must order the landlord to pay the tenant financial compensation of an amount not less than the amount of the deposit and not more than three times the amount of the deposit.</strong></li>
-        </ol>
-        <p>
-          Judges possess no discretion to waive this financial sanction. Even if the landlord subsequently protects the deposit late (such as on day 35), the breach is established, and the statutory penalty of at least 1x the deposit must be awarded to the tenant.
-        </p>
-      </section>
-
-      <section class="pt-6 border-t border-slate-100">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Unlawful Deductions & Wear and Tear Protections
-        </h2>
-        <p class="mb-4">
-          A tenancy deposit remains the legal property of the tenant at all times. A landlord cannot deduct funds for ordinary wear and tear resulting from natural passage of time and reasonable domestic use. The Tenant Fees Act 2019 reinforces these standards by forbidding mandatory professional cleaning fees where the property was returned cleaned to a standard matching the check-in inventory.
-        </p>
-      </section>
-
-      <section class="pt-6 border-t border-slate-100">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Pre-Action Protocol for Debt Claims
-        </h2>
-        <p class="mb-4">
-          Before issuing proceedings in the County Court, a tenant must serve a formal Letter Before Action in accordance with the Practice Direction on Pre-Action Conduct. This formal letter gives the landlord a statutory 14-day window to return the funds, preventing unnecessary litigation and ensuring the tenant recovers court issue fees.
-        </p>
       </section>
 
       <section class="pt-6 border-t border-slate-100">
@@ -460,63 +622,81 @@
         </h2>
         <div class="space-y-6 text-xs">
           <div>
-            <h3 class="font-bold text-slate-900 text-sm mb-1">Within how many days must a landlord protect a tenancy deposit in England?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What is the statutory deadline for landlords to protect a tenancy deposit in England?</h3>
             <p class="leading-relaxed">
-              Under Housing Act 2004 Section 213, a landlord must protect a tenancy deposit with an authorized scheme (DPS, TDS, or MyDeposits) and serve Prescribed Information on the tenant within 30 calendar days of receipt.
+              Under Housing Act 2004 Section 213, a landlord must protect a tenancy deposit in a government-approved scheme (DPS, TDS, or MyDeposits) and serve the Prescribed Information within thirty days of receiving payment.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">What compensation can a County Court order for an unprotected deposit?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What compensation can tenants claim for an unprotected deposit in County Court?</h3>
             <p class="leading-relaxed">
-              Under Housing Act 2004 Section 214, the County Court must order the landlord to return the deposit and pay financial compensation between one and three times the total deposit amount for failure to protect.
+              Under Housing Act 2004 Section 214(4), the court must order the landlord to pay compensation between one and three times the deposit amount, in addition to returning the deposit or lodging it into a custodial scheme.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">Can a landlord make deductions for ordinary wear and tear?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">How quickly must an undisputed tenancy deposit be returned upon tenancy end?</h3>
             <p class="leading-relaxed">
-              No. Under the Housing Act 2004 and the Tenant Fees Act 2019, landlords are strictly prohibited from deducting funds from a tenancy deposit for normal wear and tear resulting from reasonable everyday occupancy.
+              Scheme rules across the DPS, TDS, and MyDeposits mandate that undisputed deposit funds must be repaid to the tenant within ten calendar days of both parties reaching agreement on deductions.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">What happens if a landlord failed to provide Prescribed Information?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Can a landlord deduct for fair wear and tear under English law?</h3>
             <p class="leading-relaxed">
-              Even if the deposit was placed in a scheme, failing to provide the tenant with the official Prescribed Information leaflet and certificate within 30 days triggers statutory Section 214 court penalties of 1x to 3x compensation.
+              No. Under the Housing Act 2004, landlords cannot deduct from a deposit for normal wear and tear resulting from ordinary domestic living. Deductions are permissible only for actual damage, missing items, or rent arrears.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">How does this formal demand letter assist a County Court Part 8 claim?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What pre-action notice must a tenant give before initiating a court claim?</h3>
             <p class="leading-relaxed">
-              Serving a formal Letter Before Action demonstrates compliance with the Pre-Action Protocol for Debt Claims, providing mandatory documentary evidence of attempts to resolve the dispute prior to issuing court proceedings.
+              Under the Pre-Action Protocol for Debt Claims, a tenant should deliver a formal letter before action giving the landlord at least 14 days to repay the disputed deposit before commencing County Court proceedings.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What is the legal deposit cap under the Tenant Fees Act 2019?</h3>
+            <p class="leading-relaxed">
+              The Tenant Fees Act 2019 caps tenancy deposits at five weeks rent where annual rent is under £50,000, or six weeks rent where annual rent exceeds £50,000. Any excess sum represents an unlawful prohibited payment.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Related UK Utilities -->
+      <!-- Related Tenancy Utilities Component -->
       <section class="pt-6 border-t border-slate-100">
         <h2 class="font-display text-xl font-bold text-slate-900 mb-4">
           Related UK Statutory Utilities & Guides
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/uk/section-8-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+          <a href="/uk/section-8-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-red-700 uppercase">UK Tool</span>
-            <h3 class="text-sm font-bold text-slate-900 mt-1">Section 8 Possession Notice</h3>
-            <p class="text-xs text-slate-500 mt-1">Reformed Schedule 2 grounds landlord possession form.</p>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Section 8 Notice to Quit</h3>
+            <p class="text-xs text-slate-500 mt-1">Housing Act 1988 Form 3 statutory possession notice generator.</p>
           </a>
-          <a href="/uk/section-13-rent-challenge.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+          <a href="/uk/tenant-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-red-700 uppercase">UK Tool</span>
-            <h3 class="text-sm font-bold text-slate-900 mt-1">Section 13 Rent Challenge</h3>
-            <p class="text-xs text-slate-500 mt-1">First-tier Tribunal Form 4 referral notice builder.</p>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Tenant Notice to Quit</h3>
+            <p class="text-xs text-slate-500 mt-1">Periodic tenancy 2-month notice generator citing Renters' Rights Act.</p>
           </a>
-          <a href="/guides/security-deposit-return-rights.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+          <a href="/guides/security-deposit-return-rights.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-emerald-700 uppercase">Legal Guide</span>
-            <h3 class="text-sm font-bold text-slate-900 mt-1">Security Deposit Rights</h3>
-            <p class="text-xs text-slate-500 mt-1">Comparative statutory deposit protections guide.</p>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Deposit Protection Rights</h3>
+            <p class="text-xs text-slate-500 mt-1">Custodial deposit scheme rules and wear-and-tear guidelines.</p>
           </a>
         </div>
       </section>
     </article>
   </main>
+
+  <!-- Sticky Bottom Mobile Action Bar (Mobile Only: < 768px) -->
+  <div id="mobileActionBar" class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
+    <button type="button" onclick="copyDepositDemandToClipboard()" class="flex-1 min-h-[48px] py-3 px-4 bg-emerald-50 hover:bg-emerald-100 active:bg-emerald-200 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all">
+      <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+      <span>Copy Document</span>
+    </button>
+    <button type="button" onclick="window.print()" class="flex-1 min-h-[48px] py-3 px-4 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center space-x-2 transition-all">
+      <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+      <span>Print / Save PDF</span>
+    </button>
+  </div>
 
   <!-- Global Footer -->
   <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-12 mt-12 no-print">
@@ -531,16 +711,6 @@
         </p>
       </div>
       <div>
-        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
-        <ul class="space-y-2">
-          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
-          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
-          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
-          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
-          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
-        </ul>
-      </div>
-      <div>
         <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
         <ul class="space-y-2">
           <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
@@ -548,6 +718,16 @@
           <li><a href="/uk/tenancy-deposit-demand.html" class="text-white font-medium">Tenancy Deposit Demand</a></li>
           <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
           <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
         </ul>
       </div>
       <div>
@@ -567,49 +747,80 @@
   </footer>
 
   <!-- Toast Element -->
-  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+  <div id="toastNotification" class="fixed bottom-20 md:bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-    <span class="text-xs font-semibold" id="toastMessage">Demand letter copied to clipboard.</span>
+    <span class="text-xs font-semibold" id="toastMessage">Letter Before Action text copied.</span>
   </div>
 
   <!-- JavaScript Reactive Engine -->
   <script>
+    const breachDescriptions = {
+      UNPROTECTED: {
+        particulars: "The deposit was never protected in an authorized custodial scheme (DPS, TDS, or MyDeposits), and no Prescribed Information was served within 30 days of payment. The property was surrendered in clean condition according to the check-out inventory report.",
+        warning: "Under Section 214 of the Housing Act 2004, if a landlord fails to comply with the statutory initial requirements to protect a deposit or serve Prescribed Information within 30 days, the County Court must order the landlord to pay the applicant a sum of money not less than one and not more than three times the amount of the deposit, plus court costs and interest."
+      },
+      UNJUSTIFIED_DEDUCTIONS: {
+        particulars: "The deductions proposed from the tenancy deposit relate entirely to reasonable fair wear and tear resulting from normal residential occupation. No independent contractor invoices or receipts have been produced, and the property was professionally cleaned prior to handover.",
+        warning: "Under the Housing Act 2004 and the rules of the statutory deposit schemes, landlords cannot make deductions for fair wear and tear. If an agreed settlement is not reached, this dispute will be referred to formal scheme dispute resolution or the County Court."
+      },
+      LATE_RETURN: {
+        particulars: "The tenancy ended over ten calendar days ago, and check-out inspections were completed without recorded dispute. Despite formal requests, you have unreasonably withheld repayment of the undisputed deposit funds contrary to statutory scheme rules.",
+        warning: "Under the operational guidelines of the government-approved custodial schemes, undisputed deposit monies must be disbursed within 10 days of tenancy conclusion. Continued failure to refund will lead to an immediate claim in the County Court."
+      }
+    };
+
+    function setDisputePill(typeKey) {
+      document.getElementById('disputeType').value = typeKey;
+      document.querySelectorAll('.dispute-pill').forEach(btn => {
+        if (btn.getAttribute('data-val') === typeKey) {
+          btn.className = 'dispute-pill px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-800 whitespace-nowrap min-h-[48px] flex items-center';
+        } else {
+          btn.className = 'dispute-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center';
+        }
+      });
+      const desc = breachDescriptions[typeKey];
+      if (desc) {
+        document.getElementById('factualSummary').value = desc.particulars;
+      }
+      updateDepositDemandDOM();
+    }
+
+    function updateDepositDemandSelect() {
+      const val = document.getElementById('disputeType').value;
+      setDisputePill(val);
+    }
+
     function updateDepositDemandDOM() {
-      const disputeType = document.getElementById('disputeType').value;
+      const typeKey = document.getElementById('disputeType').value;
+      const desc = breachDescriptions[typeKey] || breachDescriptions.UNPROTECTED;
       const tenant = document.getElementById('tenantName').value || 'Tenant Name';
-      const landlord = document.getElementById('landlordName').value || 'Landlord / Letting Agent';
-      const address = document.getElementById('propertyAddress').value || 'Premises Address';
-      const forwarding = document.getElementById('forwardingAddress').value || 'Forwarding Address';
-      const depositPaid = parseFloat(document.getElementById('depositPaid').value) || 0;
-      const demandedAmount = parseFloat(document.getElementById('demandedAmount').value) || 0;
-      const vacateVal = document.getElementById('vacateDate').value;
-      const replyDays = document.getElementById('replyDays').value || '14';
-      const particulars = document.getElementById('disputeDetails').value;
+      const landlord = document.getElementById('landlordName').value || 'Landlord / Agent';
+      const address = document.getElementById('propertyAddress').value || 'Former Property Address';
+      const sortCode = document.getElementById('bankSortCode').value || 'Sort Code';
+      const accountNum = document.getElementById('bankAccountNum').value || 'Account Number';
+      const demanded = parseFloat(document.getElementById('refundDemanded').value) || 0;
+      const responseDays = document.getElementById('responseDays').value || '14';
+      const endDate = document.getElementById('tenancyEndDate').value;
+      const factual = document.getElementById('factualSummary').value;
 
       document.getElementById('prevTenant').textContent = tenant;
-      document.getElementById('prevSignatory').textContent = tenant;
       document.getElementById('prevLandlord').textContent = landlord;
       document.getElementById('prevAddress').textContent = address;
-      document.getElementById('prevForwarding').textContent = forwarding;
-      document.getElementById('prevDepositPaid').textContent = '£' + depositPaid.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-      document.getElementById('prevDemandedAmount').textContent = '£' + demandedAmount.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-      document.getElementById('prevReplyDays').textContent = replyDays;
-      document.getElementById('prevFactualParticulars').textContent = particulars;
+      document.getElementById('prevSignatory').textContent = tenant;
+      document.getElementById('prevAccountName').textContent = tenant;
+      document.getElementById('prevSortCode').textContent = sortCode;
+      document.getElementById('prevAccountNum').textContent = accountNum;
+      document.getElementById('prevRefundAmount').textContent = '£' + demanded.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('prevRefundAmount2').textContent = '£' + demanded.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('prevResponseDays').textContent = responseDays;
+      document.getElementById('prevFactualParticulars').textContent = factual;
+      document.getElementById('prevStatutoryWarning').textContent = desc.warning;
 
-      if (disputeType === 'UNPROTECTED') {
-        document.getElementById('prevPenaltyText').textContent = "Please take notice that pursuant to Section 214(4) of the Housing Act 2004, where a court is satisfied that the landlord failed to comply with statutory deposit protection requirements, the court must order the landlord to pay the tenant a sum equal to between one and three times the amount of the deposit, plus court fees and legal costs.";
-      } else {
-        document.getElementById('prevPenaltyText').textContent = "Please be advised that under the Tenant Fees Act 2019 and Housing Act 2004, deductions for ordinary wear and tear are strictly prohibited. Failure to resolve this dispute within the designated timeframe will result in formal dispute referral through the custodial scheme or County Court proceedings.";
+      if (endDate) {
+        const parts = endDate.split('-');
+        const dateObj = new Date(parts[0], parts[1] - 1, parts[2]);
+        document.getElementById('prevTenancyEndDate').textContent = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
       }
-
-      if (vacateVal) {
-        const parts = vacateVal.split('-');
-        const vObj = new Date(parts[0], parts[1] - 1, parts[2]);
-        document.getElementById('prevVacateDate').textContent = vObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-      }
-
-      const today = new Date();
-      document.getElementById('prevDate').textContent = today.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     }
 
     function copyDepositDemandToClipboard() {
@@ -635,8 +846,8 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       const past = new Date();
-      past.setDate(past.getDate() - 15);
-      document.getElementById('vacateDate').value = past.toISOString().split('T')[0];
+      past.setDate(past.getDate() - 14);
+      document.getElementById('tenancyEndDate').value = past.toISOString().split('T')[0];
       updateDepositDemandDOM();
     });
   </script>

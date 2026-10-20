@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UK Section 8 Notice to Quit Generator: Housing Act 1988 Form 3</title>
-  <meta name="description" content="Generate a legally compliant UK Section 8 notice to quit under the Renters' Rights Act. Supports reformed Ground 8 rent arrears and Ground 1A sale grounds.">
+  <title>Section 8 Notice Form 3 Ground 8 Template Free | TenantNotice</title>
+  <meta name="description" content="Generate a free UK Section 8 notice Form 3 under the Renters' Rights Act. Instant interactive preview with Ground 8 rent arrears and possession rules.">
   <link rel="canonical" href="https://tenantnotice.online/uk/section-8-notice-to-quit.html">
   <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/section-8-notice-to-quit.html">
   <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/3-day-pay-rent-or-quit.html">
@@ -66,12 +66,12 @@
         font-size: 11pt !important;
         line-height: 1.5 !important;
       }
-      .no-print, header, footer, nav, aside, .action-toolbar {
+      .no-print, header, footer, nav, aside, .action-toolbar, #mobileActionBar {
         display: none !important;
       }
       @page {
-        size: A4 portrait;
-        margin: 25mm;
+        size: a4 portrait;
+        margin: 20mm;
       }
     }
   </style>
@@ -84,10 +84,11 @@
       {
         "@type": "WebApplication",
         "@id": "https://tenantnotice.online/uk/section-8-notice-to-quit.html#app",
-        "name": "UK Section 8 Possession Notice Generator",
+        "name": "UK Section 8 Notice Form 3 Ground 8 Template Free Generator",
         "url": "https://tenantnotice.online/uk/section-8-notice-to-quit.html",
         "applicationCategory": "LegalApplication",
         "operatingSystem": "All modern browsers",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
         "offers": {
           "@type": "Offer",
           "price": "0.00",
@@ -139,7 +140,7 @@
           },
           {
             "@type": "Question",
-            "name": "What statutory form must be used for a Section 8 notice?",
+            "name": "What statutory form must be used for a Section 8 notice in England?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "A Section 8 notice must be served using statutory Form 3 as prescribed under the Housing Act 1988. Any notice failing to state the exact statutory ground wording and factual particulars will be struck out by the County Court."
@@ -158,7 +159,15 @@
             "name": "What happens if rent arrears drop below 3 months before the court hearing?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If the tenant reduces arrears below the mandatory 3-month threshold before the hearing date, Ground 8 ceases to be mandatory, and the judge may only grant possession under discretionary Grounds 10 or 11 if deemed reasonable."
+              "text": "If arrears drop below three months prior to the hearing, mandatory Ground 8 fails. However, the County Court judge retains discretionary power under Grounds 10 and 11 to grant possession if persistent late payments occurred."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Renters' Rights Act impact Section 21 no-fault evictions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Renters' Rights Act abolishes Section 21 no-fault evictions entirely across England. All tenancies convert to periodic arrangements, and possession can only be obtained through reformed Section 8 grounds."
             }
           }
         ]
@@ -167,36 +176,39 @@
   }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
-  <!-- Navigation Header -->
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+  <!-- Global Navigation Header -->
   <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center space-x-3 group">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
         <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
         <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
       </a>
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
-          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-          <span>US Portal</span>
-        </a>
-        <a href="/uk/" class="text-emerald-400 flex items-center space-x-2">
+        <a href="/uk/" class="text-emerald-400 flex items-center space-x-2 min-h-[48px]">
           <span class="w-2 h-2 rounded-full bg-red-500"></span>
           <span>UK Portal</span>
         </a>
-        <a href="/guides/uk-renters-rights-act-guide.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
-        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/guides/uk-renters-rights-act-guide.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Guides</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
       </nav>
-      <div class="flex items-center space-x-3">
-        <a href="/uk/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-1.5 border border-slate-700 rounded-lg">
-          &larr; All UK Tools
+      <div class="flex items-center space-x-2">
+        <a href="/us/3-day-pay-rent-or-quit.html" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-2 border border-slate-700 rounded-lg min-h-[48px] flex items-center">
+          Switch to US
+        </a>
+        <a href="/uk/" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 px-3 py-2 border border-emerald-500/40 bg-emerald-950/40 rounded-lg min-h-[48px] flex items-center">
+          All UK Tools
         </a>
       </div>
     </div>
   </header>
 
   <!-- Breadcrumbs -->
-  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print">
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print" aria-label="Breadcrumb">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
       <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
       <span>/</span>
@@ -206,184 +218,208 @@
     </div>
   </nav>
 
-  <!-- Main Content Workspace -->
+  <!-- Inverted Pyramid: Main Workspace -->
   <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <!-- Header Title & Direct Answer Capsule -->
     <div class="mb-8">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-800 text-xs font-semibold mb-3">
         <span class="w-2 h-2 rounded-full bg-red-600"></span>
-        Housing Act 1988 Form 3 Statutory Engine
+        Housing Act 1988 Form 3 Statutory Compiler
       </div>
-      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+      <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
         UK Section 8 Notice to Quit Generator: Housing Act 1988 (Form 3)
       </h1>
 
-      <!-- Direct Answer Capsule for AI Ingestion -->
+      <!-- 45-Word Direct Answer Capsule for AI Extraction -->
       <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
-        <p class="font-medium text-slate-200">
-          <strong>Direct Legal Rule:</strong> Under the Housing Act 1988 as reformed by the Renters' Rights Act, landlords must serve a statutory Form 3 Section 8 notice to seek possession. Mandatory Ground 8 requires at least three months rent arrears with four weeks notice. Ground 1A for property sale requires four months notice.
+        <p class="font-bold text-slate-100">
+          Under Housing Act 1988 Section 8 and the Renters' Rights Act, landlords must serve statutory Form 3 citing mandatory or discretionary Schedule 2 grounds. Mandatory Ground 8 requires four weeks notice for three months rent arrears, with day counting strictly excluding service delivery date.
         </p>
       </div>
     </div>
 
-    <!-- Split Screen Interactive Layout -->
+    <!-- Desktop Split-Screen Power Workspace (Left 40%, Right 60%) -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
-      <!-- Left Inputs Panel (lg:col-span-5) -->
-      <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 no-print text-xs">
+      <!-- Left Panel: 40% Width (lg:col-span-5) -->
+      <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5 no-print">
         <div class="flex items-center justify-between border-b border-slate-100 pb-3">
-          <h2 class="font-display text-sm font-bold text-slate-900">Form 3 Parameters</h2>
-          <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">Reactive Compiler</span>
+          <h2 class="font-display text-base font-bold text-slate-900">Form 3 Parameters</h2>
+          <span class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full">Renters' Rights Act Ready</span>
         </div>
 
+        <!-- Thumb-Friendly Mobile Segmented Pill Selector for Grounds -->
         <div>
-          <label for="possessionGround" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Schedule 2 Possession Ground</label>
-          <select id="possessionGround" onchange="updateGroundLogic()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white">
-            <option value="GROUND_8">Ground 8: Serious Rent Arrears (Mandatory - At least 3 Months Unpaid, 4 Weeks Notice)</option>
-            <option value="GROUND_1A">Ground 1A: Landlord Intends to Sell Dwelling (Mandatory - 4 Months Notice)</option>
-            <option value="GROUND_1">Ground 1: Landlord or Family Member Moving In (Mandatory - 4 Months Notice)</option>
-            <option value="GROUND_14">Ground 14: Nuisance, Annoyance, or Anti-Social Behaviour (Discretionary - Immediate Notice)</option>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Select Possession Ground</label>
+          <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-thin">
+            <button type="button" onclick="setGroundPill('G8')" class="ground-pill px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-800 whitespace-nowrap min-h-[48px] flex items-center" data-val="G8">Ground 8 (Rent Arrears)</button>
+            <button type="button" onclick="setGroundPill('G10_11')" class="ground-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="G10_11">Grounds 10 & 11</button>
+            <button type="button" onclick="setGroundPill('G1A')" class="ground-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="G1A">Ground 1A (Sale)</button>
+            <button type="button" onclick="setGroundPill('G14')" class="ground-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center" data-val="G14">Ground 14 (Nuisance)</button>
+          </div>
+          <select id="possessionGround" onchange="updateGroundSelect()" class="mt-2 w-full px-3 py-3 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            <option value="G8">Ground 8: Serious Rent Arrears (Mandatory - 4 Weeks Notice)</option>
+            <option value="G10_11">Grounds 10 & 11: Persistent Rent Arrears (Discretionary - 4 Weeks Notice)</option>
+            <option value="G1A">Ground 1A: Landlord Intention to Sell (Mandatory - 4 Months Notice)</option>
+            <option value="G1">Ground 1: Landlord or Family Occupation (Mandatory - 4 Months Notice)</option>
+            <option value="G14">Ground 14: Anti-Social Behaviour / Nuisance (Discretionary - Immediate / 24h)</option>
           </select>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="landlordName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Landlord Full Name / Company</label>
-            <input type="text" id="landlordName" oninput="updateSection8DOM()" value="Charles Montgomery Sterling" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 1: Tenancy Parties -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>1. Tenancy Parties</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="landlordName" class="block text-xs font-semibold text-slate-700 mb-1">Landlord / Agent Full Name(s)</label>
+              <input type="text" id="landlordName" oninput="updateSection8DOM()" value="Charles Montgomery (Managing Director, St. James Lettings Ltd)" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div>
+              <label for="tenantName" class="block text-xs font-semibold text-slate-700 mb-1">Tenant Full Name(s)</label>
+              <input type="text" id="tenantName" oninput="updateSection8DOM()" value="Arthur Pendelton, Sarah Pendelton" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
           </div>
-          <div>
-            <label for="tenantName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Name(s)</label>
-            <input type="text" id="tenantName" oninput="updateSection8DOM()" value="Oliver William Campbell" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
+        </details>
 
-        <div>
-          <label for="propertyAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Dwelling Address (Including Postcode)</label>
-          <input type="text" id="propertyAddress" oninput="updateSection8DOM()" value="Flat 4B, 38 Kensington Gardens Square, London, W2 4BQ" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="arrearsSection">
-          <div>
-            <label for="rentArrears" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Arrears Balance (&pound;)</label>
-            <input type="number" id="rentArrears" oninput="updateSection8DOM()" value="5400.00" step="0.01" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 2: Property Address -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>2. Premises Details</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="rentalAddress" class="block text-xs font-semibold text-slate-700 mb-1">Premises Address (Including Postcode)</label>
+              <input type="text" id="rentalAddress" oninput="updateSection8DOM()" value="Flat 4, Kensington Mansions, Trebovir Road, London, SW5 9TE" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
           </div>
-          <div>
-            <label for="monthlyRent" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Monthly Contract Rent (&pound;)</label>
-            <input type="number" id="monthlyRent" oninput="updateSection8DOM()" value="1800.00" step="0.01" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
-          </div>
-        </div>
+        </details>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label for="serviceDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Date Notice Served</label>
-            <input type="date" id="serviceDate" oninput="calculatePossessionDates()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        <!-- Collapsible Group 3: Timeline & Earliest Court Date -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>3. Service Date & Court Earliest Date</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="serviceDate" class="block text-xs font-semibold text-slate-700 mb-1">Date Notice Served</label>
+              <input type="date" id="serviceDate" oninput="calculateEarliestCourtDate()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
+            <div>
+              <label for="courtDate" class="block text-xs font-semibold text-slate-700 mb-1">Earliest Court Proceedings Date</label>
+              <input type="date" id="courtDate" oninput="updateSection8DOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">
+            </div>
           </div>
-          <div>
-            <label for="courtActionDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Earliest Court Action Date</label>
-            <input type="date" id="courtActionDate" oninput="updateSection8DOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        </details>
+
+        <!-- Collapsible Group 4: Factual Particulars -->
+        <details class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+            <span>4. Factual Particulars & Arrears Schedule</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="factualParticulars" class="block text-xs font-semibold text-slate-700 mb-1">Schedule of Arrears / Factual Basis (Section 4)</label>
+              <textarea id="factualParticulars" oninput="updateSection8DOM()" rows="3" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 min-h-[48px]">Rent is £1,650 per calendar month payable on the 1st day of each month. Arrears are as follows: August 2026 (£1,650), September 2026 (£1,650), October 2026 (£1,650). Total outstanding arrears equal £4,950, being in excess of 3 months rent.</textarea>
+            </div>
           </div>
-        </div>
+        </details>
 
-        <div>
-          <label for="factualParticulars" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Particulars of Grounds (Factual Breakdown)</label>
-          <textarea id="factualParticulars" oninput="updateSection8DOM()" rows="3" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">Rent is payable at the rate of £1,800.00 per calendar month. The tenant has failed to pay rent for the consecutive months of August 2026, September 2026, and October 2026. The total unpaid arrears sum is £5,400.00, representing exactly 3 full months of unpaid rent.</textarea>
-        </div>
-
-        <!-- Action Toolbar -->
-        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
-          <button onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        <!-- Desktop Action Toolbar -->
+        <div class="hidden sm:flex gap-3 pt-2">
+          <button type="button" onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all min-h-[48px]">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
             <span>Print / Save as PDF</span>
           </button>
-          <button onclick="copySection8ToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-200 flex items-center justify-center space-x-2 transition-all">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          <button type="button" onclick="copySection8ToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all min-h-[48px]">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
             <span>Copy Text</span>
           </button>
         </div>
       </div>
 
-      <!-- Right Letterhead Preview (lg:col-span-7) -->
+      <!-- Right Panel: 60% Width (lg:col-span-7) Sticky Physical Preview -->
       <div class="lg:col-span-7">
         <div class="sticky top-20">
           <div class="flex items-center justify-between mb-3 no-print">
             <span class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-red-500"></span>
-              Statutory Form 3 Letterhead (A4 Print Ready)
+              Statutory Form 3 Letterhead Preview
             </span>
-            <span class="text-xs text-slate-400">Housing Act 1988 § 8</span>
+            <span class="text-xs text-slate-400 font-mono">A4 Format</span>
           </div>
 
           <!-- Document Container -->
-          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm">
+          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm min-h-[600px]">
             <div class="text-center border-b-2 border-slate-900 pb-4 mb-6">
-              <div class="text-xs font-bold tracking-widest uppercase font-sans text-slate-500 mb-1">
-                FORM 3 - SECTION 8 NOTICE
+              <div class="text-xs font-sans font-bold uppercase tracking-widest text-slate-500 mb-1">
+                FORM 3 - HOUSING ACT 1988 SECTION 8
               </div>
-              <div class="font-legal font-bold text-base sm:text-lg tracking-wider uppercase text-slate-900">
+              <div class="font-legal font-bold text-lg sm:text-xl tracking-wider uppercase text-slate-900">
                 NOTICE SEEKING POSSESSION OF A PROPERTY LET ON AN ASSURED PERIODIC TENANCY
               </div>
               <div class="text-xs font-mono font-bold tracking-widest text-slate-600 uppercase mt-1">
-                HOUSING ACT 1988 SECTION 8 (AS REFORMED BY THE RENTERS' RIGHTS ACT)
+                RENTERS' RIGHTS ACT STATUTORY REVISION
               </div>
             </div>
 
-            <!-- Party & Address Metadata -->
             <div class="space-y-2 mb-6 text-xs sm:text-sm">
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">1. To Tenant(s):</span>
-                <span class="font-semibold" id="prevTenant">Oliver William Campbell</span>
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">1. To the Tenant(s):</span>
+                <span class="font-semibold" id="prevTenant">Arthur Pendelton, Sarah Pendelton</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">2. Dwelling Address:</span>
-                <span class="font-semibold" id="prevAddress">Flat 4B, 38 Kensington Gardens Square, London, W2 4BQ</span>
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">2. Premises Address:</span>
+                <span class="font-semibold" id="prevAddress">Flat 4, Kensington Mansions, Trebovir Road, London, SW5 9TE</span>
               </div>
-              <div class="flex justify-between border-b border-slate-100 pb-1.5">
-                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">3. From Landlord:</span>
-                <span class="font-semibold" id="prevLandlord">Charles Montgomery Sterling</span>
+              <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">From Landlord / Agent:</span>
+                <span class="font-semibold" id="prevLandlord">Charles Montgomery (Managing Director, St. James Lettings Ltd)</span>
               </div>
             </div>
 
-            <!-- Statutory Form 3 Paragraphs -->
-            <div class="space-y-4 text-justify mb-6 text-xs sm:text-sm">
+            <div class="space-y-4 text-justify mb-8 text-xs sm:text-sm">
               <p>
-                <strong>4. STATUTORY GROUNDS RELIED UPON:</strong> The landlord intends to seek possession on the following ground(s) in Schedule 2 to the Housing Act 1988:
+                <strong>3. Grounds on which possession is sought:</strong> The landlord intends to seek possession on the following ground(s) in Schedule 2 to the Housing Act 1988:
               </p>
-              <div class="p-3.5 bg-slate-50 border-l-2 border-red-700 font-sans text-xs space-y-1">
-                <div class="font-bold text-slate-900" id="prevGroundHeading">Ground 8 (Mandatory Serious Rent Arrears)</div>
-                <div class="text-slate-600" id="prevGroundStatutoryText">
-                  Both at the date of the service of the notice under section 8 of this Act and at the date of the hearing at least three months' rent is unpaid where rent is payable monthly.
-                </div>
+              
+              <div id="prevGroundsVerbatim" class="p-3.5 bg-slate-50 border-l-2 border-slate-800 text-xs italic">
+                Ground 8: Both at the date of the service of the notice under section 8 of this Act and at the date of the hearing, at least three months rent is unpaid.
               </div>
 
               <p>
-                <strong>5. PARTICULARS OF GROUNDS:</strong> The facts and reasons why each statutory ground is being relied upon are set out below:
-              </p>
-              <p class="text-xs italic bg-slate-50 p-3 rounded border border-slate-200" id="prevParticulars">
-                Rent is payable at the rate of £1,800.00 per calendar month. The tenant has failed to pay rent for the consecutive months of August 2026, September 2026, and October 2026. The total unpaid arrears sum is £5,400.00, representing exactly 3 full months of unpaid rent.
+                <strong>4. Give a full explanation of why each ground is being relied on:</strong>
               </p>
 
-              <p>
-                <strong>6. EARLIEST DATE FOR COURT PROCEEDINGS:</strong> Court proceedings for possession will not begin earlier than:
-              </p>
-              <div class="p-3 bg-red-50 text-red-900 font-bold text-sm text-center border border-red-200 rounded-lg" id="prevEarliestCourtDate">
-                November 17, 2026
+              <div id="prevParticularsText" class="p-3 bg-slate-50 border border-slate-200 rounded text-xs">
+                Rent is £1,650 per calendar month payable on the 1st day of each month. Arrears are as follows: August 2026 (£1,650), September 2026 (£1,650), October 2026 (£1,650). Total outstanding arrears equal £4,950, being in excess of 3 months rent.
               </div>
-              <p class="text-xs text-slate-500">
-                After the above date, the landlord may apply to the County Court for a possession order. If you do not leave before that date, the landlord cannot lawfully evict you without obtaining a possession order from the Court.
+
+              <p>
+                <strong>5. Earliest Date Court Proceedings Can Begin:</strong> Court proceedings will not begin until after <strong id="prevCourtDate" class="underline text-slate-900">November 17, 2026</strong>. After this date, the landlord may apply to the County Court for a possession order.
+              </p>
+
+              <p class="text-xs text-slate-500 leading-relaxed">
+                Important note for tenant: If you do not leave the dwelling, the landlord must obtain an order for possession from the court before you can be evicted. If you are worried about finding accommodation, you should contact your local council housing authority immediately.
               </p>
             </div>
 
-            <!-- Landlord Signature Block -->
             <div class="pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs">
               <div>
                 <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Signed by Landlord / Agent</p>
                 <div class="border-b border-slate-400 pb-1 mb-1"></div>
-                <p class="font-semibold" id="prevSignatory">Charles Montgomery Sterling</p>
-                <p class="text-slate-500">Landlord</p>
+                <p class="font-semibold" id="prevSignatory">Charles Montgomery</p>
+                <p class="text-slate-500">Authorized Agent for St. James Lettings Ltd</p>
               </div>
               <div>
-                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Date of Signature</p>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Date of Notice Service</p>
                 <div class="border-b border-slate-400 pb-1 mb-1"></div>
-                <p class="font-semibold" id="prevSignDate">October 20, 2026</p>
-                <p class="text-slate-500">Formal Service Execution</p>
+                <p class="font-semibold" id="prevServiceDate">October 20, 2026</p>
+                <p class="text-slate-500">Service pursuant to Civil Procedure Rules</p>
               </div>
             </div>
           </div>
@@ -391,89 +427,77 @@
       </div>
     </div>
 
-    <!-- Rich Editorial Legal Analysis (1,000 to 1,400 words) -->
+    <!-- Editorial Mass & Statutory Analysis (1,000 to 1,400 words) -->
     <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print">
       <section>
         <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Statutory Legal Foundation & Reformed Schedule 2 Grounds
+          Statutory Legal Foundation & Governing Act
         </h2>
         <p class="mb-4">
-          The legal landscape of residential tenancies in England has undergone its most consequential restructuring in nearly four decades under the Renters' Rights Act. By permanently repealing Section 21 of the Housing Act 1988, Parliament abolished the mechanism of no-fault repossession. Landlords may no longer terminate residential assured shorthold tenancies by simply serving a two-month notice without assigning statutory cause.
+          Under the law of England and Wales, residential tenancy possession is governed by Section 8 of the Housing Act 1988. Following the historic enactment of the Renters' Rights Act, which completely abolished Section 21 no-fault evictions, Section 8 serves as the sole remaining legal route for private landlords seeking possession of residential property. Under this statutory framework, all private residential tenancies are converted into periodic assured tenancies. Landlords cannot evict a tenant without serving a valid statutory Form 3 and establishing at least one lawful ground set out in Schedule 2 of the Housing Act 1988. Utilising a section 8 notice form 3 ground 8 template free tool guarantees that landlords and letting agents satisfy exact judicial drafting rules.
         </p>
         <p class="mb-4">
-          Instead, all residential repossession claims must be initiated under Section 8 of the Housing Act 1988 utilizing prescribed Form 3. The landlord must establish at least one ground set forth in Schedule 2 of the Act. Schedule 2 grounds are divided into mandatory grounds (where the court must order possession if the ground is substantiated) and discretionary grounds (where the court will only grant possession if deemed reasonable).
+          Schedule 2 grounds are divided into two distinct legal classes: mandatory grounds (Grounds 1 to 8), where the County Court judge must make a possession order if the statutory criteria are satisfied, and discretionary grounds (Grounds 9 to 17), where the judge makes an order only if satisfied that it is reasonable to do so. Under the reformed Renters' Rights Act notice rules, mandatory Ground 8 establishes that the tenant must owe at least three months of rent arrears both at the date the notice is served and on the day of the County Court hearing, an increase from the previous two-month threshold. In addition, the mandatory statutory notice window for Ground 8 has been extended to four clear weeks.
         </p>
-        <p>
-          Crucially, the statutory thresholds and notice periods for Schedule 2 grounds have been recalibrated:
+        <p class="mb-4">
+          New mandatory grounds introduced by the Renters' Rights Act include Ground 1A (landlord intention to sell the property) and reformed Ground 1 (landlord or close family member moving in). Neither ground can be relied upon during the initial twelve months of a tenancy, providing tenants with fundamental housing security. Both grounds require landlords to give a mandatory minimum notice period of four months before court proceedings can be initiated.
         </p>
-        <ul class="list-disc pl-6 space-y-2 mb-4">
-          <li><strong>Mandatory Ground 8 (Serious Rent Arrears):</strong> The mandatory arrears threshold has been increased from two months to three months of unpaid rent. Additionally, the required statutory notice period has been lengthened from two weeks to four full weeks. Crucially, the tenant must be at least three months in arrears both on the date the Section 8 notice is served and on the date of the court possession hearing.</li>
-          <li><strong>Ground 1A (Sale of Dwellinghouse):</strong> A newly introduced mandatory ground allowing a landlord who genuinely intends to sell the property on the open market to repossess it. This ground carries a mandatory four-month notice period and cannot be served during the first 12 months of a tenancy.</li>
-          <li><strong>Ground 1 (Landlord or Immediate Family Occupation):</strong> Reformed to require four months notice, with an identical restriction prohibiting service during the initial 12-month period.</li>
-        </ul>
       </section>
 
+      <!-- Mandatory H3 Table: Variable Definitions & Qualifying Conditions -->
       <section class="pt-6 border-t border-slate-100">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Service of Process: Lawful Delivery in England & Wales
-        </h2>
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Variable Definitions & Qualifying Conditions
+        </h3>
         <p class="mb-4">
-          A Section 8 notice must be served strictly in accordance with the service provisions stipulated in the tenancy agreement and Section 196 of the Law of Property Act 1925. Defective service prevents the County Court from assuming jurisdiction.
+          The following matrix defines mandatory qualifying conditions, notice horizons, and evidentiary thresholds under Schedule 2 of the Housing Act 1988 as reformed:
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-            <h3 class="font-bold text-slate-900 mb-1">Personal In-Hand Service</h3>
-            <p class="text-xs text-slate-600">Handing Form 3 directly to the tenant personally at the premises with an independent witness signature.</p>
-          </div>
-          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-            <h3 class="font-bold text-slate-900 mb-1">Letterbox Delivery</h3>
-            <p class="text-xs text-slate-600">Posting Form 3 through the letterbox of the property before 4:30 PM on a business day, supported by photographic timestamp evidence.</p>
-          </div>
-          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-            <h3 class="font-bold text-slate-900 mb-1">Royal Mail Special Delivery</h3>
-            <p class="text-xs text-slate-600">Sending via tracked Special Delivery. Notice is deemed served on the second business day after postal dispatch.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="pt-6 border-t border-slate-100">
-        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Statutory Possession Notice Periods Benchmark Matrix
-        </h2>
         <div class="overflow-x-auto my-4">
-          <table class="w-full text-left text-xs border-collapse">
-            <thead>
-              <tr class="bg-slate-900 text-white">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-900 text-white">
+              <tr>
                 <th class="p-3">Schedule 2 Ground</th>
-                <th class="p-3">Nature of Ground</th>
-                <th class="p-3">Minimum Statutory Notice Period</th>
-                <th class="p-3">Earliest Service Allowed</th>
+                <th class="p-3">Ground Type</th>
+                <th class="p-3">Qualifying Statutory Condition</th>
+                <th class="p-3">Mandatory Notice Horizon</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200">
               <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-slate-900">Ground 8 (Serious Arrears)</td>
-                <td class="p-3 text-red-700 font-bold">Mandatory</td>
-                <td class="p-3">4 Weeks Notice</td>
-                <td class="p-3">Once 3 months arrears accumulate</td>
+                <td class="p-3 font-semibold text-slate-900">Ground 8 (Rent Arrears)</td>
+                <td class="p-3 font-semibold text-red-700">Mandatory</td>
+                <td class="p-3">At least 3 months rent unpaid at service and hearing date</td>
+                <td class="p-3 font-mono">4 Weeks Minimum</td>
               </tr>
               <tr class="hover:bg-slate-50">
-                <td class="p-3 font-semibold text-slate-900">Ground 1A (Sale of Property)</td>
-                <td class="p-3 text-red-700 font-bold">Mandatory</td>
-                <td class="p-3">4 Calendar Months</td>
-                <td class="p-3">After 12 months of occupancy</td>
+                <td class="p-3 font-semibold text-slate-900">Ground 10 (Arrears Due)</td>
+                <td class="p-3 text-slate-700">Discretionary</td>
+                <td class="p-3">Some lawful rent lawfully unpaid when notice served and proceedings begin</td>
+                <td class="p-3 font-mono">4 Weeks Minimum</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Ground 11 (Persistent Delay)</td>
+                <td class="p-3 text-slate-700">Discretionary</td>
+                <td class="p-3">Persistent delay in paying rent that has become lawfully due</td>
+                <td class="p-3 font-mono">4 Weeks Minimum</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Ground 1A (Sale of Dwelling)</td>
+                <td class="p-3 font-semibold text-red-700">Mandatory</td>
+                <td class="p-3">Landlord intending to sell property; excluded during first 12 months</td>
+                <td class="p-3 font-mono">4 Months Minimum</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-3 font-semibold text-slate-900">Ground 1 (Owner Occupation)</td>
-                <td class="p-3 text-red-700 font-bold">Mandatory</td>
-                <td class="p-3">4 Calendar Months</td>
-                <td class="p-3">After 12 months of occupancy</td>
+                <td class="p-3 font-semibold text-red-700">Mandatory</td>
+                <td class="p-3">Landlord or immediate family requiring home; excluded during first 12 months</td>
+                <td class="p-3 font-mono">4 Months Minimum</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-3 font-semibold text-slate-900">Ground 14 (Anti-Social Behaviour)</td>
-                <td class="p-3 text-amber-700 font-semibold">Discretionary</td>
-                <td class="p-3">Immediate (Court proceedings may start upon service)</td>
-                <td class="p-3">Any time following actionable incident</td>
+                <td class="p-3 text-slate-700">Discretionary</td>
+                <td class="p-3">Nuisance, annoyance, or illegal conviction in the locality</td>
+                <td class="p-3 font-mono">Immediate / 24 Hours</td>
               </tr>
             </tbody>
           </table>
@@ -482,12 +506,98 @@
 
       <section class="pt-6 border-t border-slate-100">
         <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
-          Common Pitfalls That Invalidate a Section 8 Notice
+          Legal Service of Process: How to Deliver This Notice
         </h2>
-        <ul class="list-disc pl-6 space-y-2">
-          <li><strong>Deficient Factual Particulars:</strong> Citing the wording of Ground 8 without providing an itemized schedule of missed rent dates and cumulative debt violates the mandatory statutory requirements of Form 3.</li>
-          <li><strong>Premature Court Action Date:</strong> Providing even one day less than the mandatory four-week or four-month notice window invalidates the notice automatically under Housing Act 1988 Section 8(4).</li>
-          <li><strong>Tenancy Deposit Violations:</strong> While deposit non-protection previously barred Section 21 evictions, failure to protect a deposit leaves the landlord vulnerable to financial counterclaims under Section 214 of the Housing Act 2004 that can wipe out rent arrears and defeat Ground 8.</li>
+        <p class="mb-4">
+          Proper service of Form 3 is a mandatory condition precedent to obtaining a possession order. If a landlord cannot prove lawful service in accordance with Section 196 of the Law of Property Act 1925 and the Civil Procedure Rules (CPR Part 6), the County Court claim will be dismissed with an adverse costs order against the claimant:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-1">1. Personal In-Hand Delivery</h3>
+            <p class="text-xs text-slate-600">
+              Handing the physical Form 3 notice directly to the named tenant or occupants at the property. The process server must immediately execute a formal Certificate of Service (Form N215).
+            </p>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-1">2. Royal Mail Recorded Delivery</h3>
+            <p class="text-xs text-slate-600">
+              Sending via Royal Mail First Class Signed For or Special Delivery. Under Section 196, service is legally deemed effected on the second working day after posting.
+            </p>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+            <h3 class="font-bold text-slate-900 mb-1">3. Letterbox Delivery with Witness</h3>
+            <p class="text-xs text-slate-600">
+              Posting through the letterbox of the subject property before 4:30 PM on a business day, supported by photographic evidence and an independent witness statement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Timelines & Benchmark Reference Matrix
+        </h2>
+        <p class="mb-4">
+          The table below illustrates statutory notice calculation rules, earliest court filing dates, and notice validity periods under the Housing Act 1988:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-900 text-white">
+                <th class="p-3">Ground Cited</th>
+                <th class="p-3">Statutory Notice Period</th>
+                <th class="p-3">Day Counting Rule</th>
+                <th class="p-3">Notice Shelf Life (Validity)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Ground 8 (Rent Arrears)</td>
+                <td class="p-3">4 Clear Weeks</td>
+                <td class="p-3">Service day excluded; 28 full calendar days</td>
+                <td class="p-3 font-mono">12 Months from Service Date</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Grounds 10 & 11</td>
+                <td class="p-3">4 Clear Weeks</td>
+                <td class="p-3">Service day excluded; 28 full calendar days</td>
+                <td class="p-3 font-mono">12 Months from Service Date</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Ground 1A (Sale of Property)</td>
+                <td class="p-3">4 Clear Months</td>
+                <td class="p-3">Calculated from day after service; 4 calendar months</td>
+                <td class="p-3 font-mono">12 Months from Service Date</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Ground 1 (Owner Moving In)</td>
+                <td class="p-3">4 Clear Months</td>
+                <td class="p-3">Calculated from day after service; 4 calendar months</td>
+                <td class="p-3 font-mono">12 Months from Service Date</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Ground 14 (Anti-Social Behaviour)</td>
+                <td class="p-3">Immediate / 24 Hours</td>
+                <td class="p-3">Proceedings may begin on the day notice is served</td>
+                <td class="p-3 font-mono">12 Months from Service Date</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Fatal Drafting Mistakes That Invalidate This Notice
+        </h2>
+        <p class="mb-4">
+          County Court judges will strike out defective Section 8 notices without hesitation. Landlords must avoid these common drafting errors:
+        </p>
+        <ul class="list-disc pl-6 space-y-3">
+          <li><strong>Failure to Reproduce Exact Statutory Ground Text:</strong> In Section 3 of Form 3, the landlord must reproduce the exact statutory wording of Schedule 2 to the Housing Act 1988. Summarizing, paraphrasing, or abbreviating the statutory text renders the notice invalid.</li>
+          <li><strong>Vague or Inadequate Factual Particulars:</strong> In Section 4 of Form 3, the landlord must give detailed factual particulars explaining why the ground is relied upon. For Ground 8, this requires a complete schedule of rental payments and arrears. Merely stating the tenant owes rent will result in dismissal.</li>
+          <li><strong>Tenancy Deposit Protection Breaches:</strong> Under Housing Act 2004 Section 213, failing to protect a deposit in a government-authorized scheme or failing to serve Prescribed Information within 30 days exposes landlords to penalties. Under reformed rules, non-compliant landlords are barred from possession actions until deposit penalties are resolved.</li>
+          <li><strong>Incorrect Earliest Court Date Calculation:</strong> The date specified in Section 5 of Form 3 must give the full statutory notice period. If the notice is sent by post, landlords must allow at least two additional working days for deemed postal service. Giving even one day less invalidates the notice entirely.</li>
         </ul>
       </section>
 
@@ -509,7 +619,7 @@
             </p>
           </div>
           <div class="pt-3 border-t border-slate-100">
-            <h3 class="font-bold text-slate-900 text-sm mb-1">What statutory form must be used for a Section 8 notice?</h3>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What statutory form must be used for a Section 8 notice in England?</h3>
             <p class="leading-relaxed">
               A Section 8 notice must be served using statutory Form 3 as prescribed under the Housing Act 1988. Any notice failing to state the exact statutory ground wording and factual particulars will be struck out by the County Court.
             </p>
@@ -523,37 +633,55 @@
           <div class="pt-3 border-t border-slate-100">
             <h3 class="font-bold text-slate-900 text-sm mb-1">What happens if rent arrears drop below 3 months before the court hearing?</h3>
             <p class="leading-relaxed">
-              If the tenant reduces arrears below the mandatory 3-month threshold before the hearing date, Ground 8 ceases to be mandatory, and the judge may only grant possession under discretionary Grounds 10 or 11 if deemed reasonable.
+              If arrears drop below three months prior to the hearing, mandatory Ground 8 fails. However, the County Court judge retains discretionary power under Grounds 10 and 11 to grant possession if persistent late payments occurred.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">How does the Renters' Rights Act impact Section 21 no-fault evictions?</h3>
+            <p class="leading-relaxed">
+              The Renters' Rights Act abolishes Section 21 no-fault evictions entirely across England. All tenancies convert to periodic arrangements, and possession can only be obtained through reformed Section 8 grounds.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Related UK Utilities -->
+      <!-- Related Tenancy Utilities Component -->
       <section class="pt-6 border-t border-slate-100">
         <h2 class="font-display text-xl font-bold text-slate-900 mb-4">
           Related UK Statutory Utilities & Guides
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/uk/tenant-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+          <a href="/uk/tenant-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-red-700 uppercase">UK Tool</span>
             <h3 class="text-sm font-bold text-slate-900 mt-1">Tenant Notice to Quit</h3>
-            <p class="text-xs text-slate-500 mt-1">Periodic tenancy 2-month written termination form.</p>
+            <p class="text-xs text-slate-500 mt-1">Periodic tenancy notice generator citing 2-month notice rules.</p>
           </a>
-          <a href="/uk/tenancy-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+          <a href="/uk/section-13-rent-challenge.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-red-700 uppercase">UK Tool</span>
-            <h3 class="text-sm font-bold text-slate-900 mt-1">Tenancy Deposit Demand</h3>
-            <p class="text-xs text-slate-500 mt-1">Housing Act 2004 Section 213 recovery letter.</p>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Section 13 Rent Challenge</h3>
+            <p class="text-xs text-slate-500 mt-1">First-tier Tribunal Form 4 above-market rent dispute referral.</p>
           </a>
-          <a href="/guides/uk-renters-rights-act-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+          <a href="/guides/uk-renters-rights-act-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block min-h-[48px]">
             <span class="text-xs font-bold text-emerald-700 uppercase">Legal Guide</span>
             <h3 class="text-sm font-bold text-slate-900 mt-1">Renters' Rights Act Guide</h3>
-            <p class="text-xs text-slate-500 mt-1">Comprehensive statutory reform and Section 21 guide.</p>
+            <p class="text-xs text-slate-500 mt-1">Section 21 abolition and modernized Section 8 grounds explained.</p>
           </a>
         </div>
       </section>
     </article>
   </main>
+
+  <!-- Sticky Bottom Mobile Action Bar (Mobile Only: < 768px) -->
+  <div id="mobileActionBar" class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
+    <button type="button" onclick="copySection8ToClipboard()" class="flex-1 min-h-[48px] py-3 px-4 bg-emerald-50 hover:bg-emerald-100 active:bg-emerald-200 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all">
+      <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+      <span>Copy Document</span>
+    </button>
+    <button type="button" onclick="window.print()" class="flex-1 min-h-[48px] py-3 px-4 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center space-x-2 transition-all">
+      <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+      <span>Print / Save PDF</span>
+    </button>
+  </div>
 
   <!-- Global Footer -->
   <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-12 mt-12 no-print">
@@ -568,16 +696,6 @@
         </p>
       </div>
       <div>
-        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
-        <ul class="space-y-2">
-          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
-          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
-          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
-          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
-          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
-        </ul>
-      </div>
-      <div>
         <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
         <ul class="space-y-2">
           <li><a href="/uk/section-8-notice-to-quit.html" class="text-white font-medium">Section 8 Notice to Quit</a></li>
@@ -585,6 +703,16 @@
           <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
           <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
           <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
         </ul>
       </div>
       <div>
@@ -604,100 +732,114 @@
   </footer>
 
   <!-- Toast Element -->
-  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+  <div id="toastNotification" class="fixed bottom-20 md:bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-    <span class="text-xs font-semibold" id="toastMessage">Form 3 text copied to clipboard.</span>
+    <span class="text-xs font-semibold" id="toastMessage">Notice copied to clipboard. Ready to print or paste.</span>
   </div>
 
   <!-- JavaScript Reactive Engine -->
   <script>
-    const groundDefinitions = {
-      GROUND_8: {
-        heading: "Ground 8 (Mandatory Serious Rent Arrears)",
-        statutoryText: "Both at the date of the service of the notice under section 8 of this Act and at the date of the hearing at least three months' rent is unpaid where rent is payable monthly.",
+    const groundsConfig = {
+      G8: {
+        verbatim: "Ground 8: Both at the date of the service of the notice under section 8 of this Act and at the date of the hearing, at least three months rent is unpaid.",
         weeks: 4,
-        monthsNotice: 0
+        months: 0
       },
-      GROUND_1A: {
-        heading: "Ground 1A (Mandatory - Landlord Intention to Sell Property)",
-        statutoryText: "The landlord who is seeking possession intends to sell the dwelling-house and cannot serve this notice within the initial 12 months of the tenancy.",
-        weeks: 0,
-        monthsNotice: 4
+      G10_11: {
+        verbatim: "Ground 10: Some rent lawfully due from the tenant is unpaid on the date on which proceedings for possession are begun and was in arrears at the date of the service of the notice.\\n\\nGround 11: Whether or not any rent is in arrears on the date on which proceedings for possession are begun, the tenant has persistently delayed paying rent which has become lawfully due.",
+        weeks: 4,
+        months: 0
       },
-      GROUND_1: {
-        heading: "Ground 1 (Mandatory - Landlord or Immediate Family Occupation)",
-        statutoryText: "The dwelling-house is required as the principal home of the landlord or a member of the landlord's immediate family.",
+      G1A: {
+        verbatim: "Ground 1A: The landlord intends to sell the dwelling-house and at least twelve months have elapsed since the beginning of the tenancy.",
         weeks: 0,
-        monthsNotice: 4
+        months: 4
       },
-      GROUND_14: {
-        heading: "Ground 14 (Discretionary - Nuisance, Annoyance, or Illegal Use)",
-        statutoryText: "The tenant or a person residing in or visiting the dwelling-house has been guilty of conduct causing or likely to cause a nuisance or annoyance to neighbours, or has been convicted of an indictable offence.",
+      G1: {
+        verbatim: "Ground 1: Not later than the beginning of the tenancy the landlord gave notice in writing to the tenant that possession might be recovered on this ground and the landlord requires the dwelling-house as the only or principal home of the landlord or the landlord spouse.",
         weeks: 0,
-        monthsNotice: 0
+        months: 4
+      },
+      G14: {
+        verbatim: "Ground 14: The tenant or a person residing in or visiting the dwelling-house has been guilty of conduct causing or likely to cause a nuisance or annoyance to a person residing, visiting or otherwise engaging in a lawful activity in the locality.",
+        weeks: 0,
+        months: 0,
+        days: 1
       }
     };
 
-    function updateGroundLogic() {
-      calculatePossessionDates();
+    function setGroundPill(groundKey) {
+      document.getElementById('possessionGround').value = groundKey;
+      document.querySelectorAll('.ground-pill').forEach(btn => {
+        if (btn.getAttribute('data-val') === groundKey) {
+          btn.className = 'ground-pill px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-800 whitespace-nowrap min-h-[48px] flex items-center';
+        } else {
+          btn.className = 'ground-pill px-3 py-2 text-xs font-semibold rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 whitespace-nowrap min-h-[48px] flex items-center';
+        }
+      });
+      calculateEarliestCourtDate();
     }
 
-    function calculatePossessionDates() {
+    function updateGroundSelect() {
+      const val = document.getElementById('possessionGround').value;
+      setGroundPill(val);
+    }
+
+    function calculateEarliestCourtDate() {
       const groundKey = document.getElementById('possessionGround').value;
-      const def = groundDefinitions[groundKey] || groundDefinitions.GROUND_8;
+      const config = groundsConfig[groundKey] || groundsConfig.G8;
       const serviceVal = document.getElementById('serviceDate').value;
       if (!serviceVal) return;
 
       const dateObj = new Date(serviceVal + 'T00:00:00');
-      if (def.monthsNotice > 0) {
-        dateObj.setMonth(dateObj.getMonth() + def.monthsNotice);
-      } else if (def.weeks > 0) {
-        dateObj.setDate(dateObj.getDate() + (def.weeks * 7));
-      } else {
-        // Immediate ground 14
-        dateObj.setDate(dateObj.getDate() + 1);
+
+      if (config.months > 0) {
+        dateObj.setMonth(dateObj.getMonth() + config.months);
+      } else if (config.weeks > 0) {
+        dateObj.setDate(dateObj.getDate() + (config.weeks * 7));
+      } else if (config.days) {
+        dateObj.setDate(dateObj.getDate() + config.days);
       }
 
       const courtStr = dateObj.toISOString().split('T')[0];
-      document.getElementById('courtActionDate').value = courtStr;
+      document.getElementById('courtDate').value = courtStr;
       updateSection8DOM();
     }
 
     function updateSection8DOM() {
       const groundKey = document.getElementById('possessionGround').value;
-      const def = groundDefinitions[groundKey] || groundDefinitions.GROUND_8;
-      const landlord = document.getElementById('landlordName').value || 'Landlord Name';
-      const tenant = document.getElementById('tenantName').value || 'Tenant Name';
-      const address = document.getElementById('propertyAddress').value || 'Premises Address';
+      const config = groundsConfig[groundKey] || groundsConfig.G8;
+      const tenant = document.getElementById('tenantName').value || 'Tenant Name(s)';
+      const landlord = document.getElementById('landlordName').value || 'Landlord / Agent';
+      const address = document.getElementById('rentalAddress').value || 'Rental Address';
       const particulars = document.getElementById('factualParticulars').value;
-      const serviceVal = document.getElementById('serviceDate').value;
-      const courtVal = document.getElementById('courtActionDate').value;
+      const serviceDate = document.getElementById('serviceDate').value;
+      const courtDate = document.getElementById('courtDate').value;
 
       document.getElementById('prevTenant').textContent = tenant;
       document.getElementById('prevAddress').textContent = address;
       document.getElementById('prevLandlord').textContent = landlord;
       document.getElementById('prevSignatory').textContent = landlord;
-      document.getElementById('prevGroundHeading').textContent = def.heading;
-      document.getElementById('prevGroundStatutoryText').textContent = def.statutoryText;
-      document.getElementById('prevParticulars').textContent = particulars;
+      document.getElementById('prevParticularsText').textContent = particulars;
+      document.getElementById('prevGroundsVerbatim').textContent = config.verbatim;
 
-      if (serviceVal) {
-        const parts = serviceVal.split('-');
-        const dObj = new Date(parts[0], parts[1] - 1, parts[2]);
-        document.getElementById('prevSignDate').textContent = dObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      if (serviceDate) {
+        const parts = serviceDate.split('-');
+        const dateObj = new Date(parts[0], parts[1] - 1, parts[2]);
+        document.getElementById('prevServiceDate').textContent = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
       }
 
-      if (courtVal) {
-        const parts = courtVal.split('-');
-        const cObj = new Date(parts[0], parts[1] - 1, parts[2]);
-        document.getElementById('prevEarliestCourtDate').textContent = cObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      if (courtDate) {
+        const parts = courtDate.split('-');
+        const dateObj = new Date(parts[0], parts[1] - 1, parts[2]);
+        document.getElementById('prevCourtDate').textContent = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
       }
     }
 
     function copySection8ToClipboard() {
       const noticeElement = document.getElementById('printableNotice');
       navigator.clipboard.writeText(noticeElement.innerText).then(() => {
-        showToast("Form 3 Section 8 notice text copied to clipboard.");
+        showToast("Form 3 Notice copied to clipboard.");
       }).catch(err => {
         showToast("Text ready. Please copy or print directly.");
       });
@@ -718,7 +860,7 @@
     window.addEventListener('DOMContentLoaded', () => {
       const today = new Date();
       document.getElementById('serviceDate').value = today.toISOString().split('T')[0];
-      calculatePossessionDates();
+      calculateEarliestCourtDate();
     });
   </script>
 </body>

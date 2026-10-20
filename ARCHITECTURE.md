@@ -8,7 +8,7 @@ tenantnotice.online/
 ├── index.html                 # Global jurisdiction gateway and cross-border matrix
 ├── favicon.svg                # Navy and emerald SVG icon
 ├── _headers                   # Cloudflare edge security headers
-├── robots.txt                 # Search and AI crawler directives
+├── robots.txt                 # Search and AI crawler directives (blocking vulnerability scanners)
 ├── sitemap.xml                # Canonical XML sitemap covering all 20+ URLs
 ├── llms.txt                   # LLM context route summary
 ├── llms-full.txt              # Detailed LLM contextual statutory knowledge
@@ -39,6 +39,14 @@ tenantnotice.online/
     └── disclaimer.html
 ```
 
+## Mobile App Shell & Workspace Ergonomics
+- **Sticky Bottom Action Bar (Mobile Only):** On screens narrower than 768px, a fixed bottom container provides instant thumb access to primary document actions: "Copy Document" and "Print / Save PDF", complemented by a haptic visual toast.
+- **Segmented Horizontal Pill Selectors:** Dropdown menus on mobile are supplemented with horizontally scrolling pill selectors, reducing friction and tapping errors.
+- **48px Minimum Touch Targets:** All form fields, buttons, and accordion trigger bars maintain a minimum touch target height of 48px with adequate padding.
+- **Desktop Split-Screen Power Workspace:**
+  - Left Panel (40% width): Collapsible input sections (Parties, Property Details, Statutory Dates, Custom Terms) with high-density inputs.
+  - Right Panel (60% width): Sticky live document container styled as physical legal letterhead (`bg-white shadow-lg p-8 sm:p-10 border border-slate-200 rounded-xl min-h-[600px] font-serif text-slate-900 leading-relaxed`).
+
 ## Client-Side Document Compiler Engine
 Each legal generator employs an isolated, high-performance vanilla JavaScript compiler module.
 - **State Capture**: Input event listeners capture field values on `input` and `change` events.
@@ -46,17 +54,27 @@ Each legal generator employs an isolated, high-performance vanilla JavaScript co
   - Automatically calculates cure deadlines and notice periods based on user-selected state statutes or UK ground categories.
   - Formats monetary figures in USD ($) or GBP (£) with commas and decimals.
   - Dynamically updates legal citations and formal warning notices in real time.
-- **DOM Hydration**: Interpolates sanitized user values into designated `data-bind` target elements inside the preview container.
+- **DOM Hydration**: Interpolates sanitized user values into designated target elements inside the preview container.
 
 ## Dedicated Print CSS Engine (@media print)
 When the user triggers document generation via the "Print / Save as PDF" button (`window.print()`), the print engine applies strict rules:
-- **Element Culling**: Strips navigation header, footer, interactive form controls, FAQs, legal explanatory guides, and breadcrumbs (`display: none !important`).
+- **Element Culling**: Strips navigation header, footer, interactive form controls, FAQs, legal explanatory guides, breadcrumbs, and sticky mobile action bars (`display: none !important`).
 - **Page Dimensions**: Enforces standard dimensions (`@page { size: letter portrait; margin: 1in; }` for US, `@page { size: A4 portrait; margin: 25mm; }` for UK).
 - **Monochrome Typography**: Sets high-contrast black text on pure white paper (`#000000` text, `#ffffff` background).
 - **Orphan / Widow Control**: Employs `page-break-inside: avoid` on formal signature blocks and critical declaration clauses.
 
 ## Search and AI Optimization (SEO / GEO / AIO / AEO)
-- **Direct Answer Capsule**: Placed immediately below each page's single `h1` element, formatted as a 45-word bold block for direct extraction by AI search engines.
+- **Inverted Pyramid Heading Hierarchy:**
+  1. `H1`: Exact high-intent semantic query.
+  2. Direct Answer Capsule: 45-word bold block directly beneath H1.
+  3. Interactive Document Tool & Preview Workspace.
+  4. `H2`: Statutory Legal Foundation & Governing Act.
+  5. `H3`: Variable Definitions & Qualifying Conditions (raw HTML table).
+  6. `H2`: Legal Service of Process: How to Deliver This Notice.
+  7. `H2`: Statutory Timelines & Benchmark Reference Matrix (comparison table).
+  8. `H2`: Fatal Drafting Mistakes That Invalidate This Notice.
+  9. `H2`: Frequently Asked Questions (5-7 items, leading with 40-word rule).
+  10. `H2`: Related Tenancy Utilities (3-column responsive card grid).
 - **Structured Data Schemas**:
   - `WebApplication`: Identifies the tool name, browser requirements, free pricing tier, and operating system compatibility.
   - `FAQPage`: Exact 1:1 match between on-page FAQ items and JSON-LD schema questions/answers.
@@ -65,6 +83,6 @@ When the user triggers document generation via the "Print / Save as PDF" button 
 - **Hreflang Tags**: Strict regional targeting (`en-US` for `/us/`, `en-GB` for `/uk/`, `x-default` for `/`).
 
 ## Content Integrity & Style Directives
-- **Punctuation Standard**: Em-dashes are strictly prohibited across all documents and UI copy. Standard commas, parentheses, or periods are used exclusively.
+- **Punctuation Standard**: Em-dashes are strictly prohibited across all documents and UI copy. Standard commas, parentheses, colons, or periods are used exclusively.
 - **Voice and Tone**: Objective, authoritative, statutory legal language without buzzwords or repetitive AI padding.
 - **Outbound Link Hygiene**: Zero third-party hyperlinks across the entire domain. Statutory citations remain plain text. The only external API communication is the Web3Forms submission on `/legal/contact-us.html`.

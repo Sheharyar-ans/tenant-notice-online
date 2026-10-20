@@ -1,68 +1,54 @@
-# TenantNotice.online - Granular Task Backlog
+# TenantNotice.online - Sprint Task Backlog: Mobile App UI/UX & AEO Refactor
 
-## Phase 0: Foundations & Memory Initialization
-- [x] Analyze environment, skills, and Git repository
-- [x] Create PLAN.md
-- [x] Create ARCHITECTURE.md
-- [x] Create TASK_QUEUE.md
-- [x] Commit and push Phase 0 documentation to GitHub repository
+## Phase 0: Skills Discovery, Repository Audit & Task Management
+- [x] Enumerate active Antigravity skills and inspect existing HTML files
+- [x] Update PLAN.md with mobile app UI and AEO inverted pyramid roadmap
+- [x] Update ARCHITECTURE.md with mobile shell and 40/60 split specifications
+- [x] Update TASK_QUEUE.md with granular sprint checklist
+- [x] Verify zero broken links, zero em-dashes, and zero external links
 
-## Phase 1: Jurisdictional Isolation & Global Homepage
-- [x] Build `/index.html` with responsive Tailwind UI and custom SVGs (US flag and UK Union Jack)
-- [x] Implement live client-side search filtering across states and acts
-- [x] Construct global tenancy comparison matrix (CA, TX, FL, NY, UK)
-- [x] Embed 3-column featured legal guides section
-- [x] Implement hreflang annotations (`en-US`, `en-GB`, `x-default`)
+## Phase 1: Native Mobile App-Like UI/UX Architecture
+- [x] Add sticky bottom mobile action bar (Copy Document + Print / Save PDF) across all 8 tools
+- [x] Implement thumb-friendly horizontal segmented pill selectors for states, grounds, and roles
+- [x] Enforce 48px minimum touch targets and generous tap spacing across all inputs and triggers
+- [x] Structure left panel into collapsible collapsible groups (Parties, Property, Dates, Terms)
+- [x] Enforce desktop 40/60 split-panel workspace with sticky letterhead preview
+- [x] Update `@media print` CSS hiding mobile action bars, nav, forms, accordions, and footers
 
-## Phase 2: United States Portal & Statutory Suite
-- [x] Build `/us/index.html` with dynamic state filter pills and tool directory
-- [x] Build `/us/30-day-notice-to-vacate.html` (Cal. Civ. Code § 1946.1, Tex. Prop. Code § 24.005, Fla. Stat. § 83.57, NY RPL § 226-c)
-- [x] Build `/us/3-day-pay-rent-or-quit.html` (Cal. CCP § 1161(2), Fla. Stat. § 83.56(3), Tex. Prop. Code § 24.005)
-- [x] Build `/us/security-deposit-demand.html` (Cal. Civ. Code § 1950.5, Tex. Prop. Code § 92.103, Fla. Stat. § 83.49)
-- [x] Build `/us/24-hour-notice-to-enter.html` (Cal. Civ. Code § 1954)
+## Phase 2: Inverted Pyramid Heading Hierarchy & Meta Specifications
+- [x] Refactor `/us/30-day-notice-to-vacate.html` to exact inverted pyramid (H1 -> Capsule -> Workspace -> H2 Foundation -> H3 Definitions Table -> H2 Service -> H2 Timelines Table -> H2 Fatal Mistakes -> H2 FAQs -> H2 Related Utilities)
+- [x] Refactor `/us/3-day-pay-rent-or-quit.html` to exact inverted pyramid
+- [x] Refactor `/us/security-deposit-demand.html` to exact inverted pyramid
+- [x] Refactor `/us/24-hour-notice-to-enter.html` to exact inverted pyramid
+- [x] Refactor `/uk/section-8-notice-to-quit.html` to exact inverted pyramid
+- [x] Refactor `/uk/tenant-notice-to-quit.html` to exact inverted pyramid
+- [x] Refactor `/uk/tenancy-deposit-demand.html` to exact inverted pyramid
+- [x] Refactor `/uk/section-13-rent-challenge.html` to exact inverted pyramid
+- [x] Format meta titles (50-60 chars) and meta descriptions (140-155 chars)
 
-## Phase 3: United Kingdom Portal (2026 Reforms Compliant)
-- [x] Build `/uk/index.html` reflecting modern Renters' Rights framework
-- [x] Build `/uk/section-8-notice-to-quit.html` (Housing Act 1988 reformed Schedule 2 grounds)
-- [x] Build `/uk/tenant-notice-to-quit.html` (Periodic tenancy notice calculation)
-- [x] Build `/uk/tenancy-deposit-demand.html` (Housing Act 2004 Section 213 compliance)
-- [x] Build `/uk/section-13-rent-challenge.html` (Section 13 Form 4 First-tier Tribunal referral)
+## Phase 3: High-Intent Keyword Integration & Statutory Fidelity
+- [x] Embed US keywords in headings, body, and schema ("california 30 day notice to vacate template free", "california civil code 1946.1 notice", "3 day notice to pay rent or quit florida statute 83.56", "texas property code 24.005 notice to vacate", "security deposit return demand letter california 21 days civil code 1950.5", "24 hour notice to enter premises california civil code 1954")
+- [x] Embed UK keywords in headings, body, and schema ("section 8 notice form 3 ground 8 template free", "renters rights act notice rules", "tenant notice to quit periodic tenancy 2 months", "tenancy deposit scheme refund demand letter housing act 2004", "section 13 rent increase challenge form 4")
 
-## Phase 4: Client-Side Document Compiler & Print Engine
-- [x] Engineer split-screen interactive layout across all 8 tools
-- [x] Implement reactive live preview state engine with zero server roundtrips
-- [x] Implement dedicated `@media print` CSS engine for pure white 1-inch letterhead
-- [x] Add copy-to-clipboard functionality with toast notifications
+## Phase 4: Strict Humanization & Editorial Mass
+- [x] Enforce 1,000 to 1,400 words of rich legal explanatory content per tool
+- [x] Audit for absolute ban on em-dashes and AI clichés ("delve into", "tapestry", "in today's fast-paced world", "furthermore", "testament to", "it is important to remember", "a beacon of")
 
-## Phase 5: Search & AI Optimization (SEO / GEO / AIO / AEO)
-- [x] Formulate 45-word direct answer capsules beneath each page's H1
-- [x] Author 1,000 to 1,400 words of rich statutory guidance per tool
-- [x] Implement 5 to 7 conversational FAQs with factual statutory answers
-- [x] Inject valid JSON-LD schemas: FAQPage, WebApplication, BreadcrumbList, Organization, WebSite
-- [x] Enforce editorial quality standards: strict ban on em-dashes and AI clichés
+## Phase 5: Conversational LLM-First FAQs & Valid JSON-LD Schemas
+- [x] Format 5 to 7 conversational FAQs per page with 40-word leading statutory rule answers
+- [x] Verify 1:1 match between on-page HTML FAQs and JSON-LD `FAQPage` schema
+- [x] Embed `WebApplication`, `BreadcrumbList`, `Organization`, and `WebSite` schemas
 
-## Phase 6: Pillar-Cluster Internal Linking Mesh
-- [x] Create 3-column related utilities component in every tool
-- [x] Create `/guides/us-eviction-process-guide.html`
-- [x] Create `/guides/uk-renters-rights-act-guide.html`
-- [x] Create `/guides/security-deposit-return-rights.html`
-- [x] Add HTML5 breadcrumb navigation across all subpages
-- [x] Verify outbound link scrubbing (zero external links except Web3Forms)
+## Phase 6: Site-Wide Pillar-Cluster Internal Linking Mesh
+- [x] Verify 3-column related utilities cards on all 8 generators
+- [x] Audit educational guides for 4+ in-text contextual internal links
+- [x] Verify zero outbound third-party hyperlinks (only Web3Forms permitted)
 
-## Phase 7: Brand Assets, Security Hardening & Trust Infrastructure
-- [x] Create `/favicon.svg` (navy `#0f172a` and emerald `#059669` legal emblem)
-- [x] Create Cloudflare `_headers` security policy file
-- [x] Create `robots.txt` honoring all search and AI crawlers
-- [x] Create `llms.txt` and `llms-full.txt` statutory manifests
-- [x] Generate comprehensive `sitemap.xml` with all 20+ URLs
-- [x] Build institutional trust pages:
-  - `/legal/about-us.html`
-  - `/legal/contact-us.html`
-  - `/legal/privacy-policy.html`
-  - `/legal/terms-of-service.html`
-  - `/legal/disclaimer.html`
+## Phase 7: Edge Cybersecurity & Manifests
+- [x] Verify `_headers` with Cloudflare edge CSP, HSTS, frame-ancestors
+- [x] Update `robots.txt` blocking aggressive vulnerability scanners while welcoming AI bots
+- [x] Verify `sitemap.xml`, `llms.txt`, and `llms-full.txt`
 
-## Phase 8: Final Review & Git Push
-- [x] Test client-side compilation and print styles
-- [x] Check links, schemas, and responsive viewports
-- [x] Commit and push all files to GitHub repository
+## Phase 8: Commit & GitHub Push
+- [x] Run full repository verification
+- [x] Stage, commit, and push with commit message: `feat(core): implement mobile app UI layout, strict AEO heading hierarchy, statutory keyword mesh, and security hardening`
