@@ -4,6 +4,7 @@
 ## Core Jurisdictions
 - [United States Tenancy Portal](https://tenantnotice.online/us/): State-specific statutory notice generators for California, Texas, Florida, and New York.
 - [United Kingdom Tenancy Portal](https://tenantnotice.online/uk/): Parliamentary compliant notice builders reflecting the Renters' Rights Act.
+- [Legal Blog Hub](https://tenantnotice.online/blog/): Authoritative statutory legal analyses and tenancy dispute guides for US and UK jurisdictions.
 
 ## US Statutory Notice Utilities
 - [30-Day Notice to Vacate Generator](https://tenantnotice.online/us/30-day-notice-to-vacate.html): Governed by California Civ. Code Section 1946.1, Texas Prop. Code Section 24.005, Florida Stat. Section 83.57, New York RPL Section 226-c.
@@ -16,6 +17,18 @@
 - [Tenant Notice to Quit](https://tenantnotice.online/uk/tenant-notice-to-quit.html): Governed by Assured Periodic Tenancy termination rights under English common law and statute.
 - [Tenancy Deposit Refund Demand](https://tenantnotice.online/uk/tenancy-deposit-demand.html): Governed by Housing Act 2004 Section 213 compliance and custodial schemes (DPS, TDS, MyDeposits).
 - [Section 13 Rent Increase Challenge Form 4](https://tenantnotice.online/uk/section-13-rent-challenge.html): Governed by Housing Act 1988 Section 13 referral to the First-tier Tribunal (Property Chamber).
+
+## Authoritative Statutory Blog Articles (US & UK)
+- [California 30-Day vs 60-Day Notice Rules](https://tenantnotice.online/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html): Statutory tenure benchmarks under Civil Code 1946.1 and Code of Civil Procedure Section 12 day counting rules.
+- [California AB 1482 Just Cause Evictions & Rent Caps](https://tenantnotice.online/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html): Civil Code 1946.2 just cause requirements, mandatory relocation payments, and Section 1947.12 rent caps.
+- [Texas Property Code 24.005 Notice to Vacate Procedure](https://tenantnotice.online/blog/texas-property-code-24-005-notice-to-vacate-procedure.html): 3-day notice rules, delivery affidavits, outside door posting restrictions, and Justice Court timelines.
+- [Florida Statute 83.56 Three-Day Notice Rent Calculation](https://tenantnotice.online/blog/florida-statute-83-56-three-day-notice-rent-calculation.html): Mandatory exclusion of weekends and court holidays, rent definitions, and County Court dismissals.
+- [Security Deposit Return Demand Letters: CA, TX, FL](https://tenantnotice.online/blog/security-deposit-return-demand-letters-california-texas-florida.html): Comparative statutory deadlines, wear and tear standards, and bad-faith punitive damages.
+- [Renters' Rights Act Complete Guide: Section 21 Abolition](https://tenantnotice.online/blog/renters-rights-act-complete-guide-section-21-abolition.html): Abolition of Section 21 no-fault evictions and automatic conversion to rolling periodic tenancies.
+- [Reformed Section 8 Form 3 Ground 8 Rent Arrears](https://tenantnotice.online/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears.html): Mandatory 3-month rent arrears threshold, 4-week notice periods, and benefit delay defenses.
+- [Ground 1A Landlord Intention to Sell Notice Rules](https://tenantnotice.online/blog/ground-1a-landlord-intention-to-sell-notice-rules.html): Mandatory 4-month notice period, initial 12-month tenancy protection buffer, and £40,000 penalties.
+- [Tenant Statutory Notice to Quit Periodic Tenancy](https://tenantnotice.online/blog/tenant-statutory-notice-to-quit-periodic-tenancy.html): 2-month written notice rules, flexible expiry dates, and joint tenancy surrender effects.
+- [Challenging Section 13 Rent Increases in First-tier Tribunal](https://tenantnotice.online/blog/challenging-section-13-rent-increases-first-tier-tribunal.html): Form 4 limitations, tribunal market rent determinations, and application deadlines.
 
 ## Authoritative Legal Guides
 - [US Eviction Process and Statutory Timelines Guide](https://tenantnotice.online/guides/us-eviction-process-guide.html): Complete breakdown of notice windows, court filings, and service procedures.

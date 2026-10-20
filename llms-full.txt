@@ -79,7 +79,52 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 
 ---
 
-## 3. Global Authority Standards
+## 3. Legal Blog Hub & Statutory Case Analyses (/blog/)
+
+### 3.1 California 30-Day vs 60-Day Notice Rules (/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html)
+- Governing Law: California Civil Code Section 1946.1, Code of Civil Procedure Section 12, Section 12a, Section 1013, and Section 1162.
+- Core Rule: Occupancies under one continuous year permit a 30-day notice. Occupancies of one year or more mandate 60 days. Day of service excluded. Mail adds 5 calendar days.
+
+### 3.2 California AB 1482 Just Cause Evictions & Rent Caps (/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html)
+- Governing Law: California Civil Code Sections 1946.2 and 1947.12.
+- Core Rule: Continuous occupancies of 12 months or more require established at-fault or no-fault just cause. No-fault notices require one month of rent relocation assistance paid within 15 days. Annual rent increases capped at 5 percent plus CPI (maximum 10 percent).
+
+### 3.3 Texas Property Code 24.005 Notice to Vacate Procedure (/blog/texas-property-code-24-005-notice-to-vacate-procedure.html)
+- Governing Law: Texas Property Code Section 24.005, Texas Rules of Civil Procedure Rule 500.5.
+- Core Rule: Statutory default requires 3 calendar days notice to vacate before filing forcible detainer in Justice Court, unless modified in writing. Outside door posting restricted to strict statutory criteria with same-day mailing.
+
+### 3.4 Florida Statute 83.56 Three-Day Notice Rent Calculation (/blog/florida-statute-83-56-three-day-notice-rent-calculation.html)
+- Governing Law: Florida Statutes Section 83.56(3), Florida Rules of General Practice Rule 2.514.
+- Core Rule: Three-day rent demand strictly excludes day of delivery, Saturdays, Sundays, and legal court holidays. Demands restricted to base contract rent unless lease explicitly defines fees as rent.
+
+### 3.5 Security Deposit Return Demand Letters: CA, TX, FL (/blog/security-deposit-return-demand-letters-california-texas-florida.html)
+- Governing Law: Cal. Civ. Code Section 1950.5 (21 days, 2x bad-faith damages), Tex. Prop. Code Section 92.103 (30 days, 3x damages plus 100 dollars), Fla. Stat. Section 83.49 (15-30 days, certified mail requirement).
+- Core Rule: Ordinary wear and tear cannot be deducted. Pre-litigation formal demand letters establish small claims evidence.
+
+### 3.6 Renters' Rights Act Complete Guide: Section 21 Abolition (/blog/renters-rights-act-complete-guide-section-21-abolition.html)
+- Governing Law: Renters' Rights Act, Housing Act 1988 (as amended).
+- Core Rule: Section 21 no-fault evictions permanently abolished. Fixed-term ASTs convert to open-ended rolling periodic tenancies. Possession restricted to reformed Schedule 2 Section 8 grounds.
+
+### 3.7 Reformed Section 8 Notice: Form 3 & Ground 8 Rent Arrears (/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears.html)
+- Governing Law: Housing Act 1988 Schedule 2 Ground 8 (as amended), Form 3.
+- Core Rule: Mandatory possession requires at least 3 months rent arrears at notice and hearing. Mandatory notice period increased to 4 weeks. Benefit delay defenses provide discretionary relief.
+
+### 3.8 Ground 1A Landlord Intention to Sell Notice Rules (/blog/ground-1a-landlord-intention-to-sell-notice-rules.html)
+- Governing Law: Housing Act 1988 Schedule 2 Ground 1A.
+- Core Rule: Mandatory 4-month notice period to sell property. Cannot take effect during initial 12-month protected tenancy window. 12-month re-letting and marketing ban enforced with fines up to £40,000.
+
+### 3.9 Tenant Statutory Notice to Quit Periodic Tenancy (/blog/tenant-statutory-notice-to-quit-periodic-tenancy.html)
+- Governing Law: Housing Act 1988 periodic rules, Law of Property Act 1925 Section 196, Hammersmith v Monk (1992).
+- Core Rule: Tenants may terminate rolling periodic tenancy at any point on 2 months written notice. Expiry date flexible. One joint tenant notice ends tenancy for all cotenants.
+
+### 3.10 Challenging Section 13 Rent Increases: First-tier Tribunal (/blog/challenging-section-13-rent-increases-first-tier-tribunal.html)
+- Governing Law: Housing Act 1988 Sections 13 and 14, Form 4, Form Rent 1.
+- Core Rule: Rent increases restricted to Form 4 with 2 months notice no more than once per year. Tenants can challenge above-market hikes in First-tier Tribunal before effective date. Tribunal cannot exceed landlord requested rent.
+
+---
+
+## 4. Global Authority Standards
 - Citations: All statutes are cited using authentic legislative nomenclature.
 - Privacy: All document compiling and formatting occurs in client browser RAM. No personal information is retained.
 - Contact: Inquiries and editorial verification submitted through https://tenantnotice.online/legal/contact-us.html.
+

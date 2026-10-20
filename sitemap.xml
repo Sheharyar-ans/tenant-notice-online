@@ -80,6 +80,74 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Legal Blog Hub & Statutory Articles -->
+  <url>
+    <loc>https://tenantnotice.online/blog/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/texas-property-code-24-005-notice-to-vacate-procedure.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/florida-statute-83-56-three-day-notice-rent-calculation.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/security-deposit-return-demand-letters-california-texas-florida.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/renters-rights-act-complete-guide-section-21-abolition.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/ground-1a-landlord-intention-to-sell-notice-rules.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/tenant-statutory-notice-to-quit-periodic-tenancy.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/blog/challenging-section-13-rent-increases-first-tier-tribunal.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Legal Guides -->
   <url>
     <loc>https://tenantnotice.online/guides/us-eviction-process-guide.html</loc>

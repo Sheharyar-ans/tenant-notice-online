@@ -58,6 +58,12 @@
       "type": "web-application",
       "url": "https://tenantnotice.online/uk/section-13-rent-challenge.html",
       "description": "Housing Act 1988 Form 4 First-tier Tribunal rent challenge generator."
+    },
+    {
+      "name": "TenantNotice Legal Blog Hub",
+      "type": "article-hub",
+      "url": "https://tenantnotice.online/blog/",
+      "description": "Authoritative directory of 10 statutory tenancy articles covering California, Texas, Florida, and UK Renters' Rights Act."
     }
   ]
 }

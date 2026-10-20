@@ -1,54 +1,59 @@
-# TenantNotice.online - Sprint Task Backlog: Mobile App UI/UX & AEO Refactor
+# TenantNotice.online - Sprint Task Backlog: Master Refactor & 10-Article Blog Hub
 
 ## Phase 0: Skills Discovery, Repository Audit & Task Management
-- [x] Enumerate active Antigravity skills and inspect existing HTML files
-- [x] Update PLAN.md with mobile app UI and AEO inverted pyramid roadmap
-- [x] Update ARCHITECTURE.md with mobile shell and 40/60 split specifications
-- [x] Update TASK_QUEUE.md with granular sprint checklist
-- [x] Verify zero broken links, zero em-dashes, and zero external links
+- [x] Enumerate active Antigravity skills and inspect existing repository structure
+- [x] Update PLAN.md, ARCHITECTURE.md, and TASK_QUEUE.md to track 10-article blog rollout
+- [x] Verify zero third-party outbound links and strict internal linking requirements
 
-## Phase 1: Native Mobile App-Like UI/UX Architecture
-- [x] Add sticky bottom mobile action bar (Copy Document + Print / Save PDF) across all 8 tools
-- [x] Implement thumb-friendly horizontal segmented pill selectors for states, grounds, and roles
-- [x] Enforce 48px minimum touch targets and generous tap spacing across all inputs and triggers
-- [x] Structure left panel into collapsible collapsible groups (Parties, Property, Dates, Terms)
-- [x] Enforce desktop 40/60 split-panel workspace with sticky letterhead preview
-- [x] Update `@media print` CSS hiding mobile action bars, nav, forms, accordions, and footers
+## Phase 1: Print & PDF Engine Alignment
+- [x] Enforce `@page { margin: 15mm; size: auto; }` and zero-margin root flow on tools
+- [x] Completely eliminate all UI chrome, navbars, forms, and footers in `@media print`
+- [x] Eliminate phantom parent container paddings and offsets
 
-## Phase 2: Inverted Pyramid Heading Hierarchy & Meta Specifications
-- [x] Refactor `/us/30-day-notice-to-vacate.html` to exact inverted pyramid (H1 -> Capsule -> Workspace -> H2 Foundation -> H3 Definitions Table -> H2 Service -> H2 Timelines Table -> H2 Fatal Mistakes -> H2 FAQs -> H2 Related Utilities)
-- [x] Refactor `/us/3-day-pay-rent-or-quit.html` to exact inverted pyramid
-- [x] Refactor `/us/security-deposit-demand.html` to exact inverted pyramid
-- [x] Refactor `/us/24-hour-notice-to-enter.html` to exact inverted pyramid
-- [x] Refactor `/uk/section-8-notice-to-quit.html` to exact inverted pyramid
-- [x] Refactor `/uk/tenant-notice-to-quit.html` to exact inverted pyramid
-- [x] Refactor `/uk/tenancy-deposit-demand.html` to exact inverted pyramid
-- [x] Refactor `/uk/section-13-rent-challenge.html` to exact inverted pyramid
-- [x] Format meta titles (50-60 chars) and meta descriptions (140-155 chars)
+## Phase 2: Mobile App-Like UI/UX Architecture
+- [x] Sticky bottom mobile action bar (Copy Document + Print / Save PDF) on tools
+- [x] Segmented horizontal pill selectors for states, grounds, and forms
+- [x] 48px minimum touch targets across all buttons and inputs
+- [x] Desktop 40/60 split workspace with live DOM preview
 
-## Phase 3: High-Intent Keyword Integration & Statutory Fidelity
-- [x] Embed US keywords in headings, body, and schema ("california 30 day notice to vacate template free", "california civil code 1946.1 notice", "3 day notice to pay rent or quit florida statute 83.56", "texas property code 24.005 notice to vacate", "security deposit return demand letter california 21 days civil code 1950.5", "24 hour notice to enter premises california civil code 1954")
-- [x] Embed UK keywords in headings, body, and schema ("section 8 notice form 3 ground 8 template free", "renters rights act notice rules", "tenant notice to quit periodic tenancy 2 months", "tenancy deposit scheme refund demand letter housing act 2004", "section 13 rent increase challenge form 4")
+## Phase 3: Dedicated Blog Hub & 10 Statutory Legal Articles (1,200 - 1,500 words each)
+- [x] Create `/blog/index.html` with instant live search filter, jurisdictional category tabs, and card grid
+- [x] Article 1: `/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html` (Cal. Civ. Code § 1946.1)
+- [x] Article 2: `/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html` (AB 1482 rent caps & just cause)
+- [x] Article 3: `/blog/texas-property-code-24-005-notice-to-vacate-procedure.html` (Texas 3-day notice & JP Court)
+- [x] Article 4: `/blog/florida-statute-83-56-three-day-notice-rent-calculation.html` (Florida holiday/weekend exclusion)
+- [x] Article 5: `/blog/security-deposit-return-demand-letters-california-texas-florida.html` (Tri-state deposit deadlines & penalties)
+- [x] Article 6: `/blog/renters-rights-act-complete-guide-section-21-abolition.html` (Section 21 abolition & periodic conversion)
+- [x] Article 7: `/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears.html` (Ground 8 3-month arrears & 4-week notice)
+- [x] Article 8: `/blog/ground-1a-landlord-intention-to-sell-notice-rules.html` (Ground 1A 4-month sale notice rules)
+- [x] Article 9: `/blog/tenant-statutory-notice-to-quit-periodic-tenancy.html` (Periodic tenancy 2-month tenant termination)
+- [x] Article 10: `/blog/challenging-section-13-rent-increases-first-tier-tribunal.html` (Form 4 tribunal referral & market rent)
 
 ## Phase 4: Strict Humanization & Editorial Mass
-- [x] Enforce 1,000 to 1,400 words of rich legal explanatory content per tool
-- [x] Audit for absolute ban on em-dashes and AI clichés ("delve into", "tapestry", "in today's fast-paced world", "furthermore", "testament to", "it is important to remember", "a beacon of")
+- [x] Verify each of the 10 articles contains between 1,200 and 1,500 words
+- [x] Enforce absolute ban on em-dashes across all articles and meta tags
+- [x] Enforce absolute ban on AI filler tropes ("delve into", "tapestry", "in today's fast-paced world", "furthermore", "testament to", "a beacon of")
+- [x] Embed 45-word bold Direct Answer Capsules under primary H1 on all articles
 
-## Phase 5: Conversational LLM-First FAQs & Valid JSON-LD Schemas
-- [x] Format 5 to 7 conversational FAQs per page with 40-word leading statutory rule answers
-- [x] Verify 1:1 match between on-page HTML FAQs and JSON-LD `FAQPage` schema
-- [x] Embed `WebApplication`, `BreadcrumbList`, `Organization`, and `WebSite` schemas
+## Phase 5: LLM-First FAQs & Valid JSON-LD Schemas
+- [x] Embed 5 to 7 conversational FAQs per blog article with 40-word leading statutory rules
+- [x] Embed valid `BlogPosting` JSON-LD schema on all 10 articles
+- [x] Embed valid `FAQPage` JSON-LD schema matching on-page questions 1:1
+- [x] Embed valid `BreadcrumbList` schema (Home > Blog Hub > Article)
 
-## Phase 6: Site-Wide Pillar-Cluster Internal Linking Mesh
-- [x] Verify 3-column related utilities cards on all 8 generators
-- [x] Audit educational guides for 4+ in-text contextual internal links
-- [x] Verify zero outbound third-party hyperlinks (only Web3Forms permitted)
+## Phase 6: Pillar-Cluster Internal Linking Mesh
+- [x] Embed at least 4 contextual in-content internal links per blog article
+- [x] Update 3-column Related Utilities grid on all 8 generator tools linking to companion blog articles
+- [x] Maintain zero outbound third-party hyperlinks (only Web3Forms permitted)
 
-## Phase 7: Edge Cybersecurity & Manifests
-- [x] Verify `_headers` with Cloudflare edge CSP, HSTS, frame-ancestors
-- [x] Update `robots.txt` blocking aggressive vulnerability scanners while welcoming AI bots
-- [x] Verify `sitemap.xml`, `llms.txt`, and `llms-full.txt`
+## Phase 7: Edge Cybersecurity & Search Manifests
+- [x] Update `/sitemap.xml` referencing all 30+ URLs
+- [x] Update `/llms.txt` and `/llms-full.txt` with blog articles
+- [x] Update `/ai-catalog.json` with blog endpoints
+- [x] Verify `/favicon.svg` linked across all `<head>` sections
+- [x] Recompile production `css/styles.min.css`
 
-## Phase 8: Commit & GitHub Push
-- [x] Run full repository verification
-- [x] Stage, commit, and push with commit message: `feat(core): implement mobile app UI layout, strict AEO heading hierarchy, statutory keyword mesh, and security hardening`
+## Phase 8: GitHub Deployment
+- [x] Run full repository verification (word counts, em-dashes, schema validation, anchor audit)
+- [ ] Stage, commit, and push all files to `origin main` with exact commit message:
+  `feat(core): fix print spacing bug, deploy mobile app layout, launch 10-article legal blog hub, and enforce strict AEO humanization`
