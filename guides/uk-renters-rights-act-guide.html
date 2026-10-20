@@ -22,6 +22,112 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <!-- Precompiled Production Stylesheet -->
   <link rel="stylesheet" href="/css/styles.min.css">
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://tenantnotice.online/guides/uk-renters-rights-act-guide.html#article",
+        "headline": "UK Renters' Rights Act Guide | Section 21 Abolition & Section 8 Reforms",
+        "description": "Comprehensive legal guide to the UK Renters' Rights Act: abolition of Section 21 no-fault evictions, reformed Section 8 Schedule 2 grounds, and rent challenge rules.",
+        "url": "https://tenantnotice.online/guides/uk-renters-rights-act-guide.html",
+        "inLanguage": "en-GB",
+        "about": [
+          {
+            "@type": "Legislation",
+            "name": "Housing Act 1988",
+            "sameAs": "https://www.wikidata.org/wiki/Q1154848"
+          },
+          {
+            "@type": "Thing",
+            "name": "Eviction",
+            "sameAs": "https://www.wikidata.org/wiki/Q1060936"
+          },
+          {
+            "@type": "Thing",
+            "name": "Notice to quit",
+            "sameAs": "https://www.wikidata.org/wiki/Q1613416"
+          },
+          {
+            "@type": "Thing",
+            "name": "Leasehold estate",
+            "sameAs": "https://www.wikidata.org/wiki/Q126107"
+          },
+          {
+            "@type": "Place",
+            "name": "United Kingdom",
+            "sameAs": "https://www.wikidata.org/wiki/Q145"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://tenantnotice.online/guides/uk-renters-rights-act-guide.html#howto",
+        "name": "How to Navigate Reformed Possession Under the Renters' Rights Act",
+        "description": "Procedural roadmap for landlords and tenants under the Renters' Rights Act following the abolition of Section 21.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Identify Lawful Section 8 Schedule 2 Grounds",
+            "text": "Landlords must verify statutory qualifying criteria under mandatory (Ground 8, Ground 1A) or discretionary grounds before initiating possession."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Serve Prescribed Form 3 Statutory Notice",
+            "text": "Compile and serve statutory Form 3 stating verbatim ground text and full factual particulars with exact statutory notice periods (4 weeks to 4 months)."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Tenant Periodic Tenancy Exit Notice",
+            "text": "Tenants surrender periodic tenancies by serving 2 months written notice to quit expiring on the last day of a complete rental period."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Adjudicate Rent Increases via Form 4 Tribunal Referral",
+            "text": "Annual rent increases must use Section 13 Form 4. Tenants can challenge above-market demands by referring the notice to the First-tier Tribunal."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/guides/uk-renters-rights-act-guide.html#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "UK Portal",
+            "item": "https://tenantnotice.online/uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Guides",
+            "item": "https://tenantnotice.online/uk/#guides"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Renters' Rights Act Guide",
+            "item": "https://tenantnotice.online/guides/uk-renters-rights-act-guide.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
   <!-- Header -->
@@ -66,7 +172,7 @@
 
   <!-- Main Article -->
   <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
-    <article class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-slate-200">
+    <article itemscope itemtype="https://schema.org/TechArticle" class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-slate-200">
       <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 mb-4">
         <span class="px-2.5 py-1 rounded bg-red-50 text-red-700 font-bold uppercase tracking-wider">United Kingdom</span>
         <span>&bull;</span>
@@ -127,21 +233,26 @@
       <!-- Internal Linking Footer Grid -->
       <div class="mt-12 pt-8 border-t border-slate-200">
         <h3 class="font-display text-base font-bold text-slate-900 mb-4">Related UK Statutory Tools & Guides</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/uk/section-8-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-red-700 uppercase">UK Statutory Tool</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="/uk/section-8-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wide">UK Statutory Tool</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">Section 8 Notice to Quit</h4>
-            <p class="text-xs text-slate-500 mt-1">Reformed Schedule 2 grounds drafting engine.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Reformed Schedule 2 grounds drafting engine.</p>
           </a>
-          <a href="/uk/section-13-rent-challenge.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-red-700 uppercase">UK Statutory Tool</span>
+          <a href="/uk/section-13-rent-challenge.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wide">UK Statutory Tool</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">Section 13 Rent Challenge</h4>
-            <p class="text-xs text-slate-500 mt-1">First-tier Tribunal referral document generator.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">First-tier Tribunal referral document generator.</p>
           </a>
-          <a href="/uk/tenant-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-red-700 uppercase">UK Statutory Tool</span>
+          <a href="/uk/tenant-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wide">UK Statutory Tool</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">Tenant Notice to Quit</h4>
-            <p class="text-xs text-slate-500 mt-1">Legally binding 2-month exit notice builder.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Legally binding 2-month exit notice builder.</p>
+          </a>
+          <a href="/uk/tenancy-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wide">UK Statutory Tool</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1">Tenancy Deposit Demand</h4>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Housing Act 2004 s.213 deposit recovery demand.</p>
           </a>
         </div>
       </div>

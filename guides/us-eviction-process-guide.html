@@ -22,6 +22,113 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <!-- Precompiled Production Stylesheet -->
   <link rel="stylesheet" href="/css/styles.min.css">
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://tenantnotice.online/guides/us-eviction-process-guide.html#article",
+        "headline": "US Residential Eviction Process & Statutory Timelines Guide",
+        "description": "In-depth legal guide to the residential eviction process across major US states: statutory notice periods, service of process, court filings, and writ of possession.",
+        "url": "https://tenantnotice.online/guides/us-eviction-process-guide.html",
+        "inLanguage": "en-US",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Eviction",
+            "sameAs": "https://www.wikidata.org/wiki/Q1060936"
+          },
+          {
+            "@type": "Thing",
+            "name": "Notice to quit",
+            "sameAs": "https://www.wikidata.org/wiki/Q1613416"
+          },
+          {
+            "@type": "Thing",
+            "name": "Leasehold estate",
+            "sameAs": "https://www.wikidata.org/wiki/Q126107"
+          },
+          {
+            "@type": "Place",
+            "name": "United States",
+            "sameAs": "https://www.wikidata.org/wiki/Q30"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://tenantnotice.online/guides/us-eviction-process-guide.html#howto",
+        "name": "How the US Residential Eviction Process Works",
+        "description": "5-phase procedural breakdown of residential unlawful detainer actions from pre-filing notice to sheriff execution in the United States.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Serving the Mandatory Pre-Filing Notice",
+            "text": "Serve the state-prescribed notice (3-day pay or quit, 30-day notice to vacate) strictly calculating judicial and calendar days."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Executing Statutory Service of Process",
+            "text": "Deliver notice via personal in-hand service, substituted service with companion mailing, or posting ('nail and mail') pursuant to state civil procedure."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Filing Unlawful Detainer Complaint in Court",
+            "text": "File a formal summons and complaint in county municipal or justice court once the notice period expires without tenant cure or surrender."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Adjudicating Defenses and Summary Hearing",
+            "text": "Appear at the court hearing where tenant may raise statutory defenses such as breach of warranty of habitability or unlawful retaliation."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Sheriff Execution of Writ of Possession",
+            "text": "Obtain a court Judgment for Possession and Writ of Possession executed exclusively by county sheriffs or marshals."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/guides/us-eviction-process-guide.html#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "US Portal",
+            "item": "https://tenantnotice.online/us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Guides",
+            "item": "https://tenantnotice.online/us/#guides"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "US Eviction Process Guide",
+            "item": "https://tenantnotice.online/guides/us-eviction-process-guide.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
   <!-- Header -->
@@ -66,7 +173,7 @@
 
   <!-- Main Article -->
   <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
-    <article class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-slate-200">
+    <article itemscope itemtype="https://schema.org/TechArticle" class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-slate-200">
       <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 mb-4">
         <span class="px-2.5 py-1 rounded bg-blue-50 text-blue-700 font-bold uppercase tracking-wider">United States</span>
         <span>&bull;</span>
@@ -136,22 +243,27 @@
 
       <!-- Internal Linking Footer Grid -->
       <div class="mt-12 pt-8 border-t border-slate-200">
-        <h3 class="font-display text-base font-bold text-slate-900 mb-4">Related Statutory Tools & Guides</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/us/30-day-notice-to-vacate.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-emerald-700 uppercase">US Generator</span>
+        <h3 class="font-display text-base font-bold text-slate-900 mb-4">Related US Statutory Tools & Guides</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="/us/30-day-notice-to-vacate.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">US Generator</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">30-Day Notice to Vacate</h4>
-            <p class="text-xs text-slate-500 mt-1">Multi-state civil code compliant termination form.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Multi-state civil code compliant termination form.</p>
           </a>
-          <a href="/us/3-day-pay-rent-or-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-emerald-700 uppercase">US Generator</span>
+          <a href="/us/3-day-pay-rent-or-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">US Generator</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">3-Day Pay Rent or Quit</h4>
-            <p class="text-xs text-slate-500 mt-1">Nonpayment demand with holiday exclusions.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Nonpayment demand with holiday exclusions.</p>
           </a>
-          <a href="/guides/security-deposit-return-rights.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-blue-700 uppercase">Pillar Guide</span>
+          <a href="/us/24-hour-notice-to-enter.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">US Generator</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1">24-Hour Notice to Enter</h4>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Statutory landlord entry and inspection letter.</p>
+          </a>
+          <a href="/guides/security-deposit-return-rights.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wide">Pillar Guide</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">Security Deposit Rights</h4>
-            <p class="text-xs text-slate-500 mt-1">Comprehensive statutory return rules.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Comprehensive statutory return & penalty rules.</p>
           </a>
         </div>
       </div>

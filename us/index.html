@@ -35,7 +35,68 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "CollectionPage",
+        "@id": "https://tenantnotice.online/us/#collection",
+        "url": "https://tenantnotice.online/us/",
+        "name": "United States Statutory Tenancy Notice Portal",
+        "description": "State-specific US tenancy notices and eviction forms. California Civil Code, Texas Property Code, Florida Statutes, and New York Real Property Law compliant builders.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://tenantnotice.online/#website",
+          "name": "TenantNotice Online",
+          "url": "https://tenantnotice.online/"
+        },
+        "about": [
+          {
+            "@type": "Place",
+            "name": "United States",
+            "sameAs": "https://www.wikidata.org/wiki/Q30"
+          },
+          {
+            "@type": "Thing",
+            "name": "Eviction in the United States",
+            "sameAs": "https://www.wikidata.org/wiki/Q1060936"
+          },
+          {
+            "@type": "Thing",
+            "name": "Leasehold estate",
+            "sameAs": "https://www.wikidata.org/wiki/Q126107"
+          }
+        ],
+        "hasPart": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/us/30-day-notice-to-vacate.html#app",
+            "name": "California 30 Day Notice to Vacate Free Template",
+            "url": "https://tenantnotice.online/us/30-day-notice-to-vacate.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/us/3-day-pay-rent-or-quit.html#app",
+            "name": "US 3-Day Notice to Pay Rent or Quit Generator",
+            "url": "https://tenantnotice.online/us/3-day-pay-rent-or-quit.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/us/security-deposit-demand.html#app",
+            "name": "Security Deposit Return Demand Letter California 21 Days Generator",
+            "url": "https://tenantnotice.online/us/security-deposit-demand.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/us/24-hour-notice-to-enter.html#app",
+            "name": "California 24-Hour Notice to Enter Generator",
+            "url": "https://tenantnotice.online/us/24-hour-notice-to-enter.html",
+            "applicationCategory": "LegalApplication"
+          }
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/us/#breadcrumbs",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -53,6 +114,10 @@
       },
       {
         "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/us/#faq",
+        "isPartOf": {
+          "@id": "https://tenantnotice.online/us/#collection"
+        },
         "mainEntity": [
           {
             "@type": "Question",

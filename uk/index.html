@@ -35,7 +35,68 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "CollectionPage",
+        "@id": "https://tenantnotice.online/uk/#collection",
+        "url": "https://tenantnotice.online/uk/",
+        "name": "United Kingdom Tenancy Portal | Renters' Rights Act Compliant",
+        "description": "Reformed UK residential tenancy notices under the Renters' Rights Act. Section 8 notice to quit, periodic tenant notice, deposit demands, and Section 13 rent challenge.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://tenantnotice.online/#website",
+          "name": "TenantNotice Online",
+          "url": "https://tenantnotice.online/"
+        },
+        "about": [
+          {
+            "@type": "Place",
+            "name": "United Kingdom",
+            "sameAs": "https://www.wikidata.org/wiki/Q145"
+          },
+          {
+            "@type": "Legislation",
+            "name": "Housing Act 1988",
+            "sameAs": "https://www.wikidata.org/wiki/Q1154848"
+          },
+          {
+            "@type": "Thing",
+            "name": "Leasehold estate",
+            "sameAs": "https://www.wikidata.org/wiki/Q126107"
+          }
+        ],
+        "hasPart": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/uk/section-8-notice-to-quit.html#app",
+            "name": "UK Section 8 Notice Form 3 Ground 8 Template Free Generator",
+            "url": "https://tenantnotice.online/uk/section-8-notice-to-quit.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/uk/tenant-notice-to-quit.html#app",
+            "name": "UK Tenant Notice to Quit Generator",
+            "url": "https://tenantnotice.online/uk/tenant-notice-to-quit.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/uk/tenancy-deposit-demand.html#app",
+            "name": "UK Tenancy Deposit Refund Demand Letter Generator",
+            "url": "https://tenantnotice.online/uk/tenancy-deposit-demand.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/uk/section-13-rent-challenge.html#app",
+            "name": "UK Section 13 Rent Increase Challenge Generator",
+            "url": "https://tenantnotice.online/uk/section-13-rent-challenge.html",
+            "applicationCategory": "LegalApplication"
+          }
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/uk/#breadcrumbs",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -53,6 +114,10 @@
       },
       {
         "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/uk/#faq",
+        "isPartOf": {
+          "@id": "https://tenantnotice.online/uk/#collection"
+        },
         "mainEntity": [
           {
             "@type": "Question",

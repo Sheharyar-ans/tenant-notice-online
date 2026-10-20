@@ -22,6 +22,101 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <!-- Precompiled Production Stylesheet -->
   <link rel="stylesheet" href="/css/styles.min.css">
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://tenantnotice.online/guides/security-deposit-return-rights.html#article",
+        "headline": "Security Deposit Return Rights: US vs UK Statutory Guide",
+        "description": "Comparative legal guide on residential tenancy deposit returns, statutory deduction rules, bad-faith penalties, and small claims court procedures in the US and UK.",
+        "url": "https://tenantnotice.online/guides/security-deposit-return-rights.html",
+        "inLanguage": "en-US",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Security deposit",
+            "sameAs": "https://www.wikidata.org/wiki/Q1074127"
+          },
+          {
+            "@type": "Legislation",
+            "name": "Housing Act 2004",
+            "sameAs": "https://www.wikidata.org/wiki/Q5922332"
+          },
+          {
+            "@type": "Thing",
+            "name": "Leasehold estate",
+            "sameAs": "https://www.wikidata.org/wiki/Q126107"
+          },
+          {
+            "@type": "Thing",
+            "name": "Renting",
+            "sameAs": "https://www.wikidata.org/wiki/Q11883"
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://tenantnotice.online/guides/security-deposit-return-rights.html#howto",
+        "name": "How to Recover a Disputed or Unreturned Residential Security Deposit",
+        "description": "4-step recovery procedure for tenants in the United States and United Kingdom facing late returns or unjustified deductions.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Verify Statutory Return Deadlines",
+            "text": "Audit statutory deadlines (14 to 30 days across US states; 10 days for undisputed funds in UK schemes)."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Challenge Wear and Tear Deductions",
+            "text": "Review move-in/move-out inventory reports to dispute claims for normal wear and tear and demand contractor itemized invoices."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Send Formal Demand Letter Before Action",
+            "text": "Draft and serve a formal demand letter giving a statutory cure deadline (typically 10-14 days) citing bad-faith or custodial breach penalties."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Initiate Small Claims or Tribunal Filing",
+            "text": "If unrefunded, file in small claims court (US) or County Court Part 8 claim (UK) to claim deposit refund plus statutory statutory penalties."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/guides/security-deposit-return-rights.html#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://tenantnotice.online/#guides"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Security Deposit Return Rights",
+            "item": "https://tenantnotice.online/guides/security-deposit-return-rights.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
   <!-- Header -->
@@ -64,7 +159,7 @@
 
   <!-- Main Article -->
   <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
-    <article class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-slate-200">
+    <article itemscope itemtype="https://schema.org/TechArticle" class="bg-white rounded-2xl p-8 sm:p-12 shadow-sm border border-slate-200">
       <div class="flex items-center gap-3 text-xs font-semibold text-slate-500 mb-4">
         <span class="px-2.5 py-1 rounded bg-emerald-50 text-emerald-700 font-bold uppercase tracking-wider">Comparative Jurisprudence</span>
         <span>&bull;</span>
@@ -132,21 +227,26 @@
       <!-- Internal Linking Footer Grid -->
       <div class="mt-12 pt-8 border-t border-slate-200">
         <h3 class="font-display text-base font-bold text-slate-900 mb-4">Related Statutory Tools & Guides</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a href="/us/security-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-blue-700 uppercase">US Generator</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a href="/us/security-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wide">US Generator</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">US Security Deposit Demand</h4>
-            <p class="text-xs text-slate-500 mt-1">State-specific statutory pre-litigation letter.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">State-specific statutory pre-litigation letter.</p>
           </a>
-          <a href="/uk/tenancy-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-red-700 uppercase">UK Generator</span>
+          <a href="/uk/tenancy-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wide">UK Generator</span>
             <h4 class="text-sm font-bold text-slate-900 mt-1">UK Tenancy Deposit Demand</h4>
-            <p class="text-xs text-slate-500 mt-1">Housing Act 2004 Section 213 letter builder.</p>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Housing Act 2004 Section 213 letter builder.</p>
           </a>
-          <a href="/guides/us-eviction-process-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
-            <span class="text-xs font-bold text-emerald-700 uppercase">Legal Guide</span>
-            <h4 class="text-sm font-bold text-slate-900 mt-1">US Eviction Timeline Guide</h4>
-            <p class="text-xs text-slate-500 mt-1">Court filings and notice requirements.</p>
+          <a href="/guides/us-eviction-process-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Legal Guide</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1">US Eviction Timeline</h4>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Court filings and notice requirements.</p>
+          </a>
+          <a href="/guides/uk-renters-rights-act-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:shadow-sm transition-all block">
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Legal Guide</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-1">Renters' Rights Act Reform</h4>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">Section 21 abolition & periodic tenancies.</p>
           </a>
         </div>
       </div>
