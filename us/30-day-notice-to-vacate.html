@@ -14,76 +14,74 @@
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Plus Jakarta Sans', 'sans-serif'],
-            serif: ['Source Serif 4', 'Georgia', 'serif'],
-            legal: ['Cinzel', 'serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            brand: {
-              navy: '#0f172a',
-              slate: '#1e293b',
-              emerald: '#059669',
-              lightEmerald: '#10b981',
-              accent: '#0284c7'
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Precompiled Production Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.min.css">
 
-    <!-- Dedicated Print Engine Stylesheet -->
+        <!-- Dedicated Print Engine Stylesheet -->
   <style>
     @media print {
       @page {
         margin: 15mm;
         size: auto;
       }
-      html, body, main, .wrapper, .container {
+      html, body {
         margin: 0 !important;
         padding: 0 !important;
-        min-height: auto !important;
-        height: auto !important;
-        display: block !important;
         background: #ffffff !important;
+        color: #000000 !important;
       }
-      header, nav, footer, form, .form-container, .mobile-bar, .no-print, aside, #mobileActionBar {
+      /* Completely eliminate all UI chrome, navbars, forms, and headers */
+      header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *,
+      .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast {
         display: none !important;
+        visibility: hidden !important;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
         height: 0 !important;
+        width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
+        overflow: hidden !important;
       }
-      .grid, .lg\:grid-cols-12, .lg\:col-span-7, .sticky {
+      main, .grid, .lg\:col-span-7, [class*="col-span"], [class*="grid"] {
         display: block !important;
         margin: 0 !important;
         padding: 0 !important;
-        position: static !important;
         width: 100% !important;
+        max-width: 100% !important;
+        border: none !important;
+        box-shadow: none !important;
+        min-height: 0 !important;
+        height: auto !important;
+        position: static !important;
+      }
+      div.sticky {
+        position: static !important;
+        top: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
       #document-preview, #printableNotice, .document-paper {
+        display: block !important;
+        visibility: visible !important;
+        position: static !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
         box-shadow: none !important;
-        position: static !important;
         width: 100% !important;
         min-height: auto !important;
         background: #ffffff !important;
         color: #000000 !important;
         font-size: 11pt !important;
         line-height: 1.5 !important;
-        display: block !important;
+      }
+      #document-preview *, #printableNotice *, .document-paper * {
+        visibility: visible !important;
       }
     }
   </style>

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json.schemastore.org/ai-catalog.json",
+  "version": "1.0.0",
+  "name": "TenantNotice Online",
+  "description": "Dual-jurisdiction statutory tenancy and legal document engines for the United States and the United Kingdom.",
+  "homepage": "https://tenantnotice.online",
+  "documentation": "https://tenantnotice.online/llms-full.txt",
+  "llms": "https://tenantnotice.online/llms.txt",
+  "publisher": {
+    "name": "TenantNotice Online",
+    "url": "https://tenantnotice.online"
+  },
+  "endpoints": [
+    {
+      "name": "US 30-Day Notice to Vacate Generator",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/us/30-day-notice-to-vacate.html",
+      "description": "California Civ. Code Section 1946.1 and Texas Section 24.005 notice generator."
+    },
+    {
+      "name": "US 3-Day Notice to Pay Rent or Quit Generator",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/us/3-day-pay-rent-or-quit.html",
+      "description": "California CCP Section 1161(2) and Florida Section 83.56(3) cure notice generator."
+    },
+    {
+      "name": "US Security Deposit Demand Letter",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/us/security-deposit-demand.html",
+      "description": "California Civ. Code Section 1950.5 (21 days) deposit demand generator."
+    },
+    {
+      "name": "US 24-Hour Notice to Enter Premises",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/us/24-hour-notice-to-enter.html",
+      "description": "California Civ. Code Section 1954 landlord entry notice generator."
+    },
+    {
+      "name": "UK Section 8 Notice to Quit Form 3",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/uk/section-8-notice-to-quit.html",
+      "description": "Housing Act 1988 Form 3 Ground 8 rent arrears notice generator under Renters' Rights Act."
+    },
+    {
+      "name": "UK Tenant Notice to Quit",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/uk/tenant-notice-to-quit.html",
+      "description": "2-month rolling periodic tenancy termination notice generator."
+    },
+    {
+      "name": "UK Tenancy Deposit Refund Demand",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/uk/tenancy-deposit-demand.html",
+      "description": "Housing Act 2004 Section 213 deposit protection refund demand generator."
+    },
+    {
+      "name": "UK Section 13 Rent Increase Challenge Form 4",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/uk/section-13-rent-challenge.html",
+      "description": "Housing Act 1988 Form 4 First-tier Tribunal rent challenge generator."
+    }
+  ]
+}
