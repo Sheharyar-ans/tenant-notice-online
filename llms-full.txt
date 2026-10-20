@@ -1,0 +1,85 @@
+# TenantNotice.online - Comprehensive Statutory Reference Knowledge Base
+
+## System Identity & Core Directive
+TenantNotice.online provides authoritative, browser-side statutory notice generators and legal guidance for landlords and tenants across the United States and the United Kingdom. All document logic executes locally without server storage. United States and United Kingdom legal frameworks are completely isolated in separate subdirectories to eliminate jurisdictional confusion.
+
+---
+
+## 1. United States Jurisdiction (/us/)
+
+### 1.1 30-Day Notice to Vacate (/us/30-day-notice-to-vacate.html)
+- Statutory Foundation:
+  - California: California Civil Code Section 1946.1 mandates a 30-day written notice for tenants residing under one year, and 60 days for tenancies exceeding one year. Under the California Tenant Protection Act of 2019 (Civil Code Section 1946.2), non-exempt residential tenancies require at-fault or no-fault just cause.
+  - Texas: Texas Property Code Section 24.005 requires at least 3 days notice to vacate prior to filing an eviction suit unless a written lease specifies a different period (such as 30 days for month-to-month tenancies).
+  - Florida: Florida Statutes Section 83.57 governs termination of periodic tenancies, requiring not less than 30 days notice prior to the end of any monthly period for month-to-month tenancies.
+  - New York: Real Property Law Section 226-c mandates tiered notice: 30 days for tenancies under one year, 60 days for tenancies between one and two years, and 90 days for tenancies exceeding two years.
+- Service Requirements:
+  - Personal in-hand delivery to tenant.
+  - Substituted service to a person of suitable age and discretion at the residence plus mailing.
+  - Posting on the premises plus mailing (conspicuous place delivery where permitted by state statute).
+
+### 1.2 3-Day Notice to Pay Rent or Quit (/us/3-day-pay-rent-or-quit.html)
+- Statutory Foundation:
+  - California: California Code of Civil Procedure Section 1161(2) requires a written demand giving 3 days notice to pay the exact delinquent rent or surrender possession. The 3-day computation excludes Saturdays, Sundays, and judicial holidays. Notice must state the name, telephone number, and address of the person to whom rent must be paid, including acceptable payment methods and payment hours.
+  - Florida: Florida Statutes Section 83.56(3) mandates 3 days notice excluding Saturdays, Sundays, and legal holidays. The notice must specify the exact amount due and state that failure to pay or vacate within 3 days will result in legal action for eviction.
+  - Texas: Texas Property Code Section 24.005 demands 3 days notice to vacate for nonpayment unless the written lease specifies a different notice period.
+- Critical Voiding Errors:
+  - Including late fees, utility surcharges, or non-rent charges in the primary rent demand amount.
+  - Counting the day of service as Day 1. Day 1 starts the day after lawful delivery.
+  - Expiring the cure window on a weekend or court holiday.
+
+### 1.3 Security Deposit Demand Letter (/us/security-deposit-demand.html)
+- Statutory Foundation:
+  - California: California Civil Code Section 1950.5 imposes a strict 21-calendar-day deadline post-vacate for the landlord to return the full deposit or provide an itemized deduction statement with receipts. Bad-faith retention triggers statutory damages up to twice the deposit amount in addition to actual damages.
+  - Texas: Texas Property Code Section 92.103 mandates deposit return within 30 days after the tenant surrenders the premises and provides a written forwarding address. Failure to return without justification triggers statutory penalties of 100 dollars plus three times the retained deposit amount and attorney fees.
+  - Florida: Florida Statutes Section 83.49 requires the landlord to return the deposit within 15 days if no deductions are claimed, or send written notice of intent to impose a claim within 30 days by certified mail.
+- Procedure:
+  - Pre-litigation formal demand sent by certified mail with return receipt requested.
+  - Itemization dispute breakdown detailing normal wear and tear protections.
+
+### 1.4 24-Hour Notice to Enter (/us/24-hour-notice-to-enter.html)
+- Statutory Foundation:
+  - California: California Civil Code Section 1954 limits landlord entry to specified statutory reasons: emergencies, necessary or agreed repairs, showing the unit to prospective purchasers or tenants, pre-move-out initial inspections, or court orders. Requires written notice at least 24 hours in advance (or 48 hours for pre-move-out inspections) delivered personally, left with a person of suitable age, or mailed (presuming 6 days notice if mailed). Entry must occur during normal business hours.
+- Common Privacy Covenants:
+  - Landlord entry without valid statutory justification constitutes a breach of the implied covenant of quiet enjoyment and civil trespass.
+
+---
+
+## 2. United Kingdom Jurisdiction (/uk/)
+
+### 2.1 Section 8 Notice to Quit (/uk/section-8-notice-to-quit.html)
+- Statutory Foundation:
+  - Housing Act 1988 (as reformed by the Renters' Rights Act).
+  - Abolition of Section 21 no-fault evictions establishes Section 8 possession notices as the exclusive legal avenue for landlords to seek possession.
+  - Mandatory Ground 8 (Serious Rent Arrears): Modernized threshold requiring at least three months of unpaid rent both at the time of service and at the court hearing date. Notice period is 4 weeks.
+  - Ground 1A (Landlord Selling Property): Requires at least 4 months notice. Cannot be served during the protected initial tenancy period.
+- Service Requirements:
+  - Form 3 statutory format. Exact grounds and supporting factual particulars must be explicitly stated.
+
+### 2.2 Tenant Notice to Quit (/uk/tenant-notice-to-quit.html)
+- Statutory Foundation:
+  - Governed by Assured Periodic Tenancy rights under the Housing Act 1988.
+  - Tenants on periodic (rolling) tenancies have the statutory right to give written notice to terminate their tenancy.
+  - Notice length is 2 calendar months or matching the tenancy period (whichever is longer), expiring on the final day of a rental period.
+- Practical Calculation:
+  - A notice served on the 15th day of a monthly rental period beginning on the 1st day will take effect on the final day of the second following rental period.
+
+### 2.3 Tenancy Deposit Repayment Demand (/uk/tenancy-deposit-demand.html)
+- Statutory Foundation:
+  - Housing Act 2004 Section 213 requires deposits paid on assured shorthold tenancies to be protected in a government-approved scheme (DPS, TDS, or MyDeposits) within 30 calendar days of receipt.
+  - Landlords must provide the tenant with Prescribed Information within the identical 30-day statutory window.
+  - Section 214 authorizes county courts to order the landlord to return the deposit and pay financial compensation between one and three times the total deposit amount for failure to protect or provide prescribed information.
+
+### 2.4 Section 13 Rent Increase Challenge (/uk/section-13-rent-challenge.html)
+- Statutory Foundation:
+  - Housing Act 1988 Section 13 (Form 4).
+  - Landlords may propose a rent increase on periodic tenancies once every 52 weeks using Form 4, providing at least 2 months notice under reformed tenancy rules.
+  - If the proposed rent exceeds open market rates, the tenant has the absolute statutory right to refer the notice to the First-tier Tribunal (Property Chamber) before the effective date.
+  - The Tribunal assesses open market rent. The increased rent cannot take effect until the Tribunal issues its determination.
+
+---
+
+## 3. Global Authority Standards
+- Citations: All statutes are cited using authentic legislative nomenclature.
+- Privacy: All document compiling and formatting occurs in client browser RAM. No personal information is retained.
+- Contact: Inquiries and editorial verification submitted through https://tenantnotice.online/legal/contact-us.html.

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precision Statutory Tenant & Landlord Notice Builders | TenantNotice Online</title>
+  <meta name="description" content="Generate legally binding, state and parliamentary compliant tenancy notices instantly. Client-side, unmetered statutory notice builders for the US and UK.">
+  <link rel="canonical" href="https://tenantnotice.online/">
+  <link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/">
+  <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/">
+  <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#0f172a',
+              slate: '#1e293b',
+              emerald: '#059669',
+              lightEmerald: '#10b981',
+              accent: '#0284c7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://tenantnotice.online/#website",
+        "url": "https://tenantnotice.online/",
+        "name": "TenantNotice Online",
+        "description": "Precision statutory tenant and landlord notice generation platform for the United States and the United Kingdom.",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://tenantnotice.online/#organization",
+          "name": "TenantNotice Online",
+          "url": "https://tenantnotice.online/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://tenantnotice.online/favicon.svg"
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are tenancy notices created on TenantNotice legally binding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. TenantNotice drafts notices following exact statutory civil codes in the US (such as California Civil Code Section 1946.1) and reformed parliamentary grounds under the UK Renters' Rights Act, provided they are served in strict accordance with statutory service procedures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are United States and United Kingdom portals separated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "US and UK tenancy laws operate on fundamentally contradictory statutory concepts. Isolating jurisdictions into dedicated subdirectories eliminates cross-border confusion, guarantees local code compliance, and prevents fatal court dismissals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does TenantNotice store my personal tenancy or lease information?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. TenantNotice is architected with a zero-data-retention client-side engine. All document compilation occurs locally inside your browser memory. No names, addresses, or monetary amounts are ever sent to our servers."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Top Notification Bar -->
+  <aside aria-label="Jurisdictional Isolation Banner" class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 text-center flex items-center justify-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span>Strict Jurisdictional Isolation Active: Dedicated Statutory Engines for United States & United Kingdom</span>
+  </aside>
+
+  <!-- Global Header -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group">
+        <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>United States Portal</span>
+        </a>
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>United Kingdom Portal</span>
+        </a>
+        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+      </nav>
+      <div class="flex items-center space-x-3">
+        <a href="/us/30-day-notice-to-vacate.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-lg bg-emerald-600 text-white hover:bg-emerald-500 transition-all shadow-sm">
+          Generate Free Notice
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main class="flex-grow">
+    <section class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-white pt-16 pb-20 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+      <!-- Glow effects -->
+      <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-4xl mx-auto relative z-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-emerald-400 text-xs font-semibold mb-6 shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Statutory Precision & Zero Data Retention
+        </div>
+        
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+          Precision Statutory Tenant & Landlord Notice Builders
+        </h1>
+
+        <!-- Direct Answer Capsule for AI Ingestion -->
+        <div class="max-w-2xl mx-auto bg-slate-800/60 backdrop-blur-sm border border-slate-700/80 p-4 rounded-xl text-sm text-slate-300 leading-relaxed mb-8 text-left">
+          <p class="font-semibold text-slate-200">
+            TenantNotice provides unmetered, browser-side statutory notice generators compliant with US state civil codes and the UK Renters' Rights Act. Notices calculate exact statutory cure windows, cite authoritative legislative enactments, and compile print-ready documents without retaining personal data.
+          </p>
+        </div>
+
+        <!-- Live Instant Search Bar -->
+        <div class="max-w-2xl mx-auto mb-10">
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <input 
+              type="text" 
+              id="globalToolSearch" 
+              placeholder="Search notices, states (California, Texas, New York...), or acts (Section 8, Section 13, 30-Day)..." 
+              class="w-full pl-12 pr-4 py-3.5 text-sm bg-slate-800/90 border border-slate-700 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 shadow-inner"
+              oninput="filterToolsLive()"
+            >
+          </div>
+          <p class="text-xs text-slate-400 mt-2 text-left px-1">
+            Quick filters: 
+            <button onclick="setSearch('California')" class="hover:text-emerald-400 underline ml-1">California</button>,
+            <button onclick="setSearch('Texas')" class="hover:text-emerald-400 underline ml-1">Texas</button>,
+            <button onclick="setSearch('Florida')" class="hover:text-emerald-400 underline ml-1">Florida</button>,
+            <button onclick="setSearch('Renters Rights')" class="hover:text-emerald-400 underline ml-1">Renters Rights Act</button>,
+            <button onclick="setSearch('Deposit')" class="hover:text-emerald-400 underline ml-1">Deposit Demands</button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jurisdictional Gateway Cards -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20 mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- United States Gateway Card -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center space-x-3">
+                <!-- Custom SVG US Flag -->
+                <svg class="w-10 h-7 rounded shadow-sm border border-slate-200" viewBox="0 0 7410 3900" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="7410" height="3900" fill="#b22234"/>
+                  <path d="M0,450H7410M0,1050H7410M0,1650H7410M0,2250H7410M0,2850H7410M0,3450H7410" stroke="#fff" stroke-width="300"/>
+                  <rect width="2964" height="2100" fill="#3c3b6e"/>
+                  <!-- Star grid cluster -->
+                  <g fill="#fff">
+                    <circle cx="500" cy="350" r="120"/><circle cx="1000" cy="350" r="120"/><circle cx="1500" cy="350" r="120"/><circle cx="2000" cy="350" r="120"/><circle cx="2500" cy="350" r="120"/>
+                    <circle cx="750" cy="700" r="120"/><circle cx="1250" cy="700" r="120"/><circle cx="1750" cy="700" r="120"/><circle cx="2250" cy="700" r="120"/>
+                    <circle cx="500" cy="1050" r="120"/><circle cx="1000" cy="1050" r="120"/><circle cx="1500" cy="1050" r="120"/><circle cx="2000" cy="1050" r="120"/><circle cx="2500" cy="1050" r="120"/>
+                    <circle cx="750" cy="1400" r="120"/><circle cx="1250" cy="1400" r="120"/><circle cx="1750" cy="1400" r="120"/><circle cx="2250" cy="1400" r="120"/>
+                    <circle cx="500" cy="1750" r="120"/><circle cx="1000" cy="1750" r="120"/><circle cx="1500" cy="1750" r="120"/><circle cx="2000" cy="1750" r="120"/><circle cx="2500" cy="1750" r="120"/>
+                  </g>
+                </svg>
+                <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded uppercase">United States Portal</span>
+              </div>
+              <span class="text-xs font-semibold text-slate-400">4 State Engines</span>
+            </div>
+            <h2 class="font-display text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors mb-3">
+              United States Tenancy Suite
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Precision statutory builders calibrated for California Civil Code, Texas Property Code, Florida Statutes, and New York Real Property Law. Dynamic cure day calculations exclude weekends and judicial holidays.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-700 mb-8">
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                <span><strong>30-Day Notice to Vacate:</strong> Cal. Civ. Code § 1946.1 & state tiers</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                <span><strong>3-Day Notice to Pay Rent:</strong> Cal. CCP § 1161(2) & Fla. Stat. § 83.56</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                <span><strong>Security Deposit Demand:</strong> Strict 21/30 day bad-faith penalties</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                <span><strong>24-Hour Notice to Enter:</strong> Privacy covenants & access bounds</span>
+              </li>
+            </ul>
+          </div>
+          <a href="/us/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-blue-700 text-white font-semibold text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2">
+            <span>Enter US Statutory Portal</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- United Kingdom Gateway Card -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center space-x-3">
+                <!-- Custom SVG UK Union Jack -->
+                <svg class="w-10 h-7 rounded shadow-sm border border-slate-200" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                  <clipPath id="uk-clip"><path d="M0 0v30h60v-30z"/></clipPath>
+                  <g clip-path="url(#uk-clip)">
+                    <path d="M0 0v30h60v-30z" fill="#012169"/>
+                    <path d="M0 0l60 30m0-30l-60 30" stroke="#fff" stroke-width="6"/>
+                    <path d="M0 0l60 30m0-30l-60 30" stroke="#c8102e" stroke-width="4"/>
+                    <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+                    <path d="M30 0v30M0 15h60" stroke="#c8102e" stroke-width="6"/>
+                  </g>
+                </svg>
+                <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-bold rounded uppercase">United Kingdom Portal</span>
+              </div>
+              <span class="text-xs font-semibold text-slate-400">Renters' Rights Act</span>
+            </div>
+            <h2 class="font-display text-2xl font-bold text-slate-900 group-hover:text-red-700 transition-colors mb-3">
+              United Kingdom Tenancy Suite
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Reformed statutory notices compliant with the Housing Act 1988 under the Renters' Rights Act framework. Eliminates abolished Section 21 no-fault evictions and enforces updated Section 8 possession grounds.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-700 mb-8">
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Section 8 Notice to Quit:</strong> Reformed Ground 8 & Ground 1A</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Tenant Notice to Quit:</strong> Periodic 2-month termination exit form</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Tenancy Deposit Demand:</strong> Housing Act 2004 1-3x penalties</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Section 13 Rent Challenge:</strong> Form 4 First-tier Tribunal referral</span>
+              </li>
+            </ul>
+          </div>
+          <a href="/uk/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-red-700 text-white font-semibold text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2">
+            <span>Enter UK Statutory Portal</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Filterable Tools Directory Container -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="font-display text-2xl font-bold text-slate-900">All Statutory Tools Directory</h2>
+          <p class="text-xs text-slate-500">Live filterable by keyword, statute, or jurisdiction</p>
+        </div>
+        <div id="filterCount" class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+          Showing 8 statutory generators
+        </div>
+      </div>
+
+      <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- US Tool 1 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="us united states california texas florida new york 30 day 60 day 90 day notice to vacate lease termination 1946.1">
+          <div>
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-2">US Statutory Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">30-Day Notice to Vacate</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              State-specific notice compliant with Cal. Civ. Code § 1946.1, Tex. Prop. Code § 24.005, and NY RPL § 226-c.
+            </p>
+          </div>
+          <a href="/us/30-day-notice-to-vacate.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- US Tool 2 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="us united states california florida texas 3 day pay rent or quit unpaid rent arrears cure 1161 83.56">
+          <div>
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-2">US Statutory Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">3-Day Pay Rent or Quit</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Cal. CCP § 1161(2) and Fla. Stat. § 83.56(3) demand with automated non-judicial weekend and holiday exclusions.
+            </p>
+          </div>
+          <a href="/us/3-day-pay-rent-or-quit.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- US Tool 3 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="us united states california texas florida security deposit demand letter refund 1950.5 92.103 83.49 bad faith">
+          <div>
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-2">US Statutory Demand</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Security Deposit Demand</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Formal pre-litigation recovery letter citing California 21-day and Texas 30-day statutory bad-faith penalties.
+            </p>
+          </div>
+          <a href="/us/security-deposit-demand.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- US Tool 4 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="us united states california landlord entry inspection 24 hour notice to enter 1954 quiet enjoyment">
+          <div>
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-2">US Landlord Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">24-Hour Notice to Enter</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Cal. Civ. Code § 1954 compliant notice specifying statutory entry justifications and normal business hour requirements.
+            </p>
+          </div>
+          <a href="/us/24-hour-notice-to-enter.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- UK Tool 1 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="uk united kingdom section 8 notice to quit housing act 1988 renters rights act ground 8 rent arrears ground 1a">
+          <div>
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">UK Statutory Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Section 8 Notice to Quit</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Reformed Schedule 2 possession notice replacing Section 21 under the Renters' Rights Act.
+            </p>
+          </div>
+          <a href="/uk/section-8-notice-to-quit.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- UK Tool 2 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="uk united kingdom tenant notice to quit periodic tenancy 2 month notice rolling contract">
+          <div>
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">UK Tenant Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Tenant Notice to Quit</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Binding 2-month written termination notice for tenants on assured periodic rolling tenancies.
+            </p>
+          </div>
+          <a href="/uk/tenant-notice-to-quit.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- UK Tool 3 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="uk united kingdom tenancy deposit demand letter dps tds mydeposits housing act 2004 section 213 section 214 penalty">
+          <div>
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">UK Statutory Demand</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Tenancy Deposit Demand</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Housing Act 2004 Section 213 repayment demand citing 1x to 3x compensation for unprotected deposits.
+            </p>
+          </div>
+          <a href="/uk/tenancy-deposit-demand.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- UK Tool 4 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="uk united kingdom section 13 rent challenge form 4 first tier tribunal property chamber rent increase">
+          <div>
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">UK Tribunal Referral</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Section 13 Rent Challenge</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Referral document to dispute unreasonable Form 4 rent increases at the First-tier Tribunal.
+            </p>
+          </div>
+          <a href="/uk/section-13-rent-challenge.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Tenancy Comparison Matrix -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm overflow-hidden">
+        <div class="mb-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold mb-2">
+            Statutory Benchmark Comparison
+          </div>
+          <h2 class="font-display text-2xl font-bold text-slate-900">
+            Global Tenancy Comparison Matrix: US States vs United Kingdom
+          </h2>
+          <p class="text-xs text-slate-600">
+            Contrasting statutory notice windows, nonpayment cure periods, and primary eviction frameworks across key jurisdictions.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-900 text-white border-b border-slate-800">
+                <th class="p-3.5 font-bold">Jurisdiction</th>
+                <th class="p-3.5 font-bold">Governing Statute</th>
+                <th class="p-3.5 font-bold">Unpaid Rent Cure Period</th>
+                <th class="p-3.5 font-bold">Periodic Tenancy Notice</th>
+                <th class="p-3.5 font-bold">Deposit Return Deadline</th>
+                <th class="p-3.5 font-bold">No-Fault Eviction Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 text-slate-700">
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                  California (US)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">Civ. Code § 1946.1 / CCP § 1161(2)</td>
+                <td class="p-3.5 font-semibold text-emerald-700">3 Days (Excludes Weekends & Holidays)</td>
+                <td class="p-3.5">30 Days (<1 yr) / 60 Days (>1 yr)</td>
+                <td class="p-3.5">21 Calendar Days</td>
+                <td class="p-3.5 text-amber-700 font-semibold">Strict Just Cause Required (AB 1482)</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                  Texas (US)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">Prop. Code § 24.005 / § 92.103</td>
+                <td class="p-3.5 font-semibold text-emerald-700">3 Days (Unless lease specifies 24 hrs)</td>
+                <td class="p-3.5">30 Days (Month-to-month)</td>
+                <td class="p-3.5">30 Calendar Days</td>
+                <td class="p-3.5 text-slate-600">Permitted upon lease expiration</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                  Florida (US)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">Stat. § 83.56(3) / § 83.57</td>
+                <td class="p-3.5 font-semibold text-emerald-700">3 Days (Excludes Weekends & Holidays)</td>
+                <td class="p-3.5">30 Days (Month-to-month)</td>
+                <td class="p-3.5">15 Days (No claim) / 30 Days (Claim)</td>
+                <td class="p-3.5 text-slate-600">Permitted upon 30 days notice</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                  New York (US)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">RPL § 226-c / RPAPL § 711(2)</td>
+                <td class="p-3.5 font-semibold text-emerald-700">14 Days Written Rent Demand</td>
+                <td class="p-3.5">30/60/90 Days (Tiered by tenure)</td>
+                <td class="p-3.5">14 Calendar Days</td>
+                <td class="p-3.5 text-amber-700 font-semibold">Good Cause Eviction Law in select areas</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors bg-red-50/30">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                  England & Wales (UK)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">Housing Act 1988 (Renters' Rights Act)</td>
+                <td class="p-3.5 font-semibold text-red-700">4 Weeks Notice (At least 3 months arrears)</td>
+                <td class="p-3.5">2 Months (Tenant periodic notice)</td>
+                <td class="p-3.5">30 Days Scheme Protection (DPS/TDS)</td>
+                <td class="p-3.5 text-red-700 font-bold">ABOLISHED (Section 21 eliminated)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Legal Guides -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div class="mb-6">
+        <h2 class="font-display text-2xl font-bold text-slate-900">Featured Statutory Guides</h2>
+        <p class="text-xs text-slate-500">Authoritative legal analysis with exact code citations and procedural guidance</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Guide 1 -->
+        <article class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+              <span class="px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-bold">United States</span>
+              <span>12 Min Read</span>
+            </div>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">
+              <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-700 transition-colors">
+                The US Residential Eviction Process: Statutory Notice Rules & Procedural Timelines
+              </a>
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Comprehensive breakdown of lawful service methods, unlawful detainer court summons, and sheriff writ execution.
+            </p>
+          </div>
+          <a href="/guides/us-eviction-process-guide.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Read Complete Guide</span>
+            <span>&rarr;</span>
+          </a>
+        </article>
+
+        <!-- Guide 2 -->
+        <article class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+              <span class="px-2 py-0.5 rounded bg-red-50 text-red-700 font-bold">United Kingdom</span>
+              <span>14 Min Read</span>
+            </div>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">
+              <a href="/guides/uk-renters-rights-act-guide.html" class="hover:text-emerald-700 transition-colors">
+                UK Renters' Rights Act: The Definitive Guide to Section 21 Abolition & Reformed Grounds
+              </a>
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Detailed statutory roadmap covering reformed Section 8 Schedule 2 grounds, First-tier Tribunal rent disputes, and deposit claims.
+            </p>
+          </div>
+          <a href="/guides/uk-renters-rights-act-guide.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Read Complete Guide</span>
+            <span>&rarr;</span>
+          </a>
+        </article>
+
+        <!-- Guide 3 -->
+        <article class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-3">
+              <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold">Comparative</span>
+              <span>11 Min Read</span>
+            </div>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">
+              <a href="/guides/security-deposit-return-rights.html" class="hover:text-emerald-700 transition-colors">
+                Tenancy Deposit Return Rights: US Statutory Deadlines vs UK Custodial Protections
+              </a>
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Contrasting state-mandated bad-faith penalties with Housing Act 2004 Section 213 custodial deposit protections.
+            </p>
+          </div>
+          <a href="/guides/security-deposit-return-rights.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Read Complete Guide</span>
+            <span>&rarr;</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+      <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        
+        <div class="space-y-6 text-sm">
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">Are notices generated on TenantNotice legally binding?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Yes. TenantNotice drafts notices following exact statutory civil codes in the US (such as California Civil Code Section 1946.1) and reformed parliamentary grounds under the UK Renters' Rights Act, provided they are served in strict accordance with statutory service procedures.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">Why are United States and United Kingdom portals separated?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              US and UK tenancy laws operate on fundamentally contradictory statutory concepts. Isolating jurisdictions into dedicated subdirectories eliminates cross-border confusion, guarantees local code compliance, and prevents fatal court dismissals.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">Does TenantNotice store my personal tenancy or lease information?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              No. TenantNotice is architected with a zero-data-retention client-side engine. All document compilation occurs locally inside your browser memory. No names, addresses, or monetary amounts are ever sent to our servers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2">
+          <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
+          <span class="font-display font-bold text-base text-white">TenantNotice</span>
+        </div>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Precision statutory notice generation for landlords and tenants. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
+          <li><a href="/uk/tenant-notice-to-quit.html" class="hover:text-white transition-colors">Tenant Notice to Quit</a></li>
+          <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
+          <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
+          <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust & Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/legal/disclaimer.html" class="hover:text-white transition-colors">Legal Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+      &copy; 2026 TenantNotice.online. All rights reserved. Self-help legal templates and statutory reference material. Not legal advice.
+    </div>
+  </footer>
+
+  <!-- Instant Search Script -->
+  <script>
+    function filterToolsLive() {
+      const query = document.getElementById('globalToolSearch').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.tool-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const keywords = card.getAttribute('data-keywords') || '';
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+
+        if (!query || keywords.includes(query) || title.includes(query) || desc.includes(query)) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      document.getElementById('filterCount').textContent = `Showing ${visibleCount} statutory generators`;
+    }
+
+    function setSearch(term) {
+      const input = document.getElementById('globalToolSearch');
+      input.value = term;
+      filterToolsLive();
+      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+# TenantNotice.online - LLM Context Manifest
+> Precision statutory tenant and landlord notice generation platform with strict jurisdictional segregation between the United States and the United Kingdom.
+
+## Core Jurisdictions
+- United States: https://tenantnotice.online/us/
+- United Kingdom: https://tenantnotice.online/uk/
+
+## US Statutory Notice Utilities
+- 30-Day Notice to Vacate: https://tenantnotice.online/us/30-day-notice-to-vacate.html
+  - Governed by California Civ. Code § 1946.1, Texas Prop. Code § 24.005, Florida Stat. § 83.57, New York RPL § 226-c.
+- 3-Day Notice to Pay Rent or Quit: https://tenantnotice.online/us/3-day-pay-rent-or-quit.html
+  - Governed by California CCP § 1161(2), Florida Stat. § 83.56(3), Texas Prop. Code § 24.005.
+- Security Deposit Demand Letter: https://tenantnotice.online/us/security-deposit-demand.html
+  - Governed by California Civ. Code § 1950.5 (21 days), Texas Prop. Code § 92.103 (30 days), Florida Stat. § 83.49 (15 to 60 days).
+- 24-Hour Notice to Enter: https://tenantnotice.online/us/24-hour-notice-to-enter.html
+  - Governed by California Civ. Code § 1954 and common law privacy covenants.
+
+## UK Statutory Tenancy Utilities (2026 Reforms Compliant)
+- Section 8 Notice to Quit: https://tenantnotice.online/uk/section-8-notice-to-quit.html
+  - Governed by Housing Act 1988 reformed Schedule 2 possession grounds under the Renters' Rights Act.
+- Tenant Notice to Quit: https://tenantnotice.online/uk/tenant-notice-to-quit.html
+  - Governed by Assured Periodic Tenancy termination rights under English common law and statute.
+- Tenancy Deposit Demand: https://tenantnotice.online/uk/tenancy-deposit-demand.html
+  - Governed by Housing Act 2004 Section 213 compliance and custodial schemes (DPS, TDS, MyDeposits).
+- Section 13 Rent Increase Challenge: https://tenantnotice.online/uk/section-13-rent-challenge.html
+  - Governed by Housing Act 1988 Section 13 (Form 4) referral to the First-tier Tribunal (Property Chamber).
+
+## Authoritative Legal Guides
+- US Eviction Process and Statutory Timelines: https://tenantnotice.online/guides/us-eviction-process-guide.html
+- UK Renters' Rights Act Comprehensive Guide: https://tenantnotice.online/guides/uk-renters-rights-act-guide.html
+- Security Deposit Return Rights and Small Claims Procedures: https://tenantnotice.online/guides/security-deposit-return-rights.html
+
+## Institutional Trust & Legal Compliance
+- About TenantNotice: https://tenantnotice.online/legal/about-us.html
+- Contact and Editorial Inquiries: https://tenantnotice.online/legal/contact-us.html
+- Privacy Policy (GDPR and CPRA Compliant): https://tenantnotice.online/legal/privacy-policy.html
+- Terms of Service: https://tenantnotice.online/legal/terms-of-service.html
+- Legal Disclaimer: https://tenantnotice.online/legal/disclaimer.html

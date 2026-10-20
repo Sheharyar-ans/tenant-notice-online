@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK Tenant Notice to Quit Generator: Periodic Tenancy 2-Month Notice</title>
+  <meta name="description" content="Generate a legally binding 2-month tenant notice to quit for UK periodic tenancies under the Renters' Rights Act. Calculates rental period expiry dates.">
+  <link rel="canonical" href="https://tenantnotice.online/uk/tenant-notice-to-quit.html">
+  <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/tenant-notice-to-quit.html">
+  <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/30-day-notice-to-vacate.html">
+  <link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/uk/tenant-notice-to-quit.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Source Serif 4', 'Georgia', 'serif'],
+            legal: ['Cinzel', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#0f172a',
+              slate: '#1e293b',
+              emerald: '#059669',
+              lightEmerald: '#10b981',
+              accent: '#0284c7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Print Engine -->
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printableNotice, #printableNotice * {
+        visibility: visible;
+      }
+      #printableNotice {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+        line-height: 1.5 !important;
+      }
+      .no-print, header, footer, nav, aside, .action-toolbar {
+        display: none !important;
+      }
+      @page {
+        size: A4 portrait;
+        margin: 25mm;
+      }
+    }
+  </style>
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://tenantnotice.online/uk/tenant-notice-to-quit.html#app",
+        "name": "UK Tenant Notice to Quit Generator",
+        "url": "https://tenantnotice.online/uk/tenant-notice-to-quit.html",
+        "applicationCategory": "LegalApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "GBP"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "UK Portal",
+            "item": "https://tenantnotice.online/uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tenant Notice to Quit",
+            "item": "https://tenantnotice.online/uk/tenant-notice-to-quit.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/uk/tenant-notice-to-quit.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much notice must a tenant give to end a periodic tenancy in England?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under the Renters' Rights Act, tenants on statutory periodic tenancies have the legal right to terminate their tenancy by serving at least 2 calendar months written notice to quit on their landlord or letting agent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a tenant notice to quit need to end on a specific day of the rental period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Under common law rules governing periodic tenancies, a tenant's notice to quit must expire on either the first or last day of a rental period (typically the day preceding the date monthly rent falls due)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a tenant withdraw a notice to quit once served?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A valid notice to quit served by a tenant brings the tenancy to an end upon expiry and cannot be withdrawn unilaterally. It can only be rescinded if the landlord expressly agrees in writing to grant a new tenancy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a landlord charge fees for a tenant ending a periodic tenancy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Under the Tenant Fees Act 2019, landlords and letting agents are prohibited from charging check-out fees, administrative termination fees, or inventory exit fees to tenants terminating a periodic tenancy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if one joint tenant serves a notice to quit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under established English property law, a valid notice to quit served by one joint tenant on a periodic tenancy terminates the tenancy for all joint tenants, regardless of whether the other joint tenants consented."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Navigation Header -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group">
+        <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/uk/" class="text-emerald-400 flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>UK Portal</span>
+        </a>
+        <a href="/guides/uk-renters-rights-act-guide.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+      </nav>
+      <div class="flex items-center space-x-3">
+        <a href="/uk/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-1.5 border border-slate-700 rounded-lg">
+          &larr; All UK Tools
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+      <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
+      <span>/</span>
+      <a href="/uk/" class="hover:text-slate-900 transition-colors">UK Portal</a>
+      <span>/</span>
+      <span class="text-slate-900 font-medium">Tenant Notice to Quit</span>
+    </div>
+  </nav>
+
+  <!-- Interactive Document Workspace -->
+  <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold mb-3">
+        <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+        Assured Periodic Tenancy Exit Engine
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        UK Tenant Notice to Quit Generator: Periodic Tenancy 2-Month Notice
+      </h1>
+
+      <!-- Direct Answer Capsule for AI Ingestion -->
+      <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
+        <p class="font-medium text-slate-200">
+          <strong>Direct Legal Rule:</strong> Under the Renters' Rights Act, tenants residing on rolling periodic tenancies in England may terminate their tenancy by serving a written two-month notice to quit. The notice must expire on the final day of a rental period to legally end rent liability.
+        </p>
+      </div>
+    </div>
+
+    <!-- Split-Screen Interactive Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+      <!-- Left Form Controls (lg:col-span-5) -->
+      <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 no-print text-xs">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h2 class="font-display text-sm font-bold text-slate-900">Tenancy Exit Details</h2>
+          <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">Reactive Compiler</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="tenantName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Full Name(s)</label>
+            <input type="text" id="tenantName" oninput="updateTenantNoticeDOM()" value="Sophie Louise Taylor" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label for="landlordName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Landlord / Letting Agent</label>
+            <input type="text" id="landlordName" oninput="updateTenantNoticeDOM()" value="Foxtons Property Management (Ref: L-8820)" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="propertyAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Rented Premises Address (With Postcode)</label>
+          <input type="text" id="propertyAddress" oninput="updateTenantNoticeDOM()" value="Apartment 14, St. John's Court, Warwick Road, Manchester, M16 0QQ" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="rentPaymentDay" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Day of Month Rent is Paid</label>
+            <input type="number" id="rentPaymentDay" oninput="calculateExitDate()" value="1" min="1" max="31" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label for="noticeDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Date Notice Served</label>
+            <input type="date" id="noticeDate" oninput="calculateExitDate()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="exitDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Calculated Termination / Surrender Date</label>
+          <input type="date" id="exitDate" oninput="updateTenantNoticeDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 font-semibold bg-slate-50">
+          <p class="text-[11px] text-slate-500 mt-1">Calculated to expire on the final day of the second following monthly rental period.</p>
+        </div>
+
+        <div>
+          <label for="forwardingAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Forwarding Address for Deposit Return</label>
+          <input type="text" id="forwardingAddress" oninput="updateTenantNoticeDOM()" value="24 Elmfield Avenue, Didsbury, Manchester, M20 6EE" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <label for="handoverArrangements" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Check-Out & Key Handover Proposal</label>
+          <textarea id="handoverArrangements" oninput="updateTenantNoticeDOM()" rows="3" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">I propose that we conduct the joint check-out inventory inspection at 11:00 AM on the effective exit date, at which time all keys, fobs, and parking permits will be returned to your agent.</textarea>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+          <button onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button onclick="copyTenantNoticeToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-200 flex items-center justify-center space-x-2 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            <span>Copy Text</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Letterhead Preview (lg:col-span-7) -->
+      <div class="lg:col-span-7">
+        <div class="sticky top-20">
+          <div class="flex items-center justify-between mb-3 no-print">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Statutory Letterhead Preview (A4 Ready)
+            </span>
+            <span class="text-xs text-slate-400">Periodic Tenancy Notice</span>
+          </div>
+
+          <!-- Document Container -->
+          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm">
+            <div class="text-center border-b-2 border-slate-900 pb-4 mb-6">
+              <div class="font-legal font-bold text-lg sm:text-xl tracking-wider uppercase text-slate-900">
+                TENANT'S STATUTORY NOTICE TO QUIT
+              </div>
+              <div class="text-xs font-mono font-bold tracking-widest text-slate-600 uppercase mt-1">
+                HOUSING ACT 1988 (PERIODIC TENANCY TERMINATION)
+              </div>
+            </div>
+
+            <!-- Party Metadata Header -->
+            <div class="space-y-2 mb-6 text-xs sm:text-sm">
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Date of Notice:</span>
+                <span class="font-semibold" id="prevNoticeDate">October 20, 2026</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">To Landlord / Agent:</span>
+                <span class="font-semibold" id="prevLandlord">Foxtons Property Management</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Premises Address:</span>
+                <span class="font-semibold" id="prevAddress">Apartment 14, St. John's Court, Warwick Road, Manchester, M16 0QQ</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">From Tenant(s):</span>
+                <span class="font-semibold" id="prevTenant">Sophie Louise Taylor</span>
+              </div>
+            </div>
+
+            <!-- Notice Narrative Text -->
+            <div class="space-y-4 text-justify mb-6 text-xs sm:text-sm">
+              <p>
+                <strong>DEAR SIR / MADAM:</strong>
+              </p>
+              <p>
+                Please take formal notice that I, being the tenant of the residential dwelling described above under an assured periodic tenancy, hereby give you at least two calendar months written notice to quit and terminate the tenancy.
+              </p>
+              <p>
+                I will deliver up vacant possession of the premises to you or your designated property representative on:
+              </p>
+              <div class="p-3 bg-slate-50 border border-slate-200 text-slate-900 font-bold text-center text-sm rounded-lg" id="prevExitDate">
+                December 31, 2026
+              </div>
+              <p>
+                This termination date has been calculated to expire on the final day of a rental period in strict compliance with the statutory rules governing periodic tenancies.
+              </p>
+              <p id="prevHandoverText" class="text-xs italic bg-slate-50 p-3 rounded border border-slate-200">
+                I propose that we conduct the joint check-out inventory inspection at 11:00 AM on the effective exit date, at which time all keys, fobs, and parking permits will be returned to your agent.
+              </p>
+              <p>
+                <strong>TENANCY DEPOSIT REPAYMENT REQUEST:</strong> Please confirm receipt of this notice and provide written confirmation of the scheme holding my deposit (DPS, TDS, or MyDeposits). My forwarding address for all post-tenancy communications and deposit release authorization is:
+              </p>
+              <p class="font-semibold pl-4 border-l-2 border-slate-900 text-xs" id="prevForwarding">
+                24 Elmfield Avenue, Didsbury, Manchester, M20 6EE
+              </p>
+            </div>
+
+            <!-- Signature Line -->
+            <div class="pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs">
+              <div>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Tenant Signature</p>
+                <div class="border-b border-slate-400 pb-1 mb-1"></div>
+                <p class="font-semibold" id="prevSignatory">Sophie Louise Taylor</p>
+                <p class="text-slate-500">Tenant</p>
+              </div>
+              <div>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Delivery Method</p>
+                <div class="border-b border-slate-400 pb-1 mb-1"></div>
+                <p class="font-semibold">Recorded Delivery / Email with Acknowledgment</p>
+                <p class="text-slate-500">Statutory Notice Transmission</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Analysis (1,000 to 1,400 words) -->
+    <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print">
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Legal Foundation & Periodic Tenancy Exit Rules
+        </h2>
+        <p class="mb-4">
+          Under the modernized framework of English housing law established by the Renters' Rights Act, fixed-term assured shorthold tenancies have been replaced with a universal system of periodic rolling tenancies. In this structure, residential tenants are endowed with the statutory right to bring their tenancy to an end at any time by giving their landlord two calendar months written notice.
+        </p>
+        <p class="mb-4">
+          Under the common law principles reaffirmed by the courts in cases such as <em>Crate v Miller</em> and <em>Fernandez v McDonald</em>, a valid notice to quit served by a periodic tenant must satisfy two strict criteria:
+        </p>
+        <ol class="list-decimal pl-6 space-y-2 mb-4">
+          <li><strong>Length of Notice:</strong> It must provide at least two clear calendar months between the date of service and the intended termination date.</li>
+          <li><strong>Expiry on a Rental Period Boundary:</strong> The notice must expire on the final day of a rental period, or alternatively on the first day of the subsequent rental period. For example, if rent is payable on the 1st day of each month, the monthly rental period runs from the 1st to the final day of that month. A valid notice must therefore expire on the final day of a month (such as December 31st).</li>
+        </ol>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Joint Tenancies: The Unilateral Termination Rule
+        </h2>
+        <p class="mb-4">
+          One of the most consequential aspects of English tenancy law concerns joint tenants residing under a periodic contract. Under the landmark House of Lords ruling in <em>Hammersmith and Fulham LBC v Monk [1992]</em>, any one joint tenant has the legal power to serve a notice to quit on the landlord without the consent, agreement, or prior knowledge of the other joint tenants.
+        </p>
+        <p>
+          Once that notice expires, the periodic tenancy terminates for all tenants residing in the property as a matter of law. The remaining occupants do not retain automatic rights of continued occupation unless the landlord chooses to offer them a brand-new individual tenancy agreement.
+        </p>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Tenant Fees Act 2019 Protections upon Exit
+        </h2>
+        <p class="mb-4">
+          When serving a notice to quit to conclude a periodic tenancy, tenants are protected by the Tenant Fees Act 2019. Landlords and letting agents are legally prohibited from levying:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li>Exit fees or surrender administration charges for processing a valid notice.</li>
+          <li>Compulsory professional cleaning fees unless the tenant has breached their statutory duty of returning the property to the standard established in the check-in inventory.</li>
+          <li>Check-out inventory fees or inspection charges.</li>
+        </ul>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Common Pitfalls That Void a Tenant Notice to Quit
+        </h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Insufficient Notice Length:</strong> Providing 59 days instead of two full calendar months renders the notice void on its face, leaving the tenant legally liable for rent during subsequent periods.</li>
+          <li><strong>Mid-Period Termination Dates:</strong> Demanding that the tenancy terminate on the 15th day of a calendar month when the rental period runs from the 1st to the end of the month violates common law rules and allows the landlord to reject the notice.</li>
+          <li><strong>Oral or Informal Notice:</strong> Sending a text message or verbal notice over the phone is legally invalid. Tenancy agreements require formal written notice served in accordance with the agreement's service clause.</li>
+        </ul>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-6 text-xs">
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">How much notice must a tenant give to end a periodic tenancy in England?</h3>
+            <p class="leading-relaxed">
+              Under the Renters' Rights Act, tenants on statutory periodic tenancies have the legal right to terminate their tenancy by serving at least 2 calendar months written notice to quit on their landlord or letting agent.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Does a tenant notice to quit need to end on a specific day of the rental period?</h3>
+            <p class="leading-relaxed">
+              Yes. Under common law rules governing periodic tenancies, a tenant's notice to quit must expire on either the first or last day of a rental period (typically the day preceding the date monthly rent falls due).
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Can a tenant withdraw a notice to quit once served?</h3>
+            <p class="leading-relaxed">
+              No. A valid notice to quit served by a tenant brings the tenancy to an end upon expiry and cannot be withdrawn unilaterally. It can only be rescinded if the landlord expressly agrees in writing to grant a new tenancy.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Can a landlord charge fees for a tenant ending a periodic tenancy?</h3>
+            <p class="leading-relaxed">
+              No. Under the Tenant Fees Act 2019, landlords and letting agents are prohibited from charging check-out fees, administrative termination fees, or inventory exit fees to tenants terminating a periodic tenancy.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What happens if one joint tenant serves a notice to quit?</h3>
+            <p class="leading-relaxed">
+              Under established English property law, a valid notice to quit served by one joint tenant on a periodic tenancy terminates the tenancy for all joint tenants, regardless of whether the other joint tenants consented.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Utilities Grid -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Related UK Statutory Utilities & Guides
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/uk/section-8-notice-to-quit.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+            <span class="text-xs font-bold text-red-700 uppercase">UK Tool</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Section 8 Possession Notice</h3>
+            <p class="text-xs text-slate-500 mt-1">Reformed Schedule 2 grounds landlord possession form.</p>
+          </a>
+          <a href="/uk/tenancy-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+            <span class="text-xs font-bold text-red-700 uppercase">UK Tool</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Tenancy Deposit Demand</h3>
+            <p class="text-xs text-slate-500 mt-1">Housing Act 2004 Section 213 recovery letter.</p>
+          </a>
+          <a href="/guides/uk-renters-rights-act-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-red-500 transition-colors block">
+            <span class="text-xs font-bold text-emerald-700 uppercase">Legal Guide</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Renters' Rights Act Guide</h3>
+            <p class="text-xs text-slate-500 mt-1">In-depth overview of Section 21 abolition and periodic tenancies.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-12 mt-12 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2">
+          <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
+          <span class="font-display font-bold text-base text-white">TenantNotice</span>
+        </div>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Precision statutory notice generation for landlords and tenants. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
+          <li><a href="/uk/tenant-notice-to-quit.html" class="text-white font-medium">Tenant Notice to Quit</a></li>
+          <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
+          <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
+          <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust & Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/legal/disclaimer.html" class="hover:text-white transition-colors">Legal Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+      &copy; 2026 TenantNotice.online. All rights reserved. Self-help legal templates and statutory reference material. Not legal advice.
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+    <span class="text-xs font-semibold" id="toastMessage">Notice to quit copied to clipboard.</span>
+  </div>
+
+  <!-- JavaScript Reactive Engine -->
+  <script>
+    function calculateExitDate() {
+      const noticeVal = document.getElementById('noticeDate').value;
+      const paymentDay = parseInt(document.getElementById('rentPaymentDay').value) || 1;
+      if (!noticeVal) return;
+
+      const dateObj = new Date(noticeVal + 'T00:00:00');
+      // Must give at least 2 full calendar months
+      dateObj.setMonth(dateObj.getMonth() + 2);
+
+      // Now align to the end of that rental period (day before payment day)
+      // If payment day is 1st, end of period is the last day of the previous calendar month
+      if (paymentDay === 1) {
+        // Find last day of that month
+        const year = dateObj.getFullYear();
+        const month = dateObj.getMonth();
+        const lastDay = new Date(year, month + 1, 0); // 0 gets last day of previous month
+        document.getElementById('exitDate').value = lastDay.toISOString().split('T')[0];
+      } else {
+        // Day before payment day in that month
+        dateObj.setDate(paymentDay - 1);
+        document.getElementById('exitDate').value = dateObj.toISOString().split('T')[0];
+      }
+
+      updateTenantNoticeDOM();
+    }
+
+    function updateTenantNoticeDOM() {
+      const tenant = document.getElementById('tenantName').value || 'Tenant Name';
+      const landlord = document.getElementById('landlordName').value || 'Landlord / Letting Agent';
+      const address = document.getElementById('propertyAddress').value || 'Premises Address';
+      const noticeVal = document.getElementById('noticeDate').value;
+      const exitVal = document.getElementById('exitDate').value;
+      const forwarding = document.getElementById('forwardingAddress').value;
+      const handover = document.getElementById('handoverArrangements').value;
+
+      document.getElementById('prevTenant').textContent = tenant;
+      document.getElementById('prevSignatory').textContent = tenant;
+      document.getElementById('prevLandlord').textContent = landlord;
+      document.getElementById('prevAddress').textContent = address;
+      document.getElementById('prevForwarding').textContent = forwarding;
+      document.getElementById('prevHandoverText').textContent = handover;
+
+      if (noticeVal) {
+        const parts = noticeVal.split('-');
+        const nObj = new Date(parts[0], parts[1] - 1, parts[2]);
+        document.getElementById('prevNoticeDate').textContent = nObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      }
+
+      if (exitVal) {
+        const parts = exitVal.split('-');
+        const eObj = new Date(parts[0], parts[1] - 1, parts[2]);
+        document.getElementById('prevExitDate').textContent = eObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      }
+    }
+
+    function copyTenantNoticeToClipboard() {
+      const noticeElement = document.getElementById('printableNotice');
+      navigator.clipboard.writeText(noticeElement.innerText).then(() => {
+        showToast("Tenant notice text successfully copied to clipboard.");
+      }).catch(err => {
+        showToast("Text ready. Please copy or print directly.");
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const today = new Date();
+      document.getElementById('noticeDate').value = today.toISOString().split('T')[0];
+      calculateExitDate();
+    });
+  </script>
+</body>
+</html>

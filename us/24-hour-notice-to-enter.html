@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California 24-Hour Notice to Enter Generator: Civ. Code § 1954</title>
+  <meta name="description" content="Generate a statutory 24-hour notice of entry for residential landlords. Complies with California Civil Code § 1954, privacy covenants, and business hours rules.">
+  <link rel="canonical" href="https://tenantnotice.online/us/24-hour-notice-to-enter.html">
+  <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/24-hour-notice-to-enter.html">
+  <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/tenant-notice-to-quit.html">
+  <link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/us/24-hour-notice-to-enter.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Source Serif 4', 'Georgia', 'serif'],
+            legal: ['Cinzel', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              navy: '#0f172a',
+              slate: '#1e293b',
+              emerald: '#059669',
+              lightEmerald: '#10b981',
+              accent: '#0284c7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Print Engine -->
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printableNotice, #printableNotice * {
+        visibility: visible;
+      }
+      #printableNotice {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+        line-height: 1.5 !important;
+      }
+      .no-print, header, footer, nav, aside, .action-toolbar {
+        display: none !important;
+      }
+      @page {
+        size: letter portrait;
+        margin: 1in;
+      }
+    }
+  </style>
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://tenantnotice.online/us/24-hour-notice-to-enter.html#app",
+        "name": "US 24-Hour Notice to Enter Generator",
+        "url": "https://tenantnotice.online/us/24-hour-notice-to-enter.html",
+        "applicationCategory": "LegalApplication",
+        "operatingSystem": "All modern browsers",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "US Portal",
+            "item": "https://tenantnotice.online/us/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "24-Hour Notice to Enter",
+            "item": "https://tenantnotice.online/us/24-hour-notice-to-enter.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/us/24-hour-notice-to-enter.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the only lawful reasons for landlord entry under California Civil Code § 1954?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "California Civil Code Section 1954 permits landlord entry only in cases of emergency, to make necessary or agreed repairs, to exhibit the dwelling to prospective purchasers or tenants, to conduct pre-move-out inspections, or pursuant to court order."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What constitutes normal business hours for landlord entry in California?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In California, normal business hours are legally interpreted as Monday through Friday, 9:00 AM to 5:00 PM, excluding state and federal holidays, unless the tenant gives explicit consent to entry on weekends or evenings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much advance notice is required if the notice to enter is mailed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under California Civil Code Section 1954, if the notice is mailed, mailing must occur at least six calendar days prior to the intended entry date to establish a statutory presumption of reasonable notice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much advance notice is required for an initial pre-move-out inspection?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under California Civil Code Section 1950.5(f), a landlord must provide at least 48 hours written notice before conducting an initial pre-move-out inspection, unless the parties mutually agree in writing to a different schedule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a tenant sue a landlord for entering without statutory 24-hour notice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Unauthorized landlord entry without statutory notice or valid justification constitutes civil trespass, breach of the implied covenant of quiet enjoyment, and illegal tenant harassment under California Civil Code Section 1940.2."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group">
+        <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="/us/" class="text-emerald-400 flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>UK Portal</span>
+        </a>
+        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+      </nav>
+      <div class="flex items-center space-x-3">
+        <a href="/us/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-1.5 border border-slate-700 rounded-lg">
+          &larr; All US Tools
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+      <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
+      <span>/</span>
+      <a href="/us/" class="hover:text-slate-900 transition-colors">US Portal</a>
+      <span>/</span>
+      <span class="text-slate-900 font-medium">24-Hour Notice to Enter</span>
+    </div>
+  </nav>
+
+  <!-- Interactive Workspace -->
+  <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <div class="mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold mb-3">
+        <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+        Statutory Access Compliance Generator
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        California 24-Hour Notice to Enter Generator: Civ. Code § 1954
+      </h1>
+
+      <!-- Direct Answer Capsule for AI Ingestion -->
+      <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
+        <p class="font-medium text-slate-200">
+          <strong>Direct Legal Rule:</strong> California Civil Code Section 1954 prohibits residential landlords from entering tenant premises without at least twenty-four hours advance written notice. Entry must occur during normal business hours for enumerated statutory reasons, including necessary repairs, inspections, or exhibiting the property to prospective purchasers.
+        </p>
+      </div>
+    </div>
+
+    <!-- Split-Screen Interactive Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+      <!-- Left Configuration Panel (lg:col-span-5) -->
+      <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 no-print text-xs">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h2 class="font-display text-sm font-bold text-slate-900">Notice Configuration</h2>
+          <span class="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">Reactive Compiler</span>
+        </div>
+
+        <div>
+          <label for="statutoryReason" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Lawful Statutory Reason for Entry</label>
+          <select id="statutoryReason" onchange="updateEntryDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white">
+            <option value="Necessary or Agreed Repairs and Maintenance">Make Necessary or Agreed Repairs, Alterations, or Improvements</option>
+            <option value="Exhibit Property to Prospective Purchasers or Mortgagees">Exhibit the Property to Prospective Purchasers or Mortgagees</option>
+            <option value="Exhibit Property to Prospective Tenants">Exhibit the Property to Prospective Tenants</option>
+            <option value="Pre-Move-Out Initial Inspection (Civ. Code § 1950.5)">Initial Pre-Move-Out Inspection (48 Hours Advance Notice)</option>
+            <option value="Annual Smoke and Carbon Monoxide Detector Inspection">Annual Smoke and Carbon Monoxide Detector Safety Inspection</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="landlordName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Landlord / Management Co.</label>
+            <input type="text" id="landlordName" oninput="updateEntryDOM()" value="Beacon Property Management Inc." class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label for="tenantName" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Tenant Name(s)</label>
+            <input type="text" id="tenantName" oninput="updateEntryDOM()" value="Claire Reynolds" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="rentalAddress" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Premises Address (Including Unit #)</label>
+          <input type="text" id="rentalAddress" oninput="updateEntryDOM()" value="510 S. Grand Avenue, Apt 1804, Los Angeles, CA 90071" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label for="entryDate" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Intended Date of Entry</label>
+            <input type="date" id="entryDate" oninput="updateEntryDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label for="entryWindow" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Entry Time Window</label>
+            <input type="text" id="entryWindow" oninput="updateEntryDOM()" value="10:00 AM to 1:00 PM" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+          </div>
+        </div>
+
+        <div>
+          <label for="personnelEntering" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Personnel / Contractors Entering</label>
+          <input type="text" id="personnelEntering" oninput="updateEntryDOM()" value="Licensed HVAC Technician (Apex Mechanical) & Property Manager" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <label for="serviceMethod" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Service Method</label>
+          <select id="serviceMethod" onchange="updateEntryDOM()" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white">
+            <option value="Personal In-Hand Delivery">Personal In-Hand Delivery to Tenant</option>
+            <option value="Left with Person of Suitable Age at the Residence">Left with Person of Suitable Age at the Residence</option>
+            <option value="Left on or Under Front Door">Left on, Near, or Under the Usual Entry Door</option>
+            <option value="First-Class Mail (Mailed 6 Days in Advance)">Mailed via First-Class Mail (Presumes 6 Days Notice)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="entryScope" class="block font-bold text-slate-700 uppercase tracking-wider mb-1">Scope of Work / Inspection Particulars</label>
+          <textarea id="entryScope" oninput="updateEntryDOM()" rows="3" class="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500">Annual servicing and filter replacement of central heat pump unit, plus testing of kitchen and hallway smoke and carbon monoxide detectors.</textarea>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+          <button onclick="window.print()" class="flex-1 py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs rounded-xl shadow-sm flex items-center justify-center space-x-2 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button onclick="copyEntryToClipboard()" class="py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-xl border border-emerald-200 flex items-center justify-center space-x-2 transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            <span>Copy Text</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Letterhead Preview (lg:col-span-7) -->
+      <div class="lg:col-span-7">
+        <div class="sticky top-20">
+          <div class="flex items-center justify-between mb-3 no-print">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+              Statutory Letterhead Preview
+            </span>
+            <span class="text-xs text-slate-400">California Civil Code Compliant</span>
+          </div>
+
+          <!-- Document Container -->
+          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm">
+            <div class="text-center border-b-2 border-slate-900 pb-4 mb-6">
+              <div class="font-legal font-bold text-lg sm:text-xl tracking-wider uppercase text-slate-900">
+                NOTICE OF INTENT TO ENTER RESIDENTIAL PREMISES
+              </div>
+              <div class="text-xs font-mono font-bold tracking-widest text-slate-600 uppercase mt-1">
+                CALIFORNIA CIVIL CODE SECTION 1954
+              </div>
+            </div>
+
+            <!-- Header Metadata -->
+            <div class="space-y-2 mb-6 text-xs sm:text-sm">
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Date of Notice:</span>
+                <span class="font-semibold" id="prevNoticeDate">October 20, 2026</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">To Tenant(s):</span>
+                <span class="font-semibold" id="prevTenant">Claire Reynolds</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">Premises Address:</span>
+                <span class="font-semibold" id="prevAddress">510 S. Grand Avenue, Apt 1804, Los Angeles, CA 90071</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-100 pb-1.5">
+                <span class="font-bold uppercase tracking-wider font-sans text-xs text-slate-500">From Landlord / Agent:</span>
+                <span class="font-semibold" id="prevLandlord">Beacon Property Management Inc.</span>
+              </div>
+            </div>
+
+            <!-- Narrative Notice -->
+            <div class="space-y-4 text-justify mb-6 text-xs sm:text-sm">
+              <p>
+                <strong>PLEASE TAKE NOTICE</strong> that pursuant to <strong>California Civil Code Section 1954</strong>, the landlord, owner, or authorized representative intends to enter the subject residential dwelling unit described above on:
+              </p>
+
+              <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2 text-xs">
+                <div class="flex flex-col sm:flex-row sm:justify-between">
+                  <span class="font-bold font-sans uppercase text-slate-600">Scheduled Date of Entry:</span>
+                  <span class="font-semibold text-slate-900" id="prevEntryDate">October 22, 2026</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between">
+                  <span class="font-bold font-sans uppercase text-slate-600">Approximate Time Window:</span>
+                  <span class="font-semibold text-slate-900" id="prevEntryWindow">10:00 AM to 1:00 PM</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between">
+                  <span class="font-bold font-sans uppercase text-slate-600">Personnel Entering:</span>
+                  <span class="font-semibold text-slate-900" id="prevPersonnel">Licensed HVAC Technician & Property Manager</span>
+                </div>
+              </div>
+
+              <p>
+                <strong>Statutory Purpose of Entry:</strong> Entry is being made for the following lawful statutory justification permitted under California Civil Code Section 1954:
+              </p>
+              <p class="font-semibold text-slate-900 pl-4 border-l-2 border-slate-900" id="prevReason">
+                Necessary or Agreed Repairs and Maintenance
+              </p>
+              <p id="prevScope" class="text-xs text-slate-700 italic">
+                Scope of Work: Annual servicing and filter replacement of central heat pump unit, plus testing of kitchen and hallway smoke and carbon monoxide detectors.
+              </p>
+              <p class="text-xs text-slate-600">
+                Pursuant to state law, entry will occur during normal business hours. Your presence is not required during the entry window, provided entry can be accomplished securely by management key. If you have pets, please ensure they are safely secured during the designated timeframe.
+              </p>
+            </div>
+
+            <!-- Signatures Block -->
+            <div class="pt-6 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-8 text-xs">
+              <div>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Executing Landlord / Agent</p>
+                <div class="border-b border-slate-400 pb-1 mb-1"></div>
+                <p class="font-semibold" id="prevSignatory">Beacon Property Management Inc.</p>
+                <p class="text-slate-500">Authorized Representative</p>
+              </div>
+              <div>
+                <p class="font-bold uppercase tracking-wider font-sans text-slate-500 mb-6">Service Method</p>
+                <div class="border-b border-slate-400 pb-1 mb-1"></div>
+                <p class="font-semibold" id="prevService">Personal In-Hand Delivery</p>
+                <p class="text-slate-500">Verified Advance Written Notice</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Mass & Statutory Analysis (1,000 to 1,400 words) -->
+    <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print">
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Legal Foundation & Governing State Code
+        </h2>
+        <p class="mb-4">
+          A tenant's fundamental right to privacy and exclusive possession of their leased dwelling is one of the oldest covenants recognized in common law property jurisprudence. In California, this right is codified and strictly circumscribed by California Civil Code Section 1954.
+        </p>
+        <p class="mb-4">
+          Unlike common landlord misconceptions, ownership of a residential property does not confer unfettered rights of access. Under Civil Code Section 1954, a landlord may enter the dwelling unit only in the following enumerated situations:
+        </p>
+        <ol class="list-decimal pl-6 space-y-2 mb-4">
+          <li>In case of an immediate emergency posing an imminent hazard to life or property (such as active water leaks or fire).</li>
+          <li>To make necessary or agreed repairs, decorations, alterations, or improvements, supply necessary or agreed services, or exhibit the dwelling unit to prospective or actual purchasers, mortgagees, tenants, workers, or contractors.</li>
+          <li>When the tenant has abandoned or surrendered the premises.</li>
+          <li>Pursuant to a lawful court order.</li>
+          <li>For the purpose of conducting an initial pre-move-out inspection pursuant to California Civil Code Section 1950.5(f).</li>
+        </ol>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Reasonable Notice Windows and Methods of Service
+        </h2>
+        <p class="mb-4">
+          Civil Code Section 1954 establishes clear statutory guidelines for what constitutes reasonable advance notice:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li><strong>Personal Delivery or Posting:</strong> Twenty-four (24) hours is presumed by statute to be reasonable notice when delivered personally to the tenant, left with someone of suitable age and discretion at the property, or left on, near, or under the usual entry door in a manner that a reasonable person would discover it.</li>
+          <li><strong>Mailing Presumption:</strong> If the landlord chooses to mail the notice through the United States Postal Service, mailing must occur at least six (6) calendar days prior to the intended entry to account for postal transit and preserve the 24-hour advance knowledge window.</li>
+          <li><strong>Pre-Move-Out Inspection Exception:</strong> Under Civil Code Section 1950.5, notice for an initial pre-move-out inspection requires at least forty-eight (48) hours advance written notice, rather than 24 hours.</li>
+        </ul>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Normal Business Hours & The Quiet Enjoyment Covenant
+        </h2>
+        <p class="mb-4">
+          Unless the tenant grants express contemporaneous permission, all non-emergency landlord entry must occur exclusively during normal business hours. California appellate courts interpret normal business hours as Monday through Friday, 9:00 AM to 5:00 PM. Entry on weekend days or late evening hours without tenant consent violates Civil Code Section 1954.
+        </p>
+        <p>
+          Repeated or bad-faith entries that harass the tenant or disrupt their peaceful occupancy constitute a breach of the implied covenant of quiet enjoyment (Civil Code Section 1927), illegal landlord harassment under Civil Code Section 1940.2, and civil trespass. Landlords committing such violations expose themselves to substantial civil liability in Small Claims Court and statutory damages.
+        </p>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Common Pitfalls That Void This Notice of Entry
+        </h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Vague or Overbroad Time Windows:</strong> Stating that entry will occur "sometime next week" or providing an open 8-hour window violates the statutory standard of reasonableness. Notices should specify a discrete 3 to 4 hour window.</li>
+          <li><strong>Omission of Purpose:</strong> Simply demanding entry without detailing the statutory purpose (such as inspecting smoke detectors or repairing plumbing) invalidates the notice.</li>
+          <li><strong>Unlawful Retaliatory Inspections:</strong> Scheduling repeated inspections immediately following a tenant exercising lawful rights (such as complaining of habitability defects) constitutes unlawful retaliation under Civil Code Section 1942.5.</li>
+        </ul>
+      </section>
+
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-6 text-xs">
+          <div>
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What are the only lawful reasons for landlord entry under California Civil Code § 1954?</h3>
+            <p class="leading-relaxed">
+              California Civil Code Section 1954 permits landlord entry only in cases of emergency, to make necessary or agreed repairs, to exhibit the dwelling to prospective purchasers or tenants, to conduct pre-move-out inspections, or pursuant to court order.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">What constitutes normal business hours for landlord entry in California?</h3>
+            <p class="leading-relaxed">
+              In California, normal business hours are legally interpreted as Monday through Friday, 9:00 AM to 5:00 PM, excluding state and federal holidays, unless the tenant gives explicit consent to entry on weekends or evenings.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">How much advance notice is required if the notice to enter is mailed?</h3>
+            <p class="leading-relaxed">
+              Under California Civil Code Section 1954, if the notice is mailed, mailing must occur at least six calendar days prior to the intended entry date to establish a statutory presumption of reasonable notice.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">How much advance notice is required for an initial pre-move-out inspection?</h3>
+            <p class="leading-relaxed">
+              Under California Civil Code Section 1950.5(f), a landlord must provide at least 48 hours written notice before conducting an initial pre-move-out inspection, unless the parties mutually agree in writing to a different schedule.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 text-sm mb-1">Can a tenant sue a landlord for entering without statutory 24-hour notice?</h3>
+            <p class="leading-relaxed">
+              Yes. Unauthorized landlord entry without statutory notice or valid justification constitutes civil trespass, breach of the implied covenant of quiet enjoyment, and illegal tenant harassment under California Civil Code Section 1940.2.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Utilities Grid -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Related Tenancy Utilities & Guides
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <a href="/us/30-day-notice-to-vacate.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+            <span class="text-xs font-bold text-blue-700 uppercase">US Tool</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">30-Day Notice to Vacate</h3>
+            <p class="text-xs text-slate-500 mt-1">Periodic month-to-month lease termination form.</p>
+          </a>
+          <a href="/us/security-deposit-demand.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+            <span class="text-xs font-bold text-blue-700 uppercase">US Tool</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Security Deposit Demand</h3>
+            <p class="text-xs text-slate-500 mt-1">Pre-litigation recovery demand for unreturned deposits.</p>
+          </a>
+          <a href="/guides/us-eviction-process-guide.html" class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-emerald-500 transition-colors block">
+            <span class="text-xs font-bold text-emerald-700 uppercase">Legal Guide</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">US Eviction Process</h3>
+            <p class="text-xs text-slate-500 mt-1">Comprehensive statutory timeline and sheriff writ guide.</p>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-12 mt-12 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2">
+          <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
+          <span class="font-display font-bold text-base text-white">TenantNotice</span>
+        </div>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Precision statutory notice generation for landlords and tenants. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="text-white font-medium">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
+          <li><a href="/uk/tenant-notice-to-quit.html" class="hover:text-white transition-colors">Tenant Notice to Quit</a></li>
+          <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
+          <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
+          <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust & Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/legal/disclaimer.html" class="hover:text-white transition-colors">Legal Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+      &copy; 2026 TenantNotice.online. All rights reserved. Self-help legal templates and statutory reference material. Not legal advice.
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-emerald-500/50 flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+    <span class="text-xs font-semibold" id="toastMessage">Notice copied to clipboard.</span>
+  </div>
+
+  <!-- JavaScript Reactive Engine -->
+  <script>
+    function updateEntryDOM() {
+      const reason = document.getElementById('statutoryReason').value;
+      const landlord = document.getElementById('landlordName').value || 'Landlord / Management Co.';
+      const tenant = document.getElementById('tenantName').value || 'Tenant Name';
+      const address = document.getElementById('rentalAddress').value || 'Premises Address';
+      const entryDateVal = document.getElementById('entryDate').value;
+      const windowVal = document.getElementById('entryWindow').value || 'Business Hours';
+      const personnel = document.getElementById('personnelEntering').value || 'Landlord Representative';
+      const service = document.getElementById('serviceMethod').value;
+      const scope = document.getElementById('entryScope').value;
+
+      document.getElementById('prevTenant').textContent = tenant;
+      document.getElementById('prevLandlord').textContent = landlord;
+      document.getElementById('prevSignatory').textContent = landlord;
+      document.getElementById('prevAddress').textContent = address;
+      document.getElementById('prevReason').textContent = reason;
+      document.getElementById('prevEntryWindow').textContent = windowVal;
+      document.getElementById('prevPersonnel').textContent = personnel;
+      document.getElementById('prevService').textContent = service;
+      document.getElementById('prevScope').textContent = "Scope of Work: " + scope;
+
+      if (entryDateVal) {
+        const parts = entryDateVal.split('-');
+        const dateObj = new Date(parts[0], parts[1] - 1, parts[2]);
+        document.getElementById('prevEntryDate').textContent = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+
+      const today = new Date();
+      document.getElementById('prevNoticeDate').textContent = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    function copyEntryToClipboard() {
+      const noticeElement = document.getElementById('printableNotice');
+      navigator.clipboard.writeText(noticeElement.innerText).then(() => {
+        showToast("Notice text successfully copied to clipboard.");
+      }).catch(err => {
+        showToast("Text ready. Please copy or print directly.");
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const entryTarget = new Date();
+      entryTarget.setDate(entryTarget.getDate() + 2);
+      document.getElementById('entryDate').value = entryTarget.toISOString().split('T')[0];
+      updateEntryDOM();
+    });
+  </script>
+</body>
+</html>

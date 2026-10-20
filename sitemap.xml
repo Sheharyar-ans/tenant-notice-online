@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://tenantnotice.online/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/"/>
+  </url>
+
+  <!-- United States Jurisdictional Suite -->
+  <url>
+    <loc>https://tenantnotice.online/us/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/"/>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/us/30-day-notice-to-vacate.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/us/3-day-pay-rent-or-quit.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/us/security-deposit-demand.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/us/24-hour-notice-to-enter.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- United Kingdom Jurisdictional Suite -->
+  <url>
+    <loc>https://tenantnotice.online/uk/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/"/>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/"/>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/uk/section-8-notice-to-quit.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/uk/tenant-notice-to-quit.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/uk/tenancy-deposit-demand.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/uk/section-13-rent-challenge.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Legal Guides -->
+  <url>
+    <loc>https://tenantnotice.online/guides/us-eviction-process-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/guides/uk-renters-rights-act-guide.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/guides/security-deposit-return-rights.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal & Institutional Pages -->
+  <url>
+    <loc>https://tenantnotice.online/legal/about-us.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/legal/contact-us.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/legal/privacy-policy.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/legal/terms-of-service.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tenantnotice.online/legal/disclaimer.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
