@@ -6,6 +6,15 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://api.web3forms.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com; frame-ancestors 'none';
 
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: all
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
 /ai-catalog.json
   Content-Type: application/json; charset=utf-8
   Access-Control-Allow-Origin: *
@@ -17,3 +26,4 @@
 /llms-full.txt
   Content-Type: text/plain; charset=utf-8
   Access-Control-Allow-Origin: *
+
