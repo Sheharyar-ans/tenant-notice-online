@@ -221,7 +221,7 @@
   <!-- Inverted Pyramid: Main Workspace -->
   <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
     <!-- Header Title & Direct Answer Capsule -->
-    <div class="mb-8">
+    <div class="mb-8 no-print">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-800 text-xs font-semibold mb-3">
         <span class="w-2 h-2 rounded-full bg-red-600"></span>
         First-tier Tribunal (Property Chamber) Referral Engine
@@ -358,7 +358,7 @@
           </div>
 
           <!-- Document Container -->
-          <div id="printableNotice" class="bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm min-h-[600px]">
+          <div id="printableNotice" class="document-paper bg-white rounded-xl shadow-lg border border-slate-200/90 p-8 sm:p-12 text-slate-900 font-serif leading-relaxed text-sm min-h-[600px]">
             <div class="text-center border-b-2 border-slate-900 pb-4 mb-6">
               <div class="text-xs font-bold tracking-widest uppercase font-sans text-slate-500 mb-1">
                 FORMAL NOTICE OF REFERRAL TO TRIBUNAL
@@ -673,7 +673,7 @@
   </main>
 
   <!-- Sticky Bottom Mobile Action Bar (Mobile Only: < 768px) -->
-  <div id="mobileActionBar" class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
+  <div id="mobileActionBar" class="mobile-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
     <button type="button" onclick="copyRentChallengeToClipboard()" class="flex-1 min-h-[48px] py-3 px-4 bg-emerald-50 hover:bg-emerald-100 active:bg-emerald-200 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all">
       <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
       <span>Copy Document</span>
