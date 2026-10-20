@@ -20,68 +20,149 @@
   <!-- Precompiled Production Stylesheet -->
   <link rel="stylesheet" href="/css/styles.min.css">
 
-        <!-- Dedicated Print Engine Stylesheet -->
+          <!-- Dedicated Print Engine Stylesheet -->
   <style>
     @media print {
       @page {
-        margin: 15mm;
         size: auto;
+        margin: 10mm 15mm;
       }
+      
+      /* Reset document root to eliminate extra pages */
       html, body {
         margin: 0 !important;
         padding: 0 !important;
+        min-height: 0 !important;
+        height: auto !important;
         background: #ffffff !important;
         color: #000000 !important;
+        display: block !important;
+        font-size: 9.5pt !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
-      /* Completely eliminate all UI chrome, navbars, forms, and headers */
+      
+      /* Completely eliminate all UI chrome, navbars, forms, and footers */
       header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *,
-      .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast {
+      .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast,
+      .action-toolbar, .state-pill, .ground-pill {
         display: none !important;
-        visibility: hidden !important;
-        position: absolute !important;
-        top: -9999px !important;
-        left: -9999px !important;
         height: 0 !important;
         width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
+        border: none !important;
         overflow: hidden !important;
       }
-      main, .grid, .lg\:col-span-7, [class*="col-span"], [class*="grid"] {
+      
+      /* Flatten all wrappers so they occupy zero extra height or offset */
+      main,
+      .grid,
+      .lg\:grid-cols-12,
+      .lg\:col-span-7,
+      .lg\:col-span-5,
+      div.sticky,
+      div[class*="col-span"],
+      div[class*="grid"] {
         display: block !important;
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
         margin: 0 !important;
         padding: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
         border: none !important;
         box-shadow: none !important;
         min-height: 0 !important;
         height: auto !important;
-        position: static !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+        overflow: visible !important;
       }
-      div.sticky {
-        position: static !important;
-        top: auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
-      }
-      #document-preview, #printableNotice, .document-paper {
+      
+      /* The Document Sheet */
+      #printableNotice,
+      #document-preview,
+      .document-paper {
         display: block !important;
-        visibility: visible !important;
         position: static !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
         box-shadow: none !important;
+        border-radius: 0 !important;
         width: 100% !important;
-        min-height: auto !important;
+        min-height: 0 !important;
+        height: auto !important;
         background: #ffffff !important;
         color: #000000 !important;
-        font-size: 11pt !important;
-        line-height: 1.5 !important;
+        font-size: 9.5pt !important;
+        line-height: 1.35 !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
       }
-      #document-preview *, #printableNotice *, .document-paper * {
-        visibility: visible !important;
+      
+      /* Compact typography for guaranteed single-page layout */
+      #printableNotice #previewTitle {
+        font-size: 12pt !important;
+        line-height: 1.2 !important;
+        margin-bottom: 2mm !important;
+        padding-bottom: 2mm !important;
+      }
+      
+      #printableNotice #previewStatutoryHeader {
+        font-size: 8pt !important;
+        margin-top: 1mm !important;
+      }
+      
+      #printableNotice .mb-6,
+      #printableNotice .mb-8 {
+        margin-bottom: 2.5mm !important;
+      }
+      
+      #printableNotice .pb-4,
+      #printableNotice .pb-2 {
+        padding-bottom: 1.5mm !important;
+      }
+      
+      #printableNotice .pt-6 {
+        padding-top: 2.5mm !important;
+      }
+      
+      #printableNotice .space-y-3 > * + * {
+        margin-top: 1.5mm !important;
+      }
+      
+      #printableNotice .space-y-4 > * + * {
+        margin-top: 2mm !important;
+      }
+      
+      #printableNotice p {
+        margin-bottom: 1.5mm !important;
+        line-height: 1.35 !important;
+      }
+      
+      #printableNotice #prevStateSpecificText,
+      #printableNotice .p-3\.5,
+      #printableNotice .p-4 {
+        padding: 2mm 3mm !important;
+        margin: 2mm 0 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.3 !important;
+        background-color: #f8fafc !important;
+        border-left-width: 2px !important;
+      }
+      
+      /* Keep signature block together without splitting across pages */
+      #printableNotice .grid,
+      #printableNotice .border-t,
+      .signature-container {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-top: 3mm !important;
+        padding-top: 2mm !important;
       }
     }
   </style>
@@ -727,7 +808,7 @@
           <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
           <span class="font-display font-bold text-base text-white">TenantNotice</span>
         </div>
-        <p class="text-slate-400 text-xs leading-relaxed">
+        <p class="text-slate-300 text-xs leading-relaxed">
           Precision statutory notice generation for landlords and tenants. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
         </p>
       </div>
@@ -762,7 +843,7 @@
         </ul>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-400 text-xs">
       &copy; 2026 TenantNotice.online. All rights reserved. Self-help legal templates and statutory reference material. Not legal advice.
     </div>
   </footer>
