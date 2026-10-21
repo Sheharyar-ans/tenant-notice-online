@@ -30,34 +30,155 @@
   <link rel="stylesheet" href="/css/styles.min.css">
 
   <!-- Print Engine -->
-  <style>
+    <style>
     @media print {
-      body * {
-        visibility: hidden;
+      @page {
+        margin: 15mm;
+        size: auto;
       }
-      #printableNotice, #printableNotice * {
-        visibility: visible;
+      
+      /* Reset document root to eliminate extra pages and ensure flush start at top */
+      html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        min-height: 0 !important;
+        height: auto !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        display: block !important;
+        font-size: 9.5pt !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
-      #printableNotice {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100% !important;
+      
+      /* Strictly hide all non-printable UI chrome, navbars, forms, mobile bars, FAQs, and footers */
+      header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *, article, article *,
+      .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast, #toastNotification,
+      .action-toolbar, .state-pill, .ground-pill, button, button *, input, select, textarea,
+      .faq-section, .faq-section * {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        visibility: hidden !important;
+        overflow: hidden !important;
+      }
+      
+      /* Flatten all wrappers so they occupy zero extra height or offset and start flush at top of page 1 */
+      main,
+      .grid,
+      .lg\:grid-cols-12,
+      .lg\:col-span-7,
+      .lg\:col-span-5,
+      div.sticky,
+      div[class*="col-span"],
+      div[class*="grid"] {
+        display: block !important;
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
         box-shadow: none !important;
+        min-height: 0 !important;
+        height: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        transform: none !important;
+        overflow: visible !important;
+      }
+      
+      /* The Document Sheet: Flush at top of page 1 without artificial top padding or centering gaps */
+      #printableNotice,
+      #document-preview,
+      .document-paper {
+        display: block !important;
+        position: static !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        min-height: 0 !important;
+        height: auto !important;
         background: #ffffff !important;
         color: #000000 !important;
-        font-size: 11pt !important;
-        line-height: 1.5 !important;
+        font-size: 9.5pt !important;
+        line-height: 1.35 !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+        page-break-before: avoid !important;
+        break-before: avoid !important;
       }
-      .no-print, header, footer, nav, aside, .action-toolbar, #mobileActionBar {
-        display: none !important;
+      
+      /* Compact typography for guaranteed single-page layout */
+      #printableNotice #previewTitle,
+      #printableNotice h2 {
+        font-size: 12pt !important;
+        line-height: 1.2 !important;
+        margin-top: 0 !important;
+        margin-bottom: 2mm !important;
+        padding-top: 0 !important;
+        padding-bottom: 2mm !important;
       }
-      @page {
-        size: letter portrait;
-        margin: 1in;
+      
+      #printableNotice #previewStatutoryHeader {
+        font-size: 8pt !important;
+        margin-top: 1mm !important;
+      }
+      
+      #printableNotice .mb-6,
+      #printableNotice .mb-8 {
+        margin-bottom: 2.5mm !important;
+      }
+      
+      #printableNotice .pb-4,
+      #printableNotice .pb-2 {
+        padding-bottom: 1.5mm !important;
+      }
+      
+      #printableNotice .pt-6 {
+        padding-top: 2.5mm !important;
+      }
+      
+      #printableNotice .space-y-3 > * + * {
+        margin-top: 1.5mm !important;
+      }
+      
+      #printableNotice .space-y-4 > * + * {
+        margin-top: 2mm !important;
+      }
+      
+      #printableNotice p {
+        margin-bottom: 1.5mm !important;
+        line-height: 1.35 !important;
+      }
+      
+      #printableNotice #prevStateSpecificText,
+      #printableNotice .p-3\.5,
+      #printableNotice .p-4 {
+        padding: 2mm 3mm !important;
+        margin: 2mm 0 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.3 !important;
+        background-color: #f8fafc !important;
+        border-left-width: 2px !important;
+      }
+      
+      /* Keep signature block together without splitting across pages */
+      #printableNotice .grid,
+      #printableNotice .border-t,
+      .signature-container {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-top: 3mm !important;
+        padding-top: 2mm !important;
       }
     }
   </style>
@@ -339,7 +460,7 @@
 
         <!-- Collapsible Group 1: Parties -->
         <details open class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>1. Tenancy Parties</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -357,7 +478,7 @@
 
         <!-- Collapsible Group 2: Addresses -->
         <details open class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>2. Premises & Forwarding Address</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -375,7 +496,7 @@
 
         <!-- Collapsible Group 3: Financial Demand -->
         <details open class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>3. Surrender Date & Financial Recovery</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -405,7 +526,7 @@
 
         <!-- Collapsible Group 4: Factual Background -->
         <details class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>4. Factual Background & Objections</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -762,7 +883,7 @@
   <div id="mobileActionBar" class="mobile-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
     <button type="button" onclick="copyDepositToClipboard()" class="flex-1 min-h-[48px] py-3 px-4 bg-emerald-50 hover:bg-emerald-100 active:bg-emerald-200 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all">
       <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-      <span>Copy Document</span>
+      <span>Copy Notice</span>
     </button>
     <button type="button" onclick="window.print()" class="flex-1 min-h-[48px] py-3 px-4 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center space-x-2 transition-all">
       <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>

@@ -30,14 +30,14 @@
   <link rel="stylesheet" href="/css/styles.min.css">
 
           <!-- Dedicated Print Engine Stylesheet -->
-  <style>
+    <style>
     @media print {
       @page {
+        margin: 15mm;
         size: auto;
-        margin: 10mm 15mm;
       }
       
-      /* Reset document root to eliminate extra pages */
+      /* Reset document root to eliminate extra pages and ensure flush start at top */
       html, body {
         margin: 0 !important;
         padding: 0 !important;
@@ -51,20 +51,22 @@
         print-color-adjust: exact !important;
       }
       
-      /* Completely eliminate all UI chrome, navbars, forms, and footers */
-      header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *,
-      .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast,
-      .action-toolbar, .state-pill, .ground-pill {
+      /* Strictly hide all non-printable UI chrome, navbars, forms, mobile bars, FAQs, and footers */
+      header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *, article, article *,
+      .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast, #toastNotification,
+      .action-toolbar, .state-pill, .ground-pill, button, button *, input, select, textarea,
+      .faq-section, .faq-section * {
         display: none !important;
         height: 0 !important;
         width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
+        visibility: hidden !important;
         overflow: hidden !important;
       }
       
-      /* Flatten all wrappers so they occupy zero extra height or offset */
+      /* Flatten all wrappers so they occupy zero extra height or offset and start flush at top of page 1 */
       main,
       .grid,
       .lg\:grid-cols-12,
@@ -91,7 +93,7 @@
         overflow: visible !important;
       }
       
-      /* The Document Sheet */
+      /* The Document Sheet: Flush at top of page 1 without artificial top padding or centering gaps */
       #printableNotice,
       #document-preview,
       .document-paper {
@@ -111,13 +113,18 @@
         line-height: 1.35 !important;
         page-break-after: avoid !important;
         break-after: avoid !important;
+        page-break-before: avoid !important;
+        break-before: avoid !important;
       }
       
       /* Compact typography for guaranteed single-page layout */
-      #printableNotice #previewTitle {
+      #printableNotice #previewTitle,
+      #printableNotice h2 {
         font-size: 12pt !important;
         line-height: 1.2 !important;
+        margin-top: 0 !important;
         margin-bottom: 2mm !important;
+        padding-top: 0 !important;
         padding-bottom: 2mm !important;
       }
       
@@ -465,7 +472,7 @@
 
         <!-- Collapsible Section 1: Parties -->
         <details open class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>1. Tenancy Parties</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -490,7 +497,7 @@
 
         <!-- Collapsible Section 2: Property Details -->
         <details open class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>2. Property Details</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -504,7 +511,7 @@
 
         <!-- Collapsible Section 3: Statutory Dates -->
         <details open class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>3. Statutory Dates & Day-Counting</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -522,7 +529,7 @@
 
         <!-- Collapsible Section 4: Custom Terms & Service -->
         <details class="border border-slate-200 rounded-xl p-3.5 group">
-          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[40px]">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
             <span>4. Delivery Method & Move-Out Terms</span>
             <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
           </summary>
@@ -731,7 +738,7 @@
           Legal Service of Process: How to Deliver This Notice
         </h2>
         <p class="mb-4">
-          Drafting a compliant notice to vacate is ineffective if service of process fails to satisfy statutory prerequisites. In judicial eviction proceedings (unlawful detainer lawsuits), defective service is an affirmative defense that strips the court of jurisdiction and results in mandatory dismissal with an award of court costs to the tenant. Under California civil code 1946.1 notice requirements, service must strictly comply with Code of Civil Procedure Section 1162.
+          A notice to vacate is ineffective if service fails statutory prerequisites. In unlawful detainer proceedings, defective service is an affirmative defense that strips court jurisdiction and requires mandatory dismissal with tenant court costs. Service must strictly comply with California Code of Civil Procedure Section 1162.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
           <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
@@ -901,7 +908,7 @@
   <div id="mobileActionBar" class="mobile-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex gap-3 shadow-2xl no-print">
     <button type="button" onclick="copyNoticeToClipboard()" class="flex-1 min-h-[48px] py-3 px-4 bg-emerald-50 hover:bg-emerald-100 active:bg-emerald-200 text-emerald-800 font-bold text-xs rounded-xl border border-emerald-300 flex items-center justify-center space-x-2 transition-all">
       <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-      <span>Copy Document</span>
+      <span>Copy Notice</span>
     </button>
     <button type="button" onclick="window.print()" class="flex-1 min-h-[48px] py-3 px-4 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-bold text-xs rounded-xl shadow-md flex items-center justify-center space-x-2 transition-all">
       <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
