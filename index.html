@@ -19,6 +19,7 @@
   <link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/">
   <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/">
   <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/">
+  <link rel="alternate" hreflang="en-CA" href="https://tenantnotice.online/canada/">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <!-- Open Graph & Social Cards -->
   <meta property="og:site_name" content="TenantNotice Online">
@@ -127,6 +128,36 @@
             "@id": "https://tenantnotice.online/uk/tenant-notice-to-quit.html#app",
             "name": "UK Tenant Notice to Quit Generator",
             "url": "https://tenantnotice.online/uk/tenant-notice-to-quit.html"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://tenantnotice.online/canada/#webpage",
+            "name": "Canada Statutory Tenancy Notice Portal",
+            "url": "https://tenantnotice.online/canada/"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/canada/ontario-form-n9.html#app",
+            "name": "Ontario Form N9 60-Day Notice Generator",
+            "url": "https://tenantnotice.online/canada/ontario-form-n9.html"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/canada/bc-rtb-notice.html#app",
+            "name": "BC RTB 1-Month Tenant Notice Generator",
+            "url": "https://tenantnotice.online/canada/bc-rtb-notice.html"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/canada/alberta-periodic-notice.html#app",
+            "name": "Alberta Periodic Tenancy Notice Generator",
+            "url": "https://tenantnotice.online/canada/alberta-periodic-notice.html"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/canada/ontario-lmr-interest.html#app",
+            "name": "Ontario LMR Deposit Interest Calculator",
+            "url": "https://tenantnotice.online/canada/ontario-lmr-interest.html"
           }
         ]
       },
@@ -171,28 +202,32 @@
   <!-- Top Notification Bar -->
   <aside aria-label="Jurisdictional Isolation Banner" class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 text-center flex items-center justify-center gap-2">
     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-    <span>Strict Jurisdictional Isolation Active: Dedicated Statutory Engines for United States & United Kingdom</span>
+    <span>Strict Jurisdictional Isolation Active: Dedicated Statutory Engines for United States, United Kingdom & Canada</span>
   </aside>
 
   <!-- Global Header -->
   <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center space-x-3 group">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
         <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
         <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
       </a>
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
           <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-          <span>United States Portal</span>
+          <span>US Portal</span>
         </a>
-        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2">
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
           <span class="w-2 h-2 rounded-full bg-red-500"></span>
-          <span>United Kingdom Portal</span>
+          <span>UK Portal</span>
         </a>
-        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors">Legal Guides</a>
-        <a href="/blog/" class="hover:text-emerald-400 transition-colors">Legal Hub</a>
-        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors">About</a>
+        <a href="/canada/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-600"></span>
+          <span>Canada Portal</span>
+        </a>
+        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Guides</a>
+        <a href="/blog/" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Hub</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
       </nav>
       <div class="flex items-center space-x-3">
         <a href="/us/30-day-notice-to-vacate.html" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold rounded-lg bg-emerald-600 text-white hover:bg-emerald-500 transition-all shadow-sm">
@@ -245,7 +280,9 @@
             Quick filters: 
             <button onclick="setSearch('California')" class="hover:text-emerald-400 underline ml-1">California</button>,
             <button onclick="setSearch('Texas')" class="hover:text-emerald-400 underline ml-1">Texas</button>,
-            <button onclick="setSearch('Florida')" class="hover:text-emerald-400 underline ml-1">Florida</button>,
+            <button onclick="setSearch('Ontario')" class="hover:text-emerald-400 underline ml-1">Ontario</button>,
+            <button onclick="setSearch('British Columbia')" class="hover:text-emerald-400 underline ml-1">British Columbia</button>,
+            <button onclick="setSearch('Alberta')" class="hover:text-emerald-400 underline ml-1">Alberta</button>,
             <button onclick="setSearch('Renters Rights')" class="hover:text-emerald-400 underline ml-1">Renters Rights Act</button>,
             <button onclick="setSearch('Deposit')" class="hover:text-emerald-400 underline ml-1">Deposit Demands</button>
           </p>
@@ -253,9 +290,9 @@
       </div>
     </section>
 
-    <!-- Jurisdictional Gateway Cards -->
+    <!-- Jurisdictional Gateway Cards (US, UK, Canada) -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20 mb-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- United States Gateway Card -->
         <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
           <div>
@@ -266,7 +303,6 @@
                   <rect width="7410" height="3900" fill="#b22234"/>
                   <path d="M0,450H7410M0,1050H7410M0,1650H7410M0,2250H7410M0,2850H7410M0,3450H7410" stroke="#fff" stroke-width="300"/>
                   <rect width="2964" height="2100" fill="#3c3b6e"/>
-                  <!-- Star grid cluster -->
                   <g fill="#fff">
                     <circle cx="500" cy="350" r="120"/><circle cx="1000" cy="350" r="120"/><circle cx="1500" cy="350" r="120"/><circle cx="2000" cy="350" r="120"/><circle cx="2500" cy="350" r="120"/>
                     <circle cx="750" cy="700" r="120"/><circle cx="1250" cy="700" r="120"/><circle cx="1750" cy="700" r="120"/><circle cx="2250" cy="700" r="120"/>
@@ -279,32 +315,32 @@
               </div>
               <span class="text-xs font-bold text-slate-700">4 State Engines</span>
             </div>
-            <h2 class="font-display text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors mb-3">
+            <h2 class="font-display text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors mb-3">
               United States Tenancy Suite
             </h2>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
               Precision statutory builders calibrated for California Civil Code, Texas Property Code, Florida Statutes, and New York Real Property Law. Dynamic cure day calculations exclude weekends and judicial holidays.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-700 mb-8">
+            <ul class="space-y-2 text-xs text-slate-700 mb-8">
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                <span><strong>30-Day Notice to Vacate:</strong> Cal. Civ. Code § 1946.1 & state tiers</span>
+                <span><strong>30-Day Notice to Vacate:</strong> Cal. Civ. Code § 1946.1</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                <span><strong>3-Day Notice to Pay Rent:</strong> Cal. CCP § 1161(2) & Fla. Stat. § 83.56</span>
+                <span><strong>3-Day Pay Rent or Quit:</strong> Cal. CCP § 1161(2)</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                <span><strong>Security Deposit Demand:</strong> Strict 21/30 day bad-faith penalties</span>
+                <span><strong>Security Deposit Demand:</strong> 21/30 day statutory rules</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-                <span><strong>24-Hour Notice to Enter:</strong> Privacy covenants & access bounds</span>
+                <span><strong>24-Hour Notice to Enter:</strong> Privacy covenants</span>
               </li>
             </ul>
           </div>
-          <a href="/us/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-blue-700 text-white font-semibold text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2">
+          <a href="/us/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2 min-h-[48px]">
             <span>Enter US Statutory Portal</span>
             <span>&rarr;</span>
           </a>
@@ -328,22 +364,22 @@
                 </svg>
                 <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-bold rounded uppercase">United Kingdom Portal</span>
               </div>
-              <span class="text-xs font-bold text-slate-700">Renters' Rights Act</span>
+              <span class="text-xs font-bold text-slate-700">Renters' Rights</span>
             </div>
-            <h2 class="font-display text-2xl font-bold text-slate-900 group-hover:text-red-700 transition-colors mb-3">
+            <h2 class="font-display text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-red-700 transition-colors mb-3">
               United Kingdom Tenancy Suite
             </h2>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
               Reformed statutory notices compliant with the Housing Act 1988 under the Renters' Rights Act framework. Eliminates abolished Section 21 no-fault evictions and enforces updated Section 8 possession grounds.
             </p>
-            <ul class="space-y-2.5 text-xs text-slate-700 mb-8">
+            <ul class="space-y-2 text-xs text-slate-700 mb-8">
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
-                <span><strong>Section 8 Notice to Quit:</strong> Reformed Ground 8 & Ground 1A</span>
+                <span><strong>Section 8 Notice to Quit:</strong> Reformed Ground 8 & 1A</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
-                <span><strong>Tenant Notice to Quit:</strong> Periodic 2-month termination exit form</span>
+                <span><strong>Tenant Notice to Quit:</strong> Rolling periodic notice</span>
               </li>
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
@@ -351,12 +387,59 @@
               </li>
               <li class="flex items-center space-x-2">
                 <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
-                <span><strong>Section 13 Rent Challenge:</strong> Form 4 First-tier Tribunal referral</span>
+                <span><strong>Section 13 Rent Challenge:</strong> Form 4 First-tier Tribunal</span>
               </li>
             </ul>
           </div>
-          <a href="/uk/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-red-700 text-white font-semibold text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2">
+          <a href="/uk/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-red-700 text-white font-semibold text-xs sm:text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2 min-h-[48px]">
             <span>Enter UK Statutory Portal</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Canada Gateway Card (NEW) -->
+        <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center space-x-3">
+                <!-- Custom SVG Canada Flag -->
+                <svg class="w-10 h-7 rounded shadow-sm border border-slate-200" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="250" height="500" fill="#d80621"/>
+                  <rect x="250" width="500" height="500" fill="#ffffff"/>
+                  <rect x="750" width="250" height="500" fill="#d80621"/>
+                  <path d="M500 100 L515 200 L580 180 L540 240 L600 270 L530 300 L540 370 L500 340 L460 370 L470 300 L400 270 L460 240 L420 180 L485 200 Z" fill="#d80621"/>
+                </svg>
+                <span class="px-2.5 py-1 bg-red-50 text-red-700 text-xs font-bold rounded uppercase">Canada Portal</span>
+              </div>
+              <span class="text-xs font-bold text-slate-700">LTB & RTB</span>
+            </div>
+            <h2 class="font-display text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-red-700 transition-colors mb-3">
+              Canada Statutory Suite
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+              Provincial tenancy engines calibrated for Ontario LTB, British Columbia RTB, and Alberta RTDRS statutes. Computes 60-day rental period alignments, preceding-day rules, and LMR interest ledgers.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-700 mb-8">
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Ontario Form N9:</strong> 60-Day Notice & Feb exception</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>BC RTB 1-Month Notice:</strong> Day preceding rent due date</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Alberta Periodic Notice:</strong> 1-mo tenant / 3-mo landlord</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-600"></span>
+                <span><strong>Ontario LMR Interest:</strong> RTA s. 106 annual ledger</span>
+              </li>
+            </ul>
+          </div>
+          <a href="/canada/" class="w-full py-3 px-4 bg-slate-900 group-hover:bg-red-700 text-white font-semibold text-xs sm:text-sm rounded-xl text-center transition-colors flex items-center justify-center space-x-2 min-h-[48px]">
+            <span>Enter Canada Portal</span>
             <span>&rarr;</span>
           </a>
         </div>
@@ -371,7 +454,7 @@
           <p class="text-xs text-slate-700">Live filterable by keyword, statute, or jurisdiction</p>
         </div>
         <div id="filterCount" class="text-xs font-bold text-slate-800 bg-slate-200 px-3 py-1 rounded-full">
-          Showing 8 statutory generators
+          Showing 12 statutory generators
         </div>
       </div>
 
@@ -503,6 +586,70 @@
             <span>&rarr;</span>
           </a>
         </div>
+
+        <!-- Canada Tool 1 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-red-500 transition-all flex flex-col justify-between"
+             data-keywords="canada ontario form n9 60 day notice tenant notice to end tenancy ltb landlord and tenant board rta section 44 february exception">
+          <div>
+            <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">Ontario LTB Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Ontario Form N9 60-Day Notice</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Official Ontario LTB tenant notice enforcing 60-day rental period alignment and Section 44(4) February exception rules.
+            </p>
+          </div>
+          <a href="/canada/ontario-form-n9.html" class="text-xs font-bold text-red-700 hover:text-red-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Canada Tool 2 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-500 transition-all flex flex-col justify-between"
+             data-keywords="canada british columbia bc rtb 1 month notice tenant notice to end tenancy residential tenancy branch section 45 rtb 8">
+          <div>
+            <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-2">BC RTB Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">BC RTB 1-Month Tenant Notice</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              British Columbia RTB written notice computing termination on the day preceding rent due date with deemed delivery rules.
+            </p>
+          </div>
+          <a href="/canada/bc-rtb-notice.html" class="text-xs font-bold text-blue-700 hover:text-blue-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Canada Tool 3 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-amber-500 transition-all flex flex-col justify-between"
+             data-keywords="canada alberta periodic tenancy notice to terminate rtdrs residential tenancies act 1 month 3 month landlord grounds">
+          <div>
+            <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-2">Alberta RTDRS Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Alberta Periodic Tenancy Notice</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Alberta RTA compliant dual-role engine: 1 month tenant notice and 3 month landlord notice requiring statutory cause.
+            </p>
+          </div>
+          <a href="/canada/alberta-periodic-notice.html" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Canada Tool 4 -->
+        <div class="tool-card bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-emerald-500 transition-all flex flex-col justify-between"
+             data-keywords="canada ontario lmr interest calculator last month rent deposit interest guideline section 106 offset rent increase">
+          <div>
+            <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-2">Ontario LTB Financial</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Ontario LMR Interest Calculator</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Calculate annual interest owed on Ontario Last Month Rent deposits under Section 106(6) with annual guideline rent offset.
+            </p>
+          </div>
+          <a href="/canada/ontario-lmr-interest.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100">
+            <span>Open Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -588,6 +735,39 @@
                 <td class="p-3.5">2 Months (Tenant periodic notice)</td>
                 <td class="p-3.5">30 Days Scheme Protection (DPS/TDS)</td>
                 <td class="p-3.5 text-red-700 font-bold">ABOLISHED (Section 21 eliminated)</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors bg-red-50/20">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-red-600"></span>
+                  Ontario (Canada)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">RTA 2006 / LTB</td>
+                <td class="p-3.5 font-semibold text-emerald-700">14 Calendar Days (Form N4)</td>
+                <td class="p-3.5">60 Days (Rental period end)</td>
+                <td class="p-3.5 text-red-700 font-bold">Illegal: Only LMR rent deposit allowed</td>
+                <td class="p-3.5 text-amber-700 font-semibold">Strict Just Cause Only (Form N12/N13)</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors bg-blue-50/20">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                  British Columbia (Canada)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">RTA 2002 / RTB</td>
+                <td class="p-3.5 font-semibold text-emerald-700">10 Calendar Days (RTB-30)</td>
+                <td class="p-3.5">1 Full Month (Day before rent due)</td>
+                <td class="p-3.5">15 Days (With statutory interest)</td>
+                <td class="p-3.5 text-amber-700 font-semibold">Strict Grounds (2 or 4 months notice)</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors bg-amber-50/20">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                  Alberta (Canada)
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">RTA 2000 / RTDRS</td>
+                <td class="p-3.5 font-semibold text-emerald-700">14 Clear Days Demand</td>
+                <td class="p-3.5">1 Mo (Tenant) / 3 Mo (Landlord)</td>
+                <td class="p-3.5">10 Days (Itemized statement)</td>
+                <td class="p-3.5 text-amber-700 font-semibold">Statutory Cause Required (s. 11)</td>
               </tr>
             </tbody>
           </table>
@@ -995,7 +1175,7 @@
 
   <!-- Global Footer -->
   <footer class="bg-slate-900 border-t border-slate-800 text-slate-300 text-xs py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
       <div class="space-y-3 sm:col-span-2 md:col-span-3 lg:col-span-1">
         <div class="flex items-center space-x-2">
           <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
@@ -1026,6 +1206,16 @@
         </ul>
       </div>
       <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Canada (LTB &amp; RTB)</h4>
+        <ul class="space-y-2">
+          <li><a href="/canada/ontario-form-n9.html" class="hover:text-white transition-colors">Ontario Form N9 60-Day</a></li>
+          <li><a href="/canada/bc-rtb-notice.html" class="hover:text-white transition-colors">BC RTB 1-Month Notice</a></li>
+          <li><a href="/canada/alberta-periodic-notice.html" class="hover:text-white transition-colors">Alberta Periodic Notice</a></li>
+          <li><a href="/canada/ontario-lmr-interest.html" class="hover:text-white transition-colors">Ontario LMR Interest Calc</a></li>
+          <li><a href="/canada/" class="text-red-400 hover:text-red-300 transition-colors font-medium">All Canada Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
         <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Legal Blog Hub</h4>
         <ul class="space-y-2">
           <li><a href="/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html" class="hover:text-white transition-colors">CA 30 vs 60 Day Rules</a></li>
@@ -1037,7 +1227,7 @@
         </ul>
       </div>
       <div>
-        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust & Legal</h4>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust &amp; Legal</h4>
         <ul class="space-y-2">
           <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
           <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>

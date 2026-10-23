@@ -1,9 +1,9 @@
 # TenantNotice.online - Comprehensive Statutory Reference Knowledge Base
 
 ## System Identity & Core Directive
-TenantNotice.online provides authoritative, browser-side statutory notice generators and legal guidance for landlords and tenants across the United States and the United Kingdom. All document logic executes locally without server storage. United States and United Kingdom legal frameworks are completely isolated in separate subdirectories to eliminate jurisdictional confusion.
+TenantNotice.online provides authoritative, browser-side statutory notice generators and legal guidance for landlords and tenants across the United States, the United Kingdom, and Canada. All document logic executes locally without server storage. United States, United Kingdom, and Canadian legal frameworks are completely isolated in separate subdirectories to eliminate jurisdictional confusion.
 
----
+***
 
 ## 1. United States Jurisdiction (/us/)
 
@@ -43,7 +43,7 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 - Common Privacy Covenants:
   - Landlord entry without valid statutory justification constitutes a breach of the implied covenant of quiet enjoyment and civil trespass.
 
----
+***
 
 ## 2. United Kingdom Jurisdiction (/uk/)
 
@@ -77,54 +77,88 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
   - If the proposed rent exceeds open market rates, the tenant has the absolute statutory right to refer the notice to the First-tier Tribunal (Property Chamber) before the effective date.
   - The Tribunal assesses open market rent. The increased rent cannot take effect until the Tribunal issues its determination.
 
----
+***
 
-## 3. Legal Blog Hub & Statutory Case Analyses (/blog/)
+## 3. Canada Jurisdiction (/canada/)
 
-### 3.1 California 30-Day vs 60-Day Notice Rules (/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html)
+### 3.1 Ontario Form N9 60-Day Tenant Notice to End Tenancy (/canada/ontario-form-n9.html)
+- Statutory Foundation:
+  - Ontario Residential Tenancies Act 2006 (RTA) Section 44(1) mandates at least 60 calendar days written notice for monthly or yearly tenancies.
+  - Rental Period Alignment: The effective termination date must fall on the last day of a rental period. For standard monthly tenancies where rent is payable on the 1st of each month, the termination date must be the final day of the month (the 30th or 31st). Mid-month termination dates are void ab initio before the Landlord and Tenant Board.
+  - Section 44(4) Statutory February Exception: Notice served on or before January 1 may legally terminate on the last day of February, even though February has only 28 or 29 days. Notice served on or before February 1 may terminate on March 31.
+  - Service Deeming Rules: Personal delivery and courier are deemed served immediately on receipt. Regular or registered mail adds 5 deemed statutory days under LTB Rules and RTA Section 191.
+- Mandatory Statutory Disclosures:
+  - Ex parte eviction warning under RTA Section 77 (Form L3 filing without a hearing if tenant fails to vacate).
+  - Last Month Rent (LMR) application rule under Section 106 for the final 30 days of the notice period.
+
+### 3.2 British Columbia RTB 1-Month Tenant Notice to End Tenancy (/canada/bc-rtb-notice.html)
+- Statutory Foundation:
+  - British Columbia Residential Tenancy Act (RTA) Section 45(1) mandates at least one full rental month written notice.
+  - Preceding-Day Rule: Effective date must be the day before the day in the month that rent is normally due. If rent is payable on the 1st, termination must be on the last day of the calendar month.
+  - Deemed Service Rules: Under Section 90, ordinary or registered mail is deemed received 5 days after mailing. Leaving a copy in the mailbox or attaching to the door is deemed received 3 days after posting.
+  - Security Deposit Return Disclosures: Under Section 38, landlords have 15 days from receiving the tenant's forwarding address in writing to repay deposits with statutory interest or file an RTB dispute. Unlawful retention mandates double deposit penalties.
+
+### 3.3 Alberta Periodic Tenancy Notice to Terminate (/canada/alberta-periodic-notice.html)
+- Statutory Foundation:
+  - Alberta Residential Tenancies Act (RTA) Sections 6 through 12, administered by the Residential Tenancy Dispute Resolution Service (RTDRS).
+  - Dual-Role Notice Windows: Under Section 8, tenants must provide 1 full tenancy month notice on or before the first day of the notice period. Under Section 9, landlords must provide 3 full tenancy months notice on or before the first day of the notice period.
+  - Mandatory Landlord Statutory Grounds: Under Section 11 and the Residential Tenancies Ministerial Regulation, landlords cannot terminate without cause. Lawful grounds are restricted to: (1) landlord or relative occupancy, (2) purchaser or purchaser relative occupancy following unconditional sale, (3) major renovations requiring vacant possession with all municipal permits obtained, (4) conversion to non-residential use, or (5) demolition.
+  - Security Deposit Accounting: Landlords must return the deposit or provide an itemized deduction statement within 10 days of tenancy termination under Section 46.
+
+### 3.4 Ontario Last Month Rent (LMR) Deposit Interest Calculator (/canada/ontario-lmr-interest.html)
+- Statutory Foundation:
+  - Ontario Residential Tenancies Act 2006 Section 106(6) mandates that landlords pay interest annually on rent deposits held under Section 105.
+  - Interest Rate Benchmark: Interest is calculated annually at the official Ontario Rent Increase Guideline percentage in effect when payment is due.
+  - Historic and Modern Guidelines: 2026 (2.5%), 2025 (2.5%), 2024 (2.5%), 2023 (2.5%), 2022 (1.2%), 2021 (0.0% statutory freeze), 2020 (2.2%), 2019 (1.8%), 2018 (1.8%), 2017 (1.5%), 2016 (2.0%), 2015 (1.6%), 2014 (0.8%), 2013 (2.5%), 2012 (3.1%), 2011 (0.7%), 2010 (2.1%), 2009 (1.8%), 2008 (1.4%), 2007 (2.6%).
+  - Guideline Rent Increase Offset: Under Section 106(7), where a landlord lawfully increases the rent under Section 116 by the annual guideline and the tenant does not pay an additional deposit top-up, the annual interest credit offsets the required deposit increase dollar-for-dollar. When this occurs, the deposit basis compounds each year. If rent was not increased, the accumulated interest is owed directly to the tenant as an immediate cash payment or rent deduction.
+
+***
+
+## 4. Legal Blog Hub & Statutory Case Analyses (/blog/)
+
+### 4.1 California 30-Day vs 60-Day Notice Rules (/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html)
 - Governing Law: California Civil Code Section 1946.1, Code of Civil Procedure Section 12, Section 12a, Section 1013, and Section 1162.
 - Core Rule: Occupancies under one continuous year permit a 30-day notice. Occupancies of one year or more mandate 60 days. Day of service excluded. Mail adds 5 calendar days.
 
-### 3.2 California AB 1482 Just Cause Evictions & Rent Caps (/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html)
+### 4.2 California AB 1482 Just Cause Evictions & Rent Caps (/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html)
 - Governing Law: California Civil Code Sections 1946.2 and 1947.12.
 - Core Rule: Continuous occupancies of 12 months or more require established at-fault or no-fault just cause. No-fault notices require one month of rent relocation assistance paid within 15 days. Annual rent increases capped at 5 percent plus CPI (maximum 10 percent).
 
-### 3.3 Texas Property Code 24.005 Notice to Vacate Procedure (/blog/texas-property-code-24-005-notice-to-vacate-procedure.html)
+### 4.3 Texas Property Code 24.005 Notice to Vacate Procedure (/blog/texas-property-code-24-005-notice-to-vacate-procedure.html)
 - Governing Law: Texas Property Code Section 24.005, Texas Rules of Civil Procedure Rule 500.5.
 - Core Rule: Statutory default requires 3 calendar days notice to vacate before filing forcible detainer in Justice Court, unless modified in writing. Outside door posting restricted to strict statutory criteria with same-day mailing.
 
-### 3.4 Florida Statute 83.56 Three-Day Notice Rent Calculation (/blog/florida-statute-83-56-three-day-notice-rent-calculation.html)
+### 4.4 Florida Statute 83.56 Three-Day Notice Rent Calculation (/blog/florida-statute-83-56-three-day-notice-rent-calculation.html)
 - Governing Law: Florida Statutes Section 83.56(3), Florida Rules of General Practice Rule 2.514.
 - Core Rule: Three-day rent demand strictly excludes day of delivery, Saturdays, Sundays, and legal court holidays. Demands restricted to base contract rent unless lease explicitly defines fees as rent.
 
-### 3.5 Security Deposit Return Demand Letters: CA, TX, FL (/blog/security-deposit-return-demand-letters-california-texas-florida.html)
+### 4.5 Security Deposit Return Demand Letters: CA, TX, FL (/blog/security-deposit-return-demand-letters-california-texas-florida.html)
 - Governing Law: Cal. Civ. Code Section 1950.5 (21 days, 2x bad-faith damages), Tex. Prop. Code Section 92.103 (30 days, 3x damages plus 100 dollars), Fla. Stat. Section 83.49 (15-30 days, certified mail requirement).
 - Core Rule: Ordinary wear and tear cannot be deducted. Pre-litigation formal demand letters establish small claims evidence.
 
-### 3.6 Renters' Rights Act Complete Guide: Section 21 Abolition (/blog/renters-rights-act-complete-guide-section-21-abolition.html)
+### 4.6 Renters' Rights Act Complete Guide: Section 21 Abolition (/blog/renters-rights-act-complete-guide-section-21-abolition.html)
 - Governing Law: Renters' Rights Act, Housing Act 1988 (as amended).
 - Core Rule: Section 21 no-fault evictions permanently abolished. Fixed-term ASTs convert to open-ended rolling periodic tenancies. Possession restricted to reformed Schedule 2 Section 8 grounds.
 
-### 3.7 Reformed Section 8 Notice: Form 3 & Ground 8 Rent Arrears (/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears.html)
+### 4.7 Reformed Section 8 Notice: Form 3 & Ground 8 Rent Arrears (/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears.html)
 - Governing Law: Housing Act 1988 Schedule 2 Ground 8 (as amended), Form 3.
 - Core Rule: Mandatory possession requires at least 3 months rent arrears at notice and hearing. Mandatory notice period increased to 4 weeks. Benefit delay defenses provide discretionary relief.
 
-### 3.8 Ground 1A Landlord Intention to Sell Notice Rules (/blog/ground-1a-landlord-intention-to-sell-notice-rules.html)
+### 4.8 Ground 1A Landlord Intention to Sell Notice Rules (/blog/ground-1a-landlord-intention-to-sell-notice-rules.html)
 - Governing Law: Housing Act 1988 Schedule 2 Ground 1A.
 - Core Rule: Mandatory 4-month notice period to sell property. Cannot take effect during initial 12-month protected tenancy window. 12-month re-letting and marketing ban enforced with fines up to £40,000.
 
-### 3.9 Tenant Statutory Notice to Quit Periodic Tenancy (/blog/tenant-statutory-notice-to-quit-periodic-tenancy.html)
+### 4.9 Tenant Statutory Notice to Quit Periodic Tenancy (/blog/tenant-statutory-notice-to-quit-periodic-tenancy.html)
 - Governing Law: Housing Act 1988 periodic rules, Law of Property Act 1925 Section 196, Hammersmith v Monk (1992).
 - Core Rule: Tenants may terminate rolling periodic tenancy at any point on 2 months written notice. Expiry date flexible. One joint tenant notice ends tenancy for all cotenants.
 
-### 3.10 Challenging Section 13 Rent Increases: First-tier Tribunal (/blog/challenging-section-13-rent-increases-first-tier-tribunal.html)
+### 4.10 Challenging Section 13 Rent Increases: First-tier Tribunal (/blog/challenging-section-13-rent-increases-first-tier-tribunal.html)
 - Governing Law: Housing Act 1988 Sections 13 and 14, Form 4, Form Rent 1.
 - Core Rule: Rent increases restricted to Form 4 with 2 months notice no more than once per year. Tenants can challenge above-market hikes in First-tier Tribunal before effective date. Tribunal cannot exceed landlord requested rent.
 
----
+***
 
-## 4. Global Authority Standards
+## 5. Global Authority Standards
 - Citations: All statutes are cited using authentic legislative nomenclature.
 - Privacy: All document compiling and formatting occurs in client browser RAM. No personal information is retained.
 - Contact: Inquiries and editorial verification submitted through https://tenantnotice.online/legal/contact-us.html.
-

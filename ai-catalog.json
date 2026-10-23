@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/ai-catalog.json",
   "version": "1.0.0",
   "name": "TenantNotice Online",
-  "description": "Dual-jurisdiction statutory tenancy and legal document engines for the United States and the United Kingdom.",
+  "description": "Autonomous statutory tenancy and legal document engines for the United States, the United Kingdom, and Canada.",
   "homepage": "https://tenantnotice.online",
   "documentation": "https://tenantnotice.online/llms-full.txt",
   "llms": "https://tenantnotice.online/llms.txt",
@@ -60,10 +60,40 @@
       "description": "Housing Act 1988 Form 4 First-tier Tribunal rent challenge generator."
     },
     {
+      "name": "Canada Tenancy Portal Hub",
+      "type": "portal-hub",
+      "url": "https://tenantnotice.online/canada/",
+      "description": "Autonomous Canadian tenancy portal covering Ontario (LTB), British Columbia (RTB), and Alberta (RTDRS)."
+    },
+    {
+      "name": "Ontario Form N9 60-Day Notice Generator",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/canada/ontario-form-n9.html",
+      "description": "Ontario Residential Tenancies Act Section 44 60-day tenant notice generator with deemed service rules."
+    },
+    {
+      "name": "British Columbia RTB 1-Month Notice Generator",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/canada/bc-rtb-notice.html",
+      "description": "British Columbia Residential Tenancy Act Section 45 1-month tenant notice generator."
+    },
+    {
+      "name": "Alberta Periodic Tenancy Notice Generator",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/canada/alberta-periodic-notice.html",
+      "description": "Alberta Residential Tenancies Act 1-month tenant and 3-month landlord notice generator with statutory cause validation."
+    },
+    {
+      "name": "Ontario Last Month Rent (LMR) Interest Calculator",
+      "type": "web-application",
+      "url": "https://tenantnotice.online/canada/ontario-lmr-interest.html",
+      "description": "Ontario Residential Tenancies Act Section 106 deposit interest calculator with annual guideline rent offset ledger."
+    },
+    {
       "name": "TenantNotice Legal Blog Hub",
       "type": "article-hub",
       "url": "https://tenantnotice.online/blog/",
-      "description": "Authoritative directory of 10 statutory tenancy articles covering California, Texas, Florida, and UK Renters' Rights Act."
+      "description": "Authoritative directory of statutory tenancy articles covering California, Texas, Florida, and UK Renters' Rights Act."
     }
   ]
 }

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8JZH849RX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R8JZH849RX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BC RTB 1-Month Notice to Vacate Generator | Residential Tenancy Act</title>
+  <meta name="description" content="Generate a legally valid British Columbia 1-month tenant notice to end tenancy under BC Residential Tenancy Act Section 45. Computes preceding-day rules and RTB deemed delivery.">
+  <link rel="canonical" href="https://tenantnotice.online/canada/bc-rtb-notice.html">
+  <link rel="alternate" hreflang="en-CA" href="https://tenantnotice.online/canada/bc-rtb-notice.html">
+  <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/30-day-notice-to-vacate.html">
+  <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/tenant-notice-to-quit.html">
+  <link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/canada/bc-rtb-notice.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="TenantNotice Online">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BC RTB 1-Month Notice to Vacate Generator | Residential Tenancy Act">
+  <meta property="og:description" content="Generate a legally valid British Columbia 1-month tenant notice to end tenancy under BC Residential Tenancy Act Section 45. Computes preceding-day rules and RTB deemed delivery.">
+  <meta property="og:url" content="https://tenantnotice.online/canada/bc-rtb-notice.html">
+  <meta property="og:image" content="https://tenantnotice.online/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BC RTB 1-Month Notice to Vacate Generator | Residential Tenancy Act">
+  <meta name="twitter:description" content="Generate a legally valid British Columbia 1-month tenant notice to end tenancy under BC Residential Tenancy Act Section 45. Computes preceding-day rules and RTB deemed delivery.">
+  <meta name="twitter:image" content="https://tenantnotice.online/favicon.svg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <!-- Precompiled Production Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.min.css">
+
+  <!-- Dedicated Print Engine Stylesheet -->
+  <style>
+  @media print {
+    @page {
+      margin: 15mm;
+      size: auto;
+    }
+    
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 0 !important;
+      height: auto !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      display: block !important;
+      font-size: 9.5pt !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *, article, article *,
+    .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast, #toastNotification,
+    .action-toolbar, button, button *, input, select, textarea,
+    .faq-section, .faq-section * {
+      display: none !important;
+      height: 0 !important;
+      width: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+    }
+    
+    main,
+    .grid,
+    .lg\:grid-cols-12,
+    .lg\:col-span-7,
+    .lg\:col-span-5,
+    div.sticky,
+    div[class*="col-span"],
+    div[class*="grid"] {
+      display: block !important;
+      position: static !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      min-height: 0 !important;
+      height: auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      transform: none !important;
+      overflow: visible !important;
+    }
+    
+    #printableNotice,
+    #document-preview,
+    .document-paper {
+      display: block !important;
+      position: static !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      width: 100% !important;
+      min-height: 0 !important;
+      height: auto !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      font-size: 9.5pt !important;
+      line-height: 1.35 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+      page-break-before: avoid !important;
+      break-before: avoid !important;
+    }
+
+    .signature-block, .proof-of-service-block {
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+    }
+  }
+  </style>
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://tenantnotice.online/canada/bc-rtb-notice.html#app",
+        "name": "British Columbia RTB 1-Month Tenant Notice Generator",
+        "url": "https://tenantnotice.online/canada/bc-rtb-notice.html",
+        "applicationCategory": "LegalApplication",
+        "operatingSystem": "All modern browsers",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "CAD"
+        },
+        "description": "Client-side statutory notice compiler generating British Columbia Residential Tenancy Branch (RTB) compliant 1-month tenant notice to vacate under Section 45."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/canada/bc-rtb-notice.html#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Canada Portal",
+            "item": "https://tenantnotice.online/canada/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "BC RTB 1-Month Notice Generator",
+            "item": "https://tenantnotice.online/canada/bc-rtb-notice.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/canada/bc-rtb-notice.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much advance notice must a BC tenant provide to terminate a month-to-month tenancy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under British Columbia Residential Tenancy Act Section 45(1), a tenant must give at least one full rental month written notice. The notice must be served on or before the day before the monthly rent period begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the effective date rule for a BC tenant notice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under BC RTA Section 45(1)(b), the effective date must be the day immediately preceding the day of the month on which rent is payable. If rent is payable on the first of each month, the effective date must be the final day of the calendar month (such as November 30)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do deemed service days affect notice deadlines in British Columbia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under BC RTA Section 90, documents sent by mail are deemed received on the fifth day after mailing. Documents attached to the door, placed in the mailbox, or sent by consented email are deemed received on the third day. Notices must be served early enough so the deemed date falls before the rent cycle starts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a BC tenant end a fixed-term tenancy early using a 1-month notice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Under Section 45(2), a tenant cannot end a fixed-term tenancy earlier than the date specified in the tenancy agreement. To terminate early without penalty, tenants must obtain the landlord's written consent using Form RTB-8 (Mutual Agreement to End a Tenancy) or establish breach of a material term under Section 45(3)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When must a BC landlord return the security deposit after tenancy ends?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under BC RTA Section 38, the landlord has 15 days from the later of the date the tenancy ends or the date the tenant provides their written forwarding address to return the full deposit with interest or file an RTB dispute resolution claim. Failure to comply can result in the landlord paying double the deposit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Form RTB-8 and when should it be used?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Form RTB-8 is the official Mutual Agreement to End a Tenancy provided by the Residential Tenancy Branch. It is used when landlord and tenant mutually agree to conclude a tenancy on a specific date, bypassing standard statutory notice durations."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+  <!-- Global Navigation Header -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
+        <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>UK Portal</span>
+        </a>
+        <a href="/canada/" class="text-red-400 flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-600"></span>
+          <span>Canada Portal</span>
+        </a>
+        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Guides</a>
+        <a href="/blog/" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Hub</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
+      </nav>
+      <div class="flex items-center space-x-2">
+        <a href="/canada/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-2 border border-slate-700 rounded-lg min-h-[48px] flex items-center">
+          All Canada Tools
+        </a>
+        <a href="/canada/ontario-form-n9.html" class="text-xs font-semibold text-red-400 hover:text-red-300 px-3 py-2 border border-red-500/40 bg-red-950/40 rounded-lg min-h-[48px] flex items-center">
+          Ontario N9
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+      <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
+      <span>/</span>
+      <a href="/canada/" class="hover:text-slate-900 transition-colors">Canada Portal</a>
+      <span>/</span>
+      <span class="text-slate-900 font-medium">BC RTB 1-Month Tenant Notice</span>
+    </div>
+  </nav>
+
+  <!-- Inverted Pyramid: Main Workspace -->
+  <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <!-- Header Title & Direct Answer Capsule -->
+    <section class="mb-8 no-print" aria-label="Statutory Direct Answer">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-semibold mb-3">
+        <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+        British Columbia Residential Tenancy Branch | Section 45 Statutory Compiler
+      </div>
+      <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        BC RTB 1-Month Notice to Vacate Generator: Residential Tenancy Act
+      </h1>
+      
+      <!-- 45-Word Direct Answer Capsule for AI Extraction -->
+      <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
+        <p class="font-bold text-slate-100">
+          Under British Columbia Residential Tenancy Act Section 45, a tenant terminating a periodic month-to-month tenancy must serve at least one full rental month written notice. The tenancy ends on the day preceding the date rent is due, requiring service before the monthly period commences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Desktop Split-Screen Power Workspace (Left 40%, Right 60%) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+      <!-- Left Panel: 40% Width (lg:col-span-5) -->
+      <aside class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5 no-print" aria-label="Document Parameters Form">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h2 class="font-display text-base font-bold text-slate-900">BC Notice Parameters</h2>
+          <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2.5 py-0.5 rounded-full">BC RTB Engine</span>
+        </div>
+
+        <!-- Section 1: Dates & Service Mode -->
+        <div class="space-y-4">
+          <div>
+            <label for="serviceDate" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Service Execution Date</label>
+            <input type="date" id="serviceDate" onchange="runBcCalculation()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label for="rentDueDay" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Rent Due Day</label>
+              <select id="rentDueDay" onchange="runBcCalculation()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+                <option value="1">1st of the month</option>
+                <option value="15">15th of the month</option>
+              </select>
+            </div>
+            <div>
+              <label for="serviceMethod" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">RTB Service Method</label>
+              <select id="serviceMethod" onchange="runBcCalculation()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+                <option value="personal">In Person (0 Deemed Days)</option>
+                <option value="door">Attached to Door (+3 Days)</option>
+                <option value="mail">Mail / Registered (+5 Days)</option>
+                <option value="digital">Consented Email (+3 Days)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label for="vacateDate" class="block text-xs font-bold text-slate-700 uppercase tracking-wider">Effective Termination Date</label>
+              <button type="button" onclick="snapToStatutoryBcDate()" class="text-xs text-blue-600 hover:text-blue-700 font-semibold underline">Snap to Statutory Date</button>
+            </div>
+            <input type="date" id="vacateDate" onchange="validateCustomBcDate()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+            <div id="validationBanner" class="mt-2 text-xs p-2.5 rounded-lg border"></div>
+          </div>
+        </div>
+
+        <!-- Section 2: Parties -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
+            <span>1. Tenancy Parties</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="tenantName" class="block text-xs font-semibold text-slate-700 mb-1">Tenant Full Legal Name(s)</label>
+              <input type="text" id="tenantName" value="David Miller, Emma Watson" oninput="updateNoticeDOM()" placeholder="All named tenants" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+            </div>
+            <div>
+              <label for="landlordName" class="block text-xs font-semibold text-slate-700 mb-1">Landlord / Property Representative</label>
+              <input type="text" id="landlordName" value="Pacific Coast Real Estate Corp." oninput="updateNoticeDOM()" placeholder="Owner or property manager" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+            </div>
+          </div>
+        </details>
+
+        <!-- Section 3: Property Address & Forwarding -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
+            <span>2. Rental Unit Location & Deposit Return</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="rentalAddress" class="block text-xs font-semibold text-slate-700 mb-1">Rental Unit Address in British Columbia</label>
+              <input type="text" id="rentalAddress" value="1088 Burrard Street, Apt 1504, Vancouver, BC V6Z 2R9" oninput="updateNoticeDOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+            </div>
+            <div>
+              <label for="forwardingAddress" class="block text-xs font-semibold text-slate-700 mb-1">Written Forwarding Address (BC RTA s. 38)</label>
+              <input type="text" id="forwardingAddress" value="3450 Commercial Drive, Suite 201, Vancouver, BC V5N 4E8" oninput="updateNoticeDOM()" placeholder="Address for 15-day deposit refund" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+            </div>
+            <div>
+              <label for="depositAmount" class="block text-xs font-semibold text-slate-700 mb-1">Security / Pet Deposit Held by Landlord</label>
+              <input type="text" id="depositAmount" value="$1,250.00 security deposit plus $625.00 pet damage deposit" oninput="updateNoticeDOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white min-h-[48px]">
+            </div>
+          </div>
+        </details>
+
+        <!-- Section 4: Move-Out Condition Inspection -->
+        <details class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
+            <span>3. Condition Inspection Request (RTB-27)</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="inspectionRequest" class="block text-xs font-semibold text-slate-700 mb-1">Move-Out Inspection Proposal</label>
+              <textarea id="inspectionRequest" rows="2" oninput="updateNoticeDOM()" class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white">The tenants propose a joint move-out Condition Inspection Report (RTB-27) on the effective termination date at 1:00 PM upon key handover.</textarea>
+            </div>
+          </div>
+        </details>
+
+        <!-- Action Controls -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+          <button type="button" onclick="window.print()" class="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-sm transition-all flex items-center justify-center space-x-2 min-h-[48px]">
+            <span>Print / Save PDF (BC Notice)</span>
+          </button>
+          <button type="button" onclick="copyNoticeToClipboard()" class="w-full py-2.5 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs transition-all flex items-center justify-center space-x-2 min-h-[48px]">
+            <span>Copy Text to Clipboard</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Right Panel: 60% Width (lg:col-span-7) -->
+      <section class="lg:col-span-7 sticky top-24" aria-label="Official Document Preview">
+        <div class="bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-lg text-slate-900 font-serif leading-relaxed min-h-[600px] document-paper" id="printableNotice">
+          <!-- Document Header -->
+          <div class="border-b-2 border-slate-900 pb-4 mb-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="font-sans text-xs font-bold text-blue-700 uppercase tracking-widest block">Residential Tenancy Branch (RTB)</span>
+                <h2 class="font-sans text-xl sm:text-2xl font-black text-slate-900 tracking-tight mt-1" id="previewTitle">
+                  TENANT'S WRITTEN NOTICE TO END TENANCY
+                </h2>
+                <p class="font-sans text-xs text-slate-600 mt-0.5">
+                  British Columbia Residential Tenancy Act [SBC 2002] c. 78, Section 45
+                </p>
+              </div>
+              <div class="text-right font-sans text-xs text-slate-500">
+                <span class="border border-slate-300 px-2 py-1 rounded font-bold font-mono">BC RTA s. 45</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parties & Rental Address -->
+          <div class="space-y-3 mb-6 text-xs sm:text-sm font-sans">
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">Date of Service:</span>
+              <span class="font-semibold text-slate-900" id="prevServiceDate">October 23, 2026</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">To Landlord:</span>
+              <span class="font-semibold text-slate-900" id="prevLandlordName">Pacific Coast Real Estate Corp.</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">From Tenant(s):</span>
+              <span class="font-semibold text-slate-900" id="prevTenantName">David Miller, Emma Watson</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">Rental Unit:</span>
+              <span class="font-semibold text-slate-900" id="prevRentalAddress">1088 Burrard Street, Apt 1504, Vancouver, BC V6Z 2R9</span>
+            </div>
+          </div>
+
+          <!-- Formal Statutory Notice Content -->
+          <div class="space-y-4 text-justify mb-8 text-xs sm:text-sm font-serif">
+            <p>
+              <strong>PLEASE TAKE NOTICE THAT</strong>, pursuant to Section 45 of the British Columbia <em>Residential Tenancy Act</em> [SBC 2002] c. 78, I/we hereby give formal written notice to terminate my/our periodic residential tenancy of the above-referenced premises.
+            </p>
+            <p class="p-3 bg-slate-50 border-l-4 border-blue-600 font-sans text-xs">
+              <strong>Effective Termination Date:</strong> The tenancy will end, and I/we will deliver vacant possession on: <br>
+              <strong class="text-base text-blue-700 underline" id="prevVacateDate">November 30, 2026</strong>.
+            </p>
+            <p>
+              This date satisfies the statutory requirement under Section 45(1)(b) of the Act, being at least one full rental month after the date the landlord receives this notice and falling on the day immediately preceding the day of the month on which rent is payable.
+            </p>
+            <p>
+              <strong>Security & Pet Deposit Return Demand (BC RTA Section 38):</strong> <br>
+              In accordance with Section 38(1) of the Act, the landlord is hereby provided with the tenant's official written forwarding address below. The landlord has fifteen (15) calendar days from receipt of this written address or the end of the tenancy to either:
+            </p>
+            <ol class="list-decimal pl-6 space-y-1 text-xs font-sans">
+              <li>Repay all security and pet damage deposits held (<span id="prevDepositAmount" class="font-semibold"></span>) plus statutory interest; or</li>
+              <li>Make an application for dispute resolution with the Residential Tenancy Branch claiming against the deposits.</li>
+            </ol>
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded text-xs font-sans">
+              <strong>Official Written Forwarding Address:</strong>
+              <p class="font-semibold text-slate-900 mt-0.5" id="prevForwardingAddress"></p>
+            </div>
+            <div id="prevInspectionBlock" class="p-3 bg-slate-50 border border-slate-200 rounded text-xs font-sans">
+              <strong>Condition Inspection Report (RTB-27):</strong>
+              <p class="mt-0.5" id="prevInspectionText"></p>
+            </div>
+          </div>
+
+          <!-- Signatures -->
+          <div class="pt-6 border-t border-slate-200 signature-block font-sans text-xs">
+            <p class="font-bold uppercase tracking-wider text-slate-500 mb-4">Tenant Signature</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevSignatoryName">David Miller</p>
+                <p class="text-slate-500">Tenant Signature</p>
+              </div>
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevSignatureDate">October 23, 2026</p>
+                <p class="text-slate-500">Date Executed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate of Service Block -->
+          <div class="mt-8 pt-6 border-t-2 border-slate-900 proof-of-service-block font-sans text-xs">
+            <h3 class="font-bold uppercase tracking-wider text-slate-900 mb-2">
+              Certificate of Service (BC RTA Section 88 & Section 90)
+            </h3>
+            <p class="text-slate-600 mb-3 leading-relaxed">
+              I confirm that I served this written notice to end tenancy in accordance with Section 88 of the British Columbia <em>Residential Tenancy Act</em>:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 border border-slate-200 p-3 rounded bg-slate-50 mb-4">
+              <div>
+                <span class="block text-slate-500 font-semibold">Service Method:</span>
+                <span class="font-bold text-slate-900" id="prevServiceMethodLabel">In person delivery</span>
+              </div>
+              <div>
+                <span class="block text-slate-500 font-semibold">Service Date:</span>
+                <span class="font-bold text-slate-900" id="prevCertDate">October 23, 2026</span>
+              </div>
+              <div>
+                <span class="block text-slate-500 font-semibold">Deemed Received (s. 90):</span>
+                <span class="font-bold text-slate-900" id="prevDeemedDate">October 23, 2026</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevServerName">David Miller</p>
+                <p class="text-slate-500">Server Signature</p>
+              </div>
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevCertLocation">Vancouver, British Columbia</p>
+                <p class="text-slate-500">Place of Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Editorial Mass & Statutory Analysis (1,000 to 1,400 words) -->
+    <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print" itemscope itemtype="https://schema.org/TechArticle">
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Legal Foundation & Governing Act
+        </h2>
+        <p class="mb-4">
+          In British Columbia, private residential tenancies are regulated by the <em>Residential Tenancy Act</em> [SBC 2002] c. 78 and overseen by the Residential Tenancy Branch (RTB). Under Section 45(1) of the Act, a tenant who wishes to end a periodic month-to-month tenancy must provide the landlord with formal written notice of at least one full rental month.
+        </p>
+        <p class="mb-4">
+          The operation of Section 45(1)(b) establishes a precise rule for calculating the effective termination date. The notice must specify an effective date that is the day immediately preceding the day of the month on which rent is payable under the tenancy agreement. If a tenant pays rent on the first calendar day of each month, the tenancy must terminate on the final day of a calendar month, such as April 30 or May 31. A notice cannot terminate mid-month or on the first day of a month. If a tenant serves notice on October 15, the earliest lawful date the tenancy can conclude is November 30.
+        </p>
+        <p class="mb-4">
+          For tenants in fixed-term tenancies (commonly one-year leases), Section 45(2) prohibits ending the tenancy on a date earlier than the expiration date specified in the agreement. Attempting to vacate prior to lease expiry constitutes a lease breach, potentially exposing the tenant to liquidated damages or lost rent claims. However, Section 45(3) provides a critical statutory remedy: if a landlord has breached a material term of the agreement and failed to correct the breach within a reasonable period after receiving written notice, the tenant may end the tenancy effective on a date after the landlord receives notice. Alternatively, landlords and tenants may execute official Form RTB-8 (Mutual Agreement to End a Tenancy) to dissolve the agreement on mutually agreed terms.
+        </p>
+      </section>
+
+      <!-- Mandatory H3 Table: Variable Definitions & Qualifying Conditions -->
+      <section class="pt-6 border-t border-slate-100">
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Variable Definitions & Qualifying Conditions
+        </h3>
+        <p class="mb-4">
+          The lawful termination of a British Columbia tenancy depends on lease structure, statutory deemed service rules, and deposit return deadlines:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-900 text-white">
+              <tr>
+                <th class="p-3">Statutory Variable</th>
+                <th class="p-3">Legislative Condition</th>
+                <th class="p-3">Mandatory Timeframe</th>
+                <th class="p-3">Governing Act / Section</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Periodic Tenancy Notice</td>
+                <td class="p-3">Month-to-month residential tenancy</td>
+                <td class="p-3">At least 1 full rental month</td>
+                <td class="p-3 font-mono">BC RTA s. 45(1)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Termination Date Alignment</td>
+                <td class="p-3">Rent due on the 1st of each month</td>
+                <td class="p-3">Day before rent is due (last day of month)</td>
+                <td class="p-3 font-mono">BC RTA s. 45(1)(b)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Deemed Service: Mail</td>
+                <td class="p-3">Notice sent by regular or registered mail</td>
+                <td class="p-3">Deemed received on the 5th day after mailing</td>
+                <td class="p-3 font-mono">BC RTA s. 90(a)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Deemed Service: Door Attachment</td>
+                <td class="p-3">Attached to door or placed in mailbox</td>
+                <td class="p-3">Deemed received on the 3rd day after posting</td>
+                <td class="p-3 font-mono">BC RTA s. 90(c)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Deemed Service: Email</td>
+                <td class="p-3">Consented email address for service</td>
+                <td class="p-3">Deemed received on the 3rd day after sending</td>
+                <td class="p-3 font-mono">BC RTA s. 90(f)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3 font-semibold text-slate-900">Security Deposit Return</td>
+                <td class="p-3">Landlord received written forwarding address</td>
+                <td class="p-3">15 Calendar Days (or double penalty)</td>
+                <td class="p-3 font-mono">BC RTA s. 38(1)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Legal Service of Process -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Legal Service of Process: How to Deliver Notice in British Columbia
+        </h2>
+        <p class="mb-4">
+          Under Section 88 of the <em>Residential Tenancy Act</em>, tenants must serve written notice using approved legal channels. Serving notice incorrectly can lead to an invalidation of the termination date, forcing the tenant to pay an extra month of rent.
+        </p>
+        <p class="mb-4">
+          Section 88 authorizes the following delivery mechanisms:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li><strong>Personal Delivery:</strong> Leaving the notice directly with the landlord or an adult residing at the landlord's residence. Deemed received on the same calendar day.</li>
+          <li><strong>Posting on Door or in Mailbox:</strong> Attaching the document in a conspicuous place on the landlord's door or placing it in their mailbox. Under Section 90(c), this is deemed received three days later.</li>
+          <li><strong>Registered or Regular Mail:</strong> Mailing to the landlord's service address. Under Section 90(a), notice is deemed received on the fifth day after mailing. A tenant mailing notice on October 27 will have it deemed received on November 1, pushing the termination date to December 31 instead of November 30.</li>
+          <li><strong>Email Transmission:</strong> Lawful only if the landlord has provided written consent for electronic service, such as on the standard RTB tenancy agreement. Under Section 90(f), email is deemed received three days after sending.</li>
+        </ul>
+      </section>
+
+      <!-- Section: Timelines Matrix -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Timelines & Benchmark Reference Matrix
+        </h2>
+        <p class="mb-4">
+          The table below demonstrates how service dates and deemed delivery rules determine the earliest effective termination date for a Vancouver or Victoria monthly tenancy where rent is due on the first:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-900 text-white">
+              <tr>
+                <th class="p-3">Physical Action Date</th>
+                <th class="p-3">Delivery Method</th>
+                <th class="p-3">Deemed Date (RTA s. 90)</th>
+                <th class="p-3">Qualifying Month</th>
+                <th class="p-3">Effective Termination Date</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">October 31</td>
+                <td class="p-3">In Person (0 Days)</td>
+                <td class="p-3">October 31</td>
+                <td class="p-3">November</td>
+                <td class="p-3 font-semibold text-emerald-700">November 30 (Lawful)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">October 28</td>
+                <td class="p-3">Attached to Door (+3 Days)</td>
+                <td class="p-3">October 31</td>
+                <td class="p-3">November</td>
+                <td class="p-3 font-semibold text-emerald-700">November 30 (Lawful)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">October 29</td>
+                <td class="p-3">Attached to Door (+3 Days)</td>
+                <td class="p-3">November 1</td>
+                <td class="p-3">December</td>
+                <td class="p-3 font-semibold text-red-700">December 31 (Missed Deadline)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">October 26</td>
+                <td class="p-3">Regular Mail (+5 Days)</td>
+                <td class="p-3">October 31</td>
+                <td class="p-3">November</td>
+                <td class="p-3 font-semibold text-emerald-700">November 30 (Lawful)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">October 27</td>
+                <td class="p-3">Regular Mail (+5 Days)</td>
+                <td class="p-3">November 1</td>
+                <td class="p-3">December</td>
+                <td class="p-3 font-semibold text-red-700">December 31 (Missed Deadline)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Fatal Drafting Mistakes -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Fatal Drafting Mistakes That Invalidate a BC Tenant Notice
+        </h2>
+        <div class="space-y-4">
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">1. Miscalculating Deemed Service Days</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Mailing notice on the final day of a month means it is deemed received in the subsequent month. The tenant remains responsible for rent throughout the entire following month.
+            </p>
+          </div>
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">2. Omitting Written Forwarding Address</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Under Section 38, the landlord fifteen-day clock to return the security deposit does not begin until the tenant serves their forwarding address in writing. Failing to include it delays deposit return.
+            </p>
+          </div>
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">3. Serving Notice by Text Message</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Text messages, WhatsApp chats, or verbal statements do not satisfy Section 88 written notice criteria. The RTB routinely dismisses electronic text notices as non-compliant.
+            </p>
+          </div>
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">4. Premature Departure from Fixed Term</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Serving a one-month notice during an active fixed term lease without a mutual agreement (RTB-8) can result in the tenant being liable for the landlord's re-rental costs and rent shortfall.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: FAQs -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-6 text-sm">
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">How much advance notice must a BC tenant provide to terminate a month-to-month tenancy?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under British Columbia Residential Tenancy Act Section 45(1), a tenant must give at least one full rental month written notice. The notice must be served on or before the day before the monthly rent period begins.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">What is the effective date rule for a BC tenant notice?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under BC RTA Section 45(1)(b), the effective date must be the day immediately preceding the day of the month on which rent is payable. If rent is payable on the first of each month, the effective date must be the final day of the calendar month (such as November 30).
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">How do deemed service days affect notice deadlines in British Columbia?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under BC RTA Section 90, documents sent by mail are deemed received on the fifth day after mailing. Documents attached to the door, placed in the mailbox, or sent by consented email are deemed received on the third day. Notices must be served early enough so the deemed date falls before the rent cycle starts.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">Can a BC tenant end a fixed-term tenancy early using a 1-month notice?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              No. Under Section 45(2), a tenant cannot end a fixed-term tenancy earlier than the date specified in the tenancy agreement. To terminate early without penalty, tenants must obtain the landlord's written consent using Form RTB-8 (Mutual Agreement to End a Tenancy) or establish breach of a material term under Section 45(3).
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">When must a BC landlord return the security deposit after tenancy ends?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under BC RTA Section 38, the landlord has 15 days from the later of the date the tenancy ends or the date the tenant provides their written forwarding address to return the full deposit with interest or file an RTB dispute resolution claim. Failure to comply can result in the landlord paying double the deposit.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">What is Form RTB-8 and when should it be used?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Form RTB-8 is the official Mutual Agreement to End a Tenancy provided by the Residential Tenancy Branch. It is used when landlord and tenant mutually agree to conclude a tenancy on a specific date, bypassing standard statutory notice durations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Related Tenancy Utilities -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">Related Canadian Tenancy Utilities</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border border-slate-200 rounded-xl p-5 hover:border-blue-500 transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">Ontario LTB</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-2">Ontario Form N9 60-Day Notice</h3>
+              <p class="text-xs text-slate-600 mb-4">Official 60-day tenant notice compliant with Ontario Residential Tenancies Act Section 44.</p>
+            </div>
+            <a href="/canada/ontario-form-n9.html" class="text-xs font-bold text-red-700 hover:text-red-800">Launch N9 Generator &rarr;</a>
+          </div>
+          <div class="border border-slate-200 rounded-xl p-5 hover:border-blue-500 transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-2">Alberta RTDRS</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-2">Alberta Periodic Tenancy Notice</h3>
+              <p class="text-xs text-slate-600 mb-4">Periodic notice generator supporting 1-month tenant and 3-month landlord statutory durations.</p>
+            </div>
+            <a href="/canada/alberta-periodic-notice.html" class="text-xs font-bold text-amber-700 hover:text-amber-800">Launch Alberta Generator &rarr;</a>
+          </div>
+          <div class="border border-slate-200 rounded-xl p-5 hover:border-blue-500 transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-2">Ontario Financial</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-2">Ontario LMR Interest Calculator</h3>
+              <p class="text-xs text-slate-600 mb-4">Calculate annual interest owed on your Last Month Rent deposit matching Ontario guidelines.</p>
+            </div>
+            <a href="/canada/ontario-lmr-interest.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800">Launch Calculator &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Sticky Bottom Action Bar for Mobile Devices (< 768px) -->
+  <div id="mobileActionBar" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden z-40 flex items-center gap-2 shadow-lg no-print">
+    <button type="button" onclick="copyNoticeToClipboard()" class="flex-1 py-3 px-2 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-xs flex items-center justify-center space-x-1 shadow-sm min-h-[48px]">
+      <span>Copy Notice</span>
+    </button>
+    <button type="button" onclick="window.print()" class="flex-1 py-3 px-2 rounded-xl bg-blue-600 text-white font-bold text-xs flex items-center justify-center space-x-1 shadow-sm min-h-[48px]">
+      <span>Print / Save PDF</span>
+    </button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-xl border border-slate-700 transition-all transform translate-y-20 opacity-0 pointer-events-none flex items-center space-x-2">
+    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+    <span id="toastMessage">Notice copied to clipboard</span>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-300 text-xs py-12 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div class="space-y-3 sm:col-span-2 md:col-span-3 lg:col-span-1">
+        <div class="flex items-center space-x-2">
+          <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
+          <span class="font-display font-bold text-base text-white">TenantNotice</span>
+        </div>
+        <p class="text-slate-300 text-xs leading-relaxed">
+          Autonomous statutory notice engines across the United States, United Kingdom, and Canada. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
+          <li><a href="/uk/tenant-notice-to-quit.html" class="hover:text-white transition-colors">Tenant Notice to Quit</a></li>
+          <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
+          <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
+          <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Canada (LTB & RTB)</h4>
+        <ul class="space-y-2">
+          <li><a href="/canada/ontario-form-n9.html" class="hover:text-white transition-colors">Ontario Form N9 60-Day</a></li>
+          <li><a href="/canada/bc-rtb-notice.html" class="hover:text-white transition-colors">BC RTB 1-Month Notice</a></li>
+          <li><a href="/canada/alberta-periodic-notice.html" class="hover:text-white transition-colors">Alberta Periodic Notice</a></li>
+          <li><a href="/canada/ontario-lmr-interest.html" class="hover:text-white transition-colors">Ontario LMR Interest Calc</a></li>
+          <li><a href="/canada/" class="text-red-400 hover:text-red-300 transition-colors font-medium">All Canada Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust & Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/legal/disclaimer.html" class="hover:text-white transition-colors">Legal Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-400 text-xs">
+      <p>&copy; 2026 TenantNotice Online. All rights reserved. Self-help legal software compliant with British Columbia Residential Tenancy Act.</p>
+    </div>
+  </footer>
+
+  <!-- Isolated Canadian Engine Script -->
+  <script src="/canada/js/canada-notices.js"></script>
+  <script>
+    var currentBcCalc = null;
+
+    function initBcPage() {
+      var today = new Date();
+      var isoStr = today.toISOString().split('T')[0];
+      document.getElementById('serviceDate').value = isoStr;
+      runBcCalculation();
+    }
+
+    function runBcCalculation() {
+      var sDate = document.getElementById('serviceDate').value;
+      var rentDue = document.getElementById('rentDueDay').value;
+      var method = document.getElementById('serviceMethod').value;
+      if (!sDate) return;
+
+      currentBcCalc = CanadaNotices.calculateBcNotice(sDate, rentDue, method);
+      document.getElementById('vacateDate').value = currentBcCalc.statutoryDate;
+      validateCustomBcDate();
+      updateNoticeDOM();
+    }
+
+    function snapToStatutoryBcDate() {
+      if (currentBcCalc && currentBcCalc.statutoryDate) {
+        document.getElementById('vacateDate').value = currentBcCalc.statutoryDate;
+        validateCustomBcDate();
+        updateNoticeDOM();
+      }
+    }
+
+    function validateCustomBcDate() {
+      if (!currentBcCalc) return;
+      var selDate = document.getElementById('vacateDate').value;
+      var rentDue = document.getElementById('rentDueDay').value;
+      var banner = document.getElementById('validationBanner');
+
+      var validation = CanadaNotices.validateBcDate(selDate, currentBcCalc, rentDue);
+      if (validation.valid) {
+        banner.className = 'mt-2 text-xs p-2.5 rounded-lg border border-emerald-500 bg-emerald-50 text-emerald-900 font-medium flex items-center gap-1.5';
+        banner.innerHTML = '<span class="w-2 h-2 rounded-full bg-emerald-600"></span> ' + validation.message;
+      } else {
+        banner.className = 'mt-2 text-xs p-2.5 rounded-lg border border-red-500 bg-red-50 text-red-900 font-medium flex items-center gap-1.5';
+        banner.innerHTML = '<span class="w-2 h-2 rounded-full bg-red-600"></span> ' + validation.message;
+      }
+      updateNoticeDOM();
+    }
+
+    function updateNoticeDOM() {
+      var tenant = document.getElementById('tenantName').value || 'Tenant Name';
+      var landlord = document.getElementById('landlordName').value || 'Landlord Name';
+      var address = document.getElementById('rentalAddress').value || 'Rental Address';
+      var forwarding = document.getElementById('forwardingAddress').value || 'To be provided upon move-out';
+      var depositText = document.getElementById('depositAmount').value || 'Security deposit held';
+      var inspection = document.getElementById('inspectionRequest').value || '';
+      var sDate = document.getElementById('serviceDate').value;
+      var vDate = document.getElementById('vacateDate').value;
+      var method = document.getElementById('serviceMethod').value;
+
+      document.getElementById('prevTenantName').textContent = tenant;
+      document.getElementById('prevLandlordName').textContent = landlord;
+      document.getElementById('prevRentalAddress').textContent = address;
+      document.getElementById('prevForwardingAddress').textContent = forwarding;
+      document.getElementById('prevDepositAmount').textContent = depositText;
+      document.getElementById('prevInspectionText').textContent = inspection;
+      document.getElementById('prevServiceDate').textContent = CanadaNotices.formatDateLong(sDate);
+      document.getElementById('prevVacateDate').textContent = CanadaNotices.formatDateLong(vDate);
+      document.getElementById('prevSignatoryName').textContent = tenant.split(',')[0].trim();
+      document.getElementById('prevSignatureDate').textContent = CanadaNotices.formatDateLong(sDate);
+
+      var methodLabels = {
+        personal: 'Handed directly to landlord in person (0 days deemed)',
+        door: 'Attached securely to door or in mailbox (+3 days deemed)',
+        mail: 'Sent by regular or registered mail (+5 days deemed)',
+        digital: 'Sent by consented email (+3 days deemed)'
+      };
+      document.getElementById('prevServiceMethodLabel').textContent = methodLabels[method] || method;
+      document.getElementById('prevCertDate').textContent = CanadaNotices.formatDateLong(sDate);
+      if (currentBcCalc) {
+        document.getElementById('prevDeemedDate').textContent = CanadaNotices.formatDateLong(currentBcCalc.effectiveServiceDate);
+      }
+      document.getElementById('prevServerName').textContent = tenant.split(',')[0].trim();
+    }
+
+    function copyNoticeToClipboard() {
+      var noticeElement = document.getElementById('printableNotice');
+      var textToCopy = noticeElement.innerText;
+
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        showToast("BC Notice to Vacate copied to clipboard.");
+      }).catch(function() {
+        showToast("Notice text ready. Please print or copy directly.");
+      });
+    }
+
+    function showToast(msg) {
+      var toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(function() {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    window.addEventListener('DOMContentLoaded', initBcPage);
+  </script>
+</body>
+</html>

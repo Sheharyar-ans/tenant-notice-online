@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8JZH849RX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R8JZH849RX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ontario Last Month Rent (LMR) Deposit Interest Calculator | RTA s. 106(6)</title>
+  <meta name="description" content="Calculate statutory interest owed on Ontario Last Month Rent (LMR) deposits under Residential Tenancies Act Section 106. Multi-year ledger and rent increase offset engine.">
+  <link rel="canonical" href="https://tenantnotice.online/canada/ontario-lmr-interest.html">
+  <link rel="alternate" hreflang="en-CA" href="https://tenantnotice.online/canada/ontario-lmr-interest.html">
+  <link rel="alternate" hreflang="en-US" href="https://tenantnotice.online/us/security-deposit-demand.html">
+  <link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/tenancy-deposit-demand.html">
+  <link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/canada/ontario-lmr-interest.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="TenantNotice Online">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ontario Last Month Rent (LMR) Deposit Interest Calculator | RTA s. 106(6)">
+  <meta property="og:description" content="Calculate statutory interest owed on Ontario Last Month Rent (LMR) deposits under Residential Tenancies Act Section 106. Multi-year ledger and rent increase offset engine.">
+  <meta property="og:url" content="https://tenantnotice.online/canada/ontario-lmr-interest.html">
+  <meta property="og:image" content="https://tenantnotice.online/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ontario Last Month Rent (LMR) Deposit Interest Calculator | RTA s. 106(6)">
+  <meta name="twitter:description" content="Calculate statutory interest owed on Ontario Last Month Rent (LMR) deposits under Residential Tenancies Act Section 106. Multi-year ledger and rent increase offset engine.">
+  <meta name="twitter:image" content="https://tenantnotice.online/favicon.svg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <!-- Precompiled Production Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.min.css">
+
+  <!-- Dedicated Print Engine Stylesheet -->
+  <style>
+  @media print {
+    @page {
+      margin: 15mm;
+      size: auto;
+    }
+    
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 0 !important;
+      height: auto !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      display: block !important;
+      font-size: 9.5pt !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *, article, article *,
+    .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast, #toastNotification,
+    .action-toolbar, button, button *, input, select, textarea,
+    .faq-section, .faq-section * {
+      display: none !important;
+      height: 0 !important;
+      width: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+    }
+    
+    main,
+    .grid,
+    .lg\:grid-cols-12,
+    .lg\:col-span-7,
+    .lg\:col-span-5,
+    div.sticky,
+    div[class*="col-span"],
+    div[class*="grid"] {
+      display: block !important;
+      position: static !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      min-height: 0 !important;
+      height: auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      transform: none !important;
+      overflow: visible !important;
+    }
+    
+    #printableNotice,
+    #document-preview,
+    .document-paper {
+      display: block !important;
+      position: static !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      width: 100% !important;
+      min-height: 0 !important;
+      height: auto !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      font-size: 9.5pt !important;
+      line-height: 1.35 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+      page-break-before: avoid !important;
+      break-before: avoid !important;
+    }
+
+    .signature-block, .proof-of-service-block, .kpi-summary-grid {
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+    }
+  }
+  </style>
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://tenantnotice.online/canada/ontario-lmr-interest.html#app",
+        "name": "Ontario Last Month Rent Deposit Interest Calculator",
+        "url": "https://tenantnotice.online/canada/ontario-lmr-interest.html",
+        "applicationCategory": "LegalApplication",
+        "operatingSystem": "All modern browsers",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "CAD"
+        },
+        "description": "Client-side legal accounting calculator determining statutory interest owed on Ontario Last Month's Rent (LMR) deposits under Section 106 of the Residential Tenancies Act."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tenantnotice.online/canada/ontario-lmr-interest.html#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tenantnotice.online/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Canada Portal",
+            "item": "https://tenantnotice.online/canada/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ontario LMR Interest Calculator",
+            "item": "https://tenantnotice.online/canada/ontario-lmr-interest.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tenantnotice.online/canada/ontario-lmr-interest.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are security deposits or damage deposits legal in Ontario?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Under Ontario Residential Tenancies Act Section 105, traditional security deposits, pet damage deposits, and cleaning deposits are strictly illegal. A landlord may only collect a rent deposit for the last rental period (Last Month Rent) and a refundable key deposit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the interest rate an Ontario landlord must pay on Last Month Rent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Ontario Residential Tenancies Act Section 106(6), the landlord must pay interest annually at the official Ontario Rent Increase Guideline percentage in effect when payment is due. For 2024, 2025, and 2026, the annual rate is 2.5 percent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does LMR interest offset an annual rent increase?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Section 106(7), the landlord may apply the interest owing directly to the deposit. Because the rent increase guideline percentage exactly matches the interest rate, when a landlord raises rent by the guideline, the interest earned offsets the tenant deposit top-up, leaving zero net interest payable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if the landlord does not increase the rent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the landlord does not increase the rent by the guideline percentage, no top-up is required from the tenant. The landlord must pay the entire interest amount directly to the tenant annually or allow the tenant to deduct it from their rent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can an Ontario tenant deduct unpaid deposit interest from their monthly rent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Under Section 106(6) of the Act, if the landlord fails to pay interest when due, the tenant is statutorily entitled to deduct the owed interest amount from a subsequent rent payment or file a Form T1 application with the Landlord and Tenant Board."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the limitation period to claim unpaid LMR interest at the LTB?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Section 135.1 of the Ontario Residential Tenancies Act, a tenant has one year from the date the interest payment became due to file a Form T1 application with the Landlord and Tenant Board to recover unpaid interest."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col pb-24 md:pb-0">
+  <!-- Global Navigation Header -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
+        <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>UK Portal</span>
+        </a>
+        <a href="/canada/" class="text-red-400 flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-600"></span>
+          <span>Canada Portal</span>
+        </a>
+        <a href="/guides/us-eviction-process-guide.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Guides</a>
+        <a href="/blog/" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Hub</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
+      </nav>
+      <div class="flex items-center space-x-2">
+        <a href="/canada/" class="text-xs font-semibold text-slate-300 hover:text-white px-3 py-2 border border-slate-700 rounded-lg min-h-[48px] flex items-center">
+          All Canada Tools
+        </a>
+        <a href="/canada/ontario-form-n9.html" class="text-xs font-semibold text-red-400 hover:text-red-300 px-3 py-2 border border-red-500/40 bg-red-950/40 rounded-lg min-h-[48px] flex items-center">
+          Ontario N9
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+      <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
+      <span>/</span>
+      <a href="/canada/" class="hover:text-slate-900 transition-colors">Canada Portal</a>
+      <span>/</span>
+      <span class="text-slate-900 font-medium">Ontario LMR Interest Calculator</span>
+    </div>
+  </nav>
+
+  <!-- Inverted Pyramid: Main Workspace -->
+  <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <!-- Header Title & Direct Answer Capsule -->
+    <section class="mb-8 no-print" aria-label="Statutory Direct Answer">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold mb-3">
+        <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+        Ontario Residential Tenancies Act Section 106(6) Financial Calculator
+      </div>
+      <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Ontario Last Month Rent (LMR) Deposit Interest Calculator
+      </h1>
+      
+      <!-- 45-Word Direct Answer Capsule for AI Extraction -->
+      <div class="bg-slate-900 text-white p-4 sm:p-5 rounded-xl border border-slate-800 text-sm leading-relaxed max-w-4xl shadow-sm">
+        <p class="font-bold text-slate-100">
+          Under Ontario Residential Tenancies Act Section 106(6), a landlord holding a Last Month Rent deposit must pay annual interest matching the official Ontario Rent Increase Guideline percentage. Interest may offset annual rent increases or be demanded directly by the tenant.
+        </p>
+      </div>
+    </section>
+
+    <!-- Desktop Split-Screen Power Workspace (Left 40%, Right 60%) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
+      <!-- Left Panel: 40% Width (lg:col-span-5) -->
+      <aside class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-5 no-print" aria-label="Document Parameters Form">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h2 class="font-display text-base font-bold text-slate-900">Deposit Parameters</h2>
+          <span class="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full">Ontario LTB Engine</span>
+        </div>
+
+        <!-- Section 1: Financial & Date Inputs -->
+        <div class="space-y-4">
+          <div>
+            <label for="initialDeposit" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Initial Rent Deposit Paid ($CAD)</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-500 font-bold">$</span>
+              <input type="number" step="0.01" id="initialDeposit" value="2200.00" oninput="runLmrLedger()" class="w-full pl-8 pr-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            </div>
+            <p class="text-xs text-slate-500 mt-1">Amount paid for Last Month's Rent at start of tenancy.</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label for="startDate" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Tenancy Start Date</label>
+              <input type="date" id="startDate" value="2022-09-01" onchange="runLmrLedger()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            </div>
+            <div>
+              <label for="endDate" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Calculation End Date</label>
+              <input type="date" id="endDate" onchange="runLmrLedger()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            </div>
+          </div>
+
+          <div>
+            <label for="offsetMode" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Rent Increase & Offset Mode (s. 106(7))</label>
+            <select id="offsetMode" onchange="runLmrLedger()" class="w-full px-3 py-2.5 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+              <option value="none">No Rent Increase (Landlord owes full interest payment)</option>
+              <option value="full_offset">Guideline Rent Increases Applied (Interest offset deposit top-up)</option>
+            </select>
+            <p class="text-xs text-slate-500 mt-1">If landlord increased rent by guideline and applied interest to deposit, net interest is $0.</p>
+          </div>
+        </div>
+
+        <!-- Section 2: Parties -->
+        <details open class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
+            <span>1. Tenancy Parties</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="tenantName" class="block text-xs font-semibold text-slate-700 mb-1">Tenant Name(s)</label>
+              <input type="text" id="tenantName" value="Laura Thompson" oninput="updateStatementDOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            </div>
+            <div>
+              <label for="landlordName" class="block text-xs font-semibold text-slate-700 mb-1">Landlord / Property Manager</label>
+              <input type="text" id="landlordName" value="Maple Residential Asset Management" oninput="updateStatementDOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            </div>
+            <div>
+              <label for="rentalAddress" class="block text-xs font-semibold text-slate-700 mb-1">Rental Unit Address in Ontario</label>
+              <input type="text" id="rentalAddress" value="250 Front Street West, Suite 1902, Toronto, ON M5V 3G5" oninput="updateStatementDOM()" class="w-full px-3 py-2.5 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+            </div>
+          </div>
+        </details>
+
+        <!-- Section 3: Recovery Instructions -->
+        <details class="border border-slate-200 rounded-xl p-3.5 group">
+          <summary class="font-semibold text-xs text-slate-900 uppercase tracking-wider cursor-pointer list-none flex items-center justify-between min-h-[48px]">
+            <span>2. Recovery Method</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">&darr;</span>
+          </summary>
+          <div class="mt-3 space-y-3 pt-3 border-t border-slate-100">
+            <div>
+              <label for="recoveryMethod" class="block text-xs font-semibold text-slate-700 mb-1">Preferred Recovery Route</label>
+              <select id="recoveryMethod" onchange="updateStatementDOM()" class="w-full px-3 py-2.5 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 bg-white min-h-[48px]">
+                <option value="direct_payment">Formal Demand for Direct e-Transfer / Cheque</option>
+                <option value="rent_deduction">Statutory Deduction from Upcoming Rent Payment (s. 106(6))</option>
+              </select>
+            </div>
+          </div>
+        </details>
+
+        <!-- Action Controls -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+          <button type="button" onclick="window.print()" class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-sm transition-all flex items-center justify-center space-x-2 min-h-[48px]">
+            <span>Print / Save PDF (Interest Statement)</span>
+          </button>
+          <button type="button" onclick="copyNoticeToClipboard()" class="w-full py-2.5 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-semibold text-xs transition-all flex items-center justify-center space-x-2 min-h-[48px]">
+            <span>Copy Text to Clipboard</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Right Panel: 60% Width (lg:col-span-7) -->
+      <section class="lg:col-span-7 sticky top-24" aria-label="Official Statement Preview">
+        <div class="bg-white p-6 sm:p-10 rounded-2xl border border-slate-200 shadow-lg text-slate-900 font-serif leading-relaxed min-h-[600px] document-paper" id="printableNotice">
+          <!-- Document Header -->
+          <div class="border-b-2 border-slate-900 pb-4 mb-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="font-sans text-xs font-bold text-emerald-700 uppercase tracking-widest block">Ontario Residential Tenancies Act, 2006</span>
+                <h2 class="font-sans text-xl sm:text-2xl font-black text-slate-900 tracking-tight mt-1" id="previewTitle">
+                  STATEMENT OF LAST MONTH RENT (LMR) DEPOSIT INTEREST
+                </h2>
+                <p class="font-sans text-xs text-slate-600 mt-0.5">
+                  Statutory Accounting pursuant to Section 106(6) and Section 106(7)
+                </p>
+              </div>
+              <div class="text-right font-sans text-xs text-slate-500">
+                <span class="border border-slate-300 px-2 py-1 rounded font-bold font-mono">RTA s. 106</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parties & Rental Address -->
+          <div class="space-y-3 mb-6 text-xs sm:text-sm font-sans">
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">Date of Statement:</span>
+              <span class="font-semibold text-slate-900" id="prevStatementDate">October 23, 2026</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">To Landlord:</span>
+              <span class="font-semibold text-slate-900" id="prevLandlordName">Maple Residential Asset Management</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">From Tenant:</span>
+              <span class="font-semibold text-slate-900" id="prevTenantName">Laura Thompson</span>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-between border-b border-slate-100 pb-2">
+              <span class="font-bold uppercase tracking-wider text-xs text-slate-500">Rental Unit:</span>
+              <span class="font-semibold text-slate-900" id="prevRentalAddress">250 Front Street West, Suite 1902, Toronto, ON M5V 3G5</span>
+            </div>
+          </div>
+
+          <!-- KPI Summary Cards -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 font-sans kpi-summary-grid">
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+              <span class="block text-slate-500 text-[10px] font-bold uppercase tracking-wider">Initial Deposit</span>
+              <span class="text-sm sm:text-base font-black text-slate-900" id="prevKpiDeposit">$2,200.00</span>
+            </div>
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+              <span class="block text-slate-500 text-[10px] font-bold uppercase tracking-wider">Total Interest</span>
+              <span class="text-sm sm:text-base font-black text-slate-900" id="prevKpiInterest">$0.00</span>
+            </div>
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl">
+              <span class="block text-slate-500 text-[10px] font-bold uppercase tracking-wider">Offset Applied</span>
+              <span class="text-sm sm:text-base font-black text-slate-900" id="prevKpiOffset">$0.00</span>
+            </div>
+            <div class="p-3 bg-emerald-50 border border-emerald-300 rounded-xl">
+              <span class="block text-emerald-800 text-[10px] font-bold uppercase tracking-wider">Net Balance Due</span>
+              <span class="text-sm sm:text-base font-black text-emerald-700" id="prevKpiNetDue">$0.00</span>
+            </div>
+          </div>
+
+          <!-- Itemized Ledger Table -->
+          <div class="mb-6 font-sans">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-800 mb-2">Itemized Annual Interest Accounting</h3>
+            <div class="overflow-x-auto border border-slate-200 rounded-lg">
+              <table class="w-full text-left text-xs border-collapse">
+                <thead class="bg-slate-900 text-white">
+                  <tr>
+                    <th class="p-2">Period</th>
+                    <th class="p-2">Dates</th>
+                    <th class="p-2">Guideline</th>
+                    <th class="p-2">Deposit Basis</th>
+                    <th class="p-2">Interest</th>
+                    <th class="p-2">Offset</th>
+                    <th class="p-2">Net Due</th>
+                  </tr>
+                </thead>
+                <tbody id="prevLedgerBody" class="divide-y divide-slate-200 text-slate-700">
+                  <!-- Dynamically hydrated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Formal Statutory Demand Paragraph -->
+          <div class="space-y-4 text-justify mb-8 text-xs sm:text-sm font-serif">
+            <p>
+              <strong>STATUTORY DECLARATION & FORMAL DEMAND:</strong> <br>
+              Pursuant to Section 106(6) of the Ontario <em>Residential Tenancies Act, 2006</em> (S.O. 2006, c. 17), a landlord of a rental unit shall pay interest to the tenant annually on the amount of the rent deposit at a rate equal to the guideline determined under Section 120 in effect at the time payment becomes due.
+            </p>
+            <p id="prevDemandInstructions" class="p-3 bg-slate-50 border-l-4 border-emerald-600 font-sans text-xs">
+              <!-- Dynamically populated demand instructions -->
+            </p>
+            <p class="text-xs font-sans text-slate-600">
+              Please note that under Ontario law, if this statutory obligation remains unsatisfied, the tenant reserves the right under Section 106(6) to deduct the outstanding sum from future rent, or file an application with the Landlord and Tenant Board (Form T1) seeking a formal repayment order and reimbursement of the board application filing fee.
+            </p>
+          </div>
+
+          <!-- Signatures -->
+          <div class="pt-6 border-t border-slate-200 signature-block font-sans text-xs">
+            <p class="font-bold uppercase tracking-wider text-slate-500 mb-4">Tenant Execution</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevSignatoryName">Laura Thompson</p>
+                <p class="text-slate-500">Tenant Signature</p>
+              </div>
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevSignatureDate">October 23, 2026</p>
+                <p class="text-slate-500">Execution Date</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate of Service Block -->
+          <div class="mt-8 pt-6 border-t-2 border-slate-900 proof-of-service-block font-sans text-xs">
+            <h3 class="font-bold uppercase tracking-wider text-slate-900 mb-2">
+              Certificate of Delivery (Ontario RTA s. 191)
+            </h3>
+            <p class="text-slate-600 mb-3 leading-relaxed">
+              I certify that this Statement of LMR Deposit Interest was delivered to the landlord or authorized representative:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 border border-slate-200 p-3 rounded bg-slate-50 mb-4">
+              <div>
+                <span class="block text-slate-500 font-semibold">Delivery Date:</span>
+                <span class="font-bold text-slate-900" id="prevCertDate">October 23, 2026</span>
+              </div>
+              <div>
+                <span class="block text-slate-500 font-semibold">Method:</span>
+                <span class="font-bold text-slate-900">Personal delivery / Email pursuant to RTA Section 191</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900" id="prevServerName">Laura Thompson</p>
+                <p class="text-slate-500">Server Signature</p>
+              </div>
+              <div>
+                <div class="border-b border-slate-400 pb-1 mb-1 h-8"></div>
+                <p class="font-semibold text-slate-900">Toronto, Ontario</p>
+                <p class="text-slate-500">Location of Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Editorial Mass & Statutory Analysis (1,000 to 1,400 words) -->
+    <article class="bg-white rounded-2xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed no-print" itemscope itemtype="https://schema.org/TechArticle">
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Statutory Legal Foundation & Governing Act
+        </h2>
+        <p class="mb-4">
+          Under the Ontario <em>Residential Tenancies Act, 2006</em> (S.O. 2006, c. 17), the financial framework governing residential security deposits differs sharply from the United States and other Canadian jurisdictions. Pursuant to Section 105 of the Act, traditional damage deposits, cleaning deposits, and pet deposits are completely illegal. A landlord is statutorily prohibited from requiring or collecting any deposit from a prospective or current tenant other than a rent deposit for the last rental period of the tenancy (commonly referred to as Last Month's Rent or LMR) and a reasonable refundable key deposit limited to the actual direct replacement cost.
+        </p>
+        <p class="mb-4">
+          Because the landlord holds the tenant's Last Month Rent deposit throughout the entire duration of the tenancy, Section 106(6) of the Act establishes a mandatory affirmative obligation on the part of the landlord: the landlord shall pay interest to the tenant annually on the amount of the deposit. The statutory rate of interest is not arbitrary; it is strictly defined as equal to the Ontario Rent Increase Guideline determined under Section 120 that is in effect at the time payment becomes due.
+        </p>
+        <p class="mb-4">
+          Crucially, Section 106(7) sets out the statutory offsetting mechanism. The landlord may apply the interest owing under subsection (6) to the amount of the deposit so that the amount of the deposit remains equal to the current lawful rent. When a landlord serves a compliant Notice of Rent Increase (Form N1) raising rent by the exact annual guideline percentage, the statutory deposit top-up required from the tenant under Section 106(3) is identical in dollar value to the interest owed by the landlord under Section 106(6). If the landlord applies the interest to the deposit, both obligations neutralize each other completely. However, if the landlord never raised the rent, or raised the rent below the guideline, the tenant remains entitled to direct payment of the accrued interest.
+        </p>
+      </section>
+
+      <!-- Mandatory H3 Table: Historical Guidelines Table -->
+      <section class="pt-6 border-t border-slate-100">
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-4">
+          Ontario Rent Increase Guideline & Deposit Interest History
+        </h3>
+        <p class="mb-4">
+          The following table details the official statutory guideline percentages determined under Section 120 of the Ontario Residential Tenancies Act, which dictate the exact annual interest rates payable on Last Month Rent deposits:
+        </p>
+        <div class="overflow-x-auto my-4">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-900 text-white">
+              <tr>
+                <th class="p-3">Calendar Year</th>
+                <th class="p-3">Statutory Guideline Rate (%)</th>
+                <th class="p-3">Legal Basis / Enactment</th>
+                <th class="p-3">Interest on $2,000 Deposit</th>
+                <th class="p-3">Statutory Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50 font-semibold text-slate-900">
+                <td class="p-3">2026</td>
+                <td class="p-3 text-emerald-700">2.5%</td>
+                <td class="p-3 font-mono">Ontario Regulation</td>
+                <td class="p-3">$50.00</td>
+                <td class="p-3">Statutory Cap In Effect</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2025</td>
+                <td class="p-3 text-emerald-700">2.5%</td>
+                <td class="p-3 font-mono">Ontario Regulation</td>
+                <td class="p-3">$50.00</td>
+                <td class="p-3">Statutory Cap In Effect</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2024</td>
+                <td class="p-3 text-emerald-700">2.5%</td>
+                <td class="p-3 font-mono">Ontario Regulation</td>
+                <td class="p-3">$50.00</td>
+                <td class="p-3">Statutory Cap In Effect</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2023</td>
+                <td class="p-3 text-emerald-700">2.5%</td>
+                <td class="p-3 font-mono">Ontario Regulation</td>
+                <td class="p-3">$50.00</td>
+                <td class="p-3">Statutory Cap In Effect</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2022</td>
+                <td class="p-3 text-emerald-700">1.2%</td>
+                <td class="p-3 font-mono">CPI Formula</td>
+                <td class="p-3">$24.00</td>
+                <td class="p-3">Post-COVID Adjustment</td>
+              </tr>
+              <tr class="hover:bg-slate-50 text-red-700">
+                <td class="p-3 font-bold">2021</td>
+                <td class="p-3 font-bold">0.0%</td>
+                <td class="p-3 font-mono">COVID-19 Freeze Act</td>
+                <td class="p-3">$0.00</td>
+                <td class="p-3 font-semibold">Legislated Rent Freeze</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2020</td>
+                <td class="p-3 text-emerald-700">2.2%</td>
+                <td class="p-3 font-mono">CPI Formula</td>
+                <td class="p-3">$44.00</td>
+                <td class="p-3">Standard Guideline</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2019</td>
+                <td class="p-3 text-emerald-700">1.8%</td>
+                <td class="p-3 font-mono">CPI Formula</td>
+                <td class="p-3">$36.00</td>
+                <td class="p-3">Standard Guideline</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2018</td>
+                <td class="p-3 text-emerald-700">1.8%</td>
+                <td class="p-3 font-mono">CPI Formula</td>
+                <td class="p-3">$36.00</td>
+                <td class="p-3">Standard Guideline</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="p-3">2017</td>
+                <td class="p-3 text-emerald-700">1.5%</td>
+                <td class="p-3 font-mono">CPI Formula</td>
+                <td class="p-3">$30.00</td>
+                <td class="p-3">Standard Guideline</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Offset Mechanics -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          How Deposit Interest Offsets Annual Rent Increases
+        </h2>
+        <p class="mb-4">
+          A frequent source of dispute between Ontario landlords and tenants is whether interest must be paid directly by cheque or e-transfer each year. Section 106(7) provides landlords with the statutory discretion to credit the interest toward the deposit balance rather than issuing cash payment.
+        </p>
+        <p class="mb-4">
+          Consider a concrete scenario: A tenant signs a lease on November 1, 2023, paying $2,000 for Last Month's Rent. On November 1, 2024, the landlord issues a valid Form N1 rent increase raising rent by the 2.5% statutory guideline to $2,050. Under Section 106(3), the tenant is obligated to top up the rent deposit by $50 so it matches the new monthly rent. Simultaneously, under Section 106(6), the landlord owes the tenant 2.5% interest on the $2,000 deposit, which equals exactly $50. By applying Section 106(7), the $50 interest is rolled into the deposit, bringing the deposit held to $2,050 without any out-of-pocket payment required from either party.
+        </p>
+        <p class="mb-4">
+          Conversely, if the landlord fails to issue an annual rent increase, the monthly rent remains $2,000. In this case, no deposit top-up is owed. The landlord cannot retain the $50 interest; it must be paid directly to the tenant or deducted from the next rent installment.
+        </p>
+      </section>
+
+      <!-- Section: Remedies for Unpaid Interest -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Remedies for Unpaid Deposit Interest in Ontario
+        </h2>
+        <p class="mb-4">
+          If a landlord fails to pay statutory interest or properly credit it to the deposit, Ontario tenants possess explicit legal remedies:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 mb-4">
+          <li><strong>Direct Rent Deduction:</strong> Section 106(6) explicitly confirms that the tenant may deduct the owed interest from a subsequent rent payment. It is prudent practice to deliver this written statement and ledger to the landlord prior to making the deduction.</li>
+          <li><strong>LTB Form T1 Application:</strong> The tenant may file a Form T1 (Tenant Application for a Rebate of Money the Landlord Owes) with the Landlord and Tenant Board under Section 135. The Board will issue an order requiring the landlord to pay the interest plus reimburse the tenant's board filing fee.</li>
+          <li><strong>One-Year Limitation Period:</strong> Under Section 135.1 of the RTA, applications for interest rebates must be filed within one year of the date the interest payment became due. Delaying action beyond one year can extinguish the statutory right to recover through the board.</li>
+        </ul>
+      </section>
+
+      <!-- Section: Fatal Mistakes -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Fatal Legal Mistakes in Ontario Deposit Management
+        </h2>
+        <div class="space-y-4">
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">1. Demanding Security or Damage Deposits</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Collecting separate damage deposits violates Section 105. Tenants can file Form T1 immediately to demand full refund of illegal deposit funds with interest.
+            </p>
+          </div>
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">2. Demanding Out-of-Pocket Top-Ups Without Crediting Interest</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Landlords who demand cash top-ups from tenants after a rent increase without crediting the accrued statutory interest are collecting excess rent in violation of the Act.
+            </p>
+          </div>
+          <div class="border-l-4 border-red-500 pl-4 py-1">
+            <h3 class="font-bold text-slate-900">3. Missing the One-Year LTB Limitation Period</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Tenants who wait multiple years to address unpaid interest risk losing claims older than twelve months due to Section 135.1 statutory limitation bars.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: FAQs -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-6 text-sm">
+          <div>
+            <h3 class="font-bold text-slate-900 mb-2">Are security deposits or damage deposits legal in Ontario?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              No. Under Ontario Residential Tenancies Act Section 105, traditional security deposits, pet damage deposits, and cleaning deposits are strictly illegal. A landlord may only collect a rent deposit for the last rental period (Last Month Rent) and a refundable key deposit.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">What is the interest rate an Ontario landlord must pay on Last Month Rent?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under Ontario Residential Tenancies Act Section 106(6), the landlord must pay interest annually at the official Ontario Rent Increase Guideline percentage in effect when payment is due. For 2024, 2025, and 2026, the annual rate is 2.5 percent.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">How does LMR interest offset an annual rent increase?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under Section 106(7), the landlord may apply the interest owing directly to the deposit. Because the rent increase guideline percentage exactly matches the interest rate, when a landlord raises rent by the guideline, the interest earned offsets the tenant deposit top-up, leaving zero net interest payable.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">What happens if the landlord does not increase the rent?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              If the landlord does not increase the rent by the guideline percentage, no top-up is required from the tenant. The landlord must pay the entire interest amount directly to the tenant annually or allow the tenant to deduct it from their rent.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">Can an Ontario tenant deduct unpaid deposit interest from their monthly rent?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Yes. Under Section 106(6) of the Act, if the landlord fails to pay interest when due, the tenant is statutorily entitled to deduct the owed interest amount from a subsequent rent payment or file a Form T1 application with the Landlord and Tenant Board.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <h3 class="font-bold text-slate-900 mb-2">What is the limitation period to claim unpaid LMR interest at the LTB?</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Under Section 135.1 of the Ontario Residential Tenancies Act, a tenant has one year from the date the interest payment became due to file a Form T1 application with the Landlord and Tenant Board to recover unpaid interest.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Related Tenancy Utilities -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-6">Related Canadian Tenancy Utilities</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-2">Ontario LTB</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-2">Ontario Form N9 60-Day Notice</h3>
+              <p class="text-xs text-slate-600 mb-4">Official 60-day tenant notice compliant with Ontario Residential Tenancies Act Section 44.</p>
+            </div>
+            <a href="/canada/ontario-form-n9.html" class="text-xs font-bold text-red-700 hover:text-red-800">Launch N9 Generator &rarr;</a>
+          </div>
+          <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-2">British Columbia</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-2">BC RTB 1-Month Tenant Notice</h3>
+              <p class="text-xs text-slate-600 mb-4">Generate a 1-month periodic notice compliant with BC Residential Tenancy Act Section 45.</p>
+            </div>
+            <a href="/canada/bc-rtb-notice.html" class="text-xs font-bold text-blue-700 hover:text-blue-800">Launch BC Generator &rarr;</a>
+          </div>
+          <div class="border border-slate-200 rounded-xl p-5 hover:border-emerald-500 transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-2">Alberta RTDRS</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-2">Alberta Periodic Tenancy Notice</h3>
+              <p class="text-xs text-slate-600 mb-4">Periodic notice generator supporting 1-month tenant and 3-month landlord statutory durations.</p>
+            </div>
+            <a href="/canada/alberta-periodic-notice.html" class="text-xs font-bold text-amber-700 hover:text-amber-800">Launch Alberta Generator &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Sticky Bottom Action Bar for Mobile Devices (< 768px) -->
+  <div id="mobileActionBar" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:hidden z-40 flex items-center gap-2 shadow-lg no-print">
+    <button type="button" onclick="copyNoticeToClipboard()" class="flex-1 py-3 px-2 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-xs flex items-center justify-center space-x-1 shadow-sm min-h-[48px]">
+      <span>Copy Statement</span>
+    </button>
+    <button type="button" onclick="window.print()" class="flex-1 py-3 px-2 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center space-x-1 shadow-sm min-h-[48px]">
+      <span>Print / Save PDF</span>
+    </button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-xl border border-slate-700 transition-all transform translate-y-20 opacity-0 pointer-events-none flex items-center space-x-2">
+    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+    <span id="toastMessage">Statement copied to clipboard</span>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-300 text-xs py-12 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div class="space-y-3 sm:col-span-2 md:col-span-3 lg:col-span-1">
+        <div class="flex items-center space-x-2">
+          <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6">
+          <span class="font-display font-bold text-base text-white">TenantNotice</span>
+        </div>
+        <p class="text-slate-300 text-xs leading-relaxed">
+          Autonomous statutory notice engines across the United States, United Kingdom, and Canada. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
+          <li><a href="/uk/tenant-notice-to-quit.html" class="hover:text-white transition-colors">Tenant Notice to Quit</a></li>
+          <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
+          <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
+          <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Canada (LTB & RTB)</h4>
+        <ul class="space-y-2">
+          <li><a href="/canada/ontario-form-n9.html" class="hover:text-white transition-colors">Ontario Form N9 60-Day</a></li>
+          <li><a href="/canada/bc-rtb-notice.html" class="hover:text-white transition-colors">BC RTB 1-Month Notice</a></li>
+          <li><a href="/canada/alberta-periodic-notice.html" class="hover:text-white transition-colors">Alberta Periodic Notice</a></li>
+          <li><a href="/canada/ontario-lmr-interest.html" class="hover:text-white transition-colors">Ontario LMR Interest Calc</a></li>
+          <li><a href="/canada/" class="text-red-400 hover:text-red-300 transition-colors font-medium">All Canada Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust & Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/legal/disclaimer.html" class="hover:text-white transition-colors">Legal Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-400 text-xs">
+      <p>&copy; 2026 TenantNotice Online. All rights reserved. Self-help legal accounting software compliant with Ontario Residential Tenancies Act.</p>
+    </div>
+  </footer>
+
+  <!-- Isolated Canadian Engine Scripts -->
+  <script src="/canada/js/lmr-calculator.js"></script>
+  <script src="/canada/js/canada-notices.js"></script>
+  <script>
+    var currentLmrData = null;
+
+    function initLmrPage() {
+      var today = new Date();
+      var isoStr = today.toISOString().split('T')[0];
+      document.getElementById('endDate').value = isoStr;
+      runLmrLedger();
+    }
+
+    function runLmrLedger() {
+      var dep = parseFloat(document.getElementById('initialDeposit').value) || 0;
+      var sDate = document.getElementById('startDate').value;
+      var eDate = document.getElementById('endDate').value;
+      var mode = document.getElementById('offsetMode').value;
+
+      if (dep <= 0 || !sDate || !eDate) return;
+
+      currentLmrData = LmrCalculator.calculateLedger(dep, sDate, eDate, mode);
+      if (!currentLmrData) return;
+
+      // Update KPI displays
+      document.getElementById('prevKpiDeposit').textContent = LmrCalculator.formatCad(currentLmrData.initialDeposit);
+      document.getElementById('prevKpiInterest').textContent = LmrCalculator.formatCad(currentLmrData.totalInterestAccrued);
+      document.getElementById('prevKpiOffset').textContent = LmrCalculator.formatCad(currentLmrData.totalOffsetsApplied);
+      document.getElementById('prevKpiNetDue').textContent = LmrCalculator.formatCad(currentLmrData.totalNetPayable);
+
+      // Hydrate Ledger Table
+      var tbody = document.getElementById('prevLedgerBody');
+      tbody.innerHTML = '';
+
+      currentLmrData.ledger.forEach(function (row) {
+        var tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors';
+        tr.innerHTML = 
+          '<td class="p-2 font-bold font-mono">#' + row.periodNumber + '</td>' +
+          '<td class="p-2 text-slate-600">' + row.periodStart + ' to ' + row.periodEnd + '</td>' +
+          '<td class="p-2 font-bold text-emerald-700">' + row.guidelineRate + '% (' + row.dueYear + ')</td>' +
+          '<td class="p-2">' + LmrCalculator.formatCad(row.depositBasis) + '</td>' +
+          '<td class="p-2 font-semibold">' + LmrCalculator.formatCad(row.interestEarned) + '</td>' +
+          '<td class="p-2 text-slate-500">' + LmrCalculator.formatCad(row.offsetApplied) + '</td>' +
+          '<td class="p-2 font-bold ' + (row.netPayable > 0 ? 'text-emerald-700' : 'text-slate-600') + '">' + LmrCalculator.formatCad(row.netPayable) + '</td>';
+        tbody.appendChild(tr);
+      });
+
+      updateStatementDOM();
+    }
+
+    function updateStatementDOM() {
+      if (!currentLmrData) return;
+      var tenant = document.getElementById('tenantName').value || 'Tenant Name';
+      var landlord = document.getElementById('landlordName').value || 'Landlord Name';
+      var address = document.getElementById('rentalAddress').value || 'Rental Address';
+      var recMethod = document.getElementById('recoveryMethod').value;
+      var today = new Date().toISOString().split('T')[0];
+
+      document.getElementById('prevTenantName').textContent = tenant;
+      document.getElementById('prevLandlordName').textContent = landlord;
+      document.getElementById('prevRentalAddress').textContent = address;
+      document.getElementById('prevStatementDate').textContent = CanadaNotices.formatDateLong(today);
+      document.getElementById('prevCertDate').textContent = CanadaNotices.formatDateLong(today);
+      document.getElementById('prevSignatoryName').textContent = tenant;
+      document.getElementById('prevSignatureDate').textContent = CanadaNotices.formatDateLong(today);
+      document.getElementById('prevServerName').textContent = tenant;
+
+      var demandEl = document.getElementById('prevDemandInstructions');
+      if (currentLmrData.totalNetPayable > 0) {
+        if (recMethod === 'rent_deduction') {
+          demandEl.innerHTML = '<strong>NOTICE OF STATUTORY RENT DEDUCTION:</strong> Because net accrued deposit interest of <strong>' + LmrCalculator.formatCad(currentLmrData.totalNetPayable) + '</strong> has not been paid, the tenant will deduct this exact sum from the next upcoming monthly rental installment pursuant to Section 106(6).';
+        } else {
+          demandEl.innerHTML = '<strong>FORMAL DEMAND FOR PAYMENT:</strong> Demand is hereby made upon the landlord to deliver full payment of the net outstanding interest in the amount of <strong>' + LmrCalculator.formatCad(currentLmrData.totalNetPayable) + '</strong> within fifteen (15) calendar days via electronic transfer or cheque.';
+        }
+      } else {
+        demandEl.innerHTML = '<strong>ACCOUNTING ACKNOWLEDGMENT:</strong> Accrued statutory deposit interest of <strong>' + LmrCalculator.formatCad(currentLmrData.totalInterestAccrued) + '</strong> has been fully offset against annual guideline rent increase deposit top-ups under Section 106(7). The Last Month Rent deposit held in trust is currently <strong>' + LmrCalculator.formatCad(currentLmrData.finalDepositHeld) + '</strong> with a net balance due of $0.00.';
+      }
+    }
+
+    function copyNoticeToClipboard() {
+      var noticeElement = document.getElementById('printableNotice');
+      var textToCopy = noticeElement.innerText;
+
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        showToast("Ontario LMR Interest Statement copied to clipboard.");
+      }).catch(function() {
+        showToast("Statement ready. Please print or copy directly.");
+      });
+    }
+
+    function showToast(msg) {
+      var toast = document.getElementById('toastNotification');
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(function() {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    window.addEventListener('DOMContentLoaded', initLmrPage);
+  </script>
+</body>
+</html>
