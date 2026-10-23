@@ -119,6 +119,11 @@ Base Raw URL:
 | **SenseNova** | `sn-search-year-report` | Corporate annual reports, official filings, disclosures | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/sensenova/sn-search-year-report/SKILL.md` |
 | **SenseNova** | `sn-team-harness` | Multi-agent team coordination & execution harness | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/sensenova/sn-team-harness/SKILL.md` |
 | **SenseNova** | `sn-update` | SenseNova skills self-updater & package synchronizer | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/sensenova/sn-update/SKILL.md` |
+| **Content Engine** | `high-converting-aeo-seo` | Direct answer blocks, AI Overviews, Perplexity citation, product-led AEO/SEO | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/content-engine/high-converting-aeo-seo/SKILL.md` |
+| **Content Engine** | `geo-content-optimizer` | CITE and CORE-EEAT validation gates, AI citability scoring, entity keyword optimization | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/content-engine/geo-content-optimizer/SKILL.md` |
+| **Content Engine** | `seo-content-writer` | 5-phase SEO content engine, JTBD long-form B2B writing, section drafting | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/content-engine/seo-content-writer/SKILL.md` |
+| **Content Engine** | `geo-content-writer` | Programmatic backlog-first GEO, SearchGPT/Gemini/Perplexity structure, citation fanout | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/content-engine/geo-content-writer/SKILL.md` |
+| **Content Engine** | `agentic-seo-content` | Heading hierarchy analysis, keyword intent clustering, E-E-A-T evidence quality gates | `https://raw.githubusercontent.com/Sheharyar-ans/antigravity-master-skills/main/skills/content-engine/agentic-seo-content/SKILL.md` |
 
 ---
 
