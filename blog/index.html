@@ -152,8 +152,8 @@
           </div>
           <!-- Category Filter Buttons -->
           <div class="flex flex-wrap gap-2 justify-center mt-4">
-            <button onclick="filterCategory('all')" class="category-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-500 text-white transition-all min-h-[40px]" data-cat="all">All Jurisdictions (10)</button>
-            <button onclick="filterCategory('us')" class="category-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-all min-h-[40px]" data-cat="us">United States (5)</button>
+            <button onclick="filterCategory('all')" class="category-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-500 text-white transition-all min-h-[40px]" data-cat="all">All Jurisdictions (11)</button>
+            <button onclick="filterCategory('us')" class="category-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-all min-h-[40px]" data-cat="us">United States (6)</button>
             <button onclick="filterCategory('uk')" class="category-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-all min-h-[40px]" data-cat="uk">United Kingdom (5)</button>
           </div>
         </div>
@@ -163,6 +163,41 @@
     <!-- Articles Card Grid -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div id="articlesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Article 1: Prorated Rent Calculations -->
+        <article class="article-card group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden" data-category="us" data-keywords="prorated rent calculate mid month daily rate formulas banker 30 day move in move out tenant">
+          <a href="/blog/how-to-calculate-prorated-rent-mid-month.html" class="card-thumb-wrap block overflow-hidden relative aspect-[16/9] bg-slate-100" style="aspect-ratio: 16 / 9; width: 100%; overflow: hidden; display: block;">
+            <img 
+              src="https://images.pexels.com/photos/18751855/pexels-photo-18751855.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Smiling couple holding keys to modern apartment amidst cardboard moving boxes during mid-month move-in" 
+              loading="lazy" 
+              width="800" 
+              height="450" 
+              class="card-thumb-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover; display: block;"
+            >
+          </a>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-emerald-50 text-emerald-800 font-bold text-xs rounded uppercase">Financial Guide</span>
+              <span class="text-xs text-slate-500 font-medium flex items-center gap-1.5">
+                <span>Oct 27, 2026</span>
+                <span class="text-slate-300">&bull;</span>
+                <span>6 min read</span>
+              </span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-slate-900 hover:text-emerald-600 transition-colors mb-2">
+              <a href="/blog/how-to-calculate-prorated-rent-mid-month.html">How to Calculate Prorated Rent: Exact Daily Rate Formulas</a>
+            </h2>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Mathematical formulas and statutory tenant rights for mid-month move-ins. Compare the 30-day banker's rule against exact calendar day calculations to prevent overcharges.
+            </p>
+          </div>
+          <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="font-mono text-slate-500">Rent Formula Standard</span>
+            <a href="/blog/how-to-calculate-prorated-rent-mid-month.html" class="text-emerald-700 font-bold hover:underline">Read Article &rarr;</a>
+          </div>
+        </article>
         
         <!-- Article 1: US CA 30 vs 60 -->
         <article class="article-card group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden" data-category="us" data-keywords="california 30 day 60 day notice vacate 1946.1 tenant lease termination">

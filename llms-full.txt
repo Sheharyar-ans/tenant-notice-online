@@ -156,6 +156,15 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 - Governing Law: Housing Act 1988 Sections 13 and 14, Form 4, Form Rent 1.
 - Core Rule: Rent increases restricted to Form 4 with 2 months notice no more than once per year. Tenants can challenge above-market hikes in First-tier Tribunal before effective date. Tribunal cannot exceed landlord requested rent.
 
+### 4.11 How to Calculate Prorated Rent When Moving In Mid-Month (/blog/how-to-calculate-prorated-rent-mid-month.html)
+- Governing Principles: Contract consideration, California Civil Code Section 1946.1, Texas Property Code Chapter 92, Florida Statutes Chapter 83, Ontario Residential Tenancies Act 2006.
+- Mathematical Models:
+  - Model 1 (Exact Calendar Days): Monthly Rent / Days in Current Month * Days of Possession. Standard default in judicial disputes.
+  - Model 2 (30-Day Banker's Rule): Monthly Rent / 30 * Days of Possession. Common property management software default; produces higher per-diem charges in 31-day months.
+  - Model 3 (Annualized 365-Day): (Monthly Rent * 12) / 365 * Days of Possession. Used by institutional REITs for flat annual rate uniformity.
+  - Model 4 (Leap Year 366-Day): (Monthly Rent * 12) / 366 * Days of Possession. Adjusts annual denominator for February 29.
+- Statutory Protections: In California, 30-day notice served mid-month requires exact proration through the 30th day. Demanding full unprorated rent in a 3-day notice to pay or quit invalidates eviction proceedings under CCP Section 1161(2). In Ontario, Last Month Rent (LMR) deposits earn annual interest under RTA Section 106.
+
 ***
 
 ## 5. Global Authority Standards
