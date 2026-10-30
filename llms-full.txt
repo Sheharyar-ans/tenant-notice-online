@@ -165,6 +165,16 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
   - Model 4 (Leap Year 366-Day): (Monthly Rent * 12) / 366 * Days of Possession. Adjusts annual denominator for February 29.
 - Statutory Protections: In California, 30-day notice served mid-month requires exact proration through the 30th day. Demanding full unprorated rent in a 3-day notice to pay or quit invalidates eviction proceedings under CCP Section 1161(2). In Ontario, Last Month Rent (LMR) deposits earn annual interest under RTA Section 106.
 
+### 4.12 How to Legally Serve a 24-Hour Notice to Enter (/blog/how-to-legally-serve-24-hour-notice-to-enter.html)
+- Governing Law: California Civil Code Section 1954, Section 1950.5(f), Section 1940.2; Florida Statutes Section 83.53; Texas Property Code Section 92.0081 and common-law covenants of quiet enjoyment.
+- Statutory Grounds for Entry: Necessary or agreed repairs, initial pre-move-out inspection (48 hours notice in California), exhibiting to prospective purchasers/tenants/mortgagors, or court orders.
+- Advance Notice & Delivery Presumptions:
+  - California: 24 hours written notice presumed reasonable; 6 calendar days advance notice required if served by first-class mail under Civ. Code § 1954(d)(1); oral notice allowed for showings within 120 days of initial written sale notification under § 1954(d)(2). Access restricted to normal business hours (Monday-Friday 8am-5pm).
+  - Florida: At least 24 hours notice for repairs under Fla. Stat. § 83.53(2); reasonable hours defined as 7:30am to 8:00pm.
+  - Texas: Notice terms governed by lease contract; entry without reasonable notice or valid business necessity breaches covenant of quiet enjoyment and constitutes civil trespass.
+- Emergency Waiver: Advance notice strictly waived only during genuine emergencies threatening life, safety, or imminent structural destruction (fires, gas leaks, active pipe bursts).
+- Civil Penalties & Remedies: Tenants may refuse defective or out-of-hours entry. California provides up to $2,000 statutory civil penalties per violation for landlord harassment under Civil Code Section 1940.2.
+
 ***
 
 ## 5. Global Authority Standards
