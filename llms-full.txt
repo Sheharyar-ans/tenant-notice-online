@@ -79,6 +79,28 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 
 ***
 
+***
+
+## 4. Global Interactive Tenancy Tools (/tools/)
+
+### 4.1 Notice Expiry Date & Statutory Day Calculator (/tools/notice-expiry-date-calculator.html)
+- Algorithmic Day Counting Engine:
+  - Day Zero Rule: The calendar day a notice is served never counts as Day 1. The statutory clock begins at 12:01 AM the following calendar day across all common law and civil jurisdictions.
+  - Statutory Postal Transit Buffers: Automatically appends +5 days for Ontario (RTA Section 191) and California substituted mail, +3 days for Manitoba (RTA Section 184) and British Columbia (RTA Section 90).
+  - Judicial Business Day Rollover: When statutory deadlines terminate on a Saturday, Sunday, or official court holiday (e.g. Florida Stat. 83.56(3) or California CCP 12), the expiry date automatically rolls forward to 11:59 PM of the next judicial business day.
+  - Rental Period Month-End Alignment: Enforces full periodic month calculations terminating on the final day of the tenancy month (Ontario, Alberta, Manitoba).
+- Output: Produces court-ready audit trail and printable statutory verification docket sheet.
+
+### 4.2 Lease Breach & Tenancy Notice Finder Wizard (/tools/lease-breach-wizard.html)
+- Multi-Jurisdictional Diagnostic Architecture:
+  - Step 1: Country Selection (United States, United Kingdom, Canada).
+  - Step 2: Regional Sub-Jurisdiction (California, Texas, Florida, New York, England, Scotland, Wales, Ontario, BC, Alberta, Quebec, Manitoba).
+  - Step 3: Initiating Party (Landlord vs Tenant).
+  - Step 4: Specific Tenancy Breach (Rent arrears, curable covenant violation, incurable misconduct, owner repossession, periodic termination, repair default, unlawful entry, security deposit withholding).
+- Remedial Matching: Generates exact statutory form name, governing legal citation, cure window, permitted service channels, postal buffer, forum of record, and direct link to browser-side document generator.
+
+***
+
 ## 3. Canada Jurisdiction (/canada/)
 
 ### 3.1 Ontario Form N9 60-Day Tenant Notice to End Tenancy (/canada/ontario-form-n9.html)
@@ -104,6 +126,39 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
   - Dual-Role Notice Windows: Under Section 8, tenants must provide 1 full tenancy month notice on or before the first day of the notice period. Under Section 9, landlords must provide 3 full tenancy months notice on or before the first day of the notice period.
   - Mandatory Landlord Statutory Grounds: Under Section 11 and the Residential Tenancies Ministerial Regulation, landlords cannot terminate without cause. Lawful grounds are restricted to: (1) landlord or relative occupancy, (2) purchaser or purchaser relative occupancy following unconditional sale, (3) major renovations requiring vacant possession with all municipal permits obtained, (4) conversion to non-residential use, or (5) demolition.
   - Security Deposit Accounting: Landlords must return the deposit or provide an itemized deduction statement within 10 days of tenancy termination under Section 46.
+
+### 3.4 Quebec TAL Notice & Form Builder (/canada/quebec-tal-notice.html)
+- Statutory Foundation:
+  - Civil Code of Québec (CCQ) Articles 1851 to 2000.
+  - Act respecting the Tribunal administratif du logement (CQLR c T-15.01).
+- Non-Renewal Windows (CCQ Article 1942):
+  - Fixed Lease of 12+ Months: 3 to 6 months prior to lease expiration date. Standard July 1 to June 30 lease requires notice between January 1 and March 31.
+  - Fixed Lease < 12 Months: 1 to 2 months prior to expiry.
+  - Indeterminate / Periodic Lease: 1 to 2 months notice.
+- Repossession of Dwelling (CCQ Articles 1957 to 1960):
+  - Minimum 6 months notice prior to term end for 12+ month lease.
+  - Restricted to lessor, lessor's parents/children, or dependent former spouse/in-law.
+  - Senior Tenant Protection (Bill 65, CCQ 1959.1): Absolute immunity against repossession for tenants aged 70+ residing 10+ years with low-income qualification.
+- Bill 31 Lease Assignment Reforms (CCQ Article 1870):
+  - If lessor refuses prospective assignee for reasons other than serious default, the lease is terminated without penalty as of the assignment date.
+- Unpaid Rent Resiliation (CCQ Article 1971):
+  - Formal demand and TAL petition permitted when rent is in arrears for more than 3 weeks (21 days).
+
+### 3.5 Manitoba RTB Tenancy Notice Generator (/canada/manitoba-notice.html)
+- Statutory Foundation:
+  - The Residential Tenancies Act (C.C.S.M. c. R119).
+  - Residential Tenancies Branch (RTB) Manitoba.
+- Periodic Tenancy Termination (Section 86):
+  - Tenant must give at least 1 full rental payment period notice on or before the last day of the preceding period.
+- Landlord Form 10 Non-Payment Notice (Section 95):
+  - Rent must be overdue by at least 3 days. Notice gives at least 3 days notice to pay or vacate.
+- Landlord Own Use / Purchaser Occupancy (Section 98):
+  - Requires 3 to 6 months notice depending on municipal rental vacancy rate (below 2 percent requires 5 or 6 months).
+  - Mandatory relocation moving expense compensation under Section 99.
+- School-Age Children Immunity (Section 98(3)):
+  - Notice of termination for own use, renovations, or demolition cannot take effect until the end of the school year on June 30 if tenant has a child attending an accessible school.
+- Service by Mail (Section 184):
+  - 3-day deemed receipt buffer added to all notices served by ordinary or registered post.
 
 ### 3.4 Ontario Last Month Rent (LMR) Deposit Interest Calculator (/canada/ontario-lmr-interest.html)
 - Statutory Foundation:

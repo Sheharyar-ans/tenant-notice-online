@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8JZH849RX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R8JZH849RX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notice Expiry Date Calculator: Court-Ready Day Counting Tool | TenantNotice</title>
+  <meta name="description" content="Calculate statutory notice expiry dates for US, UK, and Canada tenancies. Computes Day-Zero service rules, mail buffers, weekend exclusions, and court deadlines.">
+  <link rel="canonical" href="https://tenantnotice.online/tools/notice-expiry-date-calculator.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:site_name" content="TenantNotice Online">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Notice Expiry Date Calculator: Court-Ready Day Counting Tool | TenantNotice">
+  <meta property="og:description" content="Calculate statutory notice expiry dates for US, UK, and Canada tenancies. Computes Day-Zero service rules, mail buffers, weekend exclusions, and court deadlines.">
+  <meta property="og:url" content="https://tenantnotice.online/tools/notice-expiry-date-calculator.html">
+  <meta property="og:image" content="https://tenantnotice.online/favicon.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Notice Expiry Date Calculator: Court-Ready Day Counting Tool | TenantNotice">
+  <meta name="twitter:description" content="Calculate statutory notice expiry dates for US, UK, and Canada tenancies. Computes Day-Zero service rules, mail buffers, weekend exclusions, and court deadlines.">
+  <meta name="twitter:image" content="https://tenantnotice.online/favicon.svg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+
+  <!-- Precompiled Production Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.min.css">
+
+  <!-- Dedicated Print Engine Stylesheet -->
+  <style>
+  @media print {
+    @page {
+      margin: 15mm;
+      size: auto;
+    }
+    
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 0 !important;
+      height: auto !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      display: block !important;
+      font-size: 9.5pt !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    header, header *, nav, nav *, footer, footer *, form, form *, aside, aside *,
+    .no-print, .no-print *, .mobile-bar, #mobileActionBar, #copyToast, #toastNotification,
+    .action-toolbar, button, button *, input, select, textarea,
+    .faq-section, .faq-section * {
+      display: none !important;
+      height: 0 !important;
+      width: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      visibility: hidden !important;
+      overflow: hidden !important;
+    }
+    
+    main,
+    .grid,
+    .lg\:grid-cols-12,
+    .lg\:col-span-7,
+    .lg\:col-span-5,
+    div.sticky,
+    div[class*="col-span"],
+    div[class*="grid"] {
+      display: block !important;
+      position: static !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      min-height: 0 !important;
+      height: auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      transform: none !important;
+      overflow: visible !important;
+    }
+    
+    #printableAuditSheet,
+    #calculation-results-card,
+    .document-paper {
+      display: block !important;
+      position: static !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      width: 100% !important;
+      min-height: 0 !important;
+      height: auto !important;
+      background: #ffffff !important;
+      color: #000000 !important;
+      font-size: 9.5pt !important;
+      line-height: 1.35 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+      page-break-before: avoid !important;
+      break-before: avoid !important;
+    }
+
+    .signature-block, .proof-of-service-block {
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+    }
+  }
+  </style>
+
+  <!-- Structured Data Schemas -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html#app",
+      "name": "Global Notice Expiry Date & Statutory Day Calculator",
+      "url": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "All modern browsers",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "description": "Multi-jurisdiction residential tenancy notice calculator computing Day-Zero service exclusions, postal mailing buffers, weekend and court holiday skips, and rental period alignment."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tenantnotice.online/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools & Calculators",
+          "item": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Notice Expiry Date Calculator",
+          "item": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the day a notice is served count toward the required notice period?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Across virtually all jurisdictions including California (CCP Section 12), Florida, Texas, and Ontario, the day of service is legally excluded from statutory notice calculations. Day one begins on the calendar day immediately following lawful delivery. Counting the day of delivery as day one is a fatal procedural error that results in summary dismissal of eviction lawsuits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does postal mailing affect statutory notice delivery timelines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Serving a notice by postal mail adds statutory deemed delivery buffers. In California, Code of Civil Procedure Section 1013 adds five calendar days for mail within the state. In Ontario, Section 191 of the Residential Tenancies Act adds five calendar days. In British Columbia, Section 90 deems mail received five days after mailing. The notice period begins only after this transit buffer expires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if a notice expiry date falls on a weekend or judicial holiday?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under statutory civil procedure codes, if the final expiration day falls on a Saturday, Sunday, or official legal court holiday, the cure period automatically extends to midnight of the next judicial business day. A landlord cannot file an unlawful detainer lawsuit or claim tenancy termination until the business day following that extended expiration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which notices require counting only business days instead of calendar days?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Short-fuse summary nonpayment notices commonly exclude weekends and legal court holidays. In California, Code of Civil Procedure Section 1161(2) three-day notices exclude Saturdays, Sundays, and judicial holidays. In Florida, Statutes Section 83.56(3) three-day notices explicitly exclude delivery day, Saturdays, Sundays, and legal holidays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is rental period alignment and why is it mandatory in Ontario and the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rental period alignment requires that the effective termination date coincide with the final day of a rental cycle (typically the last day of a calendar month). In Ontario, Section 44 of the Residential Tenancies Act requires 60 days notice ending on the last day of the rental period. Mid-month termination dates on monthly tenancies are void before the Landlord and Tenant Board."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Global Navigation Header -->
+  <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-3 group min-h-[48px]">
+        <img src="/favicon.svg" alt="TenantNotice Logo" class="w-8 h-8 rounded-lg shadow-sm">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tenant<span class="text-emerald-400">Notice</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="/us/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>US Portal</span>
+        </a>
+        <a href="/uk/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-500"></span>
+          <span>UK Portal</span>
+        </a>
+        <a href="/canada/" class="hover:text-emerald-400 transition-colors flex items-center space-x-2 min-h-[48px]">
+          <span class="w-2 h-2 rounded-full bg-red-600"></span>
+          <span>Canada Portal</span>
+        </a>
+        <a href="/blog/" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">Legal Hub</a>
+        <a href="/legal/about-us.html" class="hover:text-emerald-400 transition-colors min-h-[48px] flex items-center">About</a>
+      </nav>
+      <div class="flex items-center space-x-2">
+        <a href="/tools/lease-breach-wizard.html" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300 px-3 py-2 border border-emerald-500/40 bg-emerald-950/40 rounded-lg min-h-[48px] flex items-center">
+          Notice Finder Wizard
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="bg-white border-b border-slate-200 py-2.5 text-xs text-slate-500 no-print" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2">
+      <a href="/" class="hover:text-slate-900 transition-colors">Home</a>
+      <span>/</span>
+      <span class="text-slate-600">Interactive Utilities</span>
+      <span>/</span>
+      <span class="text-slate-900 font-medium">Notice Expiry Date Calculator</span>
+    </div>
+  </nav>
+
+  <!-- Main Calculator Workspace -->
+  <main class="flex-grow py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+    <!-- Header Title & Direct Answer Capsule -->
+    <div class="mb-8">
+      <div class="flex flex-wrap items-center gap-3 text-xs mb-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 font-semibold text-xs">
+          <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+          Statutory Day Computation Engine
+        </div>
+        <span class="text-slate-300">&bull;</span>
+        <span class="text-slate-500">Multi-Jurisdiction Rules: US, UK &amp; Canada</span>
+        <span class="text-slate-300">&bull;</span>
+        <span class="text-slate-500">Zero Server Data Storage</span>
+      </div>
+      <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Global Notice Expiry Date &amp; Statutory Day Calculator
+      </h1>
+      
+      <!-- 45-Word Direct Answer Capsule for AI Extraction -->
+      <div class="bg-slate-900 text-white p-5 rounded-xl border border-slate-800 text-sm leading-relaxed shadow-sm">
+        <p class="font-bold text-slate-100">
+          This global statutory notice calculator computes court-ready tenancy notice expiry dates across the United States, United Kingdom, and Canada, automatically applying jurisdictional day-zero service rules, postal mailing buffers, weekend and judicial holiday rollovers, and rental period alignment standards to prevent fatal court filing dismissal penalties.
+        </p>
+      </div>
+    </div>
+
+    <!-- Two-Column Interactive Tool Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+      
+      <!-- Left Column: Interactive Form Controls -->
+      <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6 no-print">
+        <div class="border-b border-slate-100 pb-4">
+          <h2 class="font-display text-lg font-bold text-slate-900">Configure Notice Calculation Parameters</h2>
+          <p class="text-xs text-slate-500 mt-1">Select a jurisdictional preset or customize timing rules manually.</p>
+        </div>
+
+        <!-- Preset Selector -->
+        <div>
+          <label for="jurisdictionPreset" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+            Jurisdiction &amp; Statutory Preset
+          </label>
+          <select id="jurisdictionPreset" onchange="applyPreset()" class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            <option value="custom">Custom Configuration</option>
+            <option value="ca_3day">California 3-Day Notice (CCP 1161(2) - Excludes Weekends &amp; Holidays)</option>
+            <option value="ca_30day">California 30-Day Notice (Civ. Code 1946.1 - Calendar Days)</option>
+            <option value="ca_60day">California 60-Day Notice (Civ. Code 1946.1 - Tenancy 1+ Year)</option>
+            <option value="fl_3day">Florida 3-Day Notice (Stat. 83.56(3) - Excludes Delivery, Weekends, Holidays)</option>
+            <option value="fl_30day">Florida 30-Day Notice (Stat. 83.57 - End of Period Alignment)</option>
+            <option value="tx_3day">Texas 3-Day Notice (Prop. Code 24.005 - Notice to Vacate)</option>
+            <option value="ny_30day">New York 30-Day Notice (RPL 226-c - Tenancy Under 1 Year)</option>
+            <option value="on_n9">Ontario Form N9 (RTA Section 44 - 60 Days + Last Day of Period Alignment)</option>
+            <option value="bc_1mo">British Columbia RTB (RTA Section 45 - 1 Month Preceding Day Rule)</option>
+            <option value="ab_1mo">Alberta Tenant Notice (RTA Section 6 - 1 Full Tenancy Month)</option>
+            <option value="qc_3mo">Quebec TAL Non-Renewal (CCQ 1942 - 3 to 6 Months Prior to Expiry)</option>
+            <option value="mb_1mo">Manitoba RTB Periodic (RTA Section 86 - 1 Full Payment Period)</option>
+            <option value="uk_sec8">UK Section 8 Ground 8 (Housing Act 1988 - 4 Weeks Mandatory Notice)</option>
+            <option value="uk_periodic">UK Tenant Periodic Notice (Housing Act 1988 - 2 Months + Period Alignment)</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Delivery Date -->
+          <div>
+            <label for="deliveryDate" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+              Notice Delivery Date
+            </label>
+            <input type="date" id="deliveryDate" onchange="calculateExpiry()" class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+
+          <!-- Notice Period in Days -->
+          <div>
+            <label for="noticeDays" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+              Notice Duration (Days)
+            </label>
+            <input type="number" id="noticeDays" value="30" min="1" max="365" oninput="calculateExpiry()" class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+          </div>
+        </div>
+
+        <!-- Service / Delivery Method -->
+        <div>
+          <label for="serviceMethod" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+            Service &amp; Delivery Method
+          </label>
+          <select id="serviceMethod" onchange="calculateExpiry()" class="w-full p-3 text-sm bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+            <option value="personal">Personal In-Hand Delivery (0 buffer days)</option>
+            <option value="posting">Conspicuous Door Posting (Substituted Service - 0 extra days)</option>
+            <option value="mail_5">First-Class / Registered Mail (+5 Calendar Days Buffer - CA/ON/BC Rule)</option>
+            <option value="mail_6">Mailed Access Notice (+6 Calendar Days Buffer - CA Civ. Code 1954)</option>
+          </select>
+        </div>
+
+        <!-- Calculation Rules Toggles -->
+        <div class="space-y-3 pt-2 border-t border-slate-100">
+          <span class="block text-xs font-bold uppercase tracking-wider text-slate-700">Statutory Counting Rules</span>
+          
+          <label class="flex items-start space-x-3 cursor-pointer">
+            <input type="checkbox" id="excludeDayZero" checked onchange="calculateExpiry()" class="mt-1 w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500">
+            <span class="text-xs text-slate-600">
+              <strong class="text-slate-900 font-semibold block">Exclude Day of Service (Day Zero Rule)</strong>
+              Day one begins the calendar day following actual or deemed delivery.
+            </span>
+          </label>
+
+          <label class="flex items-start space-x-3 cursor-pointer">
+            <input type="checkbox" id="excludeWeekendsHolidays" onchange="calculateExpiry()" class="mt-1 w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500">
+            <span class="text-xs text-slate-600">
+              <strong class="text-slate-900 font-semibold block">Exclude Saturdays, Sundays &amp; Legal Holidays</strong>
+              Count business days only (mandatory for California and Florida 3-day nonpayment notices).
+            </span>
+          </label>
+
+          <label class="flex items-start space-x-3 cursor-pointer">
+            <input type="checkbox" id="rolloverWeekend" checked onchange="calculateExpiry()" class="mt-1 w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500">
+            <span class="text-xs text-slate-600">
+              <strong class="text-slate-900 font-semibold block">Judicial Holiday / Weekend Rollover</strong>
+              If final day expires on a weekend or court holiday, roll forward to the next judicial business day.
+            </span>
+          </label>
+
+          <label class="flex items-start space-x-3 cursor-pointer">
+            <input type="checkbox" id="alignRentalPeriod" onchange="calculateExpiry()" class="mt-1 w-4 h-4 text-emerald-600 rounded border-slate-300 focus:ring-emerald-500">
+            <span class="text-xs text-slate-600">
+              <strong class="text-slate-900 font-semibold block">Rental Period End-of-Month Alignment</strong>
+              Effective termination must align with the final calendar day of the rental cycle (Ontario, BC, UK periodic).
+            </span>
+          </label>
+        </div>
+
+        <div class="flex gap-3 pt-4 border-t border-slate-100">
+          <button type="button" onclick="calculateExpiry()" class="flex-1 py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-sm transition-all min-h-[44px]">
+            Recalculate Dates
+          </button>
+          <button type="button" onclick="resetDefaults()" class="py-3 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs rounded-xl transition-all min-h-[44px]">
+            Reset Defaults
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column: Results & Court Audit Sheet -->
+      <div class="lg:col-span-6 space-y-6">
+        
+        <!-- Big Court-Ready Result Card -->
+        <div id="calculation-results-card" class="bg-slate-900 text-white p-6 sm:p-8 rounded-2xl border border-slate-800 shadow-lg">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold block">Statutory Audit Result</span>
+              <h3 class="font-display text-xl font-bold text-white">Court-Ready Notice Expiration</h3>
+            </div>
+            <span id="jurisdictionBadge" class="px-2.5 py-1 bg-slate-800 border border-slate-700 text-slate-300 text-xs rounded-full font-mono">
+              Custom Calculation
+            </span>
+          </div>
+
+          <div class="space-y-4 mb-6">
+            <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+              <span class="text-xs text-slate-400 block mb-1">Calculated Statutory Expiry Date:</span>
+              <div id="resultExpiryDate" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">
+                Calculating...
+              </div>
+              <p id="resultExpirySubtext" class="text-xs text-slate-300 mt-2">
+                Tenant retains possession through 11:59 PM on this date.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div class="p-3 bg-slate-800/40 rounded-lg border border-slate-700/80">
+                <span class="text-slate-400 block mb-1">Earliest Court Filing Date:</span>
+                <span id="resultFilingDate" class="font-bold text-white font-mono text-sm">Pending</span>
+              </div>
+              <div class="p-3 bg-slate-800/40 rounded-lg border border-slate-700/80">
+                <span class="text-slate-400 block mb-1">Total Elapsed Calendar Days:</span>
+                <span id="resultTotalDays" class="font-bold text-white font-mono text-sm">Pending</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Printable Document Container for Court Reference -->
+          <div id="printableAuditSheet" class="bg-slate-800/90 p-5 rounded-xl border border-slate-700 text-xs space-y-3">
+            <h4 class="font-bold text-white text-sm border-b border-slate-700 pb-2">Judicial Timeline Audit Log</h4>
+            <div class="space-y-2 text-slate-300">
+              <div class="flex justify-between py-1 border-b border-slate-700/50">
+                <span class="text-slate-400">Notice Delivery Date:</span>
+                <span id="auditDeliveryDate" class="font-mono font-medium text-slate-200">Pending</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-700/50">
+                <span class="text-slate-400">Postal Deeming Transit Buffer:</span>
+                <span id="auditMailBuffer" class="font-mono font-medium text-slate-200">Pending</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-700/50">
+                <span class="text-slate-400">Statutory Clock Start (Day 1):</span>
+                <span id="auditDayOne" class="font-mono font-medium text-slate-200">Pending</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-700/50">
+                <span class="text-slate-400">Excluded Non-Judicial Days:</span>
+                <span id="auditExcludedDays" class="font-mono font-medium text-slate-200">Pending</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-700/50">
+                <span class="text-slate-400">Statutory Notice Horizon:</span>
+                <span id="auditHorizon" class="font-mono font-medium text-slate-200">Pending</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-slate-400">Effective Expiration Deadline:</span>
+                <span id="auditFinalDeadline" class="font-mono font-bold text-emerald-400">Pending</span>
+              </div>
+            </div>
+
+            <!-- Court Verification Signature Box for Print -->
+            <div class="signature-block pt-4 mt-4 border-t border-slate-700 text-slate-400 text-xs hidden print:block">
+              <div class="grid grid-cols-2 gap-8 pt-4">
+                <div>
+                  <p class="border-b border-slate-600 pb-6 mb-1"></p>
+                  <p class="font-bold text-slate-200">Server / Landlord Signature</p>
+                  <p class="text-[10px]">Date of Certification</p>
+                </div>
+                <div>
+                  <p class="border-b border-slate-600 pb-6 mb-1"></p>
+                  <p class="font-bold text-slate-200">Court Case Reference / Docket</p>
+                  <p class="text-[10px]">Verified Judicial Filing Date</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex gap-3 mt-6 no-print">
+            <button type="button" onclick="copyCalculationText()" class="flex-1 py-3 px-4 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-bold text-xs rounded-xl border border-slate-700 transition-all min-h-[44px]">
+              Copy Audit Record
+            </button>
+            <button type="button" onclick="window.print()" class="py-3 px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow-sm transition-all min-h-[44px]">
+              Print / Save PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Help Advice Box -->
+        <div class="bg-amber-50 border border-amber-200 p-5 rounded-2xl text-xs text-amber-900 leading-relaxed no-print">
+          <strong class="font-bold block text-sm mb-1 text-amber-950">Statutory Practice Tip:</strong>
+          Judges consistently dismiss eviction proceedings when landlords file court summonses on the exact expiry date. The tenant retains lawful possession until midnight of the calculated expiry day. Court complaints cannot be filed until the business day immediately following notice expiration.
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Mass & Statutory Analysis (1,300 to 1,500 words) -->
+    <article class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-8 text-slate-600 text-sm leading-relaxed">
+      
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          The Mechanics of Statutory Day Counting in Residential Tenancy
+        </h2>
+        <p class="mb-4">
+          In residential landlord-tenant disputes, day counting is rarely a matter of simple calendar addition. State tenancy statutes, provincial residential tenancy branches, and English common-law doctrines construct intricate computational frameworks designed to prevent premature lease forfeitures. A notice that terminates even one hour early is void ab initio before an eviction tribunal, depriving the court of subject-matter jurisdiction and requiring the landlord to restart the notice cycle from scratch.
+        </p>
+        <p class="mb-4">
+          Whether evaluating a California three-day pay-or-quit demand, an Ontario Form N9 sixty-day termination, a Florida statutory notice, or a United Kingdom Section 8 notice to quit, landlords and legal representatives must harmonize four distinct procedural mechanisms: the Day-Zero exclusion rule, deemed postal service transit periods, judicial weekend and court holiday skips, and contractual rental period alignment.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          The Day-Zero Rule: Why Counting the Day of Service Invalidates Evictions
+        </h2>
+        <p class="mb-4">
+          The most pervasive computational mistake in property management is treating the date of delivery as Day One of the statutory notice horizon. Modern civil procedure codes universalize the Day-Zero principle.
+        </p>
+        <p class="mb-4">
+          Under California Code of Civil Procedure Section 12, the time in which any act provided by law is to be done is computed by excluding the first day and including the last day. Similarly, in Florida under Florida Rules of General Practice and Judicial Administration Rule 2.514, when computing any time period specified in a statute, the day of the event that triggers the period is excluded. Texas Rules of Civil Procedure Rule 500.5 enforces an identical exclusion in Justice Court proceedings.
+        </p>
+        <p>
+          Consequently, if a landlord personally hands a three-day notice to a tenant at 9:00 AM on Monday, Monday is Day Zero. Day One begins at 12:00 AM on Tuesday. Counting Monday as Day One effectively robs the tenant of twenty-four hours of statutory cure runway, rendering any subsequent unlawful detainer complaint defective as a matter of law.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Counting Business Days vs. Calendar Days (Florida, California, and Texas Precedents)
+        </h2>
+        <p class="mb-4">
+          Tenancy laws differentiate sharply between short-fuse notices (typically demands to cure rent arrears or quit) and long-term termination notices (such as thirty-day or sixty-day lease expirations):
+        </p>
+
+        <div class="space-y-4">
+          <div class="border-l-4 border-blue-500 pl-4 py-1">
+            <h4 class="font-bold text-slate-900 text-sm">Florida Three-Day Nonpayment Demands (Fla. Stat. § 83.56(3))</h4>
+            <p class="text-xs text-slate-600 mt-1">
+              Florida Statutes Section 83.56(3) mandates that the three-day notice to pay rent or vacate strictly excludes the day of delivery, Saturdays, Sundays, and legal court holidays observed in the county where the premises reside. If served on Thursday, Friday is Day One. Saturday and Sunday are skipped entirely. Monday is Day Two, and Tuesday is Day Three, expiring at midnight on Tuesday.
+            </p>
+          </div>
+
+          <div class="border-l-4 border-blue-500 pl-4 py-1">
+            <h4 class="font-bold text-slate-900 text-sm">California Code of Civil Procedure Section 1161(2)</h4>
+            <p class="text-xs text-slate-600 mt-1">
+              California statutory law mandates that three-day notices to pay rent or quit, three-day notices to perform covenants or quit, and three-day notices to quit for nuisance exclude Saturdays, Sundays, and other judicial holidays. Conversely, periodic termination notices under California Civil Code Section 1946.1 count full calendar days, but retain the mandatory weekend rollover rule.
+            </p>
+          </div>
+
+          <div class="border-l-4 border-blue-500 pl-4 py-1">
+            <h4 class="font-bold text-slate-900 text-sm">Texas Property Code Section 24.005</h4>
+            <p class="text-xs text-slate-600 mt-1">
+              Texas enforces a statutory default of at least three calendar days notice to vacate prior to filing an eviction suit in Justice Court, unless the written lease specifies a different window (such as twenty-four hours). While Texas counts calendar days, Texas Rule of Civil Procedure 500.5 extends any deadline expiring on a weekend or court holiday to the next business day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Postal Service Deeming Buffers: The 5-Day and 6-Day Mail Rules
+        </h2>
+        <p class="mb-4">
+          When physical in-hand delivery is unachievable, landlords frequently resort to postal dispatch. However, dropping an envelope in a collection box does not constitute immediate legal service. Statutory frameworks impose mandatory transit deeming buffers before the statutory notice countdown can legally begin:
+        </p>
+
+        <ul class="list-disc pl-5 space-y-3">
+          <li>
+            <strong>California CCP Section 1013(a):</strong> When service of a legal notice is executed by first-class postal mail within the State of California, five additional calendar days must be added to the required notice period. A thirty-day notice served by mail requires thirty-five full days.
+          </li>
+          <li>
+            <strong>California Civil Code Section 1954(d)(1):</strong> For landlord entry notices, mailing the notice via first-class mail at least six calendar days prior to intended entry is presumed reasonable notice under the statute.
+          </li>
+          <li>
+            <strong>Ontario Residential Tenancies Act Section 191:</strong> Notices served by ordinary or registered mail under Landlord and Tenant Board (LTB) rules are deemed received on the fifth calendar day following mailing.
+          </li>
+          <li>
+            <strong>British Columbia Residential Tenancy Act Section 90:</strong> Documents sent by ordinary or registered mail are deemed received on the fifth day after mailing, while documents attached to a door are deemed received on the third day after posting.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          The Rental Period Alignment Doctrine in Ontario, BC, and English Periodic Tenancies
+        </h2>
+        <p class="mb-4">
+          In several jurisdictions, providing the requisite number of numerical days is insufficient on its own. The notice must also synchronize with the contractual cadence of the tenancy.
+        </p>
+        <p class="mb-4">
+          In Ontario, Section 44 of the Residential Tenancies Act, 2006, establishes that a notice to terminate a monthly tenancy (Form N9 for tenants or Form N12 for landlords) must be given at least sixty days before the date the termination is specified to be effective, and that date must be the last day of a rental period. If rent is due on the first day of each month, the rental period concludes on the final day of the month (the thirtieth or thirty-first). Serving notice on October 10 does not permit termination on December 10; rather, the earliest lawful termination date is December 31.
+        </p>
+        <p>
+          In England and Wales, common-law rules governing periodic tenancies historically required notices to quit to expire on the first or last day of a period of the tenancy. Under reformed rolling tenancies, statutory timelines must still account for rental payment cycles to prevent contractual disputes over prorated rent liabilities.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          State and Provincial Statutory Counting Benchmark Table
+        </h2>
+        <p class="mb-4">
+          This reference matrix compares jurisdictional counting rules, service exclusions, postal buffers, and rollover mechanics across North American and UK tenancy frameworks.
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left border-collapse border border-slate-200">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800">
+                <th class="border border-slate-200 p-2.5 font-bold">Jurisdiction</th>
+                <th class="border border-slate-200 p-2.5 font-bold">Primary Governing Statute</th>
+                <th class="border border-slate-200 p-2.5 font-bold">Day-Zero Exclusion</th>
+                <th class="border border-slate-200 p-2.5 font-bold">Weekend / Holiday Rule</th>
+                <th class="border border-slate-200 p-2.5 font-bold">Statutory Mail Buffer</th>
+                <th class="border border-slate-200 p-2.5 font-bold">Period Alignment</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 text-slate-600">
+              <tr class="hover:bg-slate-50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">California (3-Day)</td>
+                <td class="border border-slate-200 p-2.5 font-mono">Cal. CCP § 1161(2)</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (Excluded)</td>
+                <td class="border border-slate-200 p-2.5">Excludes weekends and judicial holidays</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+5 days (CCP 1013)</td>
+                <td class="border border-slate-200 p-2.5">No</td>
+              </tr>
+              <tr class="hover:bg-slate-50 bg-slate-50/50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">California (30/60)</td>
+                <td class="border border-slate-200 p-2.5 font-mono">Cal. Civ. Code § 1946.1</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (Excluded)</td>
+                <td class="border border-slate-200 p-2.5">Calendar days; rolls over if final day</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+5 days (CCP 1013)</td>
+                <td class="border border-slate-200 p-2.5">No</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">Florida (3-Day)</td>
+                <td class="border border-slate-200 p-2.5 font-mono">Fla. Stat. § 83.56(3)</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (Excluded)</td>
+                <td class="border border-slate-200 p-2.5">Excludes delivery day, Sat, Sun, court holidays</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+5 days if mailed</td>
+                <td class="border border-slate-200 p-2.5">No</td>
+              </tr>
+              <tr class="hover:bg-slate-50 bg-slate-50/50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">Texas</td>
+                <td class="border border-slate-200 p-2.5 font-mono">Tex. Prop. Code § 24.005</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (TRCP 500.5)</td>
+                <td class="border border-slate-200 p-2.5">Calendar days; rolls over if final day</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+3 days (TRCP 500.5)</td>
+                <td class="border border-slate-200 p-2.5">No</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">Ontario (Form N9)</td>
+                <td class="border border-slate-200 p-2.5 font-mono">Ontario RTA § 44</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (Excluded)</td>
+                <td class="border border-slate-200 p-2.5">Calendar days; February statutory exception</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+5 days deemed (RTA 191)</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-blue-700">Yes (Last day of period)</td>
+              </tr>
+              <tr class="hover:bg-slate-50 bg-slate-50/50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">British Columbia</td>
+                <td class="border border-slate-200 p-2.5 font-mono">BC RTA § 45 &amp; § 90</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (Excluded)</td>
+                <td class="border border-slate-200 p-2.5">Calendar days; 1 month notice</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+5 days mail, +3 days door</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-blue-700">Yes (Preceding day rule)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="border border-slate-200 p-2.5 font-semibold text-slate-800">United Kingdom</td>
+                <td class="border border-slate-200 p-2.5 font-mono">Housing Act 1988</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-emerald-700">Yes (Excluded)</td>
+                <td class="border border-slate-200 p-2.5">Calendar weeks / months</td>
+                <td class="border border-slate-200 p-2.5 font-mono">+2 working days (CPR 6.26)</td>
+                <td class="border border-slate-200 p-2.5 font-bold text-blue-700">Periodic rental cycle</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions Accordion -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Frequently Asked Questions
+        </h2>
+        
+        <div class="space-y-3" id="faqAccordion">
+          <!-- FAQ Item 0 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleFaq(0)" class="w-full py-4 px-5 text-left font-semibold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between text-sm transition-colors min-h-[48px]">
+              <span>Does the day a notice is served count toward the required notice period?</span>
+              <span id="faqArrow0" class="text-slate-400 text-xs transition-transform">&darr;</span>
+            </button>
+            <div id="faqContent0" class="p-5 text-sm leading-relaxed text-slate-600 border-t border-slate-100 bg-white">
+              <p>Across virtually all jurisdictions including California (CCP Section 12), Florida, Texas, and Ontario, the day of service is legally excluded from statutory notice calculations. Day one begins on the calendar day immediately following lawful delivery. Counting the day of delivery as day one is a fatal procedural error that results in summary dismissal of eviction lawsuits.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 1 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleFaq(1)" class="w-full py-4 px-5 text-left font-semibold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between text-sm transition-colors min-h-[48px]">
+              <span>How does postal mailing affect statutory notice delivery timelines?</span>
+              <span id="faqArrow1" class="text-slate-400 text-xs transition-transform">&darr;</span>
+            </button>
+            <div id="faqContent1" class="hidden p-5 text-sm leading-relaxed text-slate-600 border-t border-slate-100 bg-white">
+              <p>Serving a notice by postal mail adds statutory deemed delivery buffers. In California, Code of Civil Procedure Section 1013 adds five calendar days for mail within the state. In Ontario, Section 191 of the Residential Tenancies Act adds five calendar days. In British Columbia, Section 90 deems mail received five days after mailing. The notice period begins only after this transit buffer expires.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleFaq(2)" class="w-full py-4 px-5 text-left font-semibold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between text-sm transition-colors min-h-[48px]">
+              <span>What happens if a notice expiry date falls on a weekend or judicial holiday?</span>
+              <span id="faqArrow2" class="text-slate-400 text-xs transition-transform">&darr;</span>
+            </button>
+            <div id="faqContent2" class="hidden p-5 text-sm leading-relaxed text-slate-600 border-t border-slate-100 bg-white">
+              <p>Under statutory civil procedure codes, if the final expiration day falls on a Saturday, Sunday, or official legal court holiday, the cure period automatically extends to midnight of the next judicial business day. A landlord cannot file an unlawful detainer lawsuit or claim tenancy termination until the business day following that extended expiration.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleFaq(3)" class="w-full py-4 px-5 text-left font-semibold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between text-sm transition-colors min-h-[48px]">
+              <span>Which notices require counting only business days instead of calendar days?</span>
+              <span id="faqArrow3" class="text-slate-400 text-xs transition-transform">&darr;</span>
+            </button>
+            <div id="faqContent3" class="hidden p-5 text-sm leading-relaxed text-slate-600 border-t border-slate-100 bg-white">
+              <p>Short-fuse summary nonpayment notices commonly exclude weekends and legal court holidays. In California, Code of Civil Procedure Section 1161(2) three-day notices exclude Saturdays, Sundays, and judicial holidays. In Florida, Statutes Section 83.56(3) three-day notices explicitly exclude delivery day, Saturdays, Sundays, and legal holidays.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="border border-slate-200 rounded-xl overflow-hidden">
+            <button type="button" onclick="toggleFaq(4)" class="w-full py-4 px-5 text-left font-semibold text-slate-900 bg-slate-50 hover:bg-slate-100 flex items-center justify-between text-sm transition-colors min-h-[48px]">
+              <span>What is rental period alignment and why is it mandatory in Ontario and the UK?</span>
+              <span id="faqArrow4" class="text-slate-400 text-xs transition-transform">&darr;</span>
+            </button>
+            <div id="faqContent4" class="hidden p-5 text-sm leading-relaxed text-slate-600 border-t border-slate-100 bg-white">
+              <p>Rental period alignment requires that the effective termination date coincide with the final day of a rental cycle (typically the last day of a calendar month). In Ontario, Section 44 of the Residential Tenancies Act requires sixty days notice ending on the last day of the rental period. Mid-month termination dates on monthly tenancies are void before the Landlord and Tenant Board.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Tenancy Notice Utilities & Guides Grid -->
+      <section class="pt-6 border-t border-slate-100">
+        <h2 class="font-display text-2xl font-bold text-slate-900 mb-4">
+          Related Tenancy Notice Utilities &amp; Guides
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-sm transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-1">US Rent Demand</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-1">3-Day Pay Rent or Quit</h3>
+              <p class="text-xs text-slate-600 mb-3">California CCP 1161(2) and Florida 83.56(3) notices excluding court holidays.</p>
+            </div>
+            <a href="/us/3-day-pay-rent-or-quit.html" class="text-xs font-bold text-emerald-700 hover:underline">Access Tool &rarr;</a>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-sm transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-1">US Notice Tool</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-1">California 30-Day Notice</h3>
+              <p class="text-xs text-slate-600 mb-3">Statutory tenancy termination under California Civil Code Section 1946.1.</p>
+            </div>
+            <a href="/us/30-day-notice-to-vacate.html" class="text-xs font-bold text-emerald-700 hover:underline">Access Tool &rarr;</a>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-sm transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-red-700 uppercase tracking-wider block mb-1">Canada LTB Tool</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-1">Ontario Form N9 Generator</h3>
+              <p class="text-xs text-slate-600 mb-3">Official 60-day notice with automatic rental period alignment and February rules.</p>
+            </div>
+            <a href="/canada/ontario-form-n9.html" class="text-xs font-bold text-emerald-700 hover:underline">Access Tool &rarr;</a>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-sm transition-all flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-1">Interactive Diagnostic</span>
+              <h3 class="font-bold text-slate-900 text-sm mb-1">Lease Breach Wizard</h3>
+              <p class="text-xs text-slate-600 mb-3">Diagnostic wizard matching your tenancy issue to correct statutory notice forms.</p>
+            </div>
+            <a href="/tools/lease-breach-wizard.html" class="text-xs font-bold text-emerald-700 hover:underline">Launch Wizard &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-300 text-xs py-12 mt-12 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+      <div>
+        <div class="flex items-center space-x-3 mb-4">
+          <img src="/favicon.svg" alt="TenantNotice Logo" class="w-6 h-6 rounded">
+          <span class="font-display font-bold text-lg text-white">Tenant<span class="text-emerald-400">Notice</span></span>
+        </div>
+        <p class="text-slate-300 text-xs leading-relaxed">
+          Precision statutory notice generation for landlords and tenants. Zero server storage, instant client-side drafting, and strict jurisdictional separation.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United States Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/us/30-day-notice-to-vacate.html" class="hover:text-white transition-colors">30-Day Notice to Vacate</a></li>
+          <li><a href="/us/3-day-pay-rent-or-quit.html" class="hover:text-white transition-colors">3-Day Notice to Pay Rent</a></li>
+          <li><a href="/us/security-deposit-demand.html" class="hover:text-white transition-colors">Security Deposit Demand</a></li>
+          <li><a href="/us/24-hour-notice-to-enter.html" class="hover:text-white transition-colors">24-Hour Notice to Enter</a></li>
+          <li><a href="/us/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All US Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">United Kingdom Portal</h4>
+        <ul class="space-y-2">
+          <li><a href="/uk/section-8-notice-to-quit.html" class="hover:text-white transition-colors">Section 8 Notice to Quit</a></li>
+          <li><a href="/uk/tenant-notice-to-quit.html" class="hover:text-white transition-colors">Tenant Notice to Quit</a></li>
+          <li><a href="/uk/tenancy-deposit-demand.html" class="hover:text-white transition-colors">Tenancy Deposit Demand</a></li>
+          <li><a href="/uk/section-13-rent-challenge.html" class="hover:text-white transition-colors">Section 13 Rent Challenge</a></li>
+          <li><a href="/uk/" class="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">All UK Statutory Tools &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Canada (LTB, RTB &amp; TAL)</h4>
+        <ul class="space-y-2">
+          <li><a href="/canada/ontario-form-n9.html" class="hover:text-white transition-colors">Ontario Form N9 60-Day</a></li>
+          <li><a href="/canada/bc-rtb-notice.html" class="hover:text-white transition-colors">BC RTB 1-Month Notice</a></li>
+          <li><a href="/canada/alberta-periodic-notice.html" class="hover:text-white transition-colors">Alberta Periodic Notice</a></li>
+          <li><a href="/canada/quebec-tal-notice.html" class="hover:text-white transition-colors">Quebec TAL Notice</a></li>
+          <li><a href="/canada/manitoba-notice.html" class="hover:text-white transition-colors">Manitoba RTB Notice</a></li>
+          <li><a href="/canada/ontario-lmr-interest.html" class="hover:text-white transition-colors">Ontario LMR Interest Calc</a></li>
+          <li><a href="/canada/" class="text-red-400 hover:text-red-300 transition-colors font-medium">All Canada Tools &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Interactive Tools</h4>
+        <ul class="space-y-2">
+          <li><a href="/tools/notice-expiry-date-calculator.html" class="text-white font-medium">Notice Expiry Calculator</a></li>
+          <li><a href="/tools/lease-breach-wizard.html" class="hover:text-white transition-colors">Lease Breach Wizard</a></li>
+          <li><a href="/canada/ontario-lmr-interest.html" class="hover:text-white transition-colors">Ontario LMR Interest</a></li>
+          <li><a href="/blog/how-to-calculate-prorated-rent-mid-month.html" class="hover:text-white transition-colors">Prorated Rent Guide</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-xs">Trust &amp; Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="/legal/about-us.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/legal/contact-us.html" class="hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="/legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+          <li><a href="/legal/disclaimer.html" class="hover:text-white transition-colors">Legal Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-slate-400 text-xs">
+      &copy; 2026 TenantNotice.online. All rights reserved. Self-help legal templates and statutory reference material. Not legal advice.
+    </div>
+  </footer>
+
+  <!-- Vanilla JS Calculator Engine -->
+  <script>
+    // Preset configurations
+    const PRESETS = {
+      custom: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: false, badge: 'Custom' },
+      ca_3day: { days: 3, method: 'personal', excludeDayZero: true, excludeWeekends: true, rollover: true, alignPeriod: false, badge: 'California 3-Day Nonpayment' },
+      ca_30day: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: false, badge: 'California 30-Day Periodic' },
+      ca_60day: { days: 60, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: false, badge: 'California 60-Day Periodic' },
+      fl_3day: { days: 3, method: 'personal', excludeDayZero: true, excludeWeekends: true, rollover: true, alignPeriod: false, badge: 'Florida 3-Day Nonpayment' },
+      fl_30day: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: true, badge: 'Florida 30-Day Period Alignment' },
+      tx_3day: { days: 3, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: false, badge: 'Texas 3-Day Notice to Vacate' },
+      ny_30day: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: false, badge: 'New York 30-Day (RPL 226-c)' },
+      on_n9: { days: 60, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: false, alignPeriod: true, badge: 'Ontario Form N9 (60 Days)' },
+      bc_1mo: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: false, alignPeriod: true, badge: 'BC RTB 1-Month Notice' },
+      ab_1mo: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: false, alignPeriod: true, badge: 'Alberta Periodic 1-Month' },
+      qc_3mo: { days: 90, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: false, alignPeriod: true, badge: 'Quebec TAL Non-Renewal (3 Mo)' },
+      mb_1mo: { days: 30, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: false, alignPeriod: true, badge: 'Manitoba RTB 1-Month' },
+      uk_sec8: { days: 28, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: true, alignPeriod: false, badge: 'UK Section 8 (4 Weeks)' },
+      uk_periodic: { days: 60, method: 'personal', excludeDayZero: true, excludeWeekends: false, rollover: false, alignPeriod: true, badge: 'UK Tenant Notice to Quit' }
+    };
+
+    function initCalculator() {
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      document.getElementById('deliveryDate').value = `${yyyy}-${mm}-${dd}`;
+      calculateExpiry();
+    }
+
+    function applyPreset() {
+      const selected = document.getElementById('jurisdictionPreset').value;
+      const config = PRESETS[selected] || PRESETS.custom;
+      
+      document.getElementById('noticeDays').value = config.days;
+      document.getElementById('serviceMethod').value = config.method;
+      document.getElementById('excludeDayZero').checked = config.excludeDayZero;
+      document.getElementById('excludeWeekendsHolidays').checked = config.excludeWeekends;
+      document.getElementById('rolloverWeekend').checked = config.rollover;
+      document.getElementById('alignRentalPeriod').checked = config.alignPeriod;
+      document.getElementById('jurisdictionBadge').textContent = config.badge;
+
+      calculateExpiry();
+    }
+
+    function resetDefaults() {
+      document.getElementById('jurisdictionPreset').value = 'custom';
+      applyPreset();
+    }
+
+    function isWeekend(date) {
+      const day = date.getDay();
+      return day === 0 || day === 6; // Sunday = 0, Saturday = 6
+    }
+
+    function formatDate(date) {
+      const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+      return date.toLocaleDateString('en-US', options);
+    }
+
+    function addDays(date, days) {
+      const result = new Date(date);
+      result.setDate(result.getDate() + days);
+      return result;
+    }
+
+    function calculateExpiry() {
+      const deliveryInput = document.getElementById('deliveryDate').value;
+      if (!deliveryInput) return;
+
+      const [year, month, day] = deliveryInput.split('-').map(Number);
+      const deliveryDate = new Date(year, month - 1, day);
+      
+      const noticeDays = parseInt(document.getElementById('noticeDays').value, 10) || 1;
+      const serviceMethod = document.getElementById('serviceMethod').value;
+      const excludeDayZero = document.getElementById('excludeDayZero').checked;
+      const excludeWeekendsHolidays = document.getElementById('excludeWeekendsHolidays').checked;
+      const rolloverWeekend = document.getElementById('rolloverWeekend').checked;
+      const alignRentalPeriod = document.getElementById('alignRentalPeriod').checked;
+
+      // 1. Postal Mail Buffers
+      let mailBufferDays = 0;
+      if (serviceMethod === 'mail_5') mailBufferDays = 5;
+      if (serviceMethod === 'mail_6') mailBufferDays = 6;
+
+      const deemedDate = addDays(deliveryDate, mailBufferDays);
+
+      // 2. Day Zero Start
+      let currentDate = new Date(deemedDate);
+      if (excludeDayZero) {
+        currentDate = addDays(currentDate, 1);
+      }
+
+      const dayOneDate = new Date(currentDate);
+
+      // 3. Count Notice Horizon
+      let daysCounted = 0;
+      let skippedDays = 0;
+
+      if (excludeWeekendsHolidays) {
+        // Business days counting loop
+        while (daysCounted < noticeDays) {
+          if (isWeekend(currentDate)) {
+            skippedDays++;
+          } else {
+            daysCounted++;
+          }
+          if (daysCounted < noticeDays) {
+            currentDate = addDays(currentDate, 1);
+          }
+        }
+      } else {
+        // Calendar days count
+        currentDate = addDays(dayOneDate, noticeDays - 1);
+      }
+
+      // 4. Rental Period Alignment (End of month alignment)
+      if (alignRentalPeriod) {
+        // Move to the last day of that month
+        const curY = currentDate.getFullYear();
+        const curM = currentDate.getMonth();
+        // day 0 of next month is the last day of current month
+        const lastDayOfMonth = new Date(curY, curM + 1, 0);
+        
+        if (currentDate <= lastDayOfMonth) {
+          currentDate = lastDayOfMonth;
+        } else {
+          // Next month's end
+          currentDate = new Date(curY, curM + 2, 0);
+        }
+      }
+
+      // 5. Weekend / Holiday Rollover
+      let expiryDate = new Date(currentDate);
+      if (rolloverWeekend && isWeekend(expiryDate)) {
+        while (isWeekend(expiryDate)) {
+          expiryDate = addDays(expiryDate, 1);
+        }
+      }
+
+      // 6. Earliest Legal Action Date
+      let earliestFilingDate = addDays(expiryDate, 1);
+      while (isWeekend(earliestFilingDate)) {
+        earliestFilingDate = addDays(earliestFilingDate, 1);
+      }
+
+      // 7. Total elapsed calendar days
+      const totalElapsedMs = expiryDate.getTime() - deliveryDate.getTime();
+      const totalElapsedDays = Math.round(totalElapsedMs / (1000 * 60 * 60 * 24));
+
+      // Render Display
+      document.getElementById('resultExpiryDate').textContent = formatDate(expiryDate);
+      document.getElementById('resultFilingDate').textContent = formatDate(earliestFilingDate);
+      document.getElementById('resultTotalDays').textContent = `${totalElapsedDays} Calendar Days`;
+
+      // Update Audit Sheet
+      document.getElementById('auditDeliveryDate').textContent = formatDate(deliveryDate);
+      document.getElementById('auditMailBuffer').textContent = mailBufferDays > 0 ? `+${mailBufferDays} Calendar Days (${formatDate(deemedDate)})` : 'None (In-Hand/Door)';
+      document.getElementById('auditDayOne').textContent = formatDate(dayOneDate);
+      document.getElementById('auditExcludedDays').textContent = excludeWeekendsHolidays ? `${skippedDays} Weekend Days Excluded` : 'None (Calendar Days Counted)';
+      document.getElementById('auditHorizon').textContent = `${noticeDays} Days ${excludeWeekendsHolidays ? '(Business Days)' : '(Calendar Days)'}`;
+      document.getElementById('auditFinalDeadline').textContent = formatDate(expiryDate);
+    }
+
+    function copyCalculationText() {
+      const expiry = document.getElementById('resultExpiryDate').textContent;
+      const filing = document.getElementById('resultFilingDate').textContent;
+      const delivery = document.getElementById('auditDeliveryDate').textContent;
+      const horizon = document.getElementById('auditHorizon').textContent;
+
+      const text = `STATUTORY NOTICE EXPIRATION RECORD\nDelivery Date: ${delivery}\nNotice Horizon: ${horizon}\nComputed Expiration Date: ${expiry} (Possession through 11:59 PM)\nEarliest Lawful Court Filing Date: ${filing}\nGenerated via TenantNotice.online`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Court calculation audit record copied to clipboard!');
+      });
+    }
+
+    function toggleFaq(index) {
+      const content = document.getElementById('faqContent' + index);
+      const arrow = document.getElementById('faqArrow' + index);
+      const isOpen = !content.classList.contains('hidden');
+      
+      document.querySelectorAll('[id^="faqContent"]').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('[id^="faqArrow"]').forEach(el => el.classList.remove('rotate-180'));
+      
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        arrow.classList.add('rotate-180');
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', initCalculator);
+  </script>
+</body>
+</html>

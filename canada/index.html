@@ -76,7 +76,7 @@
             "sameAs": "https://www.wikidata.org/wiki/Q7315486"
           }
         ],
-        "hasPart": [
+                "hasPart": [
           {
             "@type": "WebApplication",
             "@id": "https://tenantnotice.online/canada/ontario-form-n9.html#app",
@@ -96,6 +96,20 @@
             "@id": "https://tenantnotice.online/canada/alberta-periodic-notice.html#app",
             "name": "Alberta RTDRS Periodic Tenancy Notice Generator",
             "url": "https://tenantnotice.online/canada/alberta-periodic-notice.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/canada/quebec-tal-notice.html#app",
+            "name": "Quebec TAL Notice Generator and Form Builder",
+            "url": "https://tenantnotice.online/canada/quebec-tal-notice.html",
+            "applicationCategory": "LegalApplication"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://tenantnotice.online/canada/manitoba-notice.html#app",
+            "name": "Manitoba RTB Tenancy Notice Generator and Form Builder",
+            "url": "https://tenantnotice.online/canada/manitoba-notice.html",
             "applicationCategory": "LegalApplication"
           },
           {
@@ -254,17 +268,23 @@
         </div>
 
         <div class="flex flex-wrap items-center justify-center gap-3">
-          <a href="/canada/ontario-form-n9.html" class="px-5 py-2.5 bg-red-600 hover:bg-red-500 text-white font-semibold text-xs rounded-xl transition-all shadow-sm min-h-[48px] flex items-center">
-            Ontario Form N9 (60-Day)
+          <a href="/canada/ontario-form-n9.html" class="px-4 py-2 bg-red-600 hover:bg-red-500 text-white font-semibold text-xs rounded-xl transition-all shadow-sm min-h-[44px] flex items-center">
+            Ontario Form N9
           </a>
-          <a href="/canada/bc-rtb-notice.html" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl border border-slate-700 transition-all min-h-[48px] flex items-center">
-            BC RTB 1-Month Notice
+          <a href="/canada/bc-rtb-notice.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl border border-slate-700 transition-all min-h-[44px] flex items-center">
+            BC RTB 1-Month
           </a>
-          <a href="/canada/alberta-periodic-notice.html" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl border border-slate-700 transition-all min-h-[48px] flex items-center">
-            Alberta Periodic Notice
+          <a href="/canada/alberta-periodic-notice.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs rounded-xl border border-slate-700 transition-all min-h-[44px] flex items-center">
+            Alberta Periodic
           </a>
-          <a href="/canada/ontario-lmr-interest.html" class="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-600 text-white font-semibold text-xs rounded-xl transition-all shadow-sm min-h-[48px] flex items-center">
-            Ontario LMR Interest Calculator
+          <a href="/canada/quebec-tal-notice.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-indigo-300 font-semibold text-xs rounded-xl border border-indigo-700 transition-all min-h-[44px] flex items-center">
+            Quebec TAL Portal
+          </a>
+          <a href="/canada/manitoba-notice.html" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-amber-300 font-semibold text-xs rounded-xl border border-amber-700 transition-all min-h-[44px] flex items-center">
+            Manitoba RTB Portal
+          </a>
+          <a href="/canada/ontario-lmr-interest.html" class="px-4 py-2 bg-emerald-700 hover:bg-emerald-600 text-white font-semibold text-xs rounded-xl transition-all shadow-sm min-h-[44px] flex items-center">
+            LMR Interest Tool
           </a>
         </div>
       </div>
@@ -272,7 +292,7 @@
 
     <!-- Provincial Legislative Gateway Cards -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20 mb-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Ontario Card -->
         <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
@@ -336,6 +356,46 @@
             </a>
           </div>
         </div>
+
+        <!-- Quebec Card -->
+        <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-indigo-700 uppercase tracking-wider">Quebec Jurisdiction</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 font-semibold">TAL Governed</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-slate-900 mb-2">Québec (CCQ & TAL)</h2>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Civil Code of Québec Articles 1851 to 2000. Regulates 3 to 6 month lease non-renewal notices, repossession grounds, and Bill 31 lease assignment rules.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <a href="/canada/quebec-tal-notice.html" class="text-xs font-bold text-indigo-700 hover:text-indigo-800 flex items-center justify-between min-h-[40px]">
+              <span>Quebec TAL Notice Builder</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Manitoba Card -->
+        <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Manitoba Jurisdiction</span>
+              <span class="text-xs px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-semibold">RTB Governed</span>
+            </div>
+            <h2 class="font-display text-lg font-bold text-slate-900 mb-2">Manitoba (RTA C.C.S.M. c. R119)</h2>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Enforces 1 rental period tenant notices, Form 10 non-payment demands, and statutory school-age children protections extending tenancy through June 30.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <a href="/canada/manitoba-notice.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between min-h-[40px]">
+              <span>Manitoba RTB Notice Builder</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -347,11 +407,11 @@
           <p class="text-xs text-slate-600">Verified provincial drafting engines and statutory calculators</p>
         </div>
         <div class="text-xs font-bold text-slate-800 bg-slate-200 px-3 py-1 rounded-full">
-          4 Canadian Tools
+          6 Canadian Tools
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Tool 1: Ontario Form N9 -->
         <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-red-500 transition-all flex flex-col justify-between group">
           <div>
@@ -408,6 +468,36 @@
           </div>
           <a href="/canada/ontario-lmr-interest.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center justify-between pt-3 border-t border-slate-100 min-h-[48px]">
             <span>Open Calculator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Tool 5: Quebec TAL Notice Generator -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-indigo-500 transition-all flex flex-col justify-between group">
+          <div>
+            <span class="text-xs font-bold text-indigo-700 uppercase tracking-wider block mb-2">Quebec TAL Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Quebec TAL Notice & Form Builder</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Governed by CCQ Articles 1851 to 2000. Features 3 to 6 month lease non-renewal windows, landlord repossession notices, and bailiff proof of service.
+            </p>
+          </div>
+          <a href="/canada/quebec-tal-notice.html" class="text-xs font-bold text-indigo-700 hover:text-indigo-800 flex items-center justify-between pt-3 border-t border-slate-100 min-h-[48px]">
+            <span>Open Quebec Generator</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Tool 6: Manitoba RTB Notice Generator -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-amber-500 transition-all flex flex-col justify-between group">
+          <div>
+            <span class="text-xs font-bold text-amber-700 uppercase tracking-wider block mb-2">Manitoba RTB Notice</span>
+            <h3 class="font-display text-base font-bold text-slate-900 mb-2">Manitoba RTB Notice Generator</h3>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Compliant with The Residential Tenancies Act (Manitoba). Generates Section 86 periodic notices, Form 10 non-payment demands, and school-year protections.
+            </p>
+          </div>
+          <a href="/canada/manitoba-notice.html" class="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center justify-between pt-3 border-t border-slate-100 min-h-[48px]">
+            <span>Open Manitoba Generator</span>
             <span>&rarr;</span>
           </a>
         </div>
@@ -471,6 +561,28 @@
                 <td class="p-3.5 text-amber-700 font-semibold">3 Full Tenancy Months (Prescribed grounds)</td>
                 <td class="p-3.5">Max 1 month rent (Security deposit)</td>
                 <td class="p-3.5">Annual interest per provincial rate order</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                  Québec
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">CCQ / TAL</td>
+                <td class="p-3.5 font-semibold text-emerald-700">3 to 6 Months before lease expiry</td>
+                <td class="p-3.5 text-amber-700 font-semibold">6 Months (Strict repossession grounds)</td>
+                <td class="p-3.5 text-red-700 font-bold">Illegal: No deposits or advance rent</td>
+                <td class="p-3.5">Not applicable (Security deposits prohibited)</td>
+              </tr>
+              <tr class="hover:bg-slate-50 transition-colors">
+                <td class="p-3.5 font-bold text-slate-900 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  Manitoba
+                </td>
+                <td class="p-3.5 font-mono text-slate-600">RTA C.C.S.M. c. R119 / RTB</td>
+                <td class="p-3.5 font-semibold text-emerald-700">1 Full Rental Payment Period</td>
+                <td class="p-3.5 text-amber-700 font-semibold">3 to 6 Months (School year extension)</td>
+                <td class="p-3.5">Max 50% of 1 month rent</td>
+                <td class="p-3.5">Annual interest set annually by provincial RTB</td>
               </tr>
             </tbody>
           </table>

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Lease Breach & Tenancy Notice Finder Wizard | TenantNotice</title>
+  <meta name="description" content="Diagnose residential lease breaches and identify required statutory notices across the US, UK, and Canada. Select your jurisdiction and breach type for instant legal protocols.">
+  <link rel="canonical" href="https://tenantnotice.online/tools/lease-breach-wizard.html">
+  <meta property="og:title" content="Interactive Lease Breach & Tenancy Notice Finder Wizard | TenantNotice">
+  <meta property="og:description" content="Multi-jurisdictional tenancy diagnostic wizard. Match rental violations, non-payment, and landlord notices to statutory forms across US states, UK nations, and Canadian provinces.">
+  <meta property="og:url" content="https://tenantnotice.online/tools/lease-breach-wizard.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    }
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printDiagnosticReport, #printDiagnosticReport * {
+        visibility: visible;
+      }
+      #printDiagnosticReport {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        background: white !important;
+        color: black !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+      .no-print, header, footer, nav, button, .wizard-inputs {
+        display: none !important;
+      }
+      .signature-block {
+        page-break-inside: avoid;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #94a3b8;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://tenantnotice.online/tools/lease-breach-wizard.html#app",
+      "url": "https://tenantnotice.online/tools/lease-breach-wizard.html",
+      "name": "Interactive Lease Breach and Tenancy Notice Finder Wizard",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "All modern browsers",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Multi-step diagnostic wizard that matches tenancy issues, rental arrears, and lease breaches to the mandatory statutory notice forms across the United States, United Kingdom, and Canada."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tenantnotice.online/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://tenantnotice.online/tools/notice-expiry-date-calculator.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lease Breach Wizard",
+          "item": "https://tenantnotice.online/tools/lease-breach-wizard.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tenantnotice.online/tools/lease-breach-wizard.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the legal difference between a curable and an incurable lease breach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A curable lease breach involves a reversible violation, such as unpaid rent, an unapproved pet, or unauthorized parking, which gives the tenant a statutory grace window to remedy the default and maintain the lease. An incurable lease breach involves severe misconduct, substantial illegal activity, intentional property destruction, or repeated documented violations that terminate the tenancy immediately without an opportunity to cure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a landlord issue an eviction notice by text message or email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the vast majority of jurisdictions, text messages and standard emails do not satisfy statutory service requirements unless the original written lease explicitly contains a legally binding electronic service consent clause that complies with state or provincial statutes. Serving notices by unapproved electronic means frequently results in automatic dismissal of court eviction proceedings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if a landlord uses the wrong statutory notice form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Using an incorrect notice form invalidates the entire legal action. Housing courts in the United States, First-tier Tribunals in the United Kingdom, and provincial boards in Canada enforce strict statutory compliance. If an incorrect form is served, the judicial officer will dismiss the eviction lawsuit, requiring the housing provider to serve a new notice and restart the statutory waiting horizon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does statutory notice timing differ between rent arrears and lease violations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rent non-payment notices generally require shorter notice horizons, ranging from 3 to 14 days in the United States, 14 days in the United Kingdom under Section 8, and 14 to 21 days in Canadian provinces. General covenant breaches or unauthorized occupants typically require longer statutory warning periods of 10 to 30 days to provide adequate time for correction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can tenants use this wizard to enforce landlord repair obligations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The diagnostic wizard includes tenant-side statutory remedies for uninhabitable living conditions, failure to maintain essential heating or plumbing utilities, illegal landlord entry, and unlawful withholding of security deposits across all supported jurisdictions."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navigation -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <span class="text-2xl font-black text-indigo-400">TenantNotice</span>
+        <span class="text-xs font-semibold px-2 py-0.5 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">Legal Tech</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="/us/" class="hover:text-indigo-400 transition-colors">United States</a>
+        <a href="/uk/" class="hover:text-indigo-400 transition-colors">United Kingdom</a>
+        <a href="/canada/" class="hover:text-indigo-400 transition-colors">Canada</a>
+        <a href="/tools/notice-expiry-date-calculator.html" class="hover:text-indigo-400 transition-colors">Expiry Calculator</a>
+        <a href="/tools/lease-breach-wizard.html" class="text-indigo-400 font-semibold">Breach Wizard</a>
+        <a href="/blog/" class="hover:text-indigo-400 transition-colors">Editorial Library</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="/tools/notice-expiry-date-calculator.html" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors font-medium">Date Calculator</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="gradient-hero py-12 border-b border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-900/60 border border-indigo-700 text-indigo-300 text-xs font-medium mb-4">
+          <span>Tri-Jurisdictional Diagnostic Engine</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span>Updated for 2026 Housing Codes</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+          Interactive Lease Breach and Tenancy Notice Finder Wizard
+        </h1>
+        
+        <!-- 45-Word Direct Answer Capsule -->
+        <p class="max-w-3xl mx-auto text-base sm:text-lg text-indigo-200 font-bold leading-relaxed bg-indigo-950/70 border border-indigo-800/80 rounded-xl p-4 text-left shadow-lg">
+          The tenancy notice wizard identifies the exact statutory eviction form, remedy period, and service protocol required for any residential lease breach by evaluating country jurisdiction, regional landlord tenant legislation, and specific default grounds across the United States, the United Kingdom, and Canadian provincial tenancy tribunals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Wizard Application -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Step Selection Controls -->
+        <div class="lg:col-span-5 bg-slate-900 rounded-2xl border border-slate-800 p-6 shadow-xl wizard-inputs">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+            <h2 class="text-lg font-bold text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+              Diagnostic Parameters
+            </h2>
+            <button id="resetWizardBtn" type="button" class="text-xs text-slate-400 hover:text-white transition-colors underline">
+              Reset Selections
+            </button>
+          </div>
+
+          <form id="wizardForm" class="space-y-6">
+            <!-- Step 1: Country -->
+            <div>
+              <label for="wizardCountry" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                Step 1: Primary Country
+              </label>
+              <select id="wizardCountry" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="US">United States (State Housing Codes)</option>
+                <option value="UK">United Kingdom (Housing Acts)</option>
+                <option value="CA">Canada (Provincial Tenancy Acts)</option>
+              </select>
+            </div>
+
+            <!-- Step 2: Jurisdiction Sub-Region -->
+            <div>
+              <label for="wizardRegion" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                Step 2: Specific Jurisdiction / Province / State
+              </label>
+              <select id="wizardRegion" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <!-- Dynamically populated via JS -->
+              </select>
+            </div>
+
+            <!-- Step 3: Tenancy Role -->
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                Step 3: Initiating Party
+              </label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="flex items-center gap-2 bg-slate-950 border border-slate-800 hover:border-indigo-600 rounded-lg p-3 cursor-pointer transition-colors">
+                  <input type="radio" name="initiatorRole" value="landlord" checked class="text-indigo-600 focus:ring-indigo-500">
+                  <span class="text-sm font-medium text-slate-200">Landlord / Owner</span>
+                </label>
+                <label class="flex items-center gap-2 bg-slate-950 border border-slate-800 hover:border-indigo-600 rounded-lg p-3 cursor-pointer transition-colors">
+                  <input type="radio" name="initiatorRole" value="tenant" class="text-indigo-600 focus:ring-indigo-500">
+                  <span class="text-sm font-medium text-slate-200">Tenant / Renter</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4: Issue / Breach Category -->
+            <div>
+              <label for="breachCategory" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                Step 4: Issue or Tenancy Breach Type
+              </label>
+              <select id="breachCategory" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <!-- Dynamically populated based on role -->
+              </select>
+            </div>
+
+            <!-- Action Button -->
+            <button id="runDiagnosticBtn" type="button" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition-colors flex items-center justify-center gap-2">
+              <span>Generate Statutory Action Protocol</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Output Diagnostic Report Card -->
+        <div class="lg:col-span-7">
+          <div id="printDiagnosticReport" class="bg-slate-900 rounded-2xl border border-slate-800 p-6 sm:p-8 shadow-xl">
+            
+            <div class="flex flex-wrap items-center justify-between gap-4 pb-5 border-b border-slate-800 mb-6">
+              <div>
+                <span id="diagnosticBadge" class="inline-block text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded bg-indigo-950 text-indigo-400 border border-indigo-800">
+                  Jurisdictional Finding
+                </span>
+                <h3 id="statutoryTitle" class="text-xl sm:text-2xl font-bold text-white mt-1">
+                  California 3-Day Notice to Pay Rent or Quit
+                </h3>
+                <p id="governingStatute" class="text-xs text-indigo-300 font-mono mt-0.5">
+                  Governing Authority: California Code of Civil Procedure Section 1161(2)
+                </p>
+              </div>
+              <button onclick="window.print()" type="button" class="no-print bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5 font-medium">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                <span>Print Legal Protocol</span>
+              </button>
+            </div>
+
+            <!-- Key Metrics Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-400 uppercase font-semibold">Statutory Period</div>
+                <div id="statutoryPeriod" class="text-xl font-bold text-white mt-1">3 Calendar Days</div>
+                <div id="cureType" class="text-xs text-emerald-400 font-medium mt-0.5">Mandatory Cure Window</div>
+              </div>
+              <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-400 uppercase font-semibold">Permitted Service</div>
+                <div id="permittedService" class="text-sm font-bold text-slate-200 mt-1">Personal, Substituted, or Post & Mail</div>
+                <div id="mailBuffer" class="text-xs text-amber-400 font-medium mt-0.5">+5 Days if Mailed</div>
+              </div>
+              <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-400 uppercase font-semibold">Forum of Record</div>
+                <div id="forumOfRecord" class="text-sm font-bold text-slate-200 mt-1">Superior Court of California</div>
+                <div class="text-xs text-slate-400 font-medium mt-0.5">Unlawful Detainer Division</div>
+              </div>
+            </div>
+
+            <!-- Procedural Summary -->
+            <div class="space-y-4 text-sm text-slate-300 mb-6">
+              <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                <h4 class="text-xs uppercase font-bold text-slate-400 tracking-wider mb-2">Procedural Mandate and Tenant Rights</h4>
+                <p id="proceduralMandate" class="leading-relaxed">
+                  The landlord must serve a formal written notice stating the exact rent amount overdue. The tenant holds the statutory right to cure the default within three business days by tendering the demanded funds. If the tenant cures within the window, the lease continues without penalty.
+                </p>
+              </div>
+
+              <div class="bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                <h4 class="text-xs uppercase font-bold text-slate-400 tracking-wider mb-2">Service Validation Checklist</h4>
+                <ul id="serviceChecklist" class="space-y-1.5 text-xs text-slate-300">
+                  <li class="flex items-start gap-2">
+                    <span class="text-emerald-400 font-bold">&#10003;</span>
+                    <span>Exact dollar sum demanded without late fees, interest, or utility charges mixed into the base rent line.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-emerald-400 font-bold">&#10003;</span>
+                    <span>Payment instructions listing the landlord name, telephone number, address, and accepted payment methods.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-emerald-400 font-bold">&#10003;</span>
+                    <span>Execution of an Affidavit or Declaration of Service documenting exact date, time, and handover method.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Court Case Docket Reference Box (For Print) -->
+            <div class="hidden print:block border border-slate-400 p-4 rounded mb-6 text-xs text-black">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <p><strong>Property Address:</strong> _________________________________________________</p>
+                  <p class="mt-2"><strong>Tenant Name(s):</strong> _________________________________________________</p>
+                </div>
+                <div>
+                  <p><strong>Landlord / Agent:</strong> _______________________________________________</p>
+                  <p class="mt-2"><strong>Docket / Notice Ref:</strong> ___________________________________________</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action and Direct Navigation Links -->
+            <div class="no-print pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
+              <a id="generatorLink" href="/us/3-day-pay-rent-or-quit.html" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors shadow">
+                <span>Open Notice Generator</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+              <a href="/tools/notice-expiry-date-calculator.html" class="inline-flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 font-medium">
+                <span>Calculate Precise Expiry Date</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+
+            <!-- Print Signature Block -->
+            <div class="signature-block hidden print:block text-xs text-black">
+              <div class="grid grid-cols-2 gap-8">
+                <div>
+                  <p>Authorized Signature: _________________________________</p>
+                  <p class="mt-2">Printed Name: ___________________________________________</p>
+                  <p class="mt-2">Date Signed: ____________________________________________</p>
+                </div>
+                <div>
+                  <p>Process Server / Agent: _______________________________</p>
+                  <p class="mt-2">Method of Delivery: _____________________________________</p>
+                  <p class="mt-2">Date Served: ____________________________________________</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Detailed Statutory Analysis Section -->
+    <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-invert prose-indigo">
+      
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-slate-800 pb-3 mb-6">
+        Anatomy of a Valid Residential Lease Breach Notice
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-6">
+        A residential tenancy breach notice serves as the constitutional threshold for judicial eviction proceedings across common law and civil jurisdictions. When a tenant defaults on contractual lease covenants or a housing provider breaches statutory warranties of habitability, the injured party cannot unilaterally terminate possession without satisfying rigorous statutory prerequisites. Courts strictly enforce procedural fidelity, meaning that minor errors in date calculations, incorrect statutory citations, or unapproved delivery channels result in immediate case dismissals.
+      </p>
+
+      <h3 class="text-xl font-bold text-white mb-3">
+        The Fundamental Divide: Curable Covenants Versus Incurable Forfeiture
+      </h3>
+      <p class="text-slate-300 leading-relaxed mb-4">
+        Statutory tenancy frameworks bifurcate lease violations into curable and incurable categories. A curable covenant breach grants the offending party an affirmative right to correct the underlying default within a designated statutory timeline. Standard curable violations include temporary rental non-payment, the presence of unauthorized domestic pets, unapproved vehicle parking, and minor noise infractions. In these scenarios, the notice must clearly explain the exact corrective actions required to restore the tenancy to good standing.
+      </p>
+      <p class="text-slate-300 leading-relaxed mb-6">
+        Conversely, incurable forfeiture notices terminate the tenancy without granting an opportunity for rehabilitation. These notices apply exclusively to extraordinary circumstances defined by statute, such as severe intentional property destruction, documented illegal drug cultivation or distribution, violent assaults against co-tenants or property staff, or repeated documented lease breaches within a twelve-month rolling period. Because incurable notices strip the tenant of their leasehold estate without recourse, judges apply elevated evidentiary scrutiny before approving writs of possession.
+      </p>
+
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-slate-800 pb-3 mb-6 mt-10">
+        Tri-Jurisdictional Statutory Comparison Matrix
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-4">
+        Each legal system establishes distinct mandatory forms, cure periods, and administrative tribunals. Housing providers and tenants must adhere to the specific legislative codifications governing their regional properties:
+      </p>
+
+      <!-- Matrix Table -->
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-slate-800 text-slate-200 border-b border-slate-700">
+              <th class="p-3 font-semibold">Jurisdiction</th>
+              <th class="p-3 font-semibold">Governing Body / Statute</th>
+              <th class="p-3 font-semibold">Rent Default Form</th>
+              <th class="p-3 font-semibold">Cure Window</th>
+              <th class="p-3 font-semibold">Covenant Breach Form</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800 text-slate-300">
+            <tr>
+              <td class="p-3 font-bold text-white">California</td>
+              <td class="p-3">Cal. Civ. Proc. Code § 1161</td>
+              <td class="p-3 font-mono text-indigo-400">3-Day Notice to Pay or Quit</td>
+              <td class="p-3">3 Court Business Days</td>
+              <td class="p-3 font-mono">3-Day Perform or Quit</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-white">Texas</td>
+              <td class="p-3">Tex. Prop. Code Ann. § 24.005</td>
+              <td class="p-3 font-mono text-indigo-400">3-Day Notice to Vacate</td>
+              <td class="p-3">3 Days (No cure unless lease provides)</td>
+              <td class="p-3 font-mono">3-Day Notice to Vacate</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-white">Florida</td>
+              <td class="p-3">Fla. Stat. § 83.56</td>
+              <td class="p-3 font-mono text-indigo-400">3-Day Notice to Pay or Vacate</td>
+              <td class="p-3">3 Days (Excludes Sat, Sun, Holidays)</td>
+              <td class="p-3 font-mono">7-Day Notice to Cure</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-white">England (UK)</td>
+              <td class="p-3">Housing Act 1988 (as amended)</td>
+              <td class="p-3 font-mono text-indigo-400">Section 8 Notice (Grounds 8, 10, 11)</td>
+              <td class="p-3">14 Calendar Days</td>
+              <td class="p-3 font-mono">Section 8 (Ground 12)</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-white">Ontario (Canada)</td>
+              <td class="p-3">Residential Tenancies Act, 2006</td>
+              <td class="p-3 font-mono text-indigo-400">LTB Form N4</td>
+              <td class="p-3">14 Days (+5 for mail)</td>
+              <td class="p-3 font-mono">LTB Form N5 (7 Days)</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-white">Quebec (Canada)</td>
+              <td class="p-3">Civil Code of Québec (CCQ)</td>
+              <td class="p-3 font-mono text-indigo-400">TAL Formal Demand (Mise en demeure)</td>
+              <td class="p-3">3 Weeks (21 Days Late CCQ 1971)</td>
+              <td class="p-3 font-mono">TAL Resiliation Notice</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-white">Manitoba (Canada)</td>
+              <td class="p-3">Residential Tenancies Act (C.C.S.M. c. R119)</td>
+              <td class="p-3 font-mono text-indigo-400">RTB Form 10 (Non-Payment Notice)</td>
+              <td class="p-3">At least 3 Days</td>
+              <td class="p-3 font-mono">RTB Form 9 (Covenant Default)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-slate-800 pb-3 mb-6 mt-10">
+        Proof of Service and Statutory Transit Buffers
+      </h2>
+      <p class="text-slate-300 leading-relaxed mb-4">
+        Serving a notice correctly is equally essential to drafting accurate text. A flawless notice served through an unapproved transmission medium represents legal nullity. The majority of judicial systems mandate specific methods of delivery:
+      </p>
+      <ul class="list-disc pl-6 space-y-2 text-slate-300 mb-6">
+        <li><strong>Personal In-Hand Service:</strong> Delivering the notice directly to the named party or an adult resident of suitable age and discretion at the premises. The statutory calculation period commences the following day.</li>
+        <li><strong>Substituted Service:</strong> Handing the notice to an adult co-occupant followed by a certified mail copy addressed to the tenant. This method frequently adds statutory transit buffers.</li>
+        <li><strong>Posting and Mailing (Nail and Mail):</strong> Affixing the notice conspicuously to the primary entrance and mailing a duplicate copy via first-class or registered mail. Several jurisdictions disallow this method unless personal service was attempted multiple times at varying hours.</li>
+        <li><strong>Statutory Mail Buffers:</strong> When serving by registered or first-class mail, provincial statutes in Ontario, British Columbia, and Manitoba require adding three to five full calendar days to the notice timeline before counting day one.</li>
+      </ul>
+
+      <!-- Frequently Asked Questions -->
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight border-b border-slate-800 pb-3 mb-6 mt-10">
+        Frequently Asked Questions
+      </h2>
+      <div class="space-y-4 mb-8">
+        
+        <details class="group bg-slate-900 border border-slate-800 rounded-xl p-4 transition-colors hover:border-slate-700">
+          <summary class="font-bold text-white cursor-pointer flex justify-between items-center text-sm sm:text-base">
+            <span>What is the legal difference between a curable and an incurable lease breach?</span>
+            <span class="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            A curable lease breach involves a reversible violation, such as unpaid rent, an unapproved pet, or unauthorized parking, which gives the tenant a statutory grace window to remedy the default and maintain the lease. An incurable lease breach involves severe misconduct, substantial illegal activity, intentional property destruction, or repeated documented violations that terminate the tenancy immediately without an opportunity to cure.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900 border border-slate-800 rounded-xl p-4 transition-colors hover:border-slate-700">
+          <summary class="font-bold text-white cursor-pointer flex justify-between items-center text-sm sm:text-base">
+            <span>Can a landlord issue an eviction notice by text message or email?</span>
+            <span class="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            In the vast majority of jurisdictions, text messages and standard emails do not satisfy statutory service requirements unless the original written lease explicitly contains a legally binding electronic service consent clause that complies with state or provincial statutes. Serving notices by unapproved electronic means frequently results in automatic dismissal of court eviction proceedings.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900 border border-slate-800 rounded-xl p-4 transition-colors hover:border-slate-700">
+          <summary class="font-bold text-white cursor-pointer flex justify-between items-center text-sm sm:text-base">
+            <span>What happens if a landlord uses the wrong statutory notice form?</span>
+            <span class="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            Using an incorrect notice form invalidates the entire legal action. Housing courts in the United States, First-tier Tribunals in the United Kingdom, and provincial boards in Canada enforce strict statutory compliance. If an incorrect form is served, the judicial officer will dismiss the eviction lawsuit, requiring the housing provider to serve a new notice and restart the statutory waiting horizon.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900 border border-slate-800 rounded-xl p-4 transition-colors hover:border-slate-700">
+          <summary class="font-bold text-white cursor-pointer flex justify-between items-center text-sm sm:text-base">
+            <span>How does statutory notice timing differ between rent arrears and lease violations?</span>
+            <span class="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            Rent non-payment notices generally require shorter notice horizons, ranging from 3 to 14 days in the United States, 14 days in the United Kingdom under Section 8, and 14 to 21 days in Canadian provinces. General covenant breaches or unauthorized occupants typically require longer statutory warning periods of 10 to 30 days to provide adequate time for correction.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900 border border-slate-800 rounded-xl p-4 transition-colors hover:border-slate-700">
+          <summary class="font-bold text-white cursor-pointer flex justify-between items-center text-sm sm:text-base">
+            <span>Can tenants use this wizard to enforce landlord repair obligations?</span>
+            <span class="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            Yes. The diagnostic wizard includes tenant-side statutory remedies for uninhabitable living conditions, failure to maintain essential heating or plumbing utilities, illegal landlord entry, and unlawful withholding of security deposits across all supported jurisdictions.
+          </p>
+        </details>
+
+      </div>
+
+      <!-- Related Tenancy Notice Utilities Grid -->
+      <h2 class="text-2xl font-bold text-white tracking-tight mb-4">
+        Related Tenancy Notice Utilities
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 not-prose mb-12">
+        <a href="/tools/notice-expiry-date-calculator.html" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
+          <div class="text-xs font-semibold text-indigo-400 uppercase">Interactive Tool</div>
+          <div class="font-bold text-white mt-1">Notice Expiry Date Calculator</div>
+          <p class="text-xs text-slate-400 mt-1">Compute court-ready statutory deadlines with mail buffers and day-zero rules.</p>
+        </a>
+        <a href="/us/3-day-pay-rent-or-quit.html" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
+          <div class="text-xs font-semibold text-emerald-400 uppercase">United States</div>
+          <div class="font-bold text-white mt-1">3-Day Pay Rent or Quit Generator</div>
+          <p class="text-xs text-slate-400 mt-1">Standard statutory demand for rent arrears in California and Florida.</p>
+        </a>
+        <a href="/us/24-hour-notice-to-enter.html" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
+          <div class="text-xs font-semibold text-emerald-400 uppercase">United States</div>
+          <div class="font-bold text-white mt-1">24-Hour Notice to Enter Generator</div>
+          <p class="text-xs text-slate-400 mt-1">Lawful entry notice for landlord inspections and repairs.</p>
+        </a>
+        <a href="/uk/section-8-notice-to-quit.html" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
+          <div class="text-xs font-semibold text-indigo-400 uppercase">United Kingdom</div>
+          <div class="font-bold text-white mt-1">Section 8 Notice Generator</div>
+          <p class="text-xs text-slate-400 mt-1">Mandatory Grounds 8, 10, and 11 rent arrears notice for England.</p>
+        </a>
+        <a href="/canada/ontario-form-n4.html" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
+          <div class="text-xs font-semibold text-amber-400 uppercase">Canada (Ontario)</div>
+          <div class="font-bold text-white mt-1">Ontario Form N4 Notice</div>
+          <p class="text-xs text-slate-400 mt-1">Statutory 14-day early termination notice for non-payment of rent.</p>
+        </a>
+        <a href="/canada/quebec-tal-notice.html" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
+          <div class="text-xs font-semibold text-amber-400 uppercase">Canada (Quebec)</div>
+          <div class="font-bold text-white mt-1">Quebec TAL Notice Generator</div>
+          <p class="text-xs text-slate-400 mt-1">Tribunal administratif du logement non-renewal and resiliation forms.</p>
+        </a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-10 text-xs text-slate-400 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 TenantNotice.online. Comprehensive tenancy notice engineering and legal technology.</p>
+      <div class="flex items-center gap-4">
+        <a href="/legal/privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+        <a href="/legal/terms.html" class="hover:text-slate-300 transition-colors">Terms of Use</a>
+        <a href="/sitemap.xml" class="hover:text-slate-300 transition-colors">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Wizard Dynamic Script -->
+  <script>
+    const REGIONS_DATA = {
+      US: [
+        { code: 'CA', name: 'California (Cal. Civ. Proc. Code § 1161)' },
+        { code: 'TX', name: 'Texas (Tex. Prop. Code § 24.005)' },
+        { code: 'FL', name: 'Florida (Fla. Stat. § 83.56)' },
+        { code: 'NY', name: 'New York (RPAPL § 711)' },
+        { code: 'GEN_US', name: 'Other US State (Uniform Residential Landlord Act)' }
+      ],
+      UK: [
+        { code: 'ENG', name: 'England (Housing Act 1988 as amended)' },
+        { code: 'SCO', name: 'Scotland (Private Housing Tenancies Act 2016)' },
+        { code: 'WAL', name: 'Wales (Renting Homes Wales Act 2016)' }
+      ],
+      CA: [
+        { code: 'ON', name: 'Ontario (Landlord and Tenant Board / RTA 2006)' },
+        { code: 'BC', name: 'British Columbia (Residential Tenancy Branch / RTA)' },
+        { code: 'AB', name: 'Alberta (Residential Tenancies Act RSA 2000)' },
+        { code: 'QC', name: 'Quebec (Tribunal administratif du logement / CCQ)' },
+        { code: 'MB', name: 'Manitoba (Residential Tenancies Branch / RTA)' }
+      ]
+    };
+
+    const BREACH_PROFILES = {
+      landlord: [
+        { id: 'rent_arrears', label: 'Non-Payment of Rent (Arrears Default)' },
+        { id: 'lease_violation_curable', label: 'Curable Lease Breach (Pets, Noise, Unauthorized Sublet)' },
+        { id: 'lease_violation_incurable', label: 'Incurable Severe Misconduct (Damage, Illegal Activity)' },
+        { id: 'own_use', label: 'Landlord Own-Use / Personal Family Occupancy' },
+        { id: 'end_periodic', label: 'No-Fault Lease Termination / End of Periodic Tenancy' }
+      ],
+      tenant: [
+        { id: 'uninhabitable_repairs', label: 'Failure to Repair / Uninhabitable Conditions' },
+        { id: 'deposit_withholding', label: 'Unlawful Deposit Withholding / Failure to Return' },
+        { id: 'unlawful_entry', label: 'Landlord Harassment / Unlawful Entry Without Notice' },
+        { id: 'tenant_notice_end', label: 'Tenant Notice to Terminate Periodic Tenancy' }
+      ]
+    };
+
+    // Database of Jurisdictional Remedies
+    const REMEDY_DATABASE = {
+      // US California
+      'US_CA_landlord_rent_arrears': {
+        title: 'California 3-Day Notice to Pay Rent or Quit',
+        statute: 'California Code of Civil Procedure Section 1161(2)',
+        period: '3 Court Business Days',
+        cure: 'Mandatory Cure Window',
+        service: 'Personal, Substituted, or Post & Mail',
+        mailBuffer: '+5 Days if Mailed',
+        forum: 'Superior Court of California (Unlawful Detainer)',
+        mandate: 'Landlord must demand the exact rent accrued without late fees or utility surcharges. Tenant has three judicial business days to pay in full. Payment within window eliminates default.',
+        checklist: [
+          'Itemize overdue base rent exclusively without punitive penalties.',
+          'State exact dates and payment channels (in person, mail, or electronic if previously agreed).',
+          'File proof of service with the Superior Court if unlawful detainer petition is initiated.'
+        ],
+        generatorLink: '/us/3-day-pay-rent-or-quit.html'
+      },
+      'US_CA_landlord_lease_violation_curable': {
+        title: 'California 3-Day Notice to Perform Covenants or Quit',
+        statute: 'California Code of Civil Procedure Section 1161(3)',
+        period: '3 Calendar Days',
+        cure: 'Right to Cure Required',
+        service: 'Personal Handover or Substituted Service',
+        mailBuffer: '+5 Days for Postal Service',
+        forum: 'Superior Court of California',
+        mandate: 'Landlord must specify the breached lease clause and detail the specific corrective action required (e.g. removal of unauthorized animal or quiet enjoyment restoration).',
+        checklist: [
+          'Quote the specific contract clause violated from the signed lease agreement.',
+          'Provide clear, achievable corrective steps to remedy within 72 hours.',
+          'Document photographic or witness proof prior to issuing.'
+        ],
+        generatorLink: '/us/3-day-pay-rent-or-quit.html'
+      },
+      'US_CA_landlord_own_use': {
+        title: 'California 60-Day Notice to Vacate (Owner Move-In)',
+        statute: 'California Civil Code Section 1946.2 (AB 1482 Just Cause)',
+        period: '60 Calendar Days',
+        cure: 'Relocation Assistance Required',
+        service: 'Personal Delivery or Certified Mail',
+        mailBuffer: '+5 Days for Mail Transit',
+        forum: 'Superior Court of California',
+        mandate: 'For tenancies exceeding twelve months under AB 1482, owner move-in requires sixty days notice accompanied by one month of direct relocation assistance or rent waiver.',
+        checklist: [
+          'Verify that property is not exempt from the Tenant Protection Act of 2019.',
+          'Specify the family relation occupying the premises under statutory limits.',
+          'Disburse one month statutory relocation payment within 15 days of notice.'
+        ],
+        generatorLink: '/us/30-day-notice-to-vacate.html'
+      },
+      'US_CA_tenant_unlawful_entry': {
+        title: 'Tenant Notice of Unlawful Entry and Privacy Breach',
+        statute: 'California Civil Code Section 1954',
+        period: 'Immediate Cease and Desist',
+        cure: 'Civil Fine Liability up to $2,000',
+        service: 'Written Service or Certified Mail',
+        mailBuffer: 'Standard Proof of Delivery',
+        forum: 'California Small Claims Court',
+        mandate: 'Landlords must provide written 24-hour advance notice specifying date, reasonable business hours, and lawful purpose. Unauthorized entry breaches the covenant of quiet enjoyment.',
+        checklist: [
+          'Record dates, camera timestamps, and times of unauthorized entries.',
+          'Demand immediate cessation of entry without 24-hour written notice.',
+          'Reserve right to statutory damages under Civil Code Section 1954.'
+        ],
+        generatorLink: '/us/24-hour-notice-to-enter.html'
+      },
+
+      // Texas Landlord Rent
+      'US_TX_landlord_rent_arrears': {
+        title: 'Texas 3-Day Notice to Vacate for Non-Payment',
+        statute: 'Texas Property Code Section 24.005',
+        period: '3 Calendar Days',
+        cure: 'No Statutory Right to Cure (Unless in Lease)',
+        service: 'Personal, In-Person Mailbox Handover, or Certified Mail',
+        mailBuffer: 'Certified Mail Effective Upon Dispatch',
+        forum: 'Justice of the Peace (JP) Court',
+        mandate: 'Texas law does not mandate a statutory cure period for unpaid rent unless specified in the written lease contract. Notice demands immediate surrender within 72 hours.',
+        checklist: [
+          'Review lease to determine if a 24-hour or alternate notice window was contractually agreed.',
+          'Deliver inside the front door or mail via certified return receipt requested.',
+          'File eviction petition with the Justice Court precinct after day three.'
+        ],
+        generatorLink: '/us/3-day-pay-rent-or-quit.html'
+      },
+
+      // Florida Landlord Rent
+      'US_FL_landlord_rent_arrears': {
+        title: 'Florida 3-Day Notice to Pay Rent or Vacate',
+        statute: 'Florida Statutes Section 83.56(3)',
+        period: '3 Business Days',
+        cure: 'Mandatory Cure Window',
+        service: 'Personal Delivery, Substituted, or Posting on Door',
+        mailBuffer: '+5 Additional Days if Mailed',
+        forum: 'County Court (Civil Division)',
+        mandate: 'Notice demands full rent payment within three business days, strictly excluding Saturdays, Sundays, and legal court holidays. Tenant tender cures default completely.',
+        checklist: [
+          'Exclude weekends and official clerk court holidays from day calculation.',
+          'Exclude late fees unless lease explicitly defines them as additional rent.',
+          'Attach signed certificate of service verifying time and method.'
+        ],
+        generatorLink: '/us/3-day-pay-rent-or-quit.html'
+      },
+
+      // UK England Landlord Rent
+      'UK_ENG_landlord_rent_arrears': {
+        title: 'England Section 8 Notice to Quit (Grounds 8, 10, 11)',
+        statute: 'Housing Act 1988 (as amended by Housing Act 1996)',
+        period: '14 Calendar Days',
+        cure: 'Mandatory Ground 8 if 2 Months Overdue',
+        service: 'Personal Service, Process Server, or Recorded Delivery',
+        mailBuffer: 'Deemed Service: +2 Business Days',
+        forum: 'County Court of England and Wales',
+        mandate: 'Ground 8 is a mandatory eviction ground if tenant owes at least two months rent at notice service and court hearing. Landlord must complete prescribed Form 3.',
+        checklist: [
+          'Verify tenant owes at least two full months of rent on service date.',
+          'Use official prescribed Form 3 text without alterations.',
+          'Ensure tenancy deposit was protected in approved custodial scheme.'
+        ],
+        generatorLink: '/uk/section-8-notice-to-quit.html'
+      },
+
+      // UK England Tenant Deposit
+      'UK_ENG_tenant_deposit_withholding': {
+        title: 'UK Tenancy Deposit Protection Demand Letter',
+        statute: 'Housing Act 2004 Section 213-214',
+        period: '14 Calendar Days to Respond',
+        cure: '1x to 3x Deposit Penalty for Non-Compliance',
+        service: 'First Class Mail or Recorded Signed-For',
+        mailBuffer: '2 Working Days Transit',
+        forum: 'County Court Small Claims Track',
+        mandate: 'Landlords who fail to protect tenancy deposits in an authorized government scheme within thirty days are liable for compensation of up to three times the deposit sum.',
+        checklist: [
+          'Demand immediate deposit certificate or repayment within fourteen days.',
+          'Quote statutory compensation under Section 214(4) Housing Act 2004.',
+          'Prepare court claim Form N208 if landlord fails to comply.'
+        ],
+        generatorLink: '/uk/tenancy-deposit-demand.html'
+      },
+
+      // Canada Ontario Landlord Rent
+      'CA_ON_landlord_rent_arrears': {
+        title: 'Ontario Form N4: Notice to End Tenancy for Non-Payment',
+        statute: 'Residential Tenancies Act, 2006 (Ontario) Section 59',
+        period: '14 Calendar Days',
+        cure: 'Statutory Right to Void by Payment',
+        service: 'Personal Handover, Mailbox, or LTB Permitted Method',
+        mailBuffer: '+5 Calendar Days if Mailed (Section 191)',
+        forum: 'Landlord and Tenant Board (LTB)',
+        mandate: 'Landlord must specify exact rental periods and amounts. Tenant has fourteen days to pay in full, which voids the notice automatically without tribunal action.',
+        checklist: [
+          'Never include NSF bank charges or administrative fees on Form N4.',
+          'Add five additional days if notice is mailed or sent by courier.',
+          'File L1 application with the LTB only after the termination date passes.'
+        ],
+        generatorLink: '/canada/ontario-form-n4.html'
+      },
+
+      // Canada Quebec Landlord Rent
+      'CA_QC_landlord_rent_arrears': {
+        title: 'Quebec TAL Formal Demand for Unpaid Rent (Mise en demeure)',
+        statute: 'Civil Code of Québec (CCQ) Article 1971 & TAL Rules',
+        period: '3 Weeks (21 Days) Arrears Threshold',
+        cure: 'Payment Prior to Hearing Avoids Resiliation',
+        service: 'Bailiff (Huissier) or Registered Mail with Signature',
+        mailBuffer: 'Tracked Delivery Effective Upon Receipt',
+        forum: 'Tribunal administratif du logement (TAL)',
+        mandate: 'Under Article 1971 of the CCQ, a landlord may petition the TAL for resiliation of the lease when rent is delayed by more than three weeks (21 days) or frequent late payments cause serious prejudice.',
+        checklist: [
+          'Verify tenant is more than three full weeks behind on statutory due date.',
+          'Deliver via court bailiff (huissier de justice) or registered post.',
+          'File Application for Lease Resiliation directly with the TAL registry.'
+        ],
+        generatorLink: '/canada/quebec-tal-notice.html'
+      },
+
+      // Canada Manitoba Landlord Rent
+      'CA_MB_landlord_rent_arrears': {
+        title: 'Manitoba RTB Form 10: Notice of Termination for Non-Payment',
+        statute: 'The Residential Tenancies Act (Manitoba) C.C.S.M. c. R119 Section 95',
+        period: 'At least 3 Calendar Days',
+        cure: 'Right to Pay and Reinstate',
+        service: 'Personal Handover, Registered Mail, or RTB Approved Agent',
+        mailBuffer: '+3 Days if Sent by Mail (Section 184)',
+        forum: 'Residential Tenancies Branch (RTB) Manitoba',
+        mandate: 'Under Section 95, when rent is in arrears for three days or more, the landlord may serve Form 10 giving at least three days notice to pay or vacate the rental unit.',
+        checklist: [
+          'Ensure rent is at least three full days late before issuing notice.',
+          'Specify exact breakdown of unpaid rent and permitted utility charges.',
+          'Apply for Order of Possession with the RTB if tenant fails to pay.'
+        ],
+        generatorLink: '/canada/manitoba-notice.html'
+      }
+    };
+
+    // Generic Fallback Profile Generator
+    function getFallbackRemedy(country, region, role, breach) {
+      if (role === 'tenant') {
+        return {
+          title: 'Formal Notice of Tenant Grievance and Statutory Breach',
+          statute: 'Regional Residential Tenancy Legislation',
+          period: '14 Calendar Days',
+          cure: 'Mandatory Corrective Horizon',
+          service: 'Written Service with Proof of Delivery',
+          mailBuffer: '+3 to +5 Days for Mail Transit',
+          forum: 'Housing Court or Administrative Tenancy Tribunal',
+          mandate: 'Tenant demands formal remedy of housing condition or contractual default. Landlord must initiate corrective repairs or respond within statutory period.',
+          checklist: [
+            'Itemize specific structural, health, or covenant deficiencies.',
+            'Provide photographic records and previous written communications.',
+            'Retain proof of service for subsequent administrative claims.'
+          ],
+          generatorLink: '/tools/notice-expiry-date-calculator.html'
+        };
+      } else {
+        return {
+          title: 'Statutory Notice to Comply or Surrender Possession',
+          statute: 'Regional Residential Tenancy Code',
+          period: '30 Calendar Days',
+          cure: 'Statutory Remedy or Vacate',
+          service: 'Personal Service or Registered Certified Post',
+          mailBuffer: '+5 Calendar Days if Mailed',
+          forum: 'Regional Municipal Housing Court',
+          mandate: 'Landlord issues formal notification of tenancy termination or covenant enforcement in compliance with baseline common-law notice standards.',
+          checklist: [
+            'Identify all adult occupants and state complete property address.',
+            'Cite violated lease covenant or statutory end of periodic tenancy.',
+            'Execute sworn affidavit of service prior to filing formal action.'
+          ],
+          generatorLink: '/tools/notice-expiry-date-calculator.html'
+        };
+      }
+    }
+
+    // UI Controller
+    const countrySelect = document.getElementById('wizardCountry');
+    const regionSelect = document.getElementById('wizardRegion');
+    const categorySelect = document.getElementById('breachCategory');
+    const roleRadios = document.querySelectorAll('input[name="initiatorRole"]');
+    const runBtn = document.getElementById('runDiagnosticBtn');
+    const resetBtn = document.getElementById('resetWizardBtn');
+
+    function populateRegions() {
+      const country = countrySelect.value;
+      const regions = REGIONS_DATA[country] || [];
+      regionSelect.innerHTML = '';
+      regions.forEach(r => {
+        const opt = document.createElement('option');
+        opt.value = r.code;
+        opt.textContent = r.name;
+        regionSelect.appendChild(opt);
+      });
+    }
+
+    function populateCategories() {
+      const selectedRole = document.querySelector('input[name="initiatorRole"]:checked').value;
+      const categories = BREACH_PROFILES[selectedRole] || [];
+      categorySelect.innerHTML = '';
+      categories.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.id;
+        opt.textContent = c.label;
+        categorySelect.appendChild(opt);
+      });
+    }
+
+    function updateDiagnostic() {
+      const country = countrySelect.value;
+      const region = regionSelect.value;
+      const role = document.querySelector('input[name="initiatorRole"]:checked').value;
+      const breach = categorySelect.value;
+
+      const lookupKey = country + '_' + region + '_' + role + '_' + breach;
+      const remedy = REMEDY_DATABASE[lookupKey] || getFallbackRemedy(country, region, role, breach);
+
+      document.getElementById('statutoryTitle').textContent = remedy.title;
+      document.getElementById('governingStatute').textContent = 'Governing Authority: ' + remedy.statute;
+      document.getElementById('statutoryPeriod').textContent = remedy.period;
+      document.getElementById('cureType').textContent = remedy.cure;
+      document.getElementById('permittedService').textContent = remedy.service;
+      document.getElementById('mailBuffer').textContent = remedy.mailBuffer;
+      document.getElementById('forumOfRecord').textContent = remedy.forum;
+      document.getElementById('proceduralMandate').textContent = remedy.mandate;
+
+      const listEl = document.getElementById('serviceChecklist');
+      listEl.innerHTML = '';
+      remedy.checklist.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start gap-2';
+        li.innerHTML = '<span class="text-emerald-400 font-bold">&#10003;</span><span>' + item + '</span>';
+        listEl.appendChild(li);
+      });
+
+      const genLink = document.getElementById('generatorLink');
+      if (remedy.generatorLink) {
+        genLink.href = remedy.generatorLink;
+        genLink.style.display = 'inline-flex';
+      } else {
+        genLink.style.display = 'none';
+      }
+    }
+
+    // Event Listeners
+    countrySelect.addEventListener('change', () => {
+      populateRegions();
+      updateDiagnostic();
+    });
+
+    regionSelect.addEventListener('change', updateDiagnostic);
+
+    roleRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        populateCategories();
+        updateDiagnostic();
+      });
+    });
+
+    categorySelect.addEventListener('change', updateDiagnostic);
+    runBtn.addEventListener('click', updateDiagnostic);
+
+    resetBtn.addEventListener('click', () => {
+      countrySelect.value = 'US';
+      populateRegions();
+      document.querySelector('input[name="initiatorRole"][value="landlord"]').checked = true;
+      populateCategories();
+      updateDiagnostic();
+    });
+
+    // Initial setup
+    populateRegions();
+    populateCategories();
+    updateDiagnostic();
+  </script>
+</body>
+</html>
