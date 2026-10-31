@@ -160,6 +160,25 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 - Service by Mail (Section 184):
   - 3-day deemed receipt buffer added to all notices served by ordinary or registered post.
 
+### 3.6 Ontario Form N12 Eviction and Bad-Faith Legal Guide (/blog/ontario-form-n12-eviction-landlord-own-use-guide.html)
+- Statutory Foundation:
+  - Ontario Residential Tenancies Act, 2006 (RTA) Sections 48, 48.1, 49, 57, and 135.
+  - Landlord and Tenant Board Interpretation Guideline 12 (Eviction for Personal Use).
+- Mandatory Notice Standards:
+  - 60 calendar days minimum notice ending strictly on the final day of a rental period.
+  - Mandatory postal buffer: +5 days if served by regular or certified post.
+- Section 48.1 Mandatory Compensation Rule:
+  - Landlord must pay tenant one month of rent (or offer acceptable alternative unit) on or before the termination date on the Form N12.
+  - Failure to pay by the termination date invalidates the application; LTB must dismiss under RTA Section 48.1.
+- Eligible Beneficiaries:
+  - Limited to the landlord, spouse, child, parent, or primary caregiver.
+  - Corporate landlords cannot issue an N12 for personal use under any circumstances.
+- Section 48(3) Tenant 10-Day Notice Right:
+  - Tenant may give 10 days notice using Form N9 to vacate early without forfeiting the 1-month statutory compensation.
+- Bad-Faith Presumptions & Bill 184 Remedies (Section 57):
+  - Presumption of bad faith if unit is advertised, re-rented, sold, or demolished within 12 months.
+  - Remedies on Form T5: Up to 12 months rent differential, moving expenses, up to 12 months general damages, and fines up to $50,000 for individuals ($250,000 for corporations).
+
 ### 3.4 Ontario Last Month Rent (LMR) Deposit Interest Calculator (/canada/ontario-lmr-interest.html)
 - Statutory Foundation:
   - Ontario Residential Tenancies Act 2006 Section 106(6) mandates that landlords pay interest annually on rent deposits held under Section 105.

@@ -32,7 +32,9 @@
 - [Quebec TAL Tenancy Notice Generator & Form Builder](https://tenantnotice.online/canada/quebec-tal-notice.html): Governed by Civil Code of Québec Articles 1851 to 2000 and Tribunal administratif du logement rules, calculating 3 to 6 month lease non-renewal windows, 6-month repossession notices, and Bill 31 lease assignment protections.
 - [Manitoba RTB Tenancy Notice Generator](https://tenantnotice.online/canada/manitoba-notice.html): Governed by The Residential Tenancies Act (C.C.S.M. c. R119), generating Section 86 periodic termination notices, Form 10 rent arrears demands, and Section 98(3) school-age children protections extending tenancy through June 30.
 
-## Authoritative Statutory Blog Articles (US & UK)
+## Authoritative Statutory Blog Articles (Canada, US & UK)
+- [Ontario Form N12 Eviction and Landlord Own-Use Legal Guide](https://tenantnotice.online/blog/ontario-form-n12-eviction-landlord-own-use-guide.html): Complete statutory analysis of Ontario Form N12 personal occupancy notices, mandatory 1-month rent compensation under Section 48.1, LTB hearing rights, and Bill 184 bad-faith damages.
+
 - [California 30-Day vs 60-Day Notice Rules](https://tenantnotice.online/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html): Statutory tenure benchmarks under Civil Code 1946.1 and Code of Civil Procedure Section 12 day counting rules.
 - [California AB 1482 Just Cause Evictions & Rent Caps](https://tenantnotice.online/blog/california-ab-1482-tenant-protection-act-just-cause-evictions.html): Civil Code 1946.2 just cause requirements, mandatory relocation payments, and Section 1947.12 rent caps.
 - [Texas Property Code 24.005 Notice to Vacate Procedure](https://tenantnotice.online/blog/texas-property-code-24-005-notice-to-vacate-procedure.html): 3-day notice rules, delivery affidavits, outside door posting restrictions, and Justice Court timelines.
