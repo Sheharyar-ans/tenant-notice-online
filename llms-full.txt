@@ -175,6 +175,14 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 - Emergency Waiver: Advance notice strictly waived only during genuine emergencies threatening life, safety, or imminent structural destruction (fires, gas leaks, active pipe bursts).
 - Civil Penalties & Remedies: Tenants may refuse defective or out-of-hours entry. California provides up to $2,000 statutory civil penalties per violation for landlord harassment under Civil Code Section 1940.2.
 
+### 4.13 Rental Junk Fees: Are Your Landlord's Surcharges Illegal? (/blog/rental-junk-fees-illegal-landlord-charges-guide.html)
+- Governing Law: Federal Trade Commission Act Section 5, proposed FTC Trade Regulation Rule on Unfair or Deceptive Fees; California Civil Code Section 1770 (SB 478), Section 1947.3, Section 1950.5 (AB 12, AB 2801); California Code of Civil Procedure Section 1161(2); Florida Statutes Section 83.56(3); Texas Property Code Section 92.0081, Section 92.104.
+- Core Consumer Protections:
+  - Drip Pricing Prohibition: Federal and state consumer protection standards prohibit advertising a deceptive base rent while concealing mandatory recurring charges (valet trash, resident benefit packages, air filter deliveries, online payment fees).
+  - Non-Rent Eviction Barrier: Landlords cannot bundle non-rent fees (trash, admin, late fees) into summary 3-day notices to pay rent or quit. Doing so invalidates the statutory notice on its face under California and Florida law.
+  - Security Deposit Retention Limits: Deposits cannot be deducted for arbitrary administrative charges or non-negotiated move-out fees; deductions are restricted to actual unpaid rent, physical damage beyond ordinary wear and tear, and necessary cleaning.
+  - Unilateral Changes Barred: Landlords cannot impose new recurring fees mid-lease without a mutual written amendment. On periodic leases, fees require statutory 30-day notice within local rent control limits.
+
 ***
 
 ## 5. Global Authority Standards
