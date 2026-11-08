@@ -33,6 +33,7 @@
 - [Manitoba RTB Tenancy Notice Generator](https://tenantnotice.online/canada/manitoba-notice.html): Governed by The Residential Tenancies Act (C.C.S.M. c. R119), generating Section 86 periodic termination notices, Form 10 rent arrears demands, and Section 98(3) school-age children protections extending tenancy through June 30.
 
 ## Authoritative Statutory Blog Articles (Canada, US & UK)
+- [Tenant Privacy Rights and Landlord Entry Rules](https://tenantnotice.online/blog/tenant-privacy-rights-landlord-entry-rules.html): Legal analysis of the covenant of quiet enjoyment, 24-hour statutory advance notice windows under California Civil Code 1954 and Florida Statutes 83.53, emergency access exceptions, and tenant remedies against harassment.
 - [Ontario Form N12 Eviction and Landlord Own-Use Legal Guide](https://tenantnotice.online/blog/ontario-form-n12-eviction-landlord-own-use-guide.html): Complete statutory analysis of Ontario Form N12 personal occupancy notices, mandatory 1-month rent compensation under Section 48.1, LTB hearing rights, and Bill 184 bad-faith damages.
 
 - [California 30-Day vs 60-Day Notice Rules](https://tenantnotice.online/blog/california-30-day-vs-60-day-notice-to-vacate-rules.html): Statutory tenure benchmarks under Civil Code 1946.1 and Code of Civil Procedure Section 12 day counting rules.

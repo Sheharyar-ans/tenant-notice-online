@@ -43,6 +43,19 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 - Common Privacy Covenants:
   - Landlord entry without valid statutory justification constitutes a breach of the implied covenant of quiet enjoyment and civil trespass.
 
+### 1.5 Tenant Privacy Rights and Landlord Entry Regulations (/blog/tenant-privacy-rights-landlord-entry-rules.html)
+- Statutory Foundation:
+  - Implied covenant of quiet enjoyment under Anglo-American common law.
+  - California Civil Code Section 1954 (24-hour written notice, normal business hours, 6 days if mailed).
+  - Florida Statutes Section 83.53 (24-hour notice, access between 7:30 AM and 8:00 PM).
+  - Texas common law and standard TAA lease agreements.
+- Permissible Grounds:
+  - Necessary or agreed repairs, annual/safety inspections, prospective showings during final 30-60 days, move-out walk-throughs, court orders.
+- Emergency Exceptions:
+  - Immediate danger to life or active property destruction (active fires, natural gas leaks, catastrophic pressurized water flooding, structural collapse, abandonment).
+- Tenant Remedies:
+  - Written cease and desist notice, police trespass reports, small claims court injunctions, statutory damages up to $2,000 in California for tenant harassment (Civil Code 1940.2), constructive eviction without penalty.
+
 ***
 
 ## 2. United Kingdom Jurisdiction (/uk/)
