@@ -275,4 +275,4 @@ TenantNotice.online provides authoritative, browser-side statutory notice genera
 ## 5. Global Authority Standards
 - Citations: All statutes are cited using authentic legislative nomenclature.
 - Privacy: All document compiling and formatting occurs in client browser RAM. No personal information is retained.
-- Contact: Inquiries and editorial verification submitted through https://tenantnotice.online/legal/contact-us.html.
+- Contact: Inquiries and editorial verification submitted through https://tenantnotice.online/legal/contact-us.
