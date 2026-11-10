@@ -120,7 +120,7 @@
           "name": "How does statutory notice timing differ between rent arrears and lease violations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Rent non-payment notices generally require shorter notice horizons, ranging from 3 to 14 days in the United States, 14 days in the United Kingdom under Section 8, and 14 to 21 days in Canadian provinces. General covenant breaches or unauthorized occupants typically require longer statutory warning periods of 10 to 30 days to provide adequate time for correction."
+            "text": "Rent non-payment notices generally require shorter notice horizons, ranging from 3 to 14 days in the United States, 2 weeks to 4 months in the United Kingdom under Section 8 depending on the ground, and 7 to 21 days in Canadian provinces. General covenant breaches or unauthorized occupants typically require longer statutory warning periods of 10 to 30 days to provide adequate time for correction."
           }
         },
         {
@@ -436,14 +436,14 @@
               <td class="p-3 font-bold text-white">England (UK)</td>
               <td class="p-3">Housing Act 1988 (as amended)</td>
               <td class="p-3 font-mono text-indigo-400">Section 8 Notice (Grounds 8, 10, 11)</td>
-              <td class="p-3">14 Calendar Days</td>
+              <td class="p-3">4 Weeks</td>
               <td class="p-3 font-mono">Section 8 (Ground 12)</td>
             </tr>
             <tr>
               <td class="p-3 font-bold text-white">Ontario (Canada)</td>
               <td class="p-3">Residential Tenancies Act, 2006</td>
               <td class="p-3 font-mono text-indigo-400">LTB Form N4</td>
-              <td class="p-3">14 Days (+5 for mail)</td>
+              <td class="p-3">7 Days (+5 for mail)</td>
               <td class="p-3 font-mono">LTB Form N5 (7 Days)</td>
             </tr>
             <tr>
@@ -519,7 +519,7 @@
             <span class="text-indigo-400 group-open:rotate-180 transition-transform">▼</span>
           </summary>
           <p class="text-slate-300 text-sm mt-3 leading-relaxed">
-            Rent non-payment notices generally require shorter notice horizons, ranging from 3 to 14 days in the United States, 14 days in the United Kingdom under Section 8, and 14 to 21 days in Canadian provinces. General covenant breaches or unauthorized occupants typically require longer statutory warning periods of 10 to 30 days to provide adequate time for correction.
+            Rent non-payment notices generally require shorter notice horizons, ranging from 3 to 14 days in the United States, 2 weeks to 4 months in the United Kingdom under Section 8 depending on the ground, and 7 to 21 days in Canadian provinces. General covenant breaches or unauthorized occupants typically require longer statutory warning periods of 10 to 30 days to provide adequate time for correction.
           </p>
         </details>
 
@@ -563,7 +563,7 @@
         <a href="/canada/ontario-form-n4" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
           <div class="text-xs font-semibold text-amber-400 uppercase">Canada (Ontario)</div>
           <div class="font-bold text-white mt-1">Ontario Form N4 Notice</div>
-          <p class="text-xs text-slate-400 mt-1">Statutory 14-day early termination notice for non-payment of rent.</p>
+          <p class="text-xs text-slate-400 mt-1">Statutory 7-day early termination notice for non-payment of rent.</p>
         </a>
         <a href="/canada/quebec-tal-notice" class="p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-indigo-600 transition-colors block">
           <div class="text-xs font-semibold text-amber-400 uppercase">Canada (Quebec)</div>
@@ -735,15 +735,15 @@
       'UK_ENG_landlord_rent_arrears': {
         title: 'England Section 8 Notice to Quit (Grounds 8, 10, 11)',
         statute: 'Housing Act 1988 (as amended by Housing Act 1996)',
-        period: '14 Calendar Days',
-        cure: 'Mandatory Ground 8 if 2 Months Overdue',
+        period: '4 Weeks',
+        cure: 'Mandatory Ground 8 if 3 Months Overdue',
         service: 'Personal Service, Process Server, or Recorded Delivery',
         mailBuffer: 'Deemed Service: +2 Business Days',
         forum: 'County Court of England and Wales',
-        mandate: 'Ground 8 is a mandatory eviction ground if tenant owes at least two months rent at notice service and court hearing. Landlord must complete prescribed Form 3.',
+        mandate: 'Ground 8 is a mandatory eviction ground if tenant owes at least three months rent at notice service and court hearing. Landlord must complete prescribed Form 3A.',
         checklist: [
-          'Verify tenant owes at least two full months of rent on service date.',
-          'Use official prescribed Form 3 text without alterations.',
+          'Verify tenant owes at least three full months of rent on service date.',
+          'Use official prescribed Form 3A text without alterations.',
           'Ensure tenancy deposit was protected in approved custodial scheme.'
         ],
         generatorLink: '/uk/section-8-notice-to-quit.html'
@@ -771,12 +771,12 @@
       'CA_ON_landlord_rent_arrears': {
         title: 'Ontario Form N4: Notice to End Tenancy for Non-Payment',
         statute: 'Residential Tenancies Act, 2006 (Ontario) Section 59',
-        period: '14 Calendar Days',
+        period: '7 Calendar Days',
         cure: 'Statutory Right to Void by Payment',
         service: 'Personal Handover, Mailbox, or LTB Permitted Method',
         mailBuffer: '+5 Calendar Days if Mailed (Section 191)',
         forum: 'Landlord and Tenant Board (LTB)',
-        mandate: 'Landlord must specify exact rental periods and amounts. Tenant has fourteen days to pay in full, which voids the notice automatically without tribunal action.',
+        mandate: 'Landlord must specify exact rental periods and amounts. Tenant has seven days to pay in full, which voids the notice automatically without tribunal action.',
         checklist: [
           'Never include NSF bank charges or administrative fees on Form N4.',
           'Add five additional days if notice is mailed or sent by courier.',

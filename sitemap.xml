@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://tenantnotice.online/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tenantnotice.online/"/>
@@ -51,7 +51,7 @@
   <!-- United Kingdom Jurisdictional Suite -->
   <url>
     <loc>https://tenantnotice.online/uk/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://tenantnotice.online/uk/"/>
@@ -60,13 +60,13 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/uk/section-8-notice-to-quit</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tenantnotice.online/uk/tenant-notice-to-quit</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -78,7 +78,7 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/uk/section-13-rent-challenge</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -121,7 +121,7 @@
   <!-- Legal Blog Hub & Statutory Articles -->
   <url>
     <loc>https://tenantnotice.online/blog/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -157,19 +157,19 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/blog/renters-rights-act-complete-guide-section-21-abolition</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tenantnotice.online/blog/reformed-section-8-notice-form-3-ground-8-rent-arrears</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tenantnotice.online/blog/ground-1a-landlord-intention-to-sell-notice-rules</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -181,7 +181,7 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/blog/challenging-section-13-rent-increases-first-tier-tribunal</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -213,7 +213,7 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/guides/uk-renters-rights-act-guide</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -263,7 +263,7 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/tools/lease-breach-wizard</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -281,7 +281,7 @@
   </url>
   <url>
     <loc>https://tenantnotice.online/blog/ontario-form-n12-eviction-landlord-own-use-guide</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
