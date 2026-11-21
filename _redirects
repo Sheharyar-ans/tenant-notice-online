@@ -1,2 +1,9 @@
 https://www.tenantnotice.online/* https://tenantnotice.online/:splat 301
 http://www.tenantnotice.online/* https://tenantnotice.online/:splat 301
+/legal/privacy /legal/privacy-policy 301
+/legal/privacy.html /legal/privacy-policy 301
+/legal/terms /legal/terms-of-service 301
+/legal/terms.html /legal/terms-of-service 301
+/canada/ontario-form-n4 /canada/ontario-form-n9 301
+/canada/ontario-form-n4.html /canada/ontario-form-n9 301
+

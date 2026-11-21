@@ -1,6 +1,12 @@
 User-agent: Googlebot
 Allow: /
 
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
